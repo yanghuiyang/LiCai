@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#fdc9a7</color>
+    <color name="gray">#9e9d9a</color>
+    <color name="qing">#b6f2f9</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#99c344</color>
+     <color name="black">#000000</color>
+    <color name="touming">#00000000</color>
+    <color name="yybottom">#121111</color>
+    <color name="yybottom_press">#3c3535</color>
+    <color name="warn">#c4bebe</color>
+    <color name="innum">#f66607</color>
+    <color name="zj_text_bg">#e6e1e1</color>
+</resources>
