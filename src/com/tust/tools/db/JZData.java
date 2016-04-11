@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
-
+//记账数据库操作
 public class JZData {
 	//数据库名称
 	private String DB_NAME="jizhang.db";

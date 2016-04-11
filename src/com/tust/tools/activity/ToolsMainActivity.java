@@ -26,7 +26,6 @@ import android.widget.SlidingDrawer.OnDrawerCloseListener;
 import android.widget.SlidingDrawer.OnDrawerOpenListener;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.tust.tools.R;
 import com.tust.tools.db.JZSqliteHelper;
 import com.tust.tools.dialog.DialogAbout;
@@ -38,7 +37,7 @@ import com.tust.tools.service.PhoneInfoService;
 import com.tust.tools.service.SDrw;
 
 public class ToolsMainActivity extends Activity implements OnClickListener,OnLongClickListener,OnTouchListener, OnGestureListener  {
-    //工具箱主界面  六个图标布局
+    //工具箱主界面  图标布局
     private LinearLayout jz_ll, bw_ll, js_ll, wz_ll, fy_ll,info_ll,icon_ll,top_bt;
     //底部上拉界面
     private SlidingDrawer sd;
@@ -113,8 +112,8 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         rom =(TextView)this.findViewById(R.id.maintext_rom);
         String roms[]=ps.getRomMemroy();
         rom.setText("ROM大小："+roms[0]+"GB  剩余大小："+roms[1]+"GB");
-        sdcard = (TextView)this.findViewById(R.id.maintext_sd);
-        sdcard.setText("SD卡大小："+ps.getSDCardMemory()[0]+"GB  剩余大小："+ps.getSDCardMemory()[1]+"GB");
+        //sdcard = (TextView)this.findViewById(R.id.maintext_sd);
+        //sdcard.setText("SD卡大小："+ps.getSDCardMemory()[0]+"GB  剩余大小："+ps.getSDCardMemory()[1]+"GB");
         memory = (TextView)this.findViewById(R.id.maintext_memory);
         memory.setText(ps.getTotalMemory());
         String versions[] = ps.getVersion();
@@ -259,7 +258,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
             }
             break;
         case R.id.main_help_bt:
-            String texth ="如果您要了解理财助手每个子功能的特点和使用方法，请在该功能对应的图标上长按不放，程序将会弹出相应的提示信息。\r\n该程序目前适用于Android2.2及以上的版本，如有问题反馈请发送邮件至785554157@qq.com";            
+            String texth ="如果您要了解理财助手每个子功能的特点和使用方法，请在该功能对应的图标上长按不放，程序将会弹出相应的提示信息。\r\n该程序目前适用于Android2.2及以上的版本";            
             new DialogAbout(this,texth);
             sd.animateClose();
             break;
