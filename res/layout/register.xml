@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginRoot"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:id="@+id/LinearLayout01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1.0"
+	    android:background="@drawable/default_bg"
+	    android:orientation="vertical" >
+
+	    <RelativeLayout
+	        android:id="@+id/RelativeLayout02"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="15.0px"
+	        android:layout_marginRight="15.0px"
+	        android:layout_marginTop="62.0px"
+	        android:background="@drawable/login_back"
+	        android:paddingBottom="10.0px"
+	        android:paddingTop="21.0px" >
+
+	        <EditText
+	            android:id="@+id/register_account"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginBottom="5.0px"
+	            android:layout_marginLeft="5.0dip"
+	            android:layout_marginRight="5.0dip"
+	            android:layout_marginTop="5.0dip"
+	            android:background="@drawable/qq_edit_login"
+	            android:inputType="text"
+	            android:maxLength="10"
+	            android:paddingLeft="45.0sp"
+	            android:saveEnabled="true" />
+
+	        <TextView
+	            android:id="@+id/TextView01"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/register_account"
+	            android:layout_alignLeft="@+id/register_account"
+	            android:layout_alignTop="@+id/register_account"
+	            android:layout_marginRight="15.0sp"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="7.0sp"
+	            android:text="@string/strAccInputLabel"
+	            android:textColor="#ff3f3f3f"
+	            android:textSize="16.0dip" />
+
+
+	        <EditText
+	            android:id="@+id/register_pwd"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/register_account"
+	            android:layout_alignRight="@+id/register_account"
+	            android:layout_below="@+id/register_account"
+	            android:layout_marginRight="1.0dip"
+	            android:background="@drawable/qq_edit_login"
+	            android:inputType="textPassword"
+	            android:maxLength="16"
+	            android:paddingLeft="45.0sp"
+	            android:saveEnabled="true" />
+
+	        <TextView
+	            android:id="@+id/TextView02"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/register_pwd"
+	            android:layout_alignRight="@+id/TextView01"
+	            android:layout_alignTop="@+id/register_pwd"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="7.0sp"
+	            android:text="@string/strPswInputLabel"
+	            android:textColor="#ff3f3f3f"
+	            android:textSize="16.0dip" />
+
+ 			<Spinner
+ 			    android:id="@+id/spinner_sex"
+ 			    android:layout_width="120px"
+ 			    android:layout_height="70px"
+ 			    android:layout_alignTop="@+id/TextView03"
+ 			    android:layout_toRightOf="@+id/TextView01"
+ 			    android:entries="@array/sprinnerSex"
+ 			    android:textSize="16.0dip" />
+  
+ 			    />
+
+ 			<EditText
+ 			    android:id="@+id/register_tel"
+ 			    android:layout_width="wrap_content"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_alignLeft="@+id/register_pwd"
+ 			    android:layout_alignRight="@+id/register_pwd"
+ 			    android:layout_below="@+id/register_pwd"
+ 			    android:layout_marginTop="16dp"
+ 			    android:background="@drawable/qq_edit_login"
+ 			    android:ems="10"
+ 			    android:inputType="text"
+ 			    android:maxLength="16"
+ 			    android:paddingLeft="45.0sp"
+ 			    android:saveEnabled="true" >
+
+ 			    <requestFocus />
+ 			</EditText>
+
+ 			<TextView
+ 			    android:id="@+id/TextView04"
+ 			    android:layout_width="wrap_content"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_alignBaseline="@+id/register_tel"
+ 			    android:layout_alignBottom="@+id/register_tel"
+ 			    android:layout_alignLeft="@+id/register_tel"
+ 			    android:gravity="center_vertical"
+ 			    android:paddingLeft="7.0sp"
+ 			    android:text="@string/tel"
+ 			    android:textColor="#ff3f3f3f"
+ 			    android:textSize="16.0dip" />
+
+ 			<TextView
+ 			    android:id="@+id/TextView03"
+ 			    android:layout_width="wrap_content"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_alignLeft="@+id/register_tel"
+ 			    android:layout_below="@+id/register_tel"
+ 			    android:layout_marginTop="18dp"
+ 			    android:gravity="center_vertical"
+ 			    android:paddingLeft="7.0sp"
+ 			    android:text="@string/sex"
+ 			    android:textColor="#ff3f3f3f"
+ 			    android:textSize="16.0dip" />
+
+ 			<Button
+ 			    android:id="@+id/btn_register"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+ 			    android:layout_alignLeft="@+id/TextView03"
+ 			    android:layout_alignRight="@+id/register_tel"
+ 			    android:layout_below="@+id/spinner_sex"
+ 			    android:layout_marginTop="90dp"
+ 			    android:text="@string/register"
+ 			    android:textSize="16.0dip" />
+
+	    </RelativeLayout>
+
+	    <TableLayout
+	        android:id="@+id/TableLayout01"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20.0px"
+	        android:layout_marginRight="20.0px"
+	        android:stretchColumns="1" >
+
+	        <TableRow>
+	        </TableRow>
+	    </TableLayout>
+	</LinearLayout>
+</LinearLayout>

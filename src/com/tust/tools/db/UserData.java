@@ -35,9 +35,9 @@ public class UserData {
 	    /*
 	     * 判断某条是否存在
 	     * */
-	    public boolean haveUser(int id){
+	    public boolean haveUser(String username){
 	    	boolean flag=false;
-	    	Cursor cursor=db.query("User", null,"ID ='"+id+"'", null, null, null, null);
+	    	Cursor cursor=db.query("User", null,"username ='"+username+"'", null, null, null, null);
 	    	flag=cursor.moveToFirst();
 	    	cursor.close();
 	    	return flag;
@@ -56,19 +56,19 @@ public class UserData {
 	    /*
 	     * 更新用户表的记录
 	     * */	
-	    public int UpdateUserInfo(User user,int id){
+	    public int UpdateUserInfo(User user){
 	        ContentValues values = new ContentValues();
 	        values.put("username", user.getUsername());
 	        values.put("pwd", user.getPwd());
 	        values.put("sex", user.getSex());
 	        values.put("tel", user.getTel());
-	        int idupdate= db.update("User", values, "ID ='"+id+"'", null);
+	        int idupdate= db.update("User", values, "username ='"+user.getUsername()+"'", null);
 	        this.close();
 	        return idupdate;
 	    }
 	  
 	    /*
-	     * 添加支出记录
+	     * 添加用户
 	     * */
 	    public Long SaveUser(User user){
 	        ContentValues values = new ContentValues();
@@ -82,14 +82,14 @@ public class UserData {
 	    }
 	    
 	    
-	    /*
-	     * 删除用户表的记录
-	     * */
-	    public int DelUser(int id){
-	        int iddel=  db.delete("User", "ID ="+id, null);
-	        this.close();
-	        return iddel;
-	    }
+//	    /*
+//	     * 删除用户表的记录
+//	     * */
+//	    public int DelUser(int id){
+//	        int iddel=  db.delete("User", "ID ="+id, null);
+//	        this.close();
+//	        return iddel;
+//	    }
 	    
 	    /*
 	     * 删除所有记录

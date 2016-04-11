@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends Activity implements OnClickListener{
-	private Button btn_login;
+	private Button btn_login, btn_register;
 	private EditText account, pwd;
 	private UserData userData;
 	@Override
@@ -24,6 +24,8 @@ public class LoginActivity extends Activity implements OnClickListener{
 		setContentView(R.layout.loginpage);
 		btn_login = (Button) findViewById(R.id.btn_login);
 		btn_login.setOnClickListener(this);
+		btn_register = (Button) findViewById(R.id.btn_register);
+		btn_register.setOnClickListener(this);
 		account = (EditText) this.findViewById(R.id.login_edit_account);
 		pwd = (EditText) this.findViewById(R.id.login_edit_pwd);
 		
@@ -47,8 +49,10 @@ public class LoginActivity extends Activity implements OnClickListener{
 					showMsg("账号密码错误");
 					return;
 				}
-		    	
 		      break;
+		    case R.id.btn_register: //跳转注册页面
+		    	changeActivity(UserRegisterActivity.class);
+		    	break;
 		    default:
 			      break;
 			    }
