@@ -193,8 +193,8 @@ public final class R {
         public static final int TableLayout01=0x7f0900b3;
         public static final int TextView01=0x7f0900ad;
         public static final int TextView02=0x7f0900af;
-        public static final int TextView03=0x7f0900d6;
-        public static final int TextView04=0x7f0900d8;
+        public static final int TextView03=0x7f0900d7;
+        public static final int TextView04=0x7f0900d6;
         public static final int btn_login=0x7f0900b2;
         public static final int btn_register=0x7f0900b1;
         public static final int bw_et=0x7f090010;
@@ -397,9 +397,9 @@ public final class R {
         public static final int mingxi_time_item_text=0x7f090095;
         public static final int register_account=0x7f0900d3;
         public static final int register_pwd=0x7f0900d4;
-        public static final int register_tel=0x7f0900d7;
+        public static final int register_tel=0x7f0900d5;
         public static final int relativeLayout1=0x7f09007c;
-        public static final int spinner_sex=0x7f0900d5;
+        public static final int spinner_sex=0x7f0900d8;
         public static final int stockText29=0x7f0900a0;
         public static final int textView1=0x7f0900a2;
         public static final int textView4=0x7f090053;

@@ -80,15 +80,6 @@
 	            android:text="@string/strPswInputLabel"
 	            android:textColor="#ff3f3f3f"
 	            android:textSize="16.0dip" />
-
- 			<Spinner
- 			    android:id="@+id/spinner_sex"
- 			    android:layout_width="120px"
- 			    android:layout_height="70px"
- 			    android:layout_alignTop="@+id/TextView03"
- 			    android:layout_toRightOf="@+id/TextView01"
- 			    android:entries="@array/sprinnerSex"
- 			    android:textSize="16.0dip" />
   
  			    />
 
@@ -146,6 +137,14 @@
  			    android:layout_marginTop="90dp"
  			    android:text="@string/register"
  			    android:textSize="16.0dip" />
+
+ 			<Spinner
+ 			    android:id="@+id/spinner_sex"
+ 			    android:layout_width="155px"
+ 			    android:layout_height="80px"
+ 			    android:layout_alignTop="@+id/TextView03"
+ 			    android:layout_toRightOf="@+id/TextView01"
+ 			    />
 
 	    </RelativeLayout>
 
