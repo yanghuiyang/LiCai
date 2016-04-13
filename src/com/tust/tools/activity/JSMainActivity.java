@@ -89,7 +89,7 @@ public class JSMainActivity extends Activity implements OnClickListener{
     String s = "";
     public void YunSuan(Button b){
     	String s = et.getText().toString().trim();
-       	//·ÀÖ¹Êı×ÖÄ©Î²ÊÇĞ¡Êıµã
+       	//é˜²æ­¢æ•°å­—æœ«å°¾æ˜¯å°æ•°ç‚¹
        	if(s.contains(".")&&s.indexOf(".")==(s.length()-1)){
        		s= s.substring(0, s.length()-1);
        	}
@@ -113,11 +113,11 @@ public class JSMainActivity extends Activity implements OnClickListener{
     }
     
     /*
-     * »ñÈ¡×îºóÒ»´ÎÊäÈë·ûºÅ ºóÃæµÄµÄÊı×Ö
+     * è·å–æœ€åä¸€æ¬¡è¾“å…¥ç¬¦å· åé¢çš„çš„æ•°å­—
      * */
     public String getLastNum(){
     	String etContent = et.getText().toString().trim();
-    	//·ÀÖ¹×îºóÊäÈë·ûºÅºóÔÙÊäÈëµÈºÅ
+    	//é˜²æ­¢æœ€åè¾“å…¥ç¬¦å·åå†è¾“å…¥ç­‰å·
      	if(etContent.endsWith("+")||etContent.endsWith("-")||etContent.endsWith("*")||etContent.endsWith("/")){
 			String newsString = etContent.substring(0, etContent.length()-1);
 			etContent = newsString;
@@ -138,7 +138,7 @@ public class JSMainActivity extends Activity implements OnClickListener{
     	if(fu=='0'){
     		return;
     	}
-    	//·ÀÖ¹Êı×ÖÄ©Î²ÊÇĞ¡Êıµã
+    	//é˜²æ­¢æ•°å­—æœ«å°¾æ˜¯å°æ•°ç‚¹
        	if(s.contains(".")&&s.indexOf(".")==(s.length()-1)){
        		s= s.substring(0, s.length()-1);
        	}
@@ -155,7 +155,7 @@ public class JSMainActivity extends Activity implements OnClickListener{
 			break;
 		case '/':
 			if(second_num==0||second_num==0.0){
-				showMsg("ÊıÑ§ÊÇÌåÓıÀÏÊ¦½ÌµÄ°É£¿");
+				showMsg("æ•°å­¦æ˜¯ä½“è‚²è€å¸ˆæ•™çš„å§ï¼Ÿ");
 				return;
 			}else{
 				count = first_num/second_num;
@@ -194,16 +194,16 @@ public class JSMainActivity extends Activity implements OnClickListener{
     }
 
     /*
-     * ÍË³öµ¯³ö¿ò
+     * é€€å‡ºå¼¹å‡ºæ¡†
      */
-    String fileName;// ÒÔµ±Ç°Ê±¼äÃüÃûµÄÎÄ¼şÃû
+    String fileName;// ä»¥å½“å‰æ—¶é—´å‘½åçš„æ–‡ä»¶å
     public void exitDialog() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         String confrimStr = "";
         String cancelStr = "";
-        builder.setTitle("ÊÇ·ñÈ·ÈÏÍË³ö£¿");
-        confrimStr = "ÍË³öĞ¡ÖúÊÖ";
-        cancelStr = "ÍË³ö¼òÒ×¼ÆËã";
+        builder.setTitle("æ˜¯å¦ç¡®è®¤é€€å‡ºï¼Ÿ");
+        confrimStr = "é€€å‡ºå°åŠ©æ‰‹";
+        cancelStr = "é€€å‡ºç®€æ˜“è®¡ç®—";
         builder.setPositiveButton(confrimStr, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -223,7 +223,7 @@ public class JSMainActivity extends Activity implements OnClickListener{
     }
 
     /*
-     * ÊäÈëÊı×Ö¼àÌı
+     * è¾“å…¥æ•°å­—ç›‘å¬
      */
     private class MyClick implements OnClickListener {
         private EditText et;
@@ -244,20 +244,20 @@ public class JSMainActivity extends Activity implements OnClickListener{
             	et.setTextSize(40);
             }
             if (v.getId() != R.id.js_bdel) {
-                if (number.equals("0")||fu=='='){// µÚÒ»´ÎÊäÈëÊ±,·ûºÅÎª = »òÕßÎÄ±¾¿òÄÚÈİÎª0
-                	fu = '0';//°Ñ·ûºÅ¸ÄÎª 0 ±ÜÃâÔÙ´Î½øÈë¸Ã¶Î³ÌĞò
+                if (number.equals("0")||fu=='='){// ç¬¬ä¸€æ¬¡è¾“å…¥æ—¶,ç¬¦å·ä¸º = æˆ–è€…æ–‡æœ¬æ¡†å†…å®¹ä¸º0
+                	fu = '0';//æŠŠç¬¦å·æ”¹ä¸º 0 é¿å…å†æ¬¡è¿›å…¥è¯¥æ®µç¨‹åº
                     if (button.getText().equals(".")) {
                     	et.setText("0.");
                     }else{
                     	et.setText(button.getText());
                     }
                  } else {
-                    if (number.contains(".")) {// ½ğ¶îÖĞÒÑ¾­°üº¬Ğ¡Êıµã
-                        if (button.getText().equals(".")&&number.indexOf(".", number.lastIndexOf(fu+""))!=-1) {// ÊäÈëµÄÎªĞ¡Êıµã
-                            showMsg("Ã»Ñ§¹ıÊıÑ§Ñ½£¿");
+                    if (number.contains(".")) {// é‡‘é¢ä¸­å·²ç»åŒ…å«å°æ•°ç‚¹
+                        if (button.getText().equals(".")&&number.indexOf(".", number.lastIndexOf(fu+""))!=-1) {// è¾“å…¥çš„ä¸ºå°æ•°ç‚¹
+                            showMsg("æ²¡å­¦è¿‡æ•°å­¦å‘€ï¼Ÿ");
                             return;
                         }
-                        // Ğ¡Êıµãºó³¬¹ıÁ½Î»Ê±
+                        // å°æ•°ç‚¹åè¶…è¿‡ä¸¤ä½æ—¶
                         if ((number.length() - number.indexOf(".")) <= 5||(
                         		number.contains("+")||
                         		number.contains("-")||
@@ -265,13 +265,13 @@ public class JSMainActivity extends Activity implements OnClickListener{
                         		number.contains("/"))) {
                         	et.append(button.getText());
                         } else {
-                            showMsg("ÕâÃ´¶àĞ¡Êı£¬ÏëÕûËÀÎÒ°¡£¿");
+                            showMsg("è¿™ä¹ˆå¤šå°æ•°ï¼Œæƒ³æ•´æ­»æˆ‘å•Šï¼Ÿ");
                         }
                     } else {
                     	et.append(button.getText());
                     }
                 }
-            } else {// Èç¹ûÊÇÉ¾³ı¼ü
+            } else {// å¦‚æœæ˜¯åˆ é™¤é”®
                 if (!number.equals("0")) {
                     if (number.length() > 1) {
                         String str = number.substring(0, number.length() - 1);

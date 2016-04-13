@@ -14,7 +14,7 @@ import com.tust.tools.R;
 import com.tust.tools.activity.JZAddActivity;
 
 /*
- * ±¸×¢dialog,Ö÷ÒªÎªÒ»¸ö´øÓĞ±à¼­¿òµÄµ¯³ö¿ò£¬ÓÃÀ´±à¼­±¸×¢
+ * å¤‡æ³¨dialog,ä¸»è¦ä¸ºä¸€ä¸ªå¸¦æœ‰ç¼–è¾‘æ¡†çš„å¼¹å‡ºæ¡†ï¼Œç”¨æ¥ç¼–è¾‘å¤‡æ³¨
  * */
 public class DialogBeiZhu extends Dialog implements OnClickListener {
 	private Button queding, quxiao;
@@ -22,18 +22,18 @@ public class DialogBeiZhu extends Dialog implements OnClickListener {
 	private Context context;
 	private View v;
 
-	// flag±êÊ¶×ª·¢»¹ÊÇÆÀÂÛ£¬id±êÊ¶µ±Ç°Î¢²©µÄid£¬where±êÊ¶´ÓÄÄÀïÆô¶¯¸Ãdialog£¬Á½¸öµØ·½¿ÉÒÔÆô¶¯£¬home½çÃæ£¬ºÍÄÚÈİ½çÃæ
+	// flagæ ‡è¯†è½¬å‘è¿˜æ˜¯è¯„è®ºï¼Œidæ ‡è¯†å½“å‰å¾®åšçš„idï¼Œwhereæ ‡è¯†ä»å“ªé‡Œå¯åŠ¨è¯¥dialogï¼Œä¸¤ä¸ªåœ°æ–¹å¯ä»¥å¯åŠ¨ï¼Œhomeç•Œé¢ï¼Œå’Œå†…å®¹ç•Œé¢
 	public DialogBeiZhu(Context context,String beizhuString) {
 		super(context, R.style.maindialog);
 		this.context = context;
 		View diaView = View.inflate(context, R.layout.dialog_beizhu, null);
 		this.setContentView(diaView);
 		this.v = diaView;
-		//Ìí¼Ó±¸×¢±à¼­¿ò
+		//æ·»åŠ å¤‡æ³¨ç¼–è¾‘æ¡†
 		et = (EditText) diaView.findViewById(R.id.jz_add_beizhu_et);
-		//È·¶¨°´Å¥
+		//ç¡®å®šæŒ‰é’®
 		queding = (Button) diaView.findViewById(R.id.jz_add_beizhu_queding);
-		//È¡Ïû°´Å¥
+		//å–æ¶ˆæŒ‰é’®
 		quxiao = (Button) diaView.findViewById(R.id.jz_add_beizhu_quxiao);
 		et.clearFocus();
 		queding.setOnClickListener(this);
@@ -41,7 +41,7 @@ public class DialogBeiZhu extends Dialog implements OnClickListener {
 		this.show();
 		diaView.startAnimation(AnimationUtils.loadAnimation(context, R.anim.push_left_in));
 		if("".equals(beizhuString)){
-		    et.setHint("ÇëÊäÈë±¸×¢ÄÚÈİ...");
+		    et.setHint("è¯·è¾“å…¥å¤‡æ³¨å†…å®¹...");
 		}else{
 		    et.setText(beizhuString);
 		}
@@ -51,7 +51,7 @@ public class DialogBeiZhu extends Dialog implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.jz_add_beizhu_queding:
-			// ×ª·¢ºÍÆÀÂÛ¶ÈĞèÒªÓÃµ½´ËdialogËùÒÔÕâÀïdialogÖĞµÄ°´¼üÒ²×÷ÓÃ²»Í¬
+			// è½¬å‘å’Œè¯„è®ºåº¦éœ€è¦ç”¨åˆ°æ­¤dialogæ‰€ä»¥è¿™é‡Œdialogä¸­çš„æŒ‰é”®ä¹Ÿä½œç”¨ä¸åŒ
 				String content = et.getText().toString().trim();
 				if (content.length() > 0) {
 					hidden();
@@ -60,26 +60,26 @@ public class DialogBeiZhu extends Dialog implements OnClickListener {
 					msg.obj = content;
 					JZAddActivity.mh.sendMessage(msg);
 				} else {
-					Toast.makeText(context, "ÊäÈë²»ÄÜÎª¿Õ", 1000).show();
+					Toast.makeText(context, "è¾“å…¥ä¸èƒ½ä¸ºç©º", 1000).show();
 				}
 			break;
 		case R.id.jz_add_beizhu_quxiao:
 			et.setText("");
-			// È¡ÏûºóµÄ¶¯»­Ğ§¹û£¬ĞèÒªÆô¶¯Ò»¸öÏß³ÌÑÓ³Ù²¥·Å½áÊø¶¯»­
+			// å–æ¶ˆåçš„åŠ¨ç”»æ•ˆæœï¼Œéœ€è¦å¯åŠ¨ä¸€ä¸ªçº¿ç¨‹å»¶è¿Ÿæ’­æ”¾ç»“æŸåŠ¨ç”»
 			hidden();
 			break;
 		}
 	}
 	
 	/*
-	 * Òş²Ødialog½çÃæ
+	 * éšè—dialogç•Œé¢
 	 * */
 	public void hidden(){
 		this.v.startAnimation(AnimationUtils.loadAnimation(context, R.anim.push_left_out));
 		new Thread() {
 			public void run() {
 				try {
-					Thread.sleep(250);//ÑÓ³ÙÎªÁËÏÔÊ¾ÍË³ö¶¯»­
+					Thread.sleep(250);//å»¶è¿Ÿä¸ºäº†æ˜¾ç¤ºé€€å‡ºåŠ¨ç”»
 					DialogBeiZhu.this.dismiss();
 				} catch (InterruptedException e) {
 					e.printStackTrace();

@@ -17,13 +17,13 @@ import com.tust.tools.bean.BWcontent;
 import com.tust.tools.db.BWData;
 
 public class BWAdapter extends BaseAdapter implements OnCheckedChangeListener{
-	//Àà±ğÁĞ±í»òÀà±ğ×ÓÀàÁĞ±íµÄ¼¯ºÏ
+	//ç±»åˆ«åˆ—è¡¨æˆ–ç±»åˆ«å­ç±»åˆ—è¡¨çš„é›†åˆ
 	public static ArrayList<BWcontent> bWlist;
-	//´æ´¢¶àÑ¡itemµÄid
+	//å­˜å‚¨å¤šé€‰itemçš„id
 	public ArrayList<Integer> idList;
-	//ÊÇ·ñÏÔÊ¾¶àÑ¡¿ò
+	//æ˜¯å¦æ˜¾ç¤ºå¤šé€‰æ¡†
 	public boolean isShowCheck;
-	//ÊÇ·ñÈ«Ñ¡
+	//æ˜¯å¦å…¨é€‰
 	public boolean isSelectAll;
 	private Context context;
 
@@ -68,23 +68,23 @@ public class BWAdapter extends BaseAdapter implements OnCheckedChangeListener{
 			TextView time_text = (TextView) convertView.findViewById(R.id.bw_list_item_time_text);
 			content_text.setText(beiwang.getContent());
 			content_text.setSingleLine(true);
-			date_text.setText(beiwang.getMonth()+"ÔÂ"+beiwang.getDay()+"ÈÕ");
+			date_text.setText(beiwang.getMonth()+"æœˆ"+beiwang.getDay()+"æ—¥");
 			time_text.setText(beiwang.getTime());
-			String weekString ="ĞÇÆÚ";
+			String weekString ="æ˜ŸæœŸ";
 			if(beiwang.getWeek()==1){
-				weekString = weekString+"Ò»";
+				weekString = weekString+"ä¸€";
 			}else if(beiwang.getWeek()==2){
-				weekString = weekString+"¶ş";
+				weekString = weekString+"äºŒ";
 			}else if(beiwang.getWeek()==3){
-				weekString = weekString+"Èı";
+				weekString = weekString+"ä¸‰";
 			}else if(beiwang.getWeek()==4){
-				weekString = weekString+"ËÄ";
+				weekString = weekString+"å››";
 			}else if(beiwang.getWeek()==5){
-				weekString = weekString+"Îå";
+				weekString = weekString+"äº”";
 			}else if(beiwang.getWeek()==6){
-				weekString = weekString+"Áù";
+				weekString = weekString+"å…­";
 			}else if(beiwang.getWeek()==7){
-				weekString = weekString+"ÈÕ";
+				weekString = weekString+"æ—¥";
 			}
 			week_text.setText(weekString);
 			CheckBox cb =(CheckBox)convertView.findViewById(R.id.bw_list_item_check);

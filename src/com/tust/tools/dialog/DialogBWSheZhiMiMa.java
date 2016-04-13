@@ -19,22 +19,22 @@ import com.tust.tools.db.JZSqliteHelper;
 import com.tust.tools.service.DongHuaYanChi;
 
 /*
- * ÃÜÂë½øÈëdialog
+ * å¯†ç è¿›å…¥dialog
  * */
 public class DialogBWSheZhiMiMa extends Dialog implements OnClickListener{
-	//ÃÜÂëÊäÈë¿ò
+	//å¯†ç è¾“å…¥æ¡†
 	private EditText mima1,mima2;
-	//ÉèÖÃÃÜÂë±êÌâ
+	//è®¾ç½®å¯†ç æ ‡é¢˜
 	private TextView title;
-	//È·¶¨  È¡Ïû  É¾³ı°´Å¥
+	//ç¡®å®š  å–æ¶ˆ  åˆ é™¤æŒ‰é’®
 	private Button queding,quxiao,shanchu;
-	//ÉÏÏÂÎÄ¶ÔÏó
+	//ä¸Šä¸‹æ–‡å¯¹è±¡
 	private Context context;
-	//DialogµÄView
+	//Dialogçš„View
 	private View diaView;
 	private Handler handler;
 	public static final String BWMIMA = "BWMIMA";
-	//ÃÜÂë  ºÍÃÜÂë±êÊ¶
+	//å¯†ç   å’Œå¯†ç æ ‡è¯†
 	int mi=0,tempmi=0;
 	public DialogBWSheZhiMiMa(Context context) {
 		super(context, R.style.maindialog);
@@ -52,19 +52,19 @@ public class DialogBWSheZhiMiMa extends Dialog implements OnClickListener{
 		quxiao= (Button)diaView.findViewById(R.id.dialog_bwmima_quxiao_bt);
 		quxiao.setOnClickListener(this);
 		mi = JZSqliteHelper.readPreferenceFile(context,BWMIMA,BWMIMA);
-		if(mi==0){//ÃÜÂëÎª0Ôòµ±Ç°Ã»ÃÜÂë
-			title.setText("ÉèÖÃ³ÌĞòÃÜÂë");
+		if(mi==0){//å¯†ç ä¸º0åˆ™å½“å‰æ²¡å¯†ç 
+			title.setText("è®¾ç½®ç¨‹åºå¯†ç ");
 			shanchu.setVisibility(View.INVISIBLE);
 		}else{
-			title.setText("ĞŞ¸Ä»òÉ¾³ıÃÜÂë");
+			title.setText("ä¿®æ”¹æˆ–åˆ é™¤å¯†ç ");
 			tempmi = mi;
-			mima1.setHint("ÇëÊäÈë¾ÉÃÜÂë");
-			mima2.setVisibility(View.GONE);//ÃÜÂëÈ·ÈÏ¿ò²»¿É¼û
-			shanchu.setVisibility(View.INVISIBLE);//É¾³ıÃÜÂë°´Å¥²»¿É¼û
+			mima1.setHint("è¯·è¾“å…¥æ—§å¯†ç ");
+			mima2.setVisibility(View.GONE);//å¯†ç ç¡®è®¤æ¡†ä¸å¯è§
+			shanchu.setVisibility(View.INVISIBLE);//åˆ é™¤å¯†ç æŒ‰é’®ä¸å¯è§
 		}
-		//Ìí¼Ó±¸×¢±à¼­¿ò
+		//æ·»åŠ å¤‡æ³¨ç¼–è¾‘æ¡†
 		this.show();
-		//»ñÈ¡´°¿Ú ÉèÖÃdialogÎ»ÖÃÎªÉÏ²¿
+		//è·å–çª—å£ è®¾ç½®dialogä½ç½®ä¸ºä¸Šéƒ¨
 		Window window = this.getWindow();
 		window.setGravity(Gravity.TOP);
 		diaView.startAnimation(AnimationUtils.loadAnimation(context, R.anim.push_up_in));
@@ -73,54 +73,54 @@ public class DialogBWSheZhiMiMa extends Dialog implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.dialog_bwmima_queding_bt ://È·¶¨
-			if(mi==0||tempmi==-1){//µ±Ã»ÓĞÃÜÂëÊ±
+		case R.id.dialog_bwmima_queding_bt ://ç¡®å®š
+			if(mi==0||tempmi==-1){//å½“æ²¡æœ‰å¯†ç æ—¶
 				if(mima1.getText().toString().length()==0||mima2.getText().toString().length()==0){
-					showMsg("ÊäÈë²»ÄÜÎª¿Õ");
+					showMsg("è¾“å…¥ä¸èƒ½ä¸ºç©º");
 					return;
 				}
 				if(mima1.getText().toString().length()!=6||mima2.getText().toString().length()!=6){
-					showMsg("ÃÜÂë±ØĞëÎªÁùÎ»Êı");
+					showMsg("å¯†ç å¿…é¡»ä¸ºå…­ä½æ•°");
 					return;
 				}
 				if(!mima1.getText().toString().equals(mima2.getText().toString())){
-					showMsg("Á½´ÎÊäÈëµÄÃÜÂë²»Æ¥Åä");
+					showMsg("ä¸¤æ¬¡è¾“å…¥çš„å¯†ç ä¸åŒ¹é…");
 					return;
 				}
 				mi = Integer.parseInt(mima2.getText().toString());
 				tempmi = mi;
 				JZSqliteHelper.saveYuSuan(context,BWMIMA,BWMIMA, mi);
-				title.setText("ĞŞ¸Ä»òÉ¾³ıÃÜÂë");
+				title.setText("ä¿®æ”¹æˆ–åˆ é™¤å¯†ç ");
 				DongHuaYanChi.dongHuaDialogEnd(this, diaView, context, handler, R.anim.push_up_out,300);
-				showMsg("¼ÓÃÜ³É¹¦");
+				showMsg("åŠ å¯†æˆåŠŸ");
 				mima1.setText("");
 				mima2.setText("");
 			}else{
 				if(mima1.getText().toString().length()==0){
-					showMsg("ÊäÈë²»ÄÜÎª¿Õ");
+					showMsg("è¾“å…¥ä¸èƒ½ä¸ºç©º");
 					return;
 				}
 				tempmi= Integer.parseInt(mima1.getText().toString());
-				if(mi==tempmi){//µ±ÃÜÂëÊäÈëÕıÈ·Ê±
-					tempmi = -1;//¸³ÖµÎª-1ĞŞ¸ÄÃÜÂëºó¿ÉÒÔ½øÈëif(mi==0||tempmi==-1)´úÂë¿é
+				if(mi==tempmi){//å½“å¯†ç è¾“å…¥æ­£ç¡®æ—¶
+					tempmi = -1;//èµ‹å€¼ä¸º-1ä¿®æ”¹å¯†ç åå¯ä»¥è¿›å…¥if(mi==0||tempmi==-1)ä»£ç å—
 					shanchu.setVisibility(View.VISIBLE);
 					mima1.setText("");
 					mima2.setText("");
-					mima1.setHint("ÇëÊäÈëĞÂÃÜÂë£¨ÁùÎ»£©");
+					mima1.setHint("è¯·è¾“å…¥æ–°å¯†ç ï¼ˆå…­ä½ï¼‰");
 					mima2.setVisibility(View.VISIBLE);
 				}else{
-					showMsg("Óë¾ÉÃÜÂë²»Æ¥Åä");
+					showMsg("ä¸æ—§å¯†ç ä¸åŒ¹é…");
 				}
 			}
 			break;
 		case R.id.dialog_bwmima_shanchu_bt :
 			JZSqliteHelper.saveYuSuan(context,BWMIMA,BWMIMA,0);
-			title.setText("³ÌĞò¼ÓÃÜ");
+			title.setText("ç¨‹åºåŠ å¯†");
 			shanchu.setVisibility(View.INVISIBLE);
 			mi = 0;
 			mima1.setText("");
 			mima2.setText("");
-			showMsg("É¾³ı³É¹¦");
+			showMsg("åˆ é™¤æˆåŠŸ");
 			DongHuaYanChi.dongHuaDialogEnd(this, diaView, context, handler, R.anim.push_up_out,300);
 			break;
 		case R.id.dialog_bwmima_quxiao_bt :
@@ -136,7 +136,7 @@ public class DialogBWSheZhiMiMa extends Dialog implements OnClickListener{
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		switch (keyCode) {
 		case KeyEvent.KEYCODE_BACK:
-			//dialogÍË³ö¶¯»­
+			//dialogé€€å‡ºåŠ¨ç”»
 			DongHuaYanChi.dongHuaDialogEnd(this, diaView, context, handler, R.anim.push_up_out,300);
 			return false;
 		}

@@ -47,23 +47,23 @@ import com.tust.tools.service.GetTime;
 import com.tust.tools.service.SDrw;
 
 public class BWNewActivity extends Activity implements OnClickListener {
-	//ÎÄ±¾±à¼­¿ò
+	//æ–‡æœ¬ç¼–è¾‘æ¡†
 	private EditText et;
-	//¸ü»»ÑÕÉ«ºÍ×ÖÌåLinerLayout
+	//æ›´æ¢é¢œè‰²å’Œå­—ä½“LinerLayout
 	LinearLayout color_ll,size_ll;
-	//¶¥²¿ÈÕÆÚ
+	//é¡¶éƒ¨æ—¥æœŸ
 	private TextView time;
 	private ImageButton picbt,colorbt;
 	private BWData dataHelper;
-	//ÊÇ·ñÎª¸üĞÂ
+	//æ˜¯å¦ä¸ºæ›´æ–°
 	private Boolean isUpdate;
 	private BWcontent beiwang;
 	private String updateString;
-	//×ÖÌå´óĞ¡
+	//å­—ä½“å¤§å°
 	private float textSize=24;
 	private float updateTextSize=0;
 	private float sizeFloats[] = new float[]{20,24,29,34}; 
-	//±³¾°ÑÕÉ«
+	//èƒŒæ™¯é¢œè‰²
 	private int bgColorId=R.drawable.bw_new_et_bg_1;
 	private int updateBgColorId=R.drawable.bw_new_et_bg_1;
 	private int ids[] = new int[]{R.drawable.bw_new_et_bg_1,R.drawable.bw_new_et_bg_2,R.drawable.bw_new_et_bg_3,R.drawable.bw_new_et_bg_4,R.drawable.bw_new_et_bg_5}; 
@@ -90,7 +90,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
     }
     
     /*
-     * ³õÊ¼»¯±³¾°ÑÕÉ«
+     * åˆå§‹åŒ–èƒŒæ™¯é¢œè‰²
      * */
     public void initBGColor(){
     	 color_ll = (LinearLayout)this.findViewById(R.id.bw_new_bgcolor_ll);
@@ -130,7 +130,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
     }
     
     /*
-     * ³õÊ¼»¯ÎÄ±¾´óĞ¡
+     * åˆå§‹åŒ–æ–‡æœ¬å¤§å°
      * */
     public void initTextSize(){
     	size_ll = (LinearLayout)this.findViewById(R.id.bw_new_textsize_ll);
@@ -166,7 +166,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
     }
     
     /*
-     * ³õÊ¼»¯¸üĞÂĞÅÏ¢
+     * åˆå§‹åŒ–æ›´æ–°ä¿¡æ¯
      * */
     public void initUpdate(){
     	Intent intent = this.getIntent();
@@ -174,13 +174,13 @@ public class BWNewActivity extends Activity implements OnClickListener {
     		int id = intent.getIntExtra("id", 0);
     		for(BWcontent beiwang : BWAdapter.bWlist){
     			if(beiwang.getId() == id){
-    				time.setText(beiwang.getYear()+"Äê"+beiwang.getMonth()+"ÔÂ"+beiwang.getDay()+"ÈÕ"+" "+beiwang.getTime());
+    				time.setText(beiwang.getYear()+"å¹´"+beiwang.getMonth()+"æœˆ"+beiwang.getDay()+"æ—¥"+" "+beiwang.getTime());
     				isUpdate = true;
     				updateString = beiwang.getContent();
     				et.setText(updateString);
-    				Editable ea = et.getText();//ÉèÖÃ¹â±êÔÚÎÄ×ÖÄ©Î²
+    				Editable ea = et.getText();//è®¾ç½®å…‰æ ‡åœ¨æ–‡å­—æœ«å°¾
     				Selection.setSelection((Spannable) ea, ea.length());
-    				//³õÊ¼»¯ÎÄ×ÖµÄ´óĞ¡
+    				//åˆå§‹åŒ–æ–‡å­—çš„å¤§å°
     				textSize = beiwang.getSize();
     				updateTextSize =textSize;
     				if(textSize==0){
@@ -188,16 +188,16 @@ public class BWNewActivity extends Activity implements OnClickListener {
     					updateTextSize = 24;
     				}
     				et.setTextSize(textSize);
-    				//³õÊ¼»¯Í¼Æ¬ ´æÔÚÍ¼Æ¬¾ÍÉèÖÃÍ¼Æ¬
+    				//åˆå§‹åŒ–å›¾ç‰‡ å­˜åœ¨å›¾ç‰‡å°±è®¾ç½®å›¾ç‰‡
     				if(beiwang.getPic()!=null&&!beiwang.getPic().equals("")&&!SDrw.getSDPath().equals("")){
     				    picpath = beiwang.getPic();
     				    File picFile = new File(picpath);
     				    picbt.setImageBitmap(decodeFile(picFile));
     				}else{
-    				    beiwang.setPic("");//·ÀÖ¹ĞŞ¸ÄÊ±¿ÕÖ¸ÕëÒì³£
+    				    beiwang.setPic("");//é˜²æ­¢ä¿®æ”¹æ—¶ç©ºæŒ‡é’ˆå¼‚å¸¸
     				}
     				
-    				//³õÊ¼»¯±³¾°ÑÕÉ«
+    				//åˆå§‹åŒ–èƒŒæ™¯é¢œè‰²
     				bgColorId=beiwang.getColor();
     				updateBgColorId = bgColorId;
     				et.setBackgroundResource(beiwang.getColor());
@@ -206,7 +206,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
     			}
     		}
     	}else{
-    		time.setText(GetTime.getYear()+"Äê"+GetTime.getMonth()+"ÔÂ"+GetTime.getDay()+"ÈÕ"+" "+GetTime.getTime());	
+    		time.setText(GetTime.getYear()+"å¹´"+GetTime.getMonth()+"æœˆ"+GetTime.getDay()+"æ—¥"+" "+GetTime.getTime());	
     	}
     }
 
@@ -253,7 +253,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
         }
     }
     /*
-	 * ´æ´¢Ö§³öÊÕÈë½è´ûµ½Êı¾İ¿â
+	 * å­˜å‚¨æ”¯å‡ºæ”¶å…¥å€Ÿè´·åˆ°æ•°æ®åº“
 	 * */
 	public void saveToDB(){
 		BWcontent beiwang = new BWcontent();
@@ -262,11 +262,11 @@ public class BWNewActivity extends Activity implements OnClickListener {
 		int week = GetTime.getWeek();
 		int day = GetTime.getDay();
 		String time = GetTime.getTime();
-		//ÄÚÈİ
+		//å†…å®¹
 		String content=et.getText().toString().trim();
 		int color = bgColorId;
 		if(content.equals(null)||content.equals("")){
-			showMsg("ÊäÈë²»ÄÜÎª¿Õ");
+			showMsg("è¾“å…¥ä¸èƒ½ä¸ºç©º");
 			return;
 		}
 		beiwang.setYear(year);
@@ -277,7 +277,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
 		beiwang.setContent(content);
 		beiwang.setColor(color);
 		beiwang.setSize(textSize);
-		if(!isUpdate){//ÅĞ¶Ïµ±Ç°ÊÇĞÂ½¨»¹ÊÇĞŞ¸Ä
+		if(!isUpdate){//åˆ¤æ–­å½“å‰æ˜¯æ–°å»ºè¿˜æ˜¯ä¿®æ”¹
 		    if(!"".equals(picpath)&&!picpath.equals(null)){
 		        beiwang.setPic(picpath);
 		    }else{
@@ -285,7 +285,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
 		    }
 		    System.out.println("beiwang.getPic()"+beiwang.getPic());
 			dataHelper.SaveBWInfo(beiwang);
-			showMsg("´æ´¢³É¹¦");
+			showMsg("å­˜å‚¨æˆåŠŸ");
 		}else{
 			if(!updateString.equals(content)||
 			        updateBgColorId!=bgColorId||
@@ -295,7 +295,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
 			        beiwang.setPic(picpath);
 			    }
 				dataHelper.UpdateBWInfo(beiwang, this.beiwang.getId());
-				showMsg("ĞŞ¸Ä³É¹¦");
+				showMsg("ä¿®æ”¹æˆåŠŸ");
 			}
 		}
 		this.finish();
@@ -303,10 +303,10 @@ public class BWNewActivity extends Activity implements OnClickListener {
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-	    menu.add(0, 100, 0, "×ÖÌå´óĞ¡");
-	    menu.add(0, 200, 0, "É¾³ı¸ÃÌõ");
-	    menu.add(0, 300, 0, "µ¼³öÎÄ±¾");
-	    menu.add(0, 400, 0, "·µ»ØÁĞ±í");
+	    menu.add(0, 100, 0, "å­—ä½“å¤§å°");
+	    menu.add(0, 200, 0, "åˆ é™¤è¯¥æ¡");
+	    menu.add(0, 300, 0, "å¯¼å‡ºæ–‡æœ¬");
+	    menu.add(0, 400, 0, "è¿”å›åˆ—è¡¨");
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -326,7 +326,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
             break;
         case 300:
             if(et.getText().toString().trim().length()<1){
-                showMsg("µ¼³öÄÚÈİ²»ÄÜÎª¿Õ");
+                showMsg("å¯¼å‡ºå†…å®¹ä¸èƒ½ä¸ºç©º");
                 return false;
             }
             showDialog("out");
@@ -339,19 +339,19 @@ public class BWNewActivity extends Activity implements OnClickListener {
     }
     
     /*
-     * É¾³ıµ¯³ö¿ò
+     * åˆ é™¤å¼¹å‡ºæ¡†
      * */
-    String fileName;//ÒÔµ±Ç°Ê±¼äÃüÃûµÄÎÄ¼şÃû
+    String fileName;//ä»¥å½“å‰æ—¶é—´å‘½åçš„æ–‡ä»¶å
     public void showDialog(final String flag){
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        if(flag.equals("del")){//Èç¹û±êÊ¶ÎªÉ¾³ı
-            builder.setTitle("ÊÇ·ñÈ·ÈÏÉ¾³ı¸ÃÌõ¼ÇÂ¼£¿");
+        if(flag.equals("del")){//å¦‚æœæ ‡è¯†ä¸ºåˆ é™¤
+            builder.setTitle("æ˜¯å¦ç¡®è®¤åˆ é™¤è¯¥æ¡è®°å½•ï¼Ÿ");
         }else if(flag.equals("out")){
             fileName = getFileName("txt");
-            builder.setMessage("È·¶¨ºóµ¼³öµÄÎÄ¼şÃûÎª"+fileName+"´æ·ÅÔÚSD/tust/tools/beiwang/txt/ÎÄ¼ş¼ĞÏÂ");
-            //builder.setTitle("È·¶¨ºóµ¼³öµÄÎÄ¼şÃûÎª"+fileName+"´æ·ÅÔÚSD/tust/tools/beiwang/txt/ÎÄ¼ş¼ĞÏÂ");  
+            builder.setMessage("ç¡®å®šåå¯¼å‡ºçš„æ–‡ä»¶åä¸º"+fileName+"å­˜æ”¾åœ¨SD/tust/tools/beiwang/txt/æ–‡ä»¶å¤¹ä¸‹");
+            //builder.setTitle("ç¡®å®šåå¯¼å‡ºçš„æ–‡ä»¶åä¸º"+fileName+"å­˜æ”¾åœ¨SD/tust/tools/beiwang/txt/æ–‡ä»¶å¤¹ä¸‹");  
         }
-        builder.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                if(flag.equals("del")){
@@ -367,11 +367,11 @@ public class BWNewActivity extends Activity implements OnClickListener {
                    String dir ="beiwang/txt/"; 
                    SDrw ic = new SDrw(fileName, false,dir);
                    ic.outWrite(line1+line2);
-                   showMsg("µ¼³ö³É¹¦");
+                   showMsg("å¯¼å‡ºæˆåŠŸ");
                }
             }
         });
-        builder.setNegativeButton("È¡Ïû", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("å–æ¶ˆ", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
             }
@@ -383,7 +383,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
 		switch (kCode) {
 		case KeyEvent.KEYCODE_BACK: {
 		    if(color_ll.isShown()||size_ll.isShown()){
-		    	//µ±Ñ¡ÔñÑÕÉ«ºÍÑ¡Ôñ×ÖÌå´óĞ¡½çÃæÏÔÊ¾Ê±°´ÏÂ·µ»Ø¼üÏÈ¹Ø±ÕÏÔÊ¾µÄ½çÃæ
+		    	//å½“é€‰æ‹©é¢œè‰²å’Œé€‰æ‹©å­—ä½“å¤§å°ç•Œé¢æ˜¾ç¤ºæ—¶æŒ‰ä¸‹è¿”å›é”®å…ˆå…³é—­æ˜¾ç¤ºçš„ç•Œé¢
 		        if(color_ll.isShown()){
                 DongHuaYanChi.dongHuaEnd(color_ll, BWNewActivity.this, handler, R.anim.picpush_right_out, 300);
 		        }
@@ -392,13 +392,13 @@ public class BWNewActivity extends Activity implements OnClickListener {
 		        }
                 return false;
             }
-		    //Èç¹ûÎÄ±¾µÄÄÚÈİ³¤¶È´óÓÚÒ»Ôò´æ´¢µ½Êı¾İ¿âÖĞ
+		    //å¦‚æœæ–‡æœ¬çš„å†…å®¹é•¿åº¦å¤§äºä¸€åˆ™å­˜å‚¨åˆ°æ•°æ®åº“ä¸­
 			if (!"".equals(et.getText().toString().trim())||!"".equals(picpath)) {
 				saveToDB();
 				this.finish();
 				return false;
 			} else {
-					if(isUpdate){//Èç¹ûµ±Ç°×´Ì¬Îª¸üĞÂÇÒÎª¿ÕÔòÉ¾³ı¸ÃÌõ
+					if(isUpdate){//å¦‚æœå½“å‰çŠ¶æ€ä¸ºæ›´æ–°ä¸”ä¸ºç©ºåˆ™åˆ é™¤è¯¥æ¡
 						dataHelper.DelBWInfo(beiwang.getId());
 				}
 				this.finish();
@@ -413,18 +413,18 @@ public class BWNewActivity extends Activity implements OnClickListener {
     }
 
     
-    private String picpath="";// ÎÄ¼şÂ·¾¶
-    private static final int PHOTO_WITH_CAMERA = 1010;// ÅÄÉãÕÕÆ¬
-    private static final int PHOTO_WITH_DATA = 1020;// ´ÓSDÖĞµÃµ½ÕÕÆ¬
-    private File PHOTO_DIR;// ÅÄÉãÕÕÆ¬´æ´¢µÄÎÄ¼ş¼ĞÂ·¾¶
-    private File capturefile;// ÅÄÉãµÄÕÕÆ¬ÎÄ¼ş
-    public void choosePic(Context context) {// ÕÕÆ¬Ñ¡Ôñ
+    private String picpath="";// æ–‡ä»¶è·¯å¾„
+    private static final int PHOTO_WITH_CAMERA = 1010;// æ‹æ‘„ç…§ç‰‡
+    private static final int PHOTO_WITH_DATA = 1020;// ä»SDä¸­å¾—åˆ°ç…§ç‰‡
+    private File PHOTO_DIR;// æ‹æ‘„ç…§ç‰‡å­˜å‚¨çš„æ–‡ä»¶å¤¹è·¯å¾„
+    private File capturefile;// æ‹æ‘„çš„ç…§ç‰‡æ–‡ä»¶
+    public void choosePic(Context context) {// ç…§ç‰‡é€‰æ‹©
         final Context dialogContext = new ContextThemeWrapper(context, android.R.style.Theme_Light);
         PHOTO_DIR = new File(SDrw.SDPATH+ "beiwang/imgcache/");
         if(!PHOTO_DIR.exists()){
             PHOTO_DIR.mkdirs();
         }
-        //Éú³Éµ±Ç°Ä¿Â¼Í¼Æ¬²»¿É¼ûµÄ±êÖ¾ÎÄ¼ş
+        //ç”Ÿæˆå½“å‰ç›®å½•å›¾ç‰‡ä¸å¯è§çš„æ ‡å¿—æ–‡ä»¶
         File noMideaFile = new File(PHOTO_DIR,".nomedia");
         if(!noMideaFile.exists()){
             try {
@@ -435,39 +435,39 @@ public class BWNewActivity extends Activity implements OnClickListener {
         }
         String[] choices;
         choices = new String[2];
-        choices[0] = "Ïà»úÅÄÉã"; // ÅÄÕÕ
-        choices[1] = "±¾µØÏà²á"; // ´ÓÏà²áÖĞÑ¡Ôñ
+        choices[0] = "ç›¸æœºæ‹æ‘„"; // æ‹ç…§
+        choices[1] = "æœ¬åœ°ç›¸å†Œ"; // ä»ç›¸å†Œä¸­é€‰æ‹©
         final ListAdapter adapter = new ArrayAdapter<String>(dialogContext, android.R.layout.simple_list_item_1, choices);
         final AlertDialog.Builder builder = new AlertDialog.Builder(dialogContext);
-        builder.setTitle("Ìí¼ÓÍ¼Æ¬");
+        builder.setTitle("æ·»åŠ å›¾ç‰‡");
         builder.setSingleChoiceItems(adapter, -1, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
                 switch (which) {
                 case 0: {
                     String status = Environment.getExternalStorageState();
-                    if (status.equals(Environment.MEDIA_MOUNTED)) {// ÅĞ¶ÏÊÇ·ñÓĞSD¿¨
+                    if (status.equals(Environment.MEDIA_MOUNTED)) {// åˆ¤æ–­æ˜¯å¦æœ‰SDå¡
                         Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                         capturefile = new File(PHOTO_DIR, getFileName("jpg"));
                         try {
                             capturefile.createNewFile();
-                            i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(capturefile));// ½«ÅÄÉãµÄÕÕÆ¬ĞÅÏ¢´æµ½capturefileÖĞ
+                            i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(capturefile));// å°†æ‹æ‘„çš„ç…§ç‰‡ä¿¡æ¯å­˜åˆ°capturefileä¸­
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-                        startActivityForResult(i, PHOTO_WITH_CAMERA);// ÓÃ»§µã»÷ÁË´ÓÕÕÏà»ú»ñÈ¡
+                        startActivityForResult(i, PHOTO_WITH_CAMERA);// ç”¨æˆ·ç‚¹å‡»äº†ä»ç…§ç›¸æœºè·å–
                     } else {
-                        showMsg("Ã»ÓĞSD¿¨");
+                        showMsg("æ²¡æœ‰SDå¡");
                     }
                     break;
                 }
-                case 1:// ´ÓÏà²áÖĞÈ¥»ñÈ¡
+                case 1:// ä»ç›¸å†Œä¸­å»è·å–
                     Intent intent = new Intent();
-                    /* ¿ªÆôPictures»­ÃæTypeÉè¶¨Îªimage */
+                    /* å¼€å¯Picturesç”»é¢Typeè®¾å®šä¸ºimage */
                     intent.setType("image/*");
-                    /* Ê¹ÓÃIntent.ACTION_GET_CONTENTÕâ¸öAction */
+                    /* ä½¿ç”¨Intent.ACTION_GET_CONTENTè¿™ä¸ªAction */
                     intent.setAction(Intent.ACTION_GET_CONTENT);
-                    /* È¡µÃÏàÆ¬ºó·µ»Ø±¾»­Ãæ */
+                    /* å–å¾—ç›¸ç‰‡åè¿”å›æœ¬ç”»é¢ */
                     startActivityForResult(intent, PHOTO_WITH_DATA);
                     break;
                 }
@@ -477,7 +477,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * Í¨¹ıÏà»ú»Ø´«Í¼Æ¬µÄÎÄ¼şÃû
+     * é€šè¿‡ç›¸æœºå›ä¼ å›¾ç‰‡çš„æ–‡ä»¶å
      */
     public String getFileName(String houzhui) {
         Date date = new Date(System.currentTimeMillis());
@@ -486,30 +486,30 @@ public class BWNewActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * Ñ¡ÔñÍ¼Æ¬µÄ»Ø´«´¦Àí
+     * é€‰æ‹©å›¾ç‰‡çš„å›ä¼ å¤„ç†
      */
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         File file = null;
         Bitmap picb = null;
-        ChangePic cp = new ChangePic();// ×ª»»Í¼Æ¬Àà
+        ChangePic cp = new ChangePic();// è½¬æ¢å›¾ç‰‡ç±»
         if (resultCode == Activity.RESULT_OK) {
             switch (requestCode) {
-            case PHOTO_WITH_CAMERA:// »ñÈ¡ÅÄÉãµÄÎÄ¼ş
+            case PHOTO_WITH_CAMERA:// è·å–æ‹æ‘„çš„æ–‡ä»¶
                 picpath = capturefile.getAbsolutePath();
                 System.out.println(picpath);
                 file = new File(picpath);
                 picb = decodeFile(file);
                 picbt.setImageBitmap(picb);
-                System.out.println("++++++Ïà»ú+++++");
+                System.out.println("++++++ç›¸æœº+++++");
                 break;
 
-            case PHOTO_WITH_DATA:// »ñÈ¡´ÓÍ¼¿âÑ¡ÔñµÄÎÄ¼ş
+            case PHOTO_WITH_DATA:// è·å–ä»å›¾åº“é€‰æ‹©çš„æ–‡ä»¶
                 Uri uri = data.getData();
                 String scheme = uri.getScheme();
                 if (scheme.equalsIgnoreCase("file")) {
-                    picpath = uri.getPath();//´ÓuriÖĞ»ñµÃÂ·¾¶
+                    picpath = uri.getPath();//ä»uriä¸­è·å¾—è·¯å¾„
                     file = new File(picpath);
-                    picb = decodeFile(file);//×ª»»Í¼Æ¬´óĞ¡
+                    picb = decodeFile(file);//è½¬æ¢å›¾ç‰‡å¤§å°
                     picbt.setImageBitmap(picb);
                 } else if (scheme.equalsIgnoreCase("content")) {
                     Cursor cursor = getContentResolver().query(uri, null, null, null, null);
@@ -521,21 +521,21 @@ public class BWNewActivity extends Activity implements OnClickListener {
                 }
                 break;
             }
-            //´æ·ÅÕÕÆ¬µÄÂ·¾¶
+            //å­˜æ”¾ç…§ç‰‡çš„è·¯å¾„
             String savePath =SDrw.SDPATH+"beiwang/imgcache/";
             picpath = cp.changePic(picpath,savePath);
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    // Ñ¹ËõÍ¼Æ¬£¬±ÜÃâ±¨´í
+    // å‹ç¼©å›¾ç‰‡ï¼Œé¿å…æŠ¥é”™
     private Bitmap decodeFile(File f) {
         Bitmap b = null;
         try {
             Bitmap bb = BitmapFactory.decodeFile(f.getAbsolutePath());
             int width = bb.getWidth();
             int height = bb.getHeight();
-            if (width > 60 || height > 60) {//Ñ¹Ëõµ½Ö¸¶¨´óĞ¡
+            if (width > 60 || height > 60) {//å‹ç¼©åˆ°æŒ‡å®šå¤§å°
                 double bi = ((double) height / (double) width);
                 b = Bitmap.createScaledBitmap(bb, 60, (int) (bi * 60), true);
             }

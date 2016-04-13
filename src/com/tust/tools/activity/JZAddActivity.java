@@ -56,39 +56,39 @@ import com.tust.tools.service.JZMingXiAdapter;
 import com.tust.tools.service.SDrw;
 
 public class JZAddActivity extends Activity implements OnClickListener {
-    // TextView½ğ¶î£¬Àà±ğ£¬Ê±¼ä£¬±¸×¢¡£
+    // TextViewé‡‘é¢ï¼Œç±»åˆ«ï¼Œæ—¶é—´ï¼Œå¤‡æ³¨ã€‚
     private TextView jine, leibie, date, time, beizhu;
-    // FrameLayoutÖ§³ö£¬ÊÕÈë£¬½è´û£¬±£´æ£¬È¡Ïû¡£
+    // FrameLayoutæ”¯å‡ºï¼Œæ”¶å…¥ï¼Œå€Ÿè´·ï¼Œä¿å­˜ï¼Œå–æ¶ˆã€‚
     private FrameLayout zhichu_fl, shouru_fl, jiedai_fl, save_fl, cancel_fl, del_fl;
-    // LinearLayoutÍ¼Æ¬£¬µ×²¿Êı×Ö°´Å¥
+    // LinearLayoutå›¾ç‰‡ï¼Œåº•éƒ¨æ•°å­—æŒ‰é’®
     private LinearLayout pic_ll, num_ll;
-    // ¶¥²¿Ñ¡ÖĞ±êÊ¶ImageViewÖ§³ö£¬ÊÕÈë£¬½è´û£¬Í¼Æ¬
+    // é¡¶éƒ¨é€‰ä¸­æ ‡è¯†ImageViewæ”¯å‡ºï¼Œæ”¶å…¥ï¼Œå€Ÿè´·ï¼Œå›¾ç‰‡
     private ImageView zhichu_iv, shouru_iv, jiedai_iv, pic;
-    // µ×²¿Êı×Ö°´Å¥
+    // åº•éƒ¨æ•°å­—æŒ‰é’®
     private Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bd, bdel;
-    // °´Å¥¼¯ºÏ
+    // æŒ‰é’®é›†åˆ
     private Button bt[] = new Button[] { b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bd, bdel };
     public static MessageHandler mh;
-    // µ±Ç°½çÃæÊÕµ½µÄÏûÏ¢±íÊ¾£¨msg.what£©
+    // å½“å‰ç•Œé¢æ”¶åˆ°çš„æ¶ˆæ¯è¡¨ç¤ºï¼ˆmsg.whatï¼‰
     public static final int leibie_msg = 1010, beizhu_msg = 1020;
-    // µ±Ç°Ñ¡ÔñµÄÌí¼ÓÀà±ğÖ§³ö£¬ÊÕÈë£¬½è´û
+    // å½“å‰é€‰æ‹©çš„æ·»åŠ ç±»åˆ«æ”¯å‡ºï¼Œæ”¶å…¥ï¼Œå€Ÿè´·
     public static final int zhichu_flag = 2010, shouru_flag = 2020, jiedai_flag = 2030;
-    // µ±Ç°Ñ¡ÔñµÄÀàĞÍ
+    // å½“å‰é€‰æ‹©çš„ç±»å‹
     private int now_flag = zhichu_flag;
-    // Êı¾İ¿â²Ù×÷
+    // æ•°æ®åº“æ“ä½œ
     JZData dataHelper;
-    // ¸ü¸ÄµÄÀàĞÍ£¨Ö§´¦ ÊÕÈë ½è´û£©
+    // æ›´æ”¹çš„ç±»å‹ï¼ˆæ”¯å¤„ æ”¶å…¥ å€Ÿè´·ï¼‰
     private int update_type, update_id, update_flag;
-    // ÅĞ¶Ïµ±Ç°ÊÇ³õÊ¼´´½¨»¹ÊÇ¶ş´Î¸üĞÂ
+    // åˆ¤æ–­å½“å‰æ˜¯åˆå§‹åˆ›å»ºè¿˜æ˜¯äºŒæ¬¡æ›´æ–°
     private boolean isUpdate = false;
-    // ¶¥²¿Ö§³ö ÊÕÈë ½è´û ÎÄ±¾£¬ĞŞ¸ÄÊ±ĞèÒª¸Ä¶¯ÎÄ±¾ÄÚÈİ
+    // é¡¶éƒ¨æ”¯å‡º æ”¶å…¥ å€Ÿè´· æ–‡æœ¬ï¼Œä¿®æ”¹æ—¶éœ€è¦æ”¹åŠ¨æ–‡æœ¬å†…å®¹
     private TextView zhichu_text, shouru_text, jiedai_text;
 
-    private String picpath = "";// ÎÄ¼şÂ·¾¶
-    private static final int PHOTO_WITH_CAMERA = 1010;// ÅÄÉãÕÕÆ¬
-    private static final int PHOTO_WITH_DATA = 1020;// ´ÓSDÖĞµÃµ½ÕÕÆ¬
-    private File PHOTO_DIR;// ÅÄÉãÕÕÆ¬´æ´¢µÄÎÄ¼ş¼ĞÂ·¾¶
-    private File capturefile;// ÅÄÉãµÄÕÕÆ¬ÎÄ¼ş
+    private String picpath = "";// æ–‡ä»¶è·¯å¾„
+    private static final int PHOTO_WITH_CAMERA = 1010;// æ‹æ‘„ç…§ç‰‡
+    private static final int PHOTO_WITH_DATA = 1020;// ä»SDä¸­å¾—åˆ°ç…§ç‰‡
+    private File PHOTO_DIR;// æ‹æ‘„ç…§ç‰‡å­˜å‚¨çš„æ–‡ä»¶å¤¹è·¯å¾„
+    private File capturefile;// æ‹æ‘„çš„ç…§ç‰‡æ–‡ä»¶
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,7 +101,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * Èç¹ûÊÇÒÔĞŞ¸ÄµÄ·½Ê½´ò¿ª¸Ã½çÃæ
+     * å¦‚æœæ˜¯ä»¥ä¿®æ”¹çš„æ–¹å¼æ‰“å¼€è¯¥ç•Œé¢
      */
     JZzhichu zc = new JZzhichu();
     JZshouru sr = new JZshouru();
@@ -140,31 +140,31 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ÅĞ¶Ï¸ÃÖ§³öÀàĞÍÊÇ·ñÎª½è´û
+     * åˆ¤æ–­è¯¥æ”¯å‡ºç±»å‹æ˜¯å¦ä¸ºå€Ÿè´·
      */
     public void getZhiChuType(JZzhichu zc) {
         pic_ll.setVisibility(View.GONE);
         if (zc.getZc_Item().equals(JZItem.jiechu) || zc.getZc_Item().equals(JZItem.huankuan)) {
             now_flag = jiedai_flag;
-            jiedai_text.setText("ĞŞ¸Ä½è´û");
+            jiedai_text.setText("ä¿®æ”¹å€Ÿè´·");
             leibie.setText(zc.getZc_Item());
             setTopBG(now_flag, jiedai_iv);
             zhichu_fl.setVisibility(View.INVISIBLE);
             shouru_fl.setVisibility(View.INVISIBLE);
         } else {
             now_flag = zhichu_flag;
-            zhichu_text.setText("ĞŞ¸ÄÖ§³ö");
+            zhichu_text.setText("ä¿®æ”¹æ”¯å‡º");
             leibie.setText(zc.getZc_Item() + ">" + zc.getZc_SubItem());
             setTopBG(now_flag, zhichu_iv);
             jiedai_fl.setVisibility(View.INVISIBLE);
             shouru_fl.setVisibility(View.INVISIBLE);
-            picpath = zc.getZc_Pic();// »ñÈ¡Í¼Æ¬Â·¾¶
+            picpath = zc.getZc_Pic();// è·å–å›¾ç‰‡è·¯å¾„
             if (picpath != null && picpath.endsWith("jpg")) {
                 File filePic = new File(picpath);
                 pic.setImageBitmap(decodeFile(filePic));
             }
         }
-        update_flag = zhichu_flag;// ÓÃÓÚÉ¾³ıµ±Ç°Êı¾İ¹¦ÄÜ
+        update_flag = zhichu_flag;// ç”¨äºåˆ é™¤å½“å‰æ•°æ®åŠŸèƒ½
         jine.setText(zc.getZc_Count() + "");
         date.setText(zc.getZc_Year() + "-" + zc.getZc_Month() + "-" + zc.getZc_Day());
         time.setText(zc.getZc_Time());
@@ -172,24 +172,24 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ÅĞ¶Ï¸ÃÊÕÈëÀàĞÍÊÇ·ñÎª½è´û
+     * åˆ¤æ–­è¯¥æ”¶å…¥ç±»å‹æ˜¯å¦ä¸ºå€Ÿè´·
      */
     public void getShouRuType(JZshouru sr) {
         pic_ll.setVisibility(View.GONE);
         if (sr.getSr_Item().equals(JZItem.jieru) || sr.getSr_Item().equals(JZItem.shoukuan)) {
-            now_flag = jiedai_flag;// ÓÃÓÚÅĞ¶Ïµ±Ç°×´Ì¬
-            jiedai_text.setText("ĞŞ¸Ä½è´û");
+            now_flag = jiedai_flag;// ç”¨äºåˆ¤æ–­å½“å‰çŠ¶æ€
+            jiedai_text.setText("ä¿®æ”¹å€Ÿè´·");
             setTopBG(now_flag, jiedai_iv);
             zhichu_fl.setVisibility(View.INVISIBLE);
             shouru_fl.setVisibility(View.INVISIBLE);
         } else {
             now_flag = shouru_flag;
-            shouru_text.setText("ĞŞ¸ÄÊÕÈë");
+            shouru_text.setText("ä¿®æ”¹æ”¶å…¥");
             setTopBG(now_flag, shouru_iv);
             jiedai_fl.setVisibility(View.INVISIBLE);
             zhichu_fl.setVisibility(View.INVISIBLE);
         }
-        update_flag = shouru_flag;// ÓÃÓÚÉ¾³ıµ±Ç°Êı¾İ¹¦ÄÜ
+        update_flag = shouru_flag;// ç”¨äºåˆ é™¤å½“å‰æ•°æ®åŠŸèƒ½
         jine.setText(sr.getSr_Count() + "");
         leibie.setText(sr.getSr_Item());
         date.setText(sr.getSr_Year() + "-" + sr.getSr_Month() + "-" + sr.getSr_Day());
@@ -198,29 +198,29 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     private void initZhiChu() {
-        // ½ğ¶îÊıÁ¿
+        // é‡‘é¢æ•°é‡
         jine = (TextView) findViewById(R.id.jz_add_jine_text);
         jine.setOnClickListener(new TextClick());
-        // Àà±ğ
+        // ç±»åˆ«
         leibie = (TextView) findViewById(R.id.jz_add_leibie_text);
         leibie.setOnClickListener(new TextClick());
-        // ÈÕÆÚ
+        // æ—¥æœŸ
         date = (TextView) findViewById(R.id.jz_add_date_text);
         date.setText(GetTime.getYear() + "-" + GetTime.getMonth() + "-" + GetTime.getDay());
         date.setOnClickListener(new TextClick());
-        // Ê±¼ä
+        // æ—¶é—´
         time = (TextView) findViewById(R.id.jz_add_time_text);
         time.setText(GetTime.getHour() + ":" + GetTime.getMinute());
         time.setOnClickListener(new TextClick());
-        // ±¸×¢
+        // å¤‡æ³¨
         beizhu = (TextView) findViewById(R.id.jz_add_beizhu_text);
         beizhu.setOnClickListener(new TextClick());
-        // Í¼Æ¬
+        // å›¾ç‰‡
         pic = (ImageView) findViewById(R.id.jz_add_zhichu_addpic_iv);
         pic.setOnClickListener(new TextClick());
-        // pic linerlayoutµ±Ñ¡ÔñÊÕÈë»ò½è´ûÊ±Òş²Ø¸ÃÑ¡Ïî
+        // pic linerlayoutå½“é€‰æ‹©æ”¶å…¥æˆ–å€Ÿè´·æ—¶éšè—è¯¥é€‰é¡¹
         pic_ll = (LinearLayout) findViewById(R.id.jz_add_pic_ll);
-        // µ×²¿Êı×Ö°´Å¥
+        // åº•éƒ¨æ•°å­—æŒ‰é’®
         num_ll = (LinearLayout) findViewById(R.id.jz_add_numbt_ll);
         num_ll.setVisibility(View.GONE);
         DongHuaYanChi.dongHuaStart(num_ll, this, mh, R.anim.jz_menu_up, 400);
@@ -239,14 +239,14 @@ public class JZAddActivity extends Activity implements OnClickListener {
         save_fl.setOnClickListener(this);
         cancel_fl = (FrameLayout) findViewById(R.id.jz_add_cancel_fl);
         cancel_fl.setOnClickListener(this);
-        // É¾³ıµ±Ç°ÒªĞŞ¸ÄµÄÊı¾İ£¬Ö»ÔÚĞŞ¸ÄÊ±ÓĞĞ§
+        // åˆ é™¤å½“å‰è¦ä¿®æ”¹çš„æ•°æ®ï¼Œåªåœ¨ä¿®æ”¹æ—¶æœ‰æ•ˆ
         del_fl = (FrameLayout) this.findViewById(R.id.jz_add_del_fl);
         del_fl.setOnClickListener(this);
         del_fl.setVisibility(View.INVISIBLE);
     }
 
     /*
-     * ³õÊ¼»¯Êı×Ö°´Å¥
+     * åˆå§‹åŒ–æ•°å­—æŒ‰é’®
      */
     private void initBt(TextView tv) {
         int id[] = new int[] { R.id.jz_add_bt_0, R.id.jz_add_bt_1, R.id.jz_add_bt_2, R.id.jz_add_bt_3, R.id.jz_add_bt_4, R.id.jz_add_bt_5, R.id.jz_add_bt_6, R.id.jz_add_bt_7, R.id.jz_add_bt_8, R.id.jz_add_bt_9, R.id.jz_add_bt_d, R.id.jz_add_bt_del };
@@ -259,43 +259,43 @@ public class JZAddActivity extends Activity implements OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-        case R.id.jz_add_zhichu_fl:// Ö§³ötab
+        case R.id.jz_add_zhichu_fl:// æ”¯å‡ºtab
             setTopBG(zhichu_flag, zhichu_iv);
-            leibie.setText("²ÍÒû>Íí²Í");
+            leibie.setText("é¤é¥®>æ™šé¤");
             break;
-        case R.id.jz_add_shouru_fl:// ÊÕÈëtab
+        case R.id.jz_add_shouru_fl:// æ”¶å…¥tab
             setTopBG(shouru_flag, shouru_iv);
-            leibie.setText("¹¤×Ê");
+            leibie.setText("å·¥èµ„");
             break;
-        case R.id.jz_add_jiedai_fl:// ½è´ûtab
+        case R.id.jz_add_jiedai_fl:// å€Ÿè´·tab
             setTopBG(jiedai_flag, jiedai_iv);
-            leibie.setText("½è³ö");
+            leibie.setText("å€Ÿå‡º");
             break;
-        case R.id.jz_add_save_fl:// ±£´æ°´Å¥
+        case R.id.jz_add_save_fl:// ä¿å­˜æŒ‰é’®
             saveToDB();
             break;
-        case R.id.jz_add_cancel_fl:// È¡Ïû°´Å¥
+        case R.id.jz_add_cancel_fl:// å–æ¶ˆæŒ‰é’®
             this.finish();
             break;
-        case R.id.jz_add_del_fl:// È¡Ïû°´Å¥
+        case R.id.jz_add_del_fl:// å–æ¶ˆæŒ‰é’®
             dataHelper = new JZData(this);
             switch (update_flag) {
             case zhichu_flag:
                 int i1 = dataHelper.DelZhiChuInfo(update_id);
                 if (i1 > 0) {
-                    showMsg("É¾³ı³É¹¦");
+                    showMsg("åˆ é™¤æˆåŠŸ");
                     this.finish();
                 } else {
-                    showMsg("É¾³ıÊ§°Ü");
+                    showMsg("åˆ é™¤å¤±è´¥");
                 }
                 break;
             case shouru_flag:
                 int i2 = dataHelper.DelShouRuInfo(update_id);
                 if (i2 > 0) {
-                    showMsg("É¾³ı³É¹¦");
+                    showMsg("åˆ é™¤æˆåŠŸ");
                     this.finish();
                 } else {
-                    showMsg("É¾³ıÊ§°Ü");
+                    showMsg("åˆ é™¤å¤±è´¥");
                 }
                 break;
             }
@@ -304,26 +304,26 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ´æ´¢Ö§³öÊÕÈë½è´ûµ½Êı¾İ¿â
+     * å­˜å‚¨æ”¯å‡ºæ”¶å…¥å€Ÿè´·åˆ°æ•°æ®åº“
      */
     public void saveToDB() {
         dataHelper = new JZData(this);
         JZzhichu zhichu = new JZzhichu();
         JZshouru shouru = new JZshouru();
-        // Àà±ğ
+        // ç±»åˆ«
         String leibies = leibie.getText().toString().trim();
         String items[] = leibies.split(">");
-        // ÈÕÆÚ
+        // æ—¥æœŸ
         String dateString = date.getText().toString().trim();
         String dates[] = dateString.split("-");
-        // Ê±¼ä
+        // æ—¶é—´
         String timeString = time.getText().toString().trim();
-        // ½ğ¶î
+        // é‡‘é¢
         String jineString = jine.getText().toString().trim();
-        // ±¸×¢
+        // å¤‡æ³¨
         String beizhuString = beizhu.getText().toString().trim();
         if (jineString.equals("0.00")) {
-            showMsg("½ğ¶î²»ÄÜÎªÁã");
+            showMsg("é‡‘é¢ä¸èƒ½ä¸ºé›¶");
             return;
         }
         if (now_flag == zhichu_flag) {
@@ -339,11 +339,11 @@ public class JZAddActivity extends Activity implements OnClickListener {
             zhichu.setZc_Beizhu(beizhuString);
             if (!isUpdate) {
                 dataHelper.SaveZhiChuInfo(zhichu);
-                showMsg("¸ÃÌõÖ§³ö´æ´¢³É¹¦");
+                showMsg("è¯¥æ¡æ”¯å‡ºå­˜å‚¨æˆåŠŸ");
                 picpath = "";
             } else {
                 dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
-                showMsg("¸ÃÌõÖ§³öĞŞ¸Ä³É¹¦");
+                showMsg("è¯¥æ¡æ”¯å‡ºä¿®æ”¹æˆåŠŸ");
             }
         } else if (now_flag == shouru_flag) {
             shouru.setSr_Item(leibies);
@@ -356,12 +356,12 @@ public class JZAddActivity extends Activity implements OnClickListener {
             shouru.setSr_Beizhu(beizhuString);
             if (!isUpdate) {
                 dataHelper.SaveShouRuInfo(shouru);
-                showMsg("¸ÃÌõÊÕÈë´æ´¢³É¹¦");
+                showMsg("è¯¥æ¡æ”¶å…¥å­˜å‚¨æˆåŠŸ");
             } else {
                 dataHelper.UpdateShouRuInfo(shouru, sr.getSr_Id());
-                showMsg("¸ÃÌõÊÕÈëĞŞ¸Ä³É¹¦");
+                showMsg("è¯¥æ¡æ”¶å…¥ä¿®æ”¹æˆåŠŸ");
             }
-        } else if (now_flag == jiedai_flag) {// ½è´ûÖĞ°üº¬½èÈëºÍ½è³ö ·Ö±ğ´æ´¢µ½Ö§³öºÍÊÕÈëÖĞ
+        } else if (now_flag == jiedai_flag) {// å€Ÿè´·ä¸­åŒ…å«å€Ÿå…¥å’Œå€Ÿå‡º åˆ†åˆ«å­˜å‚¨åˆ°æ”¯å‡ºå’Œæ”¶å…¥ä¸­
             if (leibies.equals(JZItem.jiechu) || leibies.equals(JZItem.huankuan)) {
                 zhichu.setZc_Item(leibies);
                 zhichu.setZc_SubItem("");
@@ -375,10 +375,10 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 zhichu.setZc_Beizhu(beizhuString);
                 if (!isUpdate) {
                     dataHelper.SaveZhiChuInfo(zhichu);
-                    showMsg("¸ÃÌõÖ§³ö´æ´¢³É¹¦");
+                    showMsg("è¯¥æ¡æ”¯å‡ºå­˜å‚¨æˆåŠŸ");
                 } else {
                     dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
-                    showMsg("¸ÃÌõÖ§³öĞŞ¸Ä³É¹¦");
+                    showMsg("è¯¥æ¡æ”¯å‡ºä¿®æ”¹æˆåŠŸ");
                 }
             } else if (leibies.equals(JZItem.jieru) || leibies.equals(JZItem.shoukuan)) {
                 shouru.setSr_Item(leibies);
@@ -391,10 +391,10 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 shouru.setSr_Beizhu(beizhuString);
                 if (!isUpdate) {
                     dataHelper.SaveShouRuInfo(shouru);
-                    showMsg("¸ÃÌõ½è´û´æ´¢³É¹¦");
+                    showMsg("è¯¥æ¡å€Ÿè´·å­˜å‚¨æˆåŠŸ");
                 } else {
                     dataHelper.UpdateShouRuInfo(shouru, sr.getSr_Id());
-                    showMsg("¸ÃÌõ½è´ûĞŞ¸Ä³É¹¦");
+                    showMsg("è¯¥æ¡å€Ÿè´·ä¿®æ”¹æˆåŠŸ");
                 }
             }
         }
@@ -402,10 +402,10 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ÉèÖÃ¶¥²¿ÇĞ»»°´Å¥µÄ±³¾°¼°¶¯»­
+     * è®¾ç½®é¡¶éƒ¨åˆ‡æ¢æŒ‰é’®çš„èƒŒæ™¯åŠåŠ¨ç”»
      */
     private void setTopBG(int now_flag, ImageView iv) {
-        this.now_flag = now_flag;// ¸³Öµ¸øÈ«¾Ö±äÁ¿
+        this.now_flag = now_flag;// èµ‹å€¼ç»™å…¨å±€å˜é‡
         if (now_flag == zhichu_flag) {
             if (!pic_ll.isShown()) {
                 pic_ll.setVisibility(View.VISIBLE);
@@ -434,11 +434,11 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ÈÕÆÚdialog
+     * æ—¥æœŸdialog
      */
     @Override
     protected Dialog onCreateDialog(int id) {
-        if (id == R.id.jz_add_date_text) {// µ±µã»÷°´Å¥ÎªR.id.button1ÏÔÊ¾¸Ãdialog
+        if (id == R.id.jz_add_date_text) {// å½“ç‚¹å‡»æŒ‰é’®ä¸ºR.id.button1æ˜¾ç¤ºè¯¥dialog
             Calendar c = Calendar.getInstance();
             OnDateSetListener osl = new OnDateSetListener() {
                 @Override
@@ -461,13 +461,13 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ÊäÈëÊı×Ö¼àÌı
+     * è¾“å…¥æ•°å­—ç›‘å¬
      */
     private class TextClick implements OnClickListener {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-            case R.id.jz_add_jine_text:// µã»÷numÏÔÊ¾Êı×Ö°´¼ü
+            case R.id.jz_add_jine_text:// ç‚¹å‡»numæ˜¾ç¤ºæ•°å­—æŒ‰é”®
                 if (num_ll.isShown()) {
                     DongHuaYanChi.dongHuaEnd(num_ll, JZAddActivity.this, mh, R.anim.jz_menu_down, 300);
                 } else {
@@ -475,18 +475,18 @@ public class JZAddActivity extends Activity implements OnClickListener {
                     num_ll.setVisibility(View.VISIBLE);
                 }
                 break;
-            case R.id.jz_add_leibie_text:// ¸ü¸ÄÀà±ğ
+            case R.id.jz_add_leibie_text:// æ›´æ”¹ç±»åˆ«
                 new DialogLeiBie(JZAddActivity.this, now_flag);
                 break;
-            case R.id.jz_add_date_text:// ¸ü¸ÄÈÕÆÚ
+            case R.id.jz_add_date_text:// æ›´æ”¹æ—¥æœŸ
                 onCreateDialog(R.id.jz_add_date_text);
                 break;
-            case R.id.jz_add_time_text:// ¸ü¸ÄÊ±¼ä
+            case R.id.jz_add_time_text:// æ›´æ”¹æ—¶é—´
                 onCreateDialog(R.id.jz_add_time_text);
                 break;
-            case R.id.jz_add_beizhu_text:// Ìí¼Ó±¸×¢
+            case R.id.jz_add_beizhu_text:// æ·»åŠ å¤‡æ³¨
                 String beizhuString = beizhu.getText().toString();
-                if(beizhuString.equals("ÎŞ±¸×¢")){
+                if(beizhuString.equals("æ— å¤‡æ³¨")){
                     new DialogBeiZhu(JZAddActivity.this,"");
                 }else{
                     new DialogBeiZhu(JZAddActivity.this,beizhuString);  
@@ -507,7 +507,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ÊäÈëÊı×Ö¼àÌı
+     * è¾“å…¥æ•°å­—ç›‘å¬
      */
     private class MyClick implements OnClickListener {
         private TextView tv;
@@ -521,31 +521,31 @@ public class JZAddActivity extends Activity implements OnClickListener {
             Button button = (Button) v;
             String jines = tv.getText().toString().trim();
             if (v.getId() != R.id.jz_add_bt_del && jines.length() > 9) {
-                showMsg("ÄãÓĞÕâÃ´¶àÇ®Âğ£¿");
+                showMsg("ä½ æœ‰è¿™ä¹ˆå¤šé’±å—ï¼Ÿ");
                 return;
             }
             if (v.getId() != R.id.jz_add_bt_del) {
-                if (jines.equals("0.00")) {// µÚÒ»´ÎÊäÈëÊ±
+                if (jines.equals("0.00")) {// ç¬¬ä¸€æ¬¡è¾“å…¥æ—¶
                     if (!button.getText().equals(".") && !button.getText().equals("0")) {
                         tv.setText(button.getText());
                     }
                 } else {
-                    if (jines.contains(".")) {// ½ğ¶îÖĞÒÑ¾­°üº¬Ğ¡Êıµã
-                        if (button.getText().equals(".")) {// ÊäÈëµÄÎªĞ¡Êıµã
-                            showMsg("Ã»Ñ§¹ıÊıÑ§Ñ½£¿");
+                    if (jines.contains(".")) {// é‡‘é¢ä¸­å·²ç»åŒ…å«å°æ•°ç‚¹
+                        if (button.getText().equals(".")) {// è¾“å…¥çš„ä¸ºå°æ•°ç‚¹
+                            showMsg("æ²¡å­¦è¿‡æ•°å­¦å‘€ï¼Ÿ");
                             return;
                         }
-                        // Ğ¡Êıµãºó³¬¹ıÁ½Î»Ê±
+                        // å°æ•°ç‚¹åè¶…è¿‡ä¸¤ä½æ—¶
                         if ((jines.length() - jines.indexOf(".")) <= 2) {
                             tv.append(button.getText());
                         } else {
-                            showMsg("ÄãÓĞÄÇÃ´¶àÁãÇ®Âğ£¿");
+                            showMsg("ä½ æœ‰é‚£ä¹ˆå¤šé›¶é’±å—ï¼Ÿ");
                         }
                     } else {
                         tv.append(button.getText());
                     }
                 }
-            } else {// Èç¹ûÊÇÉ¾³ı¼ü
+            } else {// å¦‚æœæ˜¯åˆ é™¤é”®
                 if (!jines.equals("0.00")) {
                     if (jines.length() > 1) {
                         String str = jines.substring(0, jines.length() - 1);
@@ -591,13 +591,13 @@ public class JZAddActivity extends Activity implements OnClickListener {
         }
     }
 
-    public void choosePic(Context context) {// ÕÕÆ¬Ñ¡Ôñ
+    public void choosePic(Context context) {// ç…§ç‰‡é€‰æ‹©
         final Context dialogContext = new ContextThemeWrapper(context, android.R.style.Theme_Light);
         PHOTO_DIR = new File(SDrw.SDPATH+ "jizhang/imgcache/");
         if (!PHOTO_DIR.exists()) {
             PHOTO_DIR.mkdirs();
         }
-        // Éú³Éµ±Ç°Ä¿Â¼Í¼Æ¬²»¿É¼ûµÄ±êÖ¾ÎÄ¼ş
+        // ç”Ÿæˆå½“å‰ç›®å½•å›¾ç‰‡ä¸å¯è§çš„æ ‡å¿—æ–‡ä»¶
         File noMideaFile = new File(PHOTO_DIR, ".nomedia");
         if (!noMideaFile.exists()) {
             try {
@@ -608,39 +608,39 @@ public class JZAddActivity extends Activity implements OnClickListener {
         }
         String[] choices;
         choices = new String[2];
-        choices[0] = "Ïà»úÅÄÉã"; // ÅÄÕÕ
-        choices[1] = "±¾µØÏà²á"; // ´ÓÏà²áÖĞÑ¡Ôñ
+        choices[0] = "ç›¸æœºæ‹æ‘„"; // æ‹ç…§
+        choices[1] = "æœ¬åœ°ç›¸å†Œ"; // ä»ç›¸å†Œä¸­é€‰æ‹©
         final ListAdapter adapter = new ArrayAdapter<String>(dialogContext, android.R.layout.simple_list_item_1, choices);
         final AlertDialog.Builder builder = new AlertDialog.Builder(dialogContext);
-        builder.setTitle("Ìí¼ÓÍ¼Æ¬");
+        builder.setTitle("æ·»åŠ å›¾ç‰‡");
         builder.setSingleChoiceItems(adapter, -1, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
                 switch (which) {
                 case 0: {
                     String status = Environment.getExternalStorageState();
-                    if (status.equals(Environment.MEDIA_MOUNTED)) {// ÅĞ¶ÏÊÇ·ñÓĞSD¿¨
+                    if (status.equals(Environment.MEDIA_MOUNTED)) {// åˆ¤æ–­æ˜¯å¦æœ‰SDå¡
                         Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                         capturefile = new File(PHOTO_DIR, getPhotoFileName());
                         try {
                             capturefile.createNewFile();
-                            i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(capturefile));// ½«ÅÄÉãµÄÕÕÆ¬ĞÅÏ¢´æµ½capturefileÖĞ
+                            i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(capturefile));// å°†æ‹æ‘„çš„ç…§ç‰‡ä¿¡æ¯å­˜åˆ°capturefileä¸­
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-                        startActivityForResult(i, PHOTO_WITH_CAMERA);// ÓÃ»§µã»÷ÁË´ÓÕÕÏà»ú»ñÈ¡
+                        startActivityForResult(i, PHOTO_WITH_CAMERA);// ç”¨æˆ·ç‚¹å‡»äº†ä»ç…§ç›¸æœºè·å–
                     } else {
-                        showMsg("Ã»ÓĞSD¿¨");
+                        showMsg("æ²¡æœ‰SDå¡");
                     }
                     break;
                 }
-                case 1:// ´ÓÏà²áÖĞÈ¥»ñÈ¡
+                case 1:// ä»ç›¸å†Œä¸­å»è·å–
                     Intent intent = new Intent();
-                    /* ¿ªÆôPictures»­ÃæTypeÉè¶¨Îªimage */
+                    /* å¼€å¯Picturesç”»é¢Typeè®¾å®šä¸ºimage */
                     intent.setType("image/*");
-                    /* Ê¹ÓÃIntent.ACTION_GET_CONTENTÕâ¸öAction */
+                    /* ä½¿ç”¨Intent.ACTION_GET_CONTENTè¿™ä¸ªAction */
                     intent.setAction(Intent.ACTION_GET_CONTENT);
-                    /* È¡µÃÏàÆ¬ºó·µ»Ø±¾»­Ãæ */
+                    /* å–å¾—ç›¸ç‰‡åè¿”å›æœ¬ç”»é¢ */
                     startActivityForResult(intent, PHOTO_WITH_DATA);
                     break;
                 }
@@ -650,7 +650,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * Í¨¹ıÏà»ú»Ø´«Í¼Æ¬µÄÎÄ¼şÃû
+     * é€šè¿‡ç›¸æœºå›ä¼ å›¾ç‰‡çš„æ–‡ä»¶å
      */
     public String getPhotoFileName() {
         Date date = new Date(System.currentTimeMillis());
@@ -659,24 +659,24 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * Ñ¡ÔñÍ¼Æ¬µÄ»Ø´«´¦Àí
+     * é€‰æ‹©å›¾ç‰‡çš„å›ä¼ å¤„ç†
      */
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         File file = null;
         Bitmap picb = null;
-        ChangePic cp = new ChangePic();// ×ª»»Í¼Æ¬Àà
+        ChangePic cp = new ChangePic();// è½¬æ¢å›¾ç‰‡ç±»
         if (resultCode == Activity.RESULT_OK) {
             switch (requestCode) {
-            case PHOTO_WITH_CAMERA:// »ñÈ¡ÅÄÉãµÄÎÄ¼ş
+            case PHOTO_WITH_CAMERA:// è·å–æ‹æ‘„çš„æ–‡ä»¶
                 picpath = capturefile.getAbsolutePath();
                 System.out.println(picpath);
                 file = new File(picpath);
                 picb = decodeFile(file);
                 pic.setImageBitmap(picb);
-                System.out.println("++++++Ïà»ú+++++");
+                System.out.println("++++++ç›¸æœº+++++");
                 break;
 
-            case PHOTO_WITH_DATA:// »ñÈ¡´ÓÍ¼¿âÑ¡ÔñµÄÎÄ¼ş
+            case PHOTO_WITH_DATA:// è·å–ä»å›¾åº“é€‰æ‹©çš„æ–‡ä»¶
                 Uri uri = data.getData();
                 String scheme = uri.getScheme();
                 if (scheme.equalsIgnoreCase("file")) {
@@ -695,14 +695,14 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 }
                 break;
             }
-            // ´æ·ÅÕÕÆ¬µÄÂ·¾¶
+            // å­˜æ”¾ç…§ç‰‡çš„è·¯å¾„
             String savePath = SDrw.SDPATH+"jizhang/imgcache/";
             picpath = cp.changePic(picpath, savePath);
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    // Ñ¹ËõÍ¼Æ¬£¬±ÜÃâ±¨´í
+    // å‹ç¼©å›¾ç‰‡ï¼Œé¿å…æŠ¥é”™
     private Bitmap decodeFile(File f) {
         Bitmap b = null;
         try {

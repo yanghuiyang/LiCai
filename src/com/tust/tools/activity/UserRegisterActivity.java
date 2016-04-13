@@ -61,7 +61,7 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 			    	user.setPwd(pwd.getText().toString());
 			    	user.setSex(sex);
 			    	user.setTel(tel.getText().toString());
-			    	String a = user.getUsername()+"-"+user.getPwd();
+			    	//String a = user.getUsername()+"-"+user.getPwd();
 			    	//待做数据校验 如重复用户等情况
 			    	long result = userData.SaveUser(user); 
 			    	if(result != -1){

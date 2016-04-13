@@ -12,15 +12,15 @@ public class BWcontent {
 	public static final String SIZE = "SIZE";
 	
 	private int id;
-	private int year;//¼ÇÊÂÄê
-	private int month;//¼ÇÊÂÔÂ
-	private int week;//¼ÇÊÂÖÜ£¨ĞÇÆÚ¼¸£©
-	private int day;//¼ÇÊÂÈÕ
-	private String time;//¼ÇÊÂÊ±¼ä
-	private String content;//¼ÇÊÂÄÚÈİ
-	private String pic;//¼ÇÊÂÍ¼Æ¬Â·¾¶
-	private int color;//¼ÇÊÂ±³¾°É«
-	private float size;//¼ÇÊÂ×ÖÌå´óĞ¡
+	private int year;//è®°äº‹å¹´
+	private int month;//è®°äº‹æœˆ
+	private int week;//è®°äº‹å‘¨ï¼ˆæ˜ŸæœŸå‡ ï¼‰
+	private int day;//è®°äº‹æ—¥
+	private String time;//è®°äº‹æ—¶é—´
+	private String content;//è®°äº‹å†…å®¹
+	private String pic;//è®°äº‹å›¾ç‰‡è·¯å¾„
+	private int color;//è®°äº‹èƒŒæ™¯è‰²
+	private float size;//è®°äº‹å­—ä½“å¤§å°
 	public int getYear() {
 		return year;
 	}

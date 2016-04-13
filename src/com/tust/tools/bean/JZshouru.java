@@ -11,23 +11,23 @@ public class JZshouru {
 	public static final String SR_TIME = "SR_TIME";
 	public static final String SR_COUNT = "SR_COUNT";
 	public static final String SR_BEIZHU = "SR_BEIZHU";
-	// ÊÕÈëÌõÄ¿id
+	// æ”¶å…¥æ¡ç›®id
 	private int sr_Id;
-	// ÔÚÄÇ·½ÃæÊÕÈë
+	// åœ¨é‚£æ–¹é¢æ”¶å…¥
 	private String sr_Item = "";
-	//ÊÕÈëÄê·İ
-	private int sr_Year = GetTime.getYear();;
-	//ÊÕÈëÔÂ·İ
+	//æ”¶å…¥å¹´ä»½
+	private int sr_Year = GetTime.getYear();
+	//æ”¶å…¥æœˆä»½
 	private int sr_Month = GetTime.getMonth();
-	//ÊÕÈëÖÜ(ÔÂÖĞµÄÄ³ÖÜ)
+	//æ”¶å…¥å‘¨(æœˆä¸­çš„æŸå‘¨)
 	private int sr_Week = GetTime.getWeekOfYear();
-	//ÊÕÈëÈÕ
+	//æ”¶å…¥æ—¥
 	private int sr_Day = GetTime.getDay();
-	//ÊÕÈëÊ±¼ä
+	//æ”¶å…¥æ—¶é—´
 	private String sr_Time = GetTime.getHour()+":"+GetTime.getMinute();
-	//ÊÕÈë×ÜÊı
+	//æ”¶å…¥æ€»æ•°
 	private double sr_Count = 0;
-	//ÊÕÈë±¸×¢
+	//æ”¶å…¥å¤‡æ³¨
 	private String sr_Beizhu="";
 	
 	public int getSr_Id() {

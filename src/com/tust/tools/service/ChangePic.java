@@ -10,7 +10,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 public class ChangePic {
-	// ×ª»»ÕÕÆ¬£¬±äĞ¡ÀûÓÚÉÏ´«
+	// è½¬æ¢ç…§ç‰‡ï¼Œå˜å°åˆ©äºä¸Šä¼ 
 	public String changePic(String pic, String path) {
 		int size = 800;
 		String newpic = "";
@@ -20,18 +20,18 @@ public class ChangePic {
 			int width = b.getWidth();
 			int height = b.getHeight();
 			if (width > size || height > size) {
-				// Í¨¹ı³¤¿í±ÈÀ´ËõĞ¡Í¼Æ¬
+				// é€šè¿‡é•¿å®½æ¯”æ¥ç¼©å°å›¾ç‰‡
 				double bi = ((double) height / (double) width);
 				bb = Bitmap
 						.createScaledBitmap(b, size, (int) (bi * size), true);
-				// ËõĞ¡ºó´æ´¢ÔÚsd¿¨ÉÏ
+				// ç¼©å°åå­˜å‚¨åœ¨sdå¡ä¸Š
 				if (!SDrw.getSDPath().equals(null)
 						&& !SDrw.getSDPath().equals("")) {
 					File dir = new File(path);
 					if (!dir.exists()) {
 						dir.mkdirs();
 					}
-					// ÒÔµ±Ç°Ê±¼äÃüÃû´æ´¢Í¼Æ¬
+					// ä»¥å½“å‰æ—¶é—´å‘½åå­˜å‚¨å›¾ç‰‡
 					Date date = new Date(System.currentTimeMillis());
 					SimpleDateFormat dateFormat = new SimpleDateFormat(
 							"yyyyMMddHHmmss");

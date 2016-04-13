@@ -16,18 +16,18 @@ import com.tust.tools.bean.JZzhichu;
 import com.tust.tools.db.JZData;
 
 public class JZMingXiAdapter extends BaseAdapter{
-	//Àà±ğÁĞ±í»òÀà±ğ×ÓÀàÁĞ±íµÄ¼¯ºÏ
+	//ç±»åˆ«åˆ—è¡¨æˆ–ç±»åˆ«å­ç±»åˆ—è¡¨çš„é›†åˆ
 	public static ArrayList<?> mingXiList;
 	private Context context;
 	private int flag = 0;
-	//Êı¾İ¿â²Ù×÷
+	//æ•°æ®åº“æ“ä½œ
     JZData dataHelper ;
 	public JZMingXiAdapter(Context context) {
 		this.context = context;
 		dataHelper= new JZData(context);
 	}
 
-	//¸ù¾İ´«ÈëµÄ²ÎÊı»ñÈ¡ÏàÓ¦µÄ¼¯ºÏ
+	//æ ¹æ®ä¼ å…¥çš„å‚æ•°è·å–ç›¸åº”çš„é›†åˆ
 	public double[] getList(int year,int month,int day,int flag){
 	    this.flag = flag;
 	    double countZhiChu = 0,countShouRu = 0;
@@ -70,7 +70,7 @@ public class JZMingXiAdapter extends BaseAdapter{
 			convertView = LayoutInflater.from(context).inflate(R.layout.jz_mingxi_item, null);
 			JZzhichu zhichu = new JZzhichu();
 			JZshouru shouru = new JZshouru();
-			//Àà±ğ
+			//ç±»åˆ«
             TextView lb_text = (TextView) convertView.findViewById(R.id.mingxi_leibie_item_text);
             TextView jine_text = (TextView) convertView.findViewById(R.id.mingxi_jine_item_text);
             TextView beizhu_text = (TextView) convertView.findViewById(R.id.mingxi_beizhu_item_text);
@@ -85,14 +85,14 @@ public class JZMingXiAdapter extends BaseAdapter{
 			    }
 			    jine_text.setText(zhichu.getZc_Count()+"");
 			    beizhu_text.setText(zhichu.getZc_Beizhu());
-			    time_text.setText(zhichu.getZc_Day()+"ÈÕ "+zhichu.getZc_Time());
+			    time_text.setText(zhichu.getZc_Day()+"æ—¥ "+zhichu.getZc_Time());
 			}else if(flag==JZMingXiActivity.shouru_flag){
 			    shouru = (JZshouru)mingXiList.get(position);
 			    convertView.setTag(shouru);
 			    lb_text.setText(shouru.getSr_Item());
 			    jine_text.setText(shouru.getSr_Count()+"");
                 beizhu_text.setText(shouru.getSr_Beizhu());
-                time_text.setText(shouru.getSr_Day()+"ÈÕ "+shouru.getSr_Time());
+                time_text.setText(shouru.getSr_Day()+"æ—¥ "+shouru.getSr_Time());
 			}
 		return convertView;
 	}

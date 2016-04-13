@@ -16,11 +16,11 @@ public class DongHua3d {
         final float centerX = v.getWidth() / 2.0f;
         final float centerY = v.getHeight() / 2.0f;
         Rotate3dAnimation rotation = null;
-        if (mode == 0) {// ¿ªÊ¼
+        if (mode == 0) {// å¼€å§‹
             rotation = new Rotate3dAnimation(start, end, centerX, centerY, 310.0f, true);
             rotation.setDuration(400);
             v.startAnimation(rotation);
-        } else {// ·µ»Ø
+        } else {// è¿”å›
             rotation = new Rotate3dAnimation(end, start, centerX, centerY, 310.0f, false);
             rotation.setDuration(400);
             v.startAnimation(rotation);
@@ -57,7 +57,7 @@ public class DongHua3d {
         }.start();
     }
     
-    //ÓÉÓÚ¶¯»­ÇĞ»»ĞèÒªÊ±¼ä£¬ËùÒÔÑÓ³ÙÏÔÊ¾ºÍÒş²ØÊÕÈëºÍÖ§³ö½çÃæ
+    //ç”±äºåŠ¨ç”»åˆ‡æ¢éœ€è¦æ—¶é—´ï¼Œæ‰€ä»¥å»¶è¿Ÿæ˜¾ç¤ºå’Œéšè—æ”¶å…¥å’Œæ”¯å‡ºç•Œé¢
     public static void yanChiShow(final View vShow,final View vHidden){
     	new Thread(){
     		public void run(){

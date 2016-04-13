@@ -26,27 +26,27 @@ import com.tust.tools.service.GetTime;
 import com.tust.tools.service.JZMingXiAdapter;
 
 public class JZMingXiActivity extends Activity implements OnClickListener,OnItemClickListener {
-	//¶¥²¿Ê±¼äµÄÉÏÔÂºÍÏÂÔÂ,Ö§³öÊÕÈë°´Å¥
+	//é¡¶éƒ¨æ—¶é—´çš„ä¸Šæœˆå’Œä¸‹æœˆ,æ”¯å‡ºæ”¶å…¥æŒ‰é’®
 	private RelativeLayout back_rl,next_rl,zhichu_rl,shouru_rl;
-	//µ×²¿»ã×Ü½çÃæ,ÁĞ±í½çÃæ
+	//åº•éƒ¨æ±‡æ€»ç•Œé¢,åˆ—è¡¨ç•Œé¢
 	private LinearLayout huizong_ll,list_ll;
-	//listÁĞ±í
+	//liståˆ—è¡¨
 	private ListView listView;
-	//ÔÂ·İ,»ã×Ü
+	//æœˆä»½,æ±‡æ€»
 	private TextView time_text,huizong_text,zhichu_text,shouru_text,shengyu_text;
-	//µ±Ç°ÄêÔÂ
+	//å½“å‰å¹´æœˆ
 	private int year,month;
-	//µ±Ç°Ê±¼ä
+	//å½“å‰æ—¶é—´
 	private String nowTime;
-	//µ±Ç°Àà±ğ
+	//å½“å‰ç±»åˆ«
 	private int flag=0;
-	//Àà±ğ  Ö§³öºÍÊÕÈë
+	//ç±»åˆ«  æ”¯å‡ºå’Œæ”¶å…¥
 	public static final int shouru_flag=4010;
 	public static final int zhichu_flag=4020;
 	public static MessageHandler mh;
-	// Êı¾İ¿â²Ù×÷
+	// æ•°æ®åº“æ“ä½œ
 //	private DataHelper dataHelper;
-	//ÊÊÅäÆ÷
+	//é€‚é…å™¨
 	private JZMingXiAdapter adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -79,9 +79,9 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 		year = GetTime.getYear();
 		month = GetTime.getMonth();
 		if(month<10){
-			nowTime = year+"Äê0"+month+"ÔÂ";
+			nowTime = year+"å¹´0"+month+"æœˆ";
 		}else{
-			nowTime = year+"Äê"+month+"ÔÂ";	
+			nowTime = year+"å¹´"+month+"æœˆ";	
 		}
 		time_text.setText(nowTime);
 		listView  = (ListView) findViewById(R.id.jz_mingxi_list);
@@ -121,7 +121,7 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 	}
 	
 	/*
-	 * »ñÈ¡µ±Ç°ÔÂ»ã×Ü
+	 * è·å–å½“å‰æœˆæ±‡æ€»
 	 * */
 	public void getHuiZong(){
 		double count[] = adapter.getList(year, month, 0, flag);
@@ -131,7 +131,7 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 		adapter.notifyDataSetChanged();
 	}
 	/*
-	 * ÏÂÒ»¸öÔÂ·½·¨
+	 * ä¸‹ä¸€ä¸ªæœˆæ–¹æ³•
 	 * */
 	public void nextMonth(int flag){
 		month++;
@@ -140,16 +140,16 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 			year++;
 		}
 		if(month<10){
-			nowTime = year+"Äê0"+month+"ÔÂ";
+			nowTime = year+"å¹´0"+month+"æœˆ";
 		}else{
-			nowTime = year+"Äê"+month+"ÔÂ";	
+			nowTime = year+"å¹´"+month+"æœˆ";	
 		}
 		time_text.setText(nowTime);
 		yanChiShow(list_ll);
 	}
 	
 	/*
-	 * ÉÏÒ»¸öÔÂ·½·¨
+	 * ä¸Šä¸€ä¸ªæœˆæ–¹æ³•
 	 * */
 	public void backMonth(int flag){
 		month--;
@@ -158,19 +158,19 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 			year--;
 		}
 		if(month<10){
-			nowTime = year+"Äê0"+month+"ÔÂ";
+			nowTime = year+"å¹´0"+month+"æœˆ";
 		}else{
-			nowTime = year+"Äê"+month+"ÔÂ";	
+			nowTime = year+"å¹´"+month+"æœˆ";	
 		}
 		time_text.setText(nowTime);	
 		yanChiShow(list_ll);
 	}
 
 	/*
-	 * ÇĞ»»¶¯»­£¬Ã¿´ÎÇĞ»»Ö´ĞĞ
+	 * åˆ‡æ¢åŠ¨ç”»ï¼Œæ¯æ¬¡åˆ‡æ¢æ‰§è¡Œ
 	 * */
     public void yanChiShow(final View v){
-    	//¶¥²¿Ö§³öºÍÊÕÈë°´ÏÂºóµÄ±³¾°
+    	//é¡¶éƒ¨æ”¯å‡ºå’Œæ”¶å…¥æŒ‰ä¸‹åçš„èƒŒæ™¯
     	if(flag == zhichu_flag){
 			zhichu_rl.setBackgroundResource(R.drawable.jz_bt_bg_s);
 			shouru_rl.setBackgroundResource(R.drawable.blank);
@@ -189,7 +189,7 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 					sleep(400);
 					mh.post(new Runnable(){
         				public void run(){
-        					//ÏÂÃæ·½·¨·â×°getHuiZong();ÎªÒ»¸öÏß³Ì£¬·ñÔòÖ±½Ó·Åµ½ÕâÀï»á³öÏÖ¶¯»­ÖĞ¶ªÖ¡ÏÖÏó
+        					//ä¸‹é¢æ–¹æ³•å°è£…getHuiZong();ä¸ºä¸€ä¸ªçº¿ç¨‹ï¼Œå¦åˆ™ç›´æ¥æ”¾åˆ°è¿™é‡Œä¼šå‡ºç°åŠ¨ç”»ä¸­ä¸¢å¸§ç°è±¡
         					huiZongThread();
 	    					DongHua3d.applyRotation(v, 0, 180, 1);
         				 }
@@ -201,7 +201,7 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
     	}.start();
     }
     
-    //ÏÂÃæ·½·¨·â×°getHuiZong();ÎªÒ»¸öÏß³Ì£¬·ñÔòÖ±½Ó·Åµ½ÕâÀï»á³öÏÖ¶¯»­ÖĞ¶ªÖ¡ÏÖÏó
+    //ä¸‹é¢æ–¹æ³•å°è£…getHuiZong();ä¸ºä¸€ä¸ªçº¿ç¨‹ï¼Œå¦åˆ™ç›´æ¥æ”¾åˆ°è¿™é‡Œä¼šå‡ºç°åŠ¨ç”»ä¸­ä¸¢å¸§ç°è±¡
     public void huiZongThread(){
     	new Thread(){
     		public void run(){

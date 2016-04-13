@@ -37,7 +37,7 @@ public class JZBaoBiaoActivity extends Activity {
     }
     
     /*
-     * ÉèÖÃ×ßÏßÍ¼
+     * è®¾ç½®èµ°çº¿å›¾
      * */
     public View setView(int flag){
     	String[] titles=null;
@@ -47,13 +47,13 @@ public class JZBaoBiaoActivity extends Activity {
     	String title = "";
     	switch (flag) {
 		case ZCSR:
-			 titles = new String[] { "ÔÂÊÕÈë", "ÔÂÖ§³ö"};
+			 titles = new String[] { "æœˆæ”¶å…¥", "æœˆæ”¯å‡º"};
 			 colors = new int[] { Color.WHITE, Color.GREEN};
 			 styles = new PointStyle[] { PointStyle.CIRCLE, PointStyle.DIAMOND};
 			 values = new ArrayList<double[]>();
 			 values.add(getShouRuYear(""));
 	         values.add(getZhiChuYear(""));
-	         title = "ÔÂÊÕÈëºÍÖ§³ö×ßÊÆÍ¼";
+	         title = "æœˆæ”¶å…¥å’Œæ”¯å‡ºèµ°åŠ¿å›¾";
 			 break;
 		case zcMingXi:
 			titles = new String[] {JZItem.canyin, JZItem.jiaotong,JZItem.gouwu,JZItem.yule,JZItem.yijiao,JZItem.jujia,JZItem.touzi,JZItem.renqing,JZItem.jiechu,JZItem.huankuan};
@@ -80,7 +80,7 @@ public class JZBaoBiaoActivity extends Activity {
 	        values.add(getZhiChuYear(selectJieChu));
 	        String selectHuanKuan= " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.huankuan+"'";
 	        values.add(getZhiChuYear(selectHuanKuan));
-	        title = "Ö§³ö×ßÊÆÍ¼";
+	        title = "æ”¯å‡ºèµ°åŠ¿å›¾";
 			break;
 		case srMingXi:
 			titles = new String[] {JZItem.gongzi,JZItem.gupiao,JZItem.jiangjin,JZItem.lixi,JZItem.fenhong,JZItem.butie,JZItem.baoxiao,JZItem.qita,JZItem.jieru,JZItem.shoukuan};
@@ -107,7 +107,7 @@ public class JZBaoBiaoActivity extends Activity {
 	        values.add(getShouRuYear(selectJieRu));
 	        String selectShouKuan= " and "+JZshouru.SR_ITEM+" = '"+ JZItem.shoukuan+"'";
 	        values.add(getShouRuYear(selectShouKuan));
-			title = "ÊÕÈë×ßÊÆÍ¼";
+			title = "æ”¶å…¥èµ°åŠ¿å›¾";
 			break;
 		}
          List<double[]> x = new ArrayList<double[]>();
@@ -120,7 +120,7 @@ public class JZBaoBiaoActivity extends Activity {
          for (int i = 0; i < length; i++) {
              ((XYSeriesRenderer) renderer.getSeriesRendererAt(i)).setFillPoints(true);
          }
-         setChartSettings(renderer, title, "ÔÂ·Ý", "½ð¶î", 1, 12, 0, 10000, Color.LTGRAY, Color.LTGRAY);
+         setChartSettings(renderer, title, "æœˆä»½", "é‡‘é¢", 1, 12, 0, 10000, Color.LTGRAY, Color.LTGRAY);
          renderer.setXLabels(12);
          renderer.setYLabels(10);
          renderer.setShowGrid(true);
@@ -135,7 +135,7 @@ public class JZBaoBiaoActivity extends Activity {
     }
     
     /*
-     * ´ÓÊý¾Ý¿âÖÐ»ñµÃµ±ÄêÃ¿ÔÂµÄÖ§³öÐÅÏ¢
+     * ä»Žæ•°æ®åº“ä¸­èŽ·å¾—å½“å¹´æ¯æœˆçš„æ”¯å‡ºä¿¡æ¯
      * */
     public double [] getZhiChuYear(String select){
     	double d[]=new double[12];
@@ -152,7 +152,7 @@ public class JZBaoBiaoActivity extends Activity {
 	    return d;
     }
     /*
-     * ´ÓÊý¾Ý¿âÖÐ»ñµÃµ±ÄêÃ¿ÔÂµÄÊÕÈëÐÅÏ¢
+     * ä»Žæ•°æ®åº“ä¸­èŽ·å¾—å½“å¹´æ¯æœˆçš„æ”¶å…¥ä¿¡æ¯
      * */
     public double [] getShouRuYear(String select){
     	double d[]=new double[12];
@@ -231,9 +231,9 @@ public class JZBaoBiaoActivity extends Activity {
     }
     @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-    	menu.add(0, 100, 0, "ÔÂÊÕÈëºÍÖ§³ö");
-    	menu.add(0, 200, 0, "ÏêÏ¸ÔÂÊÕÈë");
-    	menu.add(0, 300, 0, "ÏêÏ¸ÔÂÖ§³ö");
+    	menu.add(0, 100, 0, "æœˆæ”¶å…¥å’Œæ”¯å‡º");
+    	menu.add(0, 200, 0, "è¯¦ç»†æœˆæ”¶å…¥");
+    	menu.add(0, 300, 0, "è¯¦ç»†æœˆæ”¯å‡º");
 		return true;
 	}
 

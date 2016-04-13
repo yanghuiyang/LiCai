@@ -49,7 +49,7 @@ public class PhoneInfoService {
 		}
 		return res;
 	}
-	// »ñÈ¡CPUÃû×Ö
+	// è·å–CPUåå­—
     public String getCpuName() {
             try {
                 FileReader fr = new FileReader("/proc/cpuinfo");
@@ -62,7 +62,7 @@ public class PhoneInfoService {
             }
             return null;
     }
-    //»ñÈ¡ÄÚ´æ´óĞ¡
+    //è·å–å†…å­˜å¤§å°
     public String getTotalMemory() {  
         String str1 = "/proc/meminfo";  
         String str2=""; 
@@ -75,7 +75,7 @@ public class PhoneInfoService {
             BufferedReader localBufferedReader = new BufferedReader(fr, 8192);  
             while ((str2 = localBufferedReader.readLine()) != null) {  
                 i++;
-            	 //Êä³ö   MemTotal:488604 kb  ÓÃstr2.substring(0,str2.length()-6);È¡³ö488mb
+            	 //è¾“å‡º   MemTotal:488604 kb  ç”¨str2.substring(0,str2.length()-6);å–å‡º488mb
             	System.out.println("str2"+str2); 
             	if(i==1){
             	    memTotal = str2.split(":")[1].substring(0,str2.split(":")[1].length()-6).trim();
@@ -86,7 +86,7 @@ public class PhoneInfoService {
             	    memSheng2 = str2.split(":")[1].substring(0,str2.split(":")[1].length()-6).trim();
             	    System.out.println("memSheng2"+memSheng2);
             	    int memSheng =Integer.parseInt(memSheng1)+Integer.parseInt(memSheng2);
-            	    return "RAM´óĞ¡£º"+memTotal+"MB  Ê£Óà´óĞ¡£º"+memSheng+"MB";
+            	    return "RAMå¤§å°ï¼š"+memTotal+"MB  å‰©ä½™å¤§å°ï¼š"+memSheng+"MB";
             	}
             }  
         } catch (IOException e) {  
@@ -94,7 +94,7 @@ public class PhoneInfoService {
         return "";
     } 
     
-    //Rom´óĞ¡
+    //Romå¤§å°
     public String[] getRomMemroy() {  
         long[] romInfoLong = new long[2];  
         //Total rom memory  
@@ -126,7 +126,7 @@ public class PhoneInfoService {
         return total;  
     }  
     
-    //SD´óĞ¡
+    //SDå¤§å°
     public String[] getSDCardMemory() {  
         long[] sdCardInfo=new long[2];  
         String[] sdInfoString = new String[2]; 
@@ -137,8 +137,8 @@ public class PhoneInfoService {
             long bSize = sf.getBlockSize();  
             long bCount = sf.getBlockCount();  
             long availBlocks = sf.getAvailableBlocks();  
-            sdCardInfo[0] = bSize * bCount;//×Ü´óĞ¡  
-            sdCardInfo[1] = bSize * availBlocks;//¿ÉÓÃ´óĞ¡  
+            sdCardInfo[0] = bSize * bCount;//æ€»å¤§å°  
+            sdCardInfo[1] = bSize * availBlocks;//å¯ç”¨å¤§å°  
             
             double dTotal = (double)sdCardInfo[0]/(double)(1024*1024);
     	    String resTotal = String.valueOf(dTotal).substring(0, String.valueOf(dTotal).indexOf(".")-1);
@@ -157,13 +157,13 @@ public class PhoneInfoService {
 //        @Override  
 //        publicvoidonReceive(Context context, Intent intent) {  
 //            intlevel = intent.getIntExtra("level",0);  
-//            //  level¼Ó%¾ÍÊÇµ±Ç°µçÁ¿ÁË  
+//            //  levelåŠ %å°±æ˜¯å½“å‰ç”µé‡äº†  
 //        }  
 //    };  
 //    registerReceiver(batteryReceiver,new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
     
 
-    //ÏµÍ³µÄ°æ±¾ĞÅÏ¢
+    //ç³»ç»Ÿçš„ç‰ˆæœ¬ä¿¡æ¯
     public String[] getVersion(){  
         String[] version={"null","null","null","null"};  
         String str1 = "/proc/version";  
@@ -178,12 +178,12 @@ public class PhoneInfoService {
             localBufferedReader.close();  
         } catch (IOException e) {  
         }  
-        version[1] = Build.VERSION.RELEASE;//firmware version  android°æ±¾
+        version[1] = Build.VERSION.RELEASE;//firmware version  androidç‰ˆæœ¬
         version[2]=Build.MODEL;//model  
         version[3]=Build.DISPLAY;//system version  
         return version;  
     }  
-    //»ñÈ¡¿ª»úÊ±¼ä£¬¶ÁÈ¡ÏµÍ³Ê±ÖÓ
+    //è·å–å¼€æœºæ—¶é—´ï¼Œè¯»å–ç³»ç»Ÿæ—¶é’Ÿ
     public String getTimes() {  
         long ut = SystemClock.elapsedRealtime() / 1000;  
         if (ut == 0) {  
@@ -191,7 +191,7 @@ public class PhoneInfoService {
         }  
         int m = (int) ((ut / 60) % 60);  
         int h = (int) ((ut / 3600));  
-        return h + "Ğ¡Ê±" + m +"·Ö";  
+        return h + "å°æ—¶" + m +"åˆ†";  
     }  
 
 

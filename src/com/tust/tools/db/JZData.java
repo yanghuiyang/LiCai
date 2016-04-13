@@ -9,11 +9,11 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
-//¼ÇÕËÊı¾İ¿â²Ù×÷
+//è®°è´¦æ•°æ®åº“æ“ä½œ
 public class JZData {
-	//Êı¾İ¿âÃû³Æ
+	//æ•°æ®åº“åç§°
 	private String DB_NAME="jizhang.db";
-	//Êı¾İ¿â°æ±¾
+	//æ•°æ®åº“ç‰ˆæœ¬
 	private static int DB_VERSION=1;
 	private SQLiteDatabase db;
 	private JZSqliteHelper dbHelper;
@@ -31,7 +31,7 @@ public class JZData {
     }
     
     /*
-     * »ñÈ¡Ö§³ö±íÖĞµÄËùÓĞÊı¾İ
+     * è·å–æ”¯å‡ºè¡¨ä¸­çš„æ‰€æœ‰æ•°æ®
      * */
     public ArrayList<JZzhichu> GetZhiChuList(String selection){
         ArrayList<JZzhichu> zhichulist=new ArrayList<JZzhichu>();
@@ -58,7 +58,7 @@ public class JZData {
     }
     
     /*
-     * »ñÈ¡ÊÕÈë±íÖĞµÄËùÓĞÊı¾İ
+     * è·å–æ”¶å…¥è¡¨ä¸­çš„æ‰€æœ‰æ•°æ®
      * */
     public ArrayList<JZshouru> GetShouRuList(String selection){
         ArrayList<JZshouru> shourulist=new ArrayList<JZshouru>();
@@ -83,7 +83,7 @@ public class JZData {
     }
     
     /*
-     * ÅĞ¶ÏÄ³ÌõÊÇ·ñ´æÔÚ
+     * åˆ¤æ–­æŸæ¡æ˜¯å¦å­˜åœ¨
      * */
     public boolean haveZhiChuInfo(int id){
     	boolean flag=false;
@@ -94,7 +94,7 @@ public class JZData {
     }
     
     /*
-     * ¸üĞÂÖ§³ö±íµÄ¼ÇÂ¼
+     * æ›´æ–°æ”¯å‡ºè¡¨çš„è®°å½•
      * */
     public int UpdateZhiChuInfo(JZzhichu zhichu,int id){
         ContentValues values = new ContentValues();
@@ -113,7 +113,7 @@ public class JZData {
         return idupdate;
     }
     /*
-     * ¸üĞÂÊÕÈë±íµÄ¼ÇÂ¼
+     * æ›´æ–°æ”¶å…¥è¡¨çš„è®°å½•
      * */
     public int UpdateShouRuInfo(JZshouru shouru,int id){
         ContentValues values = new ContentValues();
@@ -130,7 +130,7 @@ public class JZData {
         return idupdate;
     }
     /*
-     * Ìí¼ÓÖ§³ö¼ÇÂ¼
+     * æ·»åŠ æ”¯å‡ºè®°å½•
      * */
     public Long SaveZhiChuInfo(JZzhichu zhichu){
         ContentValues values = new ContentValues();
@@ -150,7 +150,7 @@ public class JZData {
     }
     
     /*
-     * Ìí¼ÓÊÕÈë¼ÇÂ¼
+     * æ·»åŠ æ”¶å…¥è®°å½•
      * */
     public Long SaveShouRuInfo(JZshouru shouru){
         ContentValues values = new ContentValues();
@@ -168,7 +168,7 @@ public class JZData {
     }
     
     /*
-     * É¾³ıÖ§³ö±íµÄ¼ÇÂ¼
+     * åˆ é™¤æ”¯å‡ºè¡¨çš„è®°å½•
      * */
     public int DelZhiChuInfo(int id){
         int iddel=  db.delete(JZSqliteHelper.ZHICHU, "ID ="+id, null);
@@ -177,7 +177,7 @@ public class JZData {
     }
     
     /*
-     * É¾³ıËùÓĞ¼ÇÂ¼
+     * åˆ é™¤æ‰€æœ‰è®°å½•
      * */
     public void delAll(){
     	JZSqliteHelper.saveYuSuan(context,JZSqliteHelper.YUSUAN_MONTH,JZSqliteHelper.YUSUAN_MONTH, 0);
@@ -186,7 +186,7 @@ public class JZData {
     }
     
     /*
-     * É¾³ıÊÕÈë±íµÄ¼ÇÂ¼
+     * åˆ é™¤æ”¶å…¥è¡¨çš„è®°å½•
      * */
     public int DelShouRuInfo(int id){
         int iddel=  db.delete(JZSqliteHelper.SHOURU, "ID ="+id, null);

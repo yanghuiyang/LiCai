@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.view.View;
 
-//»­Í¼½çÃæ
+//ç”»å›¾ç•Œé¢
 public  class JZPaintViewYuE extends View {
     private Paint mPaints;
     private Paint mFramePaint;
@@ -15,18 +15,18 @@ public  class JZPaintViewYuE extends View {
     private float mStart;
     private float mSweep;
     private int bujin;
-    //Ô¤Ëã  Óà¶î   ±ÈÂÊ
+    //é¢„ç®—  ä½™é¢   æ¯”ç‡
     private float bi;
     
     public JZPaintViewYuE(Context context,float yusuan,float yue,int color,int bujin) {
         super(context);
-        this.bi = yue/(yusuan/360);	//±ÈÂÊ  (¿ØÖÆ»æÍ¼ÇøÓò)
+        this.bi = yue/(yusuan/360);	//æ¯”ç‡  (æ§åˆ¶ç»˜å›¾åŒºåŸŸ)
         this.bujin = bujin;
         mPaints = new Paint();
         mPaints = new Paint(mPaints);
         mPaints.setColor(color);
         mUseCenters = true;
-        mBigOval = new RectF(15, 0, 175, 160);//»æÍ¼ÇøÓò ¾à×ó£¬ ¾àÉÏ £¬×óÆğµãÖÁÓÒ¾àÀë £¬ÉÏÆğµã¾àÏÂ¾àÀë
+        mBigOval = new RectF(15, 0, 175, 160);//ç»˜å›¾åŒºåŸŸ è·å·¦ï¼Œ è·ä¸Š ï¼Œå·¦èµ·ç‚¹è‡³å³è·ç¦» ï¼Œä¸Šèµ·ç‚¹è·ä¸‹è·ç¦»
         mFramePaint = new Paint();
         mFramePaint.setAntiAlias(true);
         mFramePaint.setStyle(Paint.Style.STROKE);
@@ -40,7 +40,7 @@ public  class JZPaintViewYuE extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-//        canvas.drawColor(Color.WHITE);//»æÍ¼±³¾°É«
+//        canvas.drawColor(Color.WHITE);//ç»˜å›¾èƒŒæ™¯è‰²
         drawArcs(canvas, mBigOval, mUseCenters, mPaints);
         mStart = 0;
         mSweep +=bujin ;

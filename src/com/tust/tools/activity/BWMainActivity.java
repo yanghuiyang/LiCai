@@ -33,19 +33,19 @@ import com.tust.tools.service.DongHuaYanChi;
 import com.tust.tools.service.SDrw;
 
 public class BWMainActivity extends Activity implements OnClickListener, OnItemClickListener {
-	// Ö÷½çÃælist
+	// ä¸»ç•Œé¢list
 	private ListView listView;
-	// Ìí¼ÓĞÂ±¸Íü°´Å¥
+	// æ·»åŠ æ–°å¤‡å¿˜æŒ‰é’®
 	private ImageButton ib;
-	// Ö÷½çÃælistÊÊÅäÆ÷
+	// ä¸»ç•Œé¢listé€‚é…å™¨
 	private BWAdapter adapter;
-	// Ö÷½çÃæµ×²¿¶àÑ¡É¾³ı½çÃæ
+	// ä¸»ç•Œé¢åº•éƒ¨å¤šé€‰åˆ é™¤ç•Œé¢
 	private LinearLayout del_ll;
-	// ¶àÑ¡É¾³ıÈı¸ö°´Å¥
+	// å¤šé€‰åˆ é™¤ä¸‰ä¸ªæŒ‰é’®
 	private Button selectAll, delSelect, cancelSelect;
 	// 
 	private Handler handler;
-	// ´´½¨Êı¾İ¿â¶ÔÏó
+	// åˆ›å»ºæ•°æ®åº“å¯¹è±¡
 	BWData dataHelper;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -84,10 +84,10 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		// »ñÈ¡µã»÷µÄItemµÄTag£¨TagÉèÖÃÎªid£©
+		// è·å–ç‚¹å‡»çš„Itemçš„Tagï¼ˆTagè®¾ç½®ä¸ºidï¼‰
 		int content_id = (Integer) view.getTag();
 		Intent intent = new Intent(this, BWNewActivity.class);
-		intent.putExtra("id", content_id);// ½«id´«ËÍµ½ĞÂ½¨µÄactivity
+		intent.putExtra("id", content_id);// å°†idä¼ é€åˆ°æ–°å»ºçš„activity
 		startActivity(intent);
 	}
 
@@ -125,7 +125,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 			adapter.notifyDataSetChanged();
 			DongHuaYanChi.dongHuaEnd(del_ll, BWMainActivity.this, handler, R.anim.jz_menu_down, 300);
 		} else {
-			showMsg("Äã»¹Ã»ÓĞÑ¡ÔñÒªÉ¾³ıÏî");
+			showMsg("ä½ è¿˜æ²¡æœ‰é€‰æ‹©è¦åˆ é™¤é¡¹");
 		}
 	}
 
@@ -162,24 +162,24 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 	}
 
 	/*
-	 * ÍË³öµ¯³ö¿ò
+	 * é€€å‡ºå¼¹å‡ºæ¡†
 	 */
-	String fileName;// ÒÔµ±Ç°Ê±¼äÃüÃûµÄÎÄ¼şÃû
+	String fileName;// ä»¥å½“å‰æ—¶é—´å‘½åçš„æ–‡ä»¶å
 
 	public void exitDialog(final String flag) {
 		final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		String confrimStr = "";
 		String cancelStr = "";
 		if (flag.equals("exit")) {
-			builder.setTitle("ÊÇ·ñÈ·ÈÏÍË³ö£¿");
-			confrimStr = "ÍË³öĞ¡ÖúÊÖ";
-			cancelStr = "ÍË³ö±¸ÍüÂ¼";
+			builder.setTitle("æ˜¯å¦ç¡®è®¤é€€å‡ºï¼Ÿ");
+			confrimStr = "é€€å‡ºå°åŠ©æ‰‹";
+			cancelStr = "é€€å‡ºå¤‡å¿˜å½•";
 		} else if (flag.equals("out")) {
 			fileName = getFileName("all.txt");
-			builder.setMessage("È·¶¨ºóµ¼³öµÄÎÄ¼şÃûÎª"+fileName+"´æ·ÅÔÚSD/tust/tools/beiwang/txt/ÎÄ¼ş¼ĞÏÂ");
-			//builder.setTitle("È·¶¨ºóµ¼³öµÄÎÄ¼şÃûÎª" + fileName + "´æ·ÅÔÚSD/tust/tools/beiwang/txt/ÎÄ¼ş¼ĞÏÂ");
-			confrimStr = "È·¶¨";
-			cancelStr = "È¡Ïû";
+			builder.setMessage("ç¡®å®šåå¯¼å‡ºçš„æ–‡ä»¶åä¸º"+fileName+"å­˜æ”¾åœ¨SD/tust/tools/beiwang/txt/æ–‡ä»¶å¤¹ä¸‹");
+			//builder.setTitle("ç¡®å®šåå¯¼å‡ºçš„æ–‡ä»¶åä¸º" + fileName + "å­˜æ”¾åœ¨SD/tust/tools/beiwang/txt/æ–‡ä»¶å¤¹ä¸‹");
+			confrimStr = "ç¡®å®š";
+			cancelStr = "å–æ¶ˆ";
 		}
 		builder.setPositiveButton(confrimStr, new DialogInterface.OnClickListener() {
 			@Override
@@ -191,12 +191,12 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 					SDrw ic = new SDrw(fileName, true,dir);
 					String string = "";
 					for (BWcontent beiwang : BWAdapter.bWlist) {
-						String line1 = "---" + beiwang.getYear() + "Äê" + beiwang.getMonth() + "ÔÂ" + beiwang.getDay() + "ÈÕ" + beiwang.getTime() + "\r\n";
+						String line1 = "---" + beiwang.getYear() + "å¹´" + beiwang.getMonth() + "æœˆ" + beiwang.getDay() + "æ—¥" + beiwang.getTime() + "\r\n";
 						String line2 = "---" + beiwang.getContent() + "\r\n\r\n";
 						string += line1 + line2;
 					}
 					ic.outWrite(string);
-					showMsg("µ¼³ö³É¹¦");
+					showMsg("å¯¼å‡ºæˆåŠŸ");
 				}
 			}
 		});
@@ -216,7 +216,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 	}
 
 	/*
-	 * Í¨¹ıÏà»ú»Ø´«Í¼Æ¬µÄÎÄ¼şÃû
+	 * é€šè¿‡ç›¸æœºå›ä¼ å›¾ç‰‡çš„æ–‡ä»¶å
 	 */
 	public String getFileName(String houzhui) {
 		Date date = new Date(System.currentTimeMillis());
@@ -226,9 +226,9 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(0, 100, 0, "µ¼³öËùÓĞ");
-		menu.add(0, 200, 0, "Ñ¡ÔñÉ¾³ı");
-		menu.add(0, 300, 0, "ÉèÖÃÃÜÂë");
+		menu.add(0, 100, 0, "å¯¼å‡ºæ‰€æœ‰");
+		menu.add(0, 200, 0, "é€‰æ‹©åˆ é™¤");
+		menu.add(0, 300, 0, "è®¾ç½®å¯†ç ");
 		return super.onCreateOptionsMenu(menu);
 	}
 
@@ -239,7 +239,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 			if (BWAdapter.bWlist != null && BWAdapter.bWlist.size() > 0) {
 				exitDialog("out");
 			} else {
-				showMsg("Ã»ÓĞ¿Éµ¼³öÌõÄ¿");
+				showMsg("æ²¡æœ‰å¯å¯¼å‡ºæ¡ç›®");
 			}
 			break;
 		case 200:
@@ -250,7 +250,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 					adapter.isShowCheck = true;
 					adapter.notifyDataSetChanged();
 				} else {
-					showMsg("Ã»ÓĞ¿ÉÑ¡ÌõÄ¿");
+					showMsg("æ²¡æœ‰å¯é€‰æ¡ç›®");
 				}
 			} else {
 				DongHuaYanChi.dongHuaEnd(del_ll, BWMainActivity.this, handler, R.anim.jz_menu_down, 300);
@@ -266,7 +266,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 	}
 
 	/*
-	 * µã»÷Í¼Æ¬ÒÔºóµÄ¶¯»­Ğ§¹û
+	 * ç‚¹å‡»å›¾ç‰‡ä»¥åçš„åŠ¨ç”»æ•ˆæœ
 	 */
 	public void dongHua(View v) {
 		v.setAnimation(AnimationUtils.loadAnimation(this, R.anim.shake));

@@ -12,13 +12,13 @@ import com.tust.tools.R;
 import com.tust.tools.service.DongHuaYanChi;
 
 /*
- * ¹ØÓÚÈí¼şdialog
+ * å…³äºè½¯ä»¶dialog
  * */
 public class DialogAbout extends Dialog{
 	private View diaView ;
 	private Context context;
 	private Handler handler ;
-	// flag±êÊ¶×ª·¢»¹ÊÇÆÀÂÛ£¬id±êÊ¶µ±Ç°Î¢²©µÄid£¬where±êÊ¶´ÓÄÄÀïÆô¶¯¸Ãdialog£¬Á½¸öµØ·½¿ÉÒÔÆô¶¯£¬home½çÃæ£¬ºÍÄÚÈİ½çÃæ
+	// flagæ ‡è¯†è½¬å‘è¿˜æ˜¯è¯„è®ºï¼Œidæ ‡è¯†å½“å‰å¾®åšçš„idï¼Œwhereæ ‡è¯†ä»å“ªé‡Œå¯åŠ¨è¯¥dialogï¼Œä¸¤ä¸ªåœ°æ–¹å¯ä»¥å¯åŠ¨ï¼Œhomeç•Œé¢ï¼Œå’Œå†…å®¹ç•Œé¢
 	public DialogAbout(Context context,String text) {
 		super(context, R.style.maindialog);
 		this.context = context;
@@ -28,7 +28,7 @@ public class DialogAbout extends Dialog{
 		TextView textView= (TextView)diaView.findViewById(R.id.dialog_about_text);
 		textView.setText(text);
 //		textView.setMovementMethod(ScrollingMovementMethod.getInstance());
-		//Ìí¼Ó±¸×¢±à¼­¿ò
+		//æ·»åŠ å¤‡æ³¨ç¼–è¾‘æ¡†
 		this.show();
 		diaView.startAnimation(AnimationUtils.loadAnimation(context, R.anim.push_up_in));
 	}

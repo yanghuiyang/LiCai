@@ -13,7 +13,7 @@ public class JZPaintViewZandS extends View {
     private int color,left;
     private Bitmap mSrcB;
     private String lable;
-    //Ô¤Ëã  Óà¶î   ±ÈÂÊ
+    //é¢„ç®—  ä½™é¢   æ¯”ç‡
     private float height;
     Bitmap makeSrc(int left) {
       Bitmap bm = Bitmap.createBitmap(40+left, 250, Bitmap.Config.ARGB_8888);
@@ -48,7 +48,7 @@ public class JZPaintViewZandS extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-//        canvas.drawColor(Color.WHITE);//»æÍ¼±³¾°É«
+//        canvas.drawColor(Color.WHITE);//ç»˜å›¾èƒŒæ™¯è‰²
         drawArcs(canvas, mPaints,lable);
         mStart = 0;
         mSweep -=3 ;

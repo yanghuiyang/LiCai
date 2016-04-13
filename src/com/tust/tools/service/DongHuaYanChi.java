@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 
 public class DongHuaYanChi {
-	    //¿ªÊ¼ºÍ½áÊø  ²ÎÊı£ºÊÓÍ¼£¬ÉÏÏÂÎÄ£¬handler,¿ªÊ¼¶¯»­£¬½áÊø¶¯»­£¬ÑÓ³ÙÊ±¼ä
+	    //å¼€å§‹å’Œç»“æŸ  å‚æ•°ï¼šè§†å›¾ï¼Œä¸Šä¸‹æ–‡ï¼Œhandler,å¼€å§‹åŠ¨ç”»ï¼Œç»“æŸåŠ¨ç”»ï¼Œå»¶è¿Ÿæ—¶é—´
 	    public static void dongHuaSandE(final View v,final Context context,final Handler handler,final int sanimId,final int eanimId,final int time) {
 	        new Thread() {
 	            public void run() {
@@ -55,7 +55,7 @@ public class DongHuaYanChi {
 	                }
 	            }.start();
 	        }
-	    //½áÊø¶¯»­ ²ÎÊı£º ÊÓÍ¼£¬ÉÏÏÂÎÄ£¬handler,¿ªÊ¼¶¯»­£¬ÑÓ³ÙÊ±¼ä
+	    //ç»“æŸåŠ¨ç”» å‚æ•°ï¼š è§†å›¾ï¼Œä¸Šä¸‹æ–‡ï¼Œhandler,å¼€å§‹åŠ¨ç”»ï¼Œå»¶è¿Ÿæ—¶é—´
 	    public static void dongHuaEnd(final View v,final Context context,final Handler handler,final int eanimId,final int time) {
 	        new Thread() {
 	            public void run() {
@@ -78,7 +78,7 @@ public class DongHuaYanChi {
 	        }.start();
 	    }
 	    
-	  //½áÊø¶¯»­ ²ÎÊı£º ÊÓÍ¼£¬ÉÏÏÂÎÄ£¬handler,¿ªÊ¼¶¯»­£¬ÑÓ³ÙÊ±¼ä
+	  //ç»“æŸåŠ¨ç”» å‚æ•°ï¼š è§†å›¾ï¼Œä¸Šä¸‹æ–‡ï¼Œhandler,å¼€å§‹åŠ¨ç”»ï¼Œå»¶è¿Ÿæ—¶é—´
 	    public static void dongHuaDialogEnd(final Dialog d,final View v,final Context context,final Handler handler,final int eanimId,final int time) {
 	        new Thread() {
 	            public void run() {
@@ -102,7 +102,7 @@ public class DongHuaYanChi {
 	        }.start();
 	    }
 	    
-	  //½áÊø¶¯»­ ²ÎÊı£º ÊÓÍ¼£¬ÉÏÏÂÎÄ£¬handler,¿ªÊ¼¶¯»­£¬ÑÓ³ÙÊ±¼ä
+	  //ç»“æŸåŠ¨ç”» å‚æ•°ï¼š è§†å›¾ï¼Œä¸Šä¸‹æ–‡ï¼Œhandler,å¼€å§‹åŠ¨ç”»ï¼Œå»¶è¿Ÿæ—¶é—´
 	    public static void dongHuaStart(final View v,final Context context,final Handler handler,final int eanimId,final int time) {
 	        new Thread() {
 	            public void run() {
