@@ -16,7 +16,11 @@ public class JZshouru {
 	// 在那方面收入
 	private String sr_Item = "";
 	//收入年份
+<<<<<<< HEAD
 	private int sr_Year = GetTime.getYear();;
+=======
+	private int sr_Year = GetTime.getYear();
+>>>>>>> a63a26fcf9f5e1b09b2e016b7a158df387edddd8
 	//收入月份
 	private int sr_Month = GetTime.getMonth();
 	//收入周(月中的某周)

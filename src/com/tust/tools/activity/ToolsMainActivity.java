@@ -38,7 +38,11 @@ import com.tust.tools.service.SDrw;
 
 public class ToolsMainActivity extends Activity implements OnClickListener,OnLongClickListener,OnTouchListener, OnGestureListener  {
     //工具箱主界面  图标布局
+<<<<<<< HEAD
     private LinearLayout jz_ll, bw_ll, js_ll, wz_ll, fy_ll,info_ll,icon_ll,top_bt, user_manage;
+=======
+    private LinearLayout jz_ll, bw_ll, js_ll, wz_ll, fy_ll,info_ll,icon_ll,top_bt;
+>>>>>>> a63a26fcf9f5e1b09b2e016b7a158df387edddd8
     //底部上拉界面
     private SlidingDrawer sd;
     //底部上拉按钮，关于软件按钮 ，退出按钮。
@@ -249,11 +253,14 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         	dh3.oneViewDongHua(js_ll);
             changeActivity(JSMainActivity.class);
             break;
+<<<<<<< HEAD
 
             case R.id.main_ll_4://用户管理
                 dh3.oneViewDongHua(user_manage);
                 changeActivity(UserEditActivity.class);
                 break;
+=======
+>>>>>>> a63a26fcf9f5e1b09b2e016b7a158df387edddd8
         case R.id.main_top_bt://右上角切换按钮
             if(click==0){
                 top_bt.setBackgroundResource(R.drawable.main_top_btl);
@@ -283,7 +290,21 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
                 hidden_bt.setText("隐藏提醒");
             }
             break;
+<<<<<<< HEAD
 
+=======
+        case R.id.main_about_bt://底部上拉 关于 按钮
+        	String text ="该理财助手集成了N大实用功能：" +
+        			"\r\n1.记账工具     2.备忘记事。" +
+        	        "\r\n3.简易计算    " +
+        			"\r\n欢迎大家提出宝贵意见。" +
+        			"\r\nQQ：xxxxx" +
+        			"\r\n重庆大学"+
+        			"\r\n                      软件版本 v1.0" ;
+        	new DialogAbout(this,text);
+        	sd.animateClose();
+            break;
+>>>>>>> a63a26fcf9f5e1b09b2e016b7a158df387edddd8
         case R.id.main_exit_bt://底部上拉 退出  按钮
         	sd.animateClose(); 
         	this.finish();
