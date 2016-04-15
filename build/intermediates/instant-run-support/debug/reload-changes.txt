@@ -1,0 +1,10 @@
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\ToolsMainActivity$MessageHandler$override.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\ToolsMainActivity$6$override.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\ToolsMainActivity$1$override.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\ToolsMainActivity$5$override.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\service\Marrquee$override.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\ToolsMainActivity$2$override.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\ToolsMainActivity$3$override.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\ToolsMainActivity$override.class
+CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\ToolsMainActivity$4$override.class

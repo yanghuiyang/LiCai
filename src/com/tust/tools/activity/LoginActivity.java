@@ -51,6 +51,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 					SharedPreferences preferences=getSharedPreferences("userInfo", Context.MODE_PRIVATE);
 					SharedPreferences.Editor editor=preferences.edit();
 					editor.putString("userName",account.getText().toString());
+					editor.putString("pwd",pwd.getText().toString());
 					editor.commit();
 					changeActivity(ToolsMainActivity.class);
 

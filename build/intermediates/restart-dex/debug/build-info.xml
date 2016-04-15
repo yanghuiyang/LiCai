@@ -4,26 +4,26 @@
     api-level="19"
     density="xhdpi"
     format="7"
-    timestamp="10577238843588" >
+    timestamp="12840203696338" >
 
     <task
         name="javac"
-        duration="1199" />
+        duration="2265" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1518" />
+        duration="514" />
     <task
         name="verifier"
-        duration="266" />
+        duration="173" />
 
     <artifact
         location="C:\Java\workspace\LiCaiTools1.0\build\outputs\apk\LiCaiTools1.0-debug.apk"
         type="MAIN" />
 
-    <build timestamp="10577238843588" >
+    <build timestamp="12840203696338" >
         <artifact
             location="C:\Java\workspace\LiCaiTools1.0\build\outputs\apk\LiCaiTools1.0-debug.apk"
             type="MAIN" />
