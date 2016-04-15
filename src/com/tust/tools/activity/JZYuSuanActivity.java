@@ -31,7 +31,7 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 		yusuan = (TextView) this.findViewById(R.id.jz_yusuan_txt);
 		int ys = JZSqliteHelper.readPreferenceFile(this,
 				JZSqliteHelper.YUSUAN_MONTH, JZSqliteHelper.YUSUAN_MONTH);
-		yusuan.setText("µ±Ç°±¾ÔÂÔ¤Ëã£º" + ys + "");
+		yusuan.setText("å½“å‰æœ¬æœˆé¢„ç®—ï¼š" + ys + "");
 	}
 
 	@Override
@@ -39,10 +39,10 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.jz_yusuan_savebt:
 			if (et.getText().toString().length() < 1) {
-				showMsg("ÊäÈë²»ÄÜÎª¿Õ");
+				showMsg("è¾“å…¥ä¸èƒ½ä¸ºç©º");
 				return;
 			} else if (et.getText().toString().length() > 7) {
-				showMsg("ÄãÓĞÕâÃ´¶àÇ®Ã´£¿");
+				showMsg("ä½ æœ‰è¿™ä¹ˆå¤šé’±ä¹ˆï¼Ÿ");
 				return;
 			}
 			int num = Integer.parseInt(et.getText().toString());
@@ -50,7 +50,7 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 					JZSqliteHelper.YUSUAN_MONTH, num);
 			int ys = JZSqliteHelper.readPreferenceFile(this,
 					JZSqliteHelper.YUSUAN_MONTH, JZSqliteHelper.YUSUAN_MONTH);
-			yusuan.setText("µ±Ç°±¾ÔÂÔ¤Ëã£º" + ys + "");
+			yusuan.setText("å½“å‰æœ¬æœˆé¢„ç®—ï¼š" + ys + "");
 			this.finish();
 			break;
 		case R.id.jz_yusuan_cancelbt:

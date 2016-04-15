@@ -32,25 +32,25 @@ import com.tust.tools.service.JZPaintViewYuE;
 import com.tust.tools.service.JZPaintViewZandS;
 
 public class JZMainActivity extends Activity implements OnClickListener {
-    // Ö§³ö½çÃæµÄTextView
+    // æ”¯å‡ºç•Œé¢çš„TextView
     TextView zhichu_week, zhichu_month, zhichu_shouru_month, yusuan_month, yusuanyue_month;
-    // ÊÕÈë½çÃæµÄTextView
+    // æ”¶å…¥ç•Œé¢çš„TextView
     TextView shouru_year, shouru_month, shouru_day;
-    // ¶¥²¿framelayoutÖ§³öºÍÊÕÈë
+    // é¡¶éƒ¨framelayoutæ”¯å‡ºå’Œæ”¶å…¥
     private FrameLayout zhihcu_fl, shouru_fl;
-    // »æÍ¼ÇøÓò
+    // ç»˜å›¾åŒºåŸŸ
     private RelativeLayout zhichu_shang_rl, zhichu_xia_rl, shouru_shang_rl;
-    // µ×²¿»·ĞÎ°´Å¥ Ìí¼Ó£¬ Ã÷Ï¸£¬±¨±í£¬Ô¤Ëã£¬ÉèÖÃ¡£
+    // åº•éƒ¨ç¯å½¢æŒ‰é’® æ·»åŠ ï¼Œ æ˜ç»†ï¼ŒæŠ¥è¡¨ï¼Œé¢„ç®—ï¼Œè®¾ç½®ã€‚
     private Button tianjia, mingxi, baobiao, yusuan, shezhi;
-    // tab1¶¥²¿Ö§³öºÍÊÕÈë°´Å¥Ñ¡ÖĞºó±³¾°Í¼Ïñ
+    // tab1é¡¶éƒ¨æ”¯å‡ºå’Œæ”¶å…¥æŒ‰é’®é€‰ä¸­åèƒŒæ™¯å›¾åƒ
     private ImageView ivZhichu, ivShuru, menu;
-    // tab1¶¥²¿Ö§³öºÍÊÕÈë°´Å¥Ñ¡ÖĞºóÏÂÃæÏÔÊ¾µÄÄÚÈİ
+    // tab1é¡¶éƒ¨æ”¯å‡ºå’Œæ”¶å…¥æŒ‰é’®é€‰ä¸­åä¸‹é¢æ˜¾ç¤ºçš„å†…å®¹
     private LinearLayout zhichull, shourull;
-    // µ×²¿»·ĞÎ°´Å¥ÊÇ·ñÏÔÊ¾
+    // åº•éƒ¨ç¯å½¢æŒ‰é’®æ˜¯å¦æ˜¾ç¤º
     private boolean isShown = false;
-    // button¼¯ºÏ ·½±ã¹ÜÀí°´Å¥ÏÔÊ¾Òş²Ø
+    // buttoné›†åˆ æ–¹ä¾¿ç®¡ç†æŒ‰é’®æ˜¾ç¤ºéšè—
     private Button bts[] = null;
-    // Êı¾İ¿â²Ù×÷
+    // æ•°æ®åº“æ“ä½œ
     JZData dataHelper;
 
     @Override
@@ -85,7 +85,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ³õÊ¼»¯×é¼ş
+     * åˆå§‹åŒ–ç»„ä»¶
      */
     public void init() {
         ivZhichu = (ImageView) findViewById(R.id.jz_tab1_ivzhichu);
@@ -109,10 +109,10 @@ public class JZMainActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * ³õÊ¼»¯µ×²¿»·ĞÎ°´Å¥
+     * åˆå§‹åŒ–åº•éƒ¨ç¯å½¢æŒ‰é’®
      */
     public void initButton() {
-        // ¶¥²¿ÊÕÈëÖ§³ö°´Å¥
+        // é¡¶éƒ¨æ”¶å…¥æ”¯å‡ºæŒ‰é’®
         zhihcu_fl = (FrameLayout) findViewById(R.id.jz_main_zhichu_fl);
         zhihcu_fl.setOnClickListener(this);
         shouru_fl = (FrameLayout) findViewById(R.id.jz_main_shouru_fl);
@@ -134,7 +134,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * µ×²¿»·ĞÎ°´Å¥ÏÔÊ¾¶¯»­
+     * åº•éƒ¨ç¯å½¢æŒ‰é’®æ˜¾ç¤ºåŠ¨ç”»
      */
     public void btDonghua() {
         isShown = true;
@@ -149,7 +149,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * Òş²Øµ×²¿»·ĞÎ°´Å¥¶¯»­
+     * éšè—åº•éƒ¨ç¯å½¢æŒ‰é’®åŠ¨ç”»
      */
     public void btHiddenDonghua() {
     	isShown = false;
@@ -174,7 +174,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * Òş²Øµ×²¿»·ĞÎ°´Å¥
+     * éšè—åº•éƒ¨ç¯å½¢æŒ‰é’®
      */
     private void hiddenView() {
         isShown = false;
@@ -186,19 +186,19 @@ public class JZMainActivity extends Activity implements OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-        case R.id.jz_main_zhichu_fl:// ¶¥²¿Ö§³ö°´Å¥
+        case R.id.jz_main_zhichu_fl:// é¡¶éƒ¨æ”¯å‡ºæŒ‰é’®
             ivZhichu.setImageResource(R.drawable.jz_tab1_bt_bgs);
             ivShuru.setImageDrawable(null);
             ivZhichu.setAnimation(AnimationUtils.loadAnimation(this, R.anim.jz_top_right2left));
             DongHua3d.yanChiShow(zhichull, shourull);
             break;
-        case R.id.jz_main_shouru_fl:// ¶¥²¿ÊÕÈë°´Å¥
+        case R.id.jz_main_shouru_fl:// é¡¶éƒ¨æ”¶å…¥æŒ‰é’®
             ivShuru.setImageResource(R.drawable.jz_tab1_bt_bgs);
             ivZhichu.setImageDrawable(null);
             ivShuru.setAnimation(AnimationUtils.loadAnimation(this, R.anim.jz_top_left2right));
             DongHua3d.yanChiShow(shourull, zhichull);
             break;
-        case R.id.jz_mian_menuiv:// µ×²¿»·ĞÎ°´Å¥
+        case R.id.jz_mian_menuiv:// åº•éƒ¨ç¯å½¢æŒ‰é’®
             if (!isShown) {
                 btDonghua();
                 menu.setImageResource(R.drawable.jz_main_more_s);
@@ -207,26 +207,26 @@ public class JZMainActivity extends Activity implements OnClickListener {
                 menu.setImageResource(R.drawable.jz_main_more);
             }
             break;
-        case R.id.jz_main_bt_add:// ¼ÇÕË°´Å¥
+        case R.id.jz_main_bt_add:// è®°è´¦æŒ‰é’®
             changeActivity(JZAddActivity.class);
             break;
-        case R.id.jz_main_bt_mingxi:// Ã÷Ï¸
+        case R.id.jz_main_bt_mingxi:// æ˜ç»†
             changeActivity(JZMingXiActivity.class);
             break;
-        case R.id.jz_main_bt_yusuan:// Ô¤Ëã
+        case R.id.jz_main_bt_yusuan:// é¢„ç®—
             changeActivity(JZYuSuanActivity.class);
             break;
-        case R.id.jz_main_bt_baobiao://±¨±í
+        case R.id.jz_main_bt_baobiao://æŠ¥è¡¨
         	changeActivity(JZBaoBiaoActivity.class);
             break;
-        case R.id.jz_main_bt_setting://ÉèÖÃ
+        case R.id.jz_main_bt_setting://è®¾ç½®
         	changeActivity(JZSheZhiActivity.class);
             break;
         }
     }
 
     /*
-     * ÇĞ»»½çÃæ
+     * åˆ‡æ¢ç•Œé¢
      */
     public void changeActivity(Class<?> c) {
         Intent intent = new Intent(JZMainActivity.this, c);
@@ -262,18 +262,18 @@ public class JZMainActivity extends Activity implements OnClickListener {
     }
     
     /*
-     * ÍË³öµ¯³ö¿ò
+     * é€€å‡ºå¼¹å‡ºæ¡†
      * */
     public void exitDialog(){
     	final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-    	builder.setTitle("ÊÇ·ñÈ·ÈÏÍË³ö£¿");
-    	builder.setPositiveButton("ÍË³öĞ¡ÖúÊÖ", new DialogInterface.OnClickListener() {
+    	builder.setTitle("æ˜¯å¦ç¡®è®¤é€€å‡ºï¼Ÿ");
+    	builder.setPositiveButton("é€€å‡ºå°åŠ©æ‰‹", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				System.exit(0);
 			}
 		});
-    	builder.setNeutralButton("ÍË³ö¼ÇÕËÆ÷", new DialogInterface.OnClickListener() {
+    	builder.setNeutralButton("é€€å‡ºè®°è´¦å™¨", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				 Intent intent = new Intent(JZMainActivity.this,ToolsMainActivity.class);
@@ -284,7 +284,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     	builder.create().show();
     }
     /*
-     * »ñÈ¡Ö§³ö Ò³Ãæ×ÜÊı
+     * è·å–æ”¯å‡º é¡µé¢æ€»æ•°
      */
     float count_sr_yue;
     public void getZhiChu() {
@@ -324,25 +324,25 @@ public class JZMainActivity extends Activity implements OnClickListener {
             zhichu_shouru_month.setText(0 + "");
             shouru_month.setText(0 + "");
         }
-        //ÅĞ¶Ïµ±Ç°×´Ì¬È·¶¨ÊÇ·ñ»æÍ¼
+        //åˆ¤æ–­å½“å‰çŠ¶æ€ç¡®å®šæ˜¯å¦ç»˜å›¾
         if(count_zc_week>0||count_zc_yue>0||count_sr_yue>0){
-        	// ´´½¨»æÍ¼ÇøÓò
+        	// åˆ›å»ºç»˜å›¾åŒºåŸŸ
         	zhichu_shang_rl.setBackgroundDrawable(null);
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.BLUE,30,count_zc_week/20,"±¾ÖÜÖ§³ö"));
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.BLACK,100,count_zc_yue/20,"±¾ÔÂÖ§³ö"));
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.CYAN,170,count_sr_yue/20,"±¾ÔÂÊÕÈë"));
+            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.BLUE,30,count_zc_week/20,"æœ¬å‘¨æ”¯å‡º"));
+            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.BLACK,100,count_zc_yue/20,"æœ¬æœˆæ”¯å‡º"));
+            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.CYAN,170,count_sr_yue/20,"æœ¬æœˆæ”¶å…¥"));
         }else{
         	zhichu_shang_rl.setBackgroundResource(R.drawable.jz_empty_zhichu_zhuxing);
         }
 
         final float yusuan_yue = JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.YUSUAN_MONTH, JZSqliteHelper.YUSUAN_MONTH);
-        // ÔÂÔ¤Ëã
+        // æœˆé¢„ç®—
         yusuan_month.setText(yusuan_yue + "");
-        // ÔÂÔ¤ËãÓà¶î
+        // æœˆé¢„ç®—ä½™é¢
         final float zhichu_yue = Float.parseFloat(zhichu_month.getText().toString().trim());
         yusuanyue_month.setText((yusuan_yue - zhichu_yue) + "");
         
-        int bujin=0;//¸ù¾İ²»Í¬µÄÊ£Óàµ÷Õû²½½øËÙ¶È
+        int bujin=0;//æ ¹æ®ä¸åŒçš„å‰©ä½™è°ƒæ•´æ­¥è¿›é€Ÿåº¦
         if((yusuan_yue/zhichu_yue)<0.3){
         	bujin = 1;
         }else if((yusuan_yue/zhichu_yue)>=0.3&&(yusuan_yue/zhichu_yue)<=0.6){
@@ -359,7 +359,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
         }
     }
     /*
-     * »ñÈ¡ÊÕÈëÒ³Ãæ¸÷¸ö½ğ¶î×ÜÊı
+     * è·å–æ”¶å…¥é¡µé¢å„ä¸ªé‡‘é¢æ€»æ•°
      */
     public void getShouRu() {
     	float count_sr_year = 0,count_sr_day = 0;
@@ -386,13 +386,13 @@ public class JZMainActivity extends Activity implements OnClickListener {
         } else {
             shouru_day.setText(0 + "");
         }
-        //ÅĞ¶Ïµ±Ç°×´Ì¬È·¶¨ÊÇ·ñ»æÍ¼
+        //åˆ¤æ–­å½“å‰çŠ¶æ€ç¡®å®šæ˜¯å¦ç»˜å›¾
         if(count_sr_year>0||count_sr_yue>0||count_sr_day>0){
-        	// ´´½¨»æÍ¼ÇøÓò
+        	// åˆ›å»ºç»˜å›¾åŒºåŸŸ
         	shouru_shang_rl.setBackgroundDrawable(null);
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.BLUE,30,count_sr_year/40,"±¾ÄêÊÕÈë"));
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.BLACK,100,count_sr_yue/40,"±¾ÔÂÊÕÈë"));
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.CYAN,170,count_sr_day/40,"½ñÌìÊÕÈë"));
+        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.BLUE,30,count_sr_year/40,"æœ¬å¹´æ”¶å…¥"));
+        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.BLACK,100,count_sr_yue/40,"æœ¬æœˆæ”¶å…¥"));
+        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.CYAN,170,count_sr_day/40,"ä»Šå¤©æ”¶å…¥"));
         }else{
         	shouru_shang_rl.setBackgroundResource(R.drawable.jz_empty_zhichu_zhuxing);
         }

@@ -16,7 +16,7 @@ import com.tust.tools.bean.JZItem;
 import com.tust.tools.dialog.DialogLeiBie;
 
 public class JZLeibieAdapter extends BaseAdapter{
-	//Àà±ğÁĞ±í»òÀà±ğ×ÓÀàÁĞ±íµÄ¼¯ºÏ
+	//ç±»åˆ«åˆ—è¡¨æˆ–ç±»åˆ«å­ç±»åˆ—è¡¨çš„é›†åˆ
 	private ArrayList<String> leibiearr;
 	private Context context;
 	private int flag = 0;
@@ -25,7 +25,7 @@ public class JZLeibieAdapter extends BaseAdapter{
 	public JZLeibieAdapter(Context context, int flag,String subitem) {
 		this.flag = flag;
 		this.context = context;
-		//¸ù¾İ´«ÈëµÄ²ÎÊı»ñÈ¡ÏàÓ¦µÄ¼¯ºÏ
+		//æ ¹æ®ä¼ å…¥çš„å‚æ•°è·å–ç›¸åº”çš„é›†åˆ
 		if(flag==JZAddActivity.zhichu_flag){
 			getLeibieList(JZItem.leibie_s);
 		}else if(flag==JZAddActivity.shouru_flag){
@@ -38,7 +38,7 @@ public class JZLeibieAdapter extends BaseAdapter{
 	}
 
 	/*
-	 * »ñÈ¡Àà±ğµÄÁĞ±í¼¯ºÏ
+	 * è·å–ç±»åˆ«çš„åˆ—è¡¨é›†åˆ
 	 * */
 	public void getLeibieList(String s[]) {
 		leibiearr = new ArrayList<String>();
@@ -48,26 +48,26 @@ public class JZLeibieAdapter extends BaseAdapter{
 	}
 
 	/*
-	 * »ñÈ¡Àà±ğ×ÓÀàµÄÁĞ±í¼¯ºÏ£¨¸ù¾İ´«ÈëµÄµ±Ç°Ñ¡ÖĞÀà±ğÀ´ÅĞ¶Ï£©
+	 * è·å–ç±»åˆ«å­ç±»çš„åˆ—è¡¨é›†åˆï¼ˆæ ¹æ®ä¼ å…¥çš„å½“å‰é€‰ä¸­ç±»åˆ«æ¥åˆ¤æ–­ï¼‰
 	 * */
 	public void getLeibieSubList(String subitem) {
 		leibiearr = new ArrayList<String>();
 		String strs[]=null;
-		if(subitem.equals("²ÍÒû")){
+		if(subitem.equals("é¤é¥®")){
 			strs=JZItem.cy_s;
-		}else if(subitem.equals("½»Í¨")){
+		}else if(subitem.equals("äº¤é€š")){
 			strs=JZItem.jt_s;
-		}else if(subitem.equals("¹ºÎï")){
+		}else if(subitem.equals("è´­ç‰©")){
 			strs=JZItem.gw_s;
-		}else if(subitem.equals("ÓéÀÖ")){
+		}else if(subitem.equals("å¨±ä¹")){
 			strs=JZItem.yl_s;
-		}else if(subitem.equals("Ò½½Ì")){
+		}else if(subitem.equals("åŒ»æ•™")){
 			strs=JZItem.yj_s;
-		}else if(subitem.equals("¾Ó¼Ò")){
+		}else if(subitem.equals("å±…å®¶")){
 			strs=JZItem.jj_s;
-		}else if(subitem.equals("Í¶×Ê")){
+		}else if(subitem.equals("æŠ•èµ„")){
 			strs=JZItem.tz_s;
-		}else if(subitem.equals("ÈËÇé")){
+		}else if(subitem.equals("äººæƒ…")){
 			strs=JZItem.rq_s;
 		}
 		this.subItem = subitem;
@@ -94,16 +94,16 @@ public class JZLeibieAdapter extends BaseAdapter{
 	private RelativeLayout addsub=null;
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		if (flag!=DialogLeiBie.flagsubleibie) {//µ±±êÊ¶²»Îª×ÓÁĞ±íÊ±¼ÓÔØÏÂÃæµÄ½çÃæ
+		if (flag!=DialogLeiBie.flagsubleibie) {//å½“æ ‡è¯†ä¸ä¸ºå­åˆ—è¡¨æ—¶åŠ è½½ä¸‹é¢çš„ç•Œé¢
 			convertView = LayoutInflater.from(context).inflate(R.layout.jz_leibie_item, null);
 			String lb = leibiearr.get(position);
 			TextView lb_text = (TextView) convertView.findViewById(R.id.leibie_item_text);
 			addsub = (RelativeLayout) convertView.findViewById(R.id.jz_item_addsub_rl);
 			convertView.setTag(lb);
-			//µ±Ç°Ñ¡ÖĞ±êÊ¶
+			//å½“å‰é€‰ä¸­æ ‡è¯†
 			addsub.setTag(lb);
 			lb_text.setText(lb);
-		} else {//µ±±êÊ¶ÎªsubÊ± ¼ÓÔØÏÂÃæµÄ½çÃæ
+		} else {//å½“æ ‡è¯†ä¸ºsubæ—¶ åŠ è½½ä¸‹é¢çš„ç•Œé¢
 			convertView = LayoutInflater.from(context).inflate(R.layout.jz_leibie_subitem, null);
 			TextView sublb_text = (TextView) convertView.findViewById(R.id.leibie_subitem_text);
 			String lb = leibiearr.get(position);

@@ -5,6 +5,7 @@ import com.tust.tools.bean.User;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -35,7 +36,7 @@ public class UserSqliteHelper extends SQLiteOpenHelper {
         values = new ContentValues();
         values.put("username", "admin2");
         values.put("pwd", "123456");
-        values.put("sex", "1");
+        values.put("sex", "2");
         values.put("tel", "15922771237");
         db.insert("USER",null,values);
 	}

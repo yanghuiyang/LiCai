@@ -24,15 +24,15 @@ import com.tust.tools.db.JZSqliteHelper;
 import com.tust.tools.service.DongHuaYanChi;
 
 /*
- * ÃÜÂë½øÈëdialog
+ * å¯†ç è¿›å…¥dialog
  * */
 public class DialogShuRuMiMa extends Dialog implements OnClickListener{
-	//ÃÜÂëÊäÈë¿ò
+	//å¯†ç è¾“å…¥æ¡†
 	private EditText et = null;
 	private Context context;
-	//Activity¶ÔÏó  ÓÃ»§ÃÜÂëÊäÈë³É¹¦ºó¹Ø±ÕÏàÓ¦µÄActivity
+	//Activityå¯¹è±¡  ç”¨æˆ·å¯†ç è¾“å…¥æˆåŠŸåå…³é—­ç›¸åº”çš„Activity
 	private Activity activity;
-	//DialogµÄView
+	//Dialogçš„View
 	private View diaView;
 	private Handler handler;
 	private int mi = 0;
@@ -50,20 +50,20 @@ public class DialogShuRuMiMa extends Dialog implements OnClickListener{
 		quding.setOnClickListener(this);
 		Button quxiao= (Button)diaView.findViewById(R.id.dialog_mima_quxiao_bt);
 		quxiao.setOnClickListener(this);
-		//µ±´«ÈëµÄwhoseÎª¼ÇÕËÊ±
+		//å½“ä¼ å…¥çš„whoseä¸ºè®°è´¦æ—¶
 		if(whose.equals(JZSheZhiActivity.JZMIMA)){
-			et.setHint("ÇëÊäÈë¼ÇÕË¹¤¾ßÃÜÂë");
+			et.setHint("è¯·è¾“å…¥è®°è´¦å·¥å…·å¯†ç ");
 			mi = JZSqliteHelper.readPreferenceFile(context,JZSheZhiActivity.JZMIMA,JZSheZhiActivity.JZMIMA);
 			c = JZMainActivity.class;
-		}else if(whose.equals(DialogBWSheZhiMiMa.BWMIMA)){//µ±´«ÈëµÄwhoseÎª±¸ÍüÊ±
-			et.setHint("ÇëÊäÈë±¸Íü¼ÇÊÂÃÜÂë");
+		}else if(whose.equals(DialogBWSheZhiMiMa.BWMIMA)){//å½“ä¼ å…¥çš„whoseä¸ºå¤‡å¿˜æ—¶
+			et.setHint("è¯·è¾“å…¥å¤‡å¿˜è®°äº‹å¯†ç ");
 			mi = JZSqliteHelper.readPreferenceFile(context,DialogBWSheZhiMiMa.BWMIMA,DialogBWSheZhiMiMa.BWMIMA);
 			c = BWMainActivity.class;
 		}
 
-		//Ìí¼Ó±¸×¢±à¼­¿ò
+		//æ·»åŠ å¤‡æ³¨ç¼–è¾‘æ¡†
 		this.show();
-		//»ñÈ¡´°¿Ú ÉèÖÃdialogÎ»ÖÃÎªÉÏ²¿
+		//è·å–çª—å£ è®¾ç½®dialogä½ç½®ä¸ºä¸Šéƒ¨
 		Window window = this.getWindow();
 		window.setGravity(Gravity.TOP);
 		diaView.startAnimation(AnimationUtils.loadAnimation(context, R.anim.push_up_in));
@@ -75,7 +75,7 @@ public class DialogShuRuMiMa extends Dialog implements OnClickListener{
 		case R.id.dialog_mima_queding_bt:
 			String etString = et.getText().toString();
 			if(etString.equals(null)||etString.equals("")){
-				showMsg("ÊäÈë²»ÄÜÎª¿Õ");
+				showMsg("è¾“å…¥ä¸èƒ½ä¸ºç©º");
 				return;
 			}
 			if(mi!=0){
@@ -90,7 +90,7 @@ public class DialogShuRuMiMa extends Dialog implements OnClickListener{
 	                	activity.finish();
 	                }
 				}else{
-					showMsg("ÃÜÂë´íÎó");
+					showMsg("å¯†ç é”™è¯¯");
 				}
 			}
 			break;
@@ -104,7 +104,7 @@ public class DialogShuRuMiMa extends Dialog implements OnClickListener{
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		switch (keyCode) {
 		case KeyEvent.KEYCODE_BACK:
-			//dialogÍË³ö¶¯»­
+			//dialogé€€å‡ºåŠ¨ç”»
 			DongHuaYanChi.dongHuaDialogEnd(this, diaView, context, handler, R.anim.push_up_out,300);
 			return false;
 		}

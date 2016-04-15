@@ -13,7 +13,7 @@ public class SDrw {
     private String name;
     private boolean zhuijia;
     private File file;
-    private String dir;//³ıÈ¥sd¿¨Â·¾¶µÄÎÄ¼şÂ·¾¶
+    private String dir;//é™¤å»sdå¡è·¯å¾„çš„æ–‡ä»¶è·¯å¾„
     public static final String SDPATH = getSDPath()+"/tust/tools/";
     public SDrw(String name, boolean zhuijia,String dir) {
         this.name = name;
@@ -86,13 +86,13 @@ public class SDrw {
     }
     
     /*
-     * »ñÈ¡sd¿¨Â·¾¶
+     * è·å–sdå¡è·¯å¾„
      */
     public static String getSDPath() {
         File sdDir = null;
-        boolean sdCardExist = Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED); // ÅĞ¶Ïsd¿¨ÊÇ·ñ´æÔÚ
+        boolean sdCardExist = Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED); // åˆ¤æ–­sdå¡æ˜¯å¦å­˜åœ¨
         if (sdCardExist) {
-            sdDir = Environment.getExternalStorageDirectory();// »ñÈ¡¸úÄ¿Â¼
+            sdDir = Environment.getExternalStorageDirectory();// è·å–è·Ÿç›®å½•
             return sdDir.toString();
         } else {
             return "";

@@ -9,7 +9,7 @@ public class GetTime {
     	return c.get(Calendar.YEAR);
     }
     public static int getMonth(){
-        //»ñÈ¡µÄÔÂ·İºÍÖĞ¹úÏà²îÒ»¸öÔÂ
+        //è·å–çš„æœˆä»½å’Œä¸­å›½ç›¸å·®ä¸€ä¸ªæœˆ
     	return c.get(Calendar.MONTH)+1;
     }
     public static int getWeek(){
@@ -35,17 +35,17 @@ public class GetTime {
     	}
     	return hour+":"+minute;
     }
-    //ÓÉÓÚÖ±½Ó´ÓÏµÍ³µÃµ½µÄÔÂ·İºÍÏÖÊµÔÂ·İÉÙÒ»£¬ĞÇÆÚÊÇ¶àÒ»£¬£¨Å·ÖŞºÍÖĞ¹ú²»Í¬µÄ£©ËùÒÔÓÃÈçÏÂ·½·¨µÃµ½ÕıÈ·ĞÇÆÚ
+    //ç”±äºç›´æ¥ä»ç³»ç»Ÿå¾—åˆ°çš„æœˆä»½å’Œç°å®æœˆä»½å°‘ä¸€ï¼Œæ˜ŸæœŸæ˜¯å¤šä¸€ï¼Œï¼ˆæ¬§æ´²å’Œä¸­å›½ä¸åŒçš„ï¼‰æ‰€ä»¥ç”¨å¦‚ä¸‹æ–¹æ³•å¾—åˆ°æ­£ç¡®æ˜ŸæœŸ
     public static int getWeekOfYear(){
     	return getTheWeekOfYear(getYear(), getMonth(),getDay());
     }
-    //»ñÈ¡Ö¸¶¨ÈÕÆÚµÄĞÇÆÚ
+    //è·å–æŒ‡å®šæ—¥æœŸçš„æ˜ŸæœŸ
     public static int getTheWeekOfDay(int year , int month, int day){
         Calendar cd = Calendar.getInstance();
         cd.set(year, month-1, day-1); 
        return cd.get(Calendar.DAY_OF_WEEK); 
     }
-    //»ñÈ¡Ö¸¶¨ÈÕÆÚÔÚµ±ÔÂÖĞµÄµÚ¼¸¸öĞÇÆÚ
+    //è·å–æŒ‡å®šæ—¥æœŸåœ¨å½“æœˆä¸­çš„ç¬¬å‡ ä¸ªæ˜ŸæœŸ
     public static int getTheWeekOfYear(int year , int month, int day){
         Calendar cd = Calendar.getInstance();
         cd.set(year, month-1, day-1); 

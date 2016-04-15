@@ -32,9 +32,9 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 		setContentView(R.layout.register);
 		btn_register = (Button) findViewById(R.id.btn_register);
 		btn_register.setOnClickListener(this);
-		account = (EditText) this.findViewById(R.id.register_account);
-		pwd = (EditText) this.findViewById(R.id.register_pwd);
-		tel = (EditText) this.findViewById(R.id.register_tel);
+		account = (EditText) this.findViewById(R.id.edit_username);
+		pwd = (EditText) this.findViewById(R.id.edit_pwd);
+		tel = (EditText) this.findViewById(R.id.edit_tel);
 		userData = new UserData(this);
 		//性别下拉
 		sex_spinner = (Spinner) this.findViewById(R.id.spinner_sex);
@@ -61,7 +61,7 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 			    	user.setPwd(pwd.getText().toString());
 			    	user.setSex(sex);
 			    	user.setTel(tel.getText().toString());
-			    	String a = user.getUsername()+"-"+user.getPwd();
+			    	//String a = user.getUsername()+"-"+user.getPwd();
 			    	//待做数据校验 如重复用户等情况
 			    	long result = userData.SaveUser(user); 
 			    	if(result != -1){

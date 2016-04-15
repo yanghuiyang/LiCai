@@ -9,9 +9,9 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.tust.tools.bean.BWcontent;
 public class BWData {
-	//Êı¾İ¿âÃû³Æ
+	//æ•°æ®åº“åç§°
 	private String DB_NAME="beiwang.db";
-	//Êı¾İ¿â°æ±¾
+	//æ•°æ®åº“ç‰ˆæœ¬
 	private static int DB_VERSION=1;
 	private SQLiteDatabase db;
 	private BWSqliteHelper dbHelper;
@@ -27,7 +27,7 @@ public class BWData {
     }
     
     /*
-     * »ñÈ¡±¸Íü±íÖĞµÄËùÓĞÊı¾İ
+     * è·å–å¤‡å¿˜è¡¨ä¸­çš„æ‰€æœ‰æ•°æ®
      * */
     public ArrayList<BWcontent> GetBWList(String selection){
         ArrayList<BWcontent> beiwanglist=new ArrayList<BWcontent>();
@@ -54,7 +54,7 @@ public class BWData {
     }
     
     /*
-     * ÅĞ¶ÏÄ³ÌõÊÇ·ñ´æÔÚ
+     * åˆ¤æ–­æŸæ¡æ˜¯å¦å­˜åœ¨
      * */
     public boolean haveBeiWangInfo(int id){
     	boolean flag=false;
@@ -65,7 +65,7 @@ public class BWData {
     }
     
     /*
-     * ¸üĞÂ±¸Íü±íµÄ¼ÇÂ¼
+     * æ›´æ–°å¤‡å¿˜è¡¨çš„è®°å½•
      * */
     public int UpdateBWInfo(BWcontent beiwang,int id){
         ContentValues values = new ContentValues();
@@ -83,7 +83,7 @@ public class BWData {
         return idupdate;
     }
     /*
-     * Ìí¼Ó±¸Íü¼ÇÂ¼
+     * æ·»åŠ å¤‡å¿˜è®°å½•
      * */
     public Long SaveBWInfo(BWcontent beiwang){
         ContentValues values = new ContentValues();
@@ -102,7 +102,7 @@ public class BWData {
     }
     
     /*
-     * É¾³ı±¸Íü±íµÄ¼ÇÂ¼
+     * åˆ é™¤å¤‡å¿˜è¡¨çš„è®°å½•
      * */
     public int DelBWInfo(int id){
         int iddel=  db.delete(BWSqliteHelper.BEIWANG, "ID ="+id, null);

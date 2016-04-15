@@ -20,19 +20,19 @@ import com.tust.tools.db.JZSqliteHelper;
 import com.tust.tools.dialog.DialogAbout;
 
 public class JZSheZhiActivity extends Activity implements OnClickListener {
-	//ÃÜÂë±à¼­¿ò
+	//å¯†ç ç¼–è¾‘æ¡†
 	private EditText mima1,mima2;
-	//ÉèÖÃÃÜÂë±êÌâ
+	//è®¾ç½®å¯†ç æ ‡é¢˜
 	private TextView jiami_text;
-	//ÃÜÂë±à¼­½çÃæµÄ±£´æ£¬È¡Ïû£¬É¾³ı°´Å¥
+	//å¯†ç ç¼–è¾‘ç•Œé¢çš„ä¿å­˜ï¼Œå–æ¶ˆï¼Œåˆ é™¤æŒ‰é’®
 	private Button saveBt,cancelBt,shanchuBt;
-	//ÉèÖÃÑ¡Ïî  ¼ÓÃÜ£¬Çå³şÊı¾İ£¬¹ØÓÚÈí¼ş
+	//è®¾ç½®é€‰é¡¹  åŠ å¯†ï¼Œæ¸…æ¥šæ•°æ®ï¼Œå…³äºè½¯ä»¶
 	private RelativeLayout jiami_rl,qingchu_rl,guanyu_rl;
-	//±à¼­¼ÓÃÜ½çÃæ
+	//ç¼–è¾‘åŠ å¯†ç•Œé¢
 	private LinearLayout bianjijiami;
-	//mi µ±Ç°ÃÜÂë  £¬  tempmiÃÜÂë±êÊ¶
+	//mi å½“å‰å¯†ç   ï¼Œ  tempmiå¯†ç æ ‡è¯†
 	private int mi=0,tempmi=-1;
-	//¼ÇÕËÊı¾İ¿â¹ÜÀí
+	//è®°è´¦æ•°æ®åº“ç®¡ç†
 	private JZData jzdh;
 	
 	public static final String JZMIMA = "JZMIMA";
@@ -45,10 +45,10 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 		initJiaMi();
 		jiami_text = (TextView)this.findViewById(R.id.jz_shezhi_jiami_text);
 		mi = JZSqliteHelper.readPreferenceFile(this,JZMIMA,JZMIMA);
-		if(mi==0){//ÃÜÂëÎª0Ôòµ±Ç°Ã»ÃÜÂë
-			jiami_text.setText("³ÌĞò¼ÓÃÜ");
+		if(mi==0){//å¯†ç ä¸º0åˆ™å½“å‰æ²¡å¯†ç 
+			jiami_text.setText("ç¨‹åºåŠ å¯†");
 		}else{
-			jiami_text.setText("ĞŞ¸Ä»òÉ¾³ıÃÜÂë");
+			jiami_text.setText("ä¿®æ”¹æˆ–åˆ é™¤å¯†ç ");
 		}
 	}
 	
@@ -78,21 +78,21 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.jz_shezhi_jiami_rl://³ÌĞò¼ÓÃÜÑ¡Ïî
+		case R.id.jz_shezhi_jiami_rl://ç¨‹åºåŠ å¯†é€‰é¡¹
 			mi = JZSqliteHelper.readPreferenceFile(this,JZMIMA,JZMIMA);
 			if(bianjijiami.isShown()){
 				bianjijiami.setVisibility(View.GONE);
 			}else{
 				bianjijiami.setVisibility(View.VISIBLE);
-				if(mi==0){//µ±Ã»ÓĞÃÜÂëÊ±
-					jiami_text.setText("³ÌĞò¼ÓÃÜ");
+				if(mi==0){//å½“æ²¡æœ‰å¯†ç æ—¶
+					jiami_text.setText("ç¨‹åºåŠ å¯†");
 					shanchuBt.setVisibility(View.INVISIBLE);
 				}else{
-					tempmi = mi;//µ±ÓĞÃÜÂëÊ±°ÑÃÜÂë¸³Öµ¸ötempmi£¬ÒÔ±ãÓÚµã»÷È·¶¨°´Å¥Ê±ÕıÈ·ÅĞ¶Ï
-					jiami_text.setText("ĞŞ¸Ä»òÉ¾³ıÃÜÂë");
-					mima1.setHint("ÇëÊäÈë¾ÉÃÜÂë");
-					mima2.setVisibility(View.GONE);//ÃÜÂëÈ·ÈÏ¿ò²»¿É¼û
-					shanchuBt.setVisibility(View.INVISIBLE);//É¾³ıÃÜÂë°´Å¥²»¿É¼û
+					tempmi = mi;//å½“æœ‰å¯†ç æ—¶æŠŠå¯†ç èµ‹å€¼ä¸ªtempmiï¼Œä»¥ä¾¿äºç‚¹å‡»ç¡®å®šæŒ‰é’®æ—¶æ­£ç¡®åˆ¤æ–­
+					jiami_text.setText("ä¿®æ”¹æˆ–åˆ é™¤å¯†ç ");
+					mima1.setHint("è¯·è¾“å…¥æ—§å¯†ç ");
+					mima2.setVisibility(View.GONE);//å¯†ç ç¡®è®¤æ¡†ä¸å¯è§
+					shanchuBt.setVisibility(View.INVISIBLE);//åˆ é™¤å¯†ç æŒ‰é’®ä¸å¯è§
 				}
 			}
 			break;
@@ -100,62 +100,62 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 			showDialog();
 			break;
 		case R.id.jz_shezhi_about_rl :
-			String text = "¸Ã¼ÇÕËÆ÷¹¦ÄÜ±È½Ï¼òµ¥£¬Ê¹ÓÃ·½±ã¡£" +
-		            "\r\n»¶Ó­´ó¼ÒÌá³ö±¦¹óÒâ¼û¡£" +
-        			"\r\nQQ£ºxxxxx" +
-        			"\r\nÖØÇì´óÑ§"+
-        			"\r\n                      Èí¼ş°æ±¾ v1.0" ;
+			String text = "è¯¥è®°è´¦å™¨åŠŸèƒ½æ¯”è¾ƒç®€å•ï¼Œä½¿ç”¨æ–¹ä¾¿ã€‚" +
+		            "\r\næ¬¢è¿å¤§å®¶æå‡ºå®è´µæ„è§ã€‚" +
+        			"\r\nQQï¼šxxxxx" +
+        			"\r\né‡åº†å¤§å­¦"+
+        			"\r\n                      è½¯ä»¶ç‰ˆæœ¬ v1.0" ;
 			new DialogAbout(this,text);
 			break;
 		case R.id.jz_shezhi_queding_bt :
-			if(mi==0||tempmi==-1){//µ±Ã»ÓĞÃÜÂëÊ±
+			if(mi==0||tempmi==-1){//å½“æ²¡æœ‰å¯†ç æ—¶
 				if(mima1.getText().toString().length()==0||mima2.getText().toString().length()==0){
-					showMsg("ÊäÈë²»ÄÜÎª¿Õ");
+					showMsg("è¾“å…¥ä¸èƒ½ä¸ºç©º");
 					return;
 				}
 				if(mima1.getText().toString().length()!=6||mima2.getText().toString().length()!=6){
-					showMsg("ÃÜÂë±ØĞëÎªÁùÎ»Êı");
+					showMsg("å¯†ç å¿…é¡»ä¸ºå…­ä½æ•°");
 					return;
 				}
 				if(!mima1.getText().toString().equals(mima2.getText().toString())){
-					showMsg("Á½´ÎÊäÈëµÄÃÜÂë²»Æ¥Åä");
+					showMsg("ä¸¤æ¬¡è¾“å…¥çš„å¯†ç ä¸åŒ¹é…");
 					return;
 				}
 				mi = Integer.parseInt(mima2.getText().toString());
 				tempmi = mi;
 				JZSqliteHelper.saveYuSuan(this,JZMIMA,JZMIMA, mi);
-				jiami_text.setText("ĞŞ¸Ä»òÉ¾³ıÃÜÂë");
+				jiami_text.setText("ä¿®æ”¹æˆ–åˆ é™¤å¯†ç ");
 				bianjijiami.setVisibility(View.GONE);
-				showMsg("¼ÓÃÜ³É¹¦");
+				showMsg("åŠ å¯†æˆåŠŸ");
 				mima1.setText("");
 				mima2.setText("");
 			}else{
 				if(mima1.getText().toString().length()==0){
-					showMsg("ÊäÈë²»ÄÜÎª¿Õ");
+					showMsg("è¾“å…¥ä¸èƒ½ä¸ºç©º");
 					return;
 				}
 				tempmi= Integer.parseInt(mima1.getText().toString());
-				if(mi==tempmi){//µ±ÃÜÂëÊäÈëÕıÈ·Ê±
-					tempmi = -1;//¸³ÖµÎª-1ĞŞ¸ÄÃÜÂëºó¿ÉÒÔ½øÈëif(mi==0||tempmi==-1)´úÂë¿é
+				if(mi==tempmi){//å½“å¯†ç è¾“å…¥æ­£ç¡®æ—¶
+					tempmi = -1;//èµ‹å€¼ä¸º-1ä¿®æ”¹å¯†ç åå¯ä»¥è¿›å…¥if(mi==0||tempmi==-1)ä»£ç å—
 					shanchuBt.setVisibility(View.VISIBLE);
 					mima1.setText("");
 					mima2.setText("");
-					mima1.setHint("ÇëÊäÈëĞÂÃÜÂë£¨ÁùÎ»£©");
+					mima1.setHint("è¯·è¾“å…¥æ–°å¯†ç ï¼ˆå…­ä½ï¼‰");
 					mima2.setVisibility(View.VISIBLE);
 				}else{
-					showMsg("Óë¾ÉÃÜÂë²»Æ¥Åä");
+					showMsg("ä¸æ—§å¯†ç ä¸åŒ¹é…");
 				}
 			}
 			break;
 		case R.id.jz_shezhi_shanchu_bt :
 			JZSqliteHelper.saveYuSuan(this,JZMIMA,JZMIMA,0);
-			jiami_text.setText("³ÌĞò¼ÓÃÜ");
+			jiami_text.setText("ç¨‹åºåŠ å¯†");
 			bianjijiami.setVisibility(View.GONE);
 			shanchuBt.setVisibility(View.INVISIBLE);
 			mi = 0;
 			mima1.setText("");
 			mima2.setText("");
-			showMsg("É¾³ı³É¹¦");
+			showMsg("åˆ é™¤æˆåŠŸ");
 			break;
 		case R.id.jz_shezhi_quxiao_bt :
 			mima1.setText("");
@@ -168,19 +168,19 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 	
 	
 	/*
-     * ÍË³öµ¯³ö¿ò
+     * é€€å‡ºå¼¹å‡ºæ¡†
      * */
     public void showDialog(){
     	final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-    	builder.setTitle("ÊÇ·ñÈ·ÈÏÇå³ıËùÓĞÊı¾İ£¿");
-    	builder.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+    	builder.setTitle("æ˜¯å¦ç¡®è®¤æ¸…é™¤æ‰€æœ‰æ•°æ®ï¼Ÿ");
+    	builder.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				jzdh.delAll();
-				showMsg("Êı¾İÇå³ıÍê³É");
+				showMsg("æ•°æ®æ¸…é™¤å®Œæˆ");
 			}
 		});
-    	builder.setNeutralButton("È¡Ïû", new DialogInterface.OnClickListener() {
+    	builder.setNeutralButton("å–æ¶ˆ", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 			}

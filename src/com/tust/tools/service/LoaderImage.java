@@ -16,21 +16,21 @@ import android.os.Message;
 import android.widget.ImageView;
 
 /*
- * Òì²½¼ÓÔØÍ¼Æ¬
+ * å¼‚æ­¥åŠ è½½å›¾ç‰‡
  * */
 public class LoaderImage {
 	public  Drawable loadDrawable(final String imageUrl, final ImageView imageView, final ImageCallback imageCallback) {
-		// ¸ù¾İ´«ÈëµÄ²ÎÊı²»Í¬¶øÖ´ĞĞ²»Í¬µÄ²Ù×÷
+		// æ ¹æ®ä¼ å…¥çš„å‚æ•°ä¸åŒè€Œæ‰§è¡Œä¸åŒçš„æ“ä½œ
 		return isHasImg(imageUrl, imageView, imageCallback);
 	}
 
 	private  Drawable isHasImg(final String imageUrl, final ImageView imageView, final ImageCallback imageCallback) {
-		// ÒÔ¡®/¡¯À´²ğ·Ö´«ÈëµÄÁ´½ÓµØÖ·£¬ÒòÎª¸ÃÁ´½Ó¸ñÊ½ÊÇ¹Ì¶¨µÄ
+		// ä»¥â€˜/â€™æ¥æ‹†åˆ†ä¼ å…¥çš„é“¾æ¥åœ°å€ï¼Œå› ä¸ºè¯¥é“¾æ¥æ ¼å¼æ˜¯å›ºå®šçš„
 		String imageName = imageUrl.lastIndexOf("/") != 0 ? imageUrl.substring(imageUrl.lastIndexOf("/")+1, imageUrl.length()) : "";
 		File file = new File(SDrw.SDPATH+"tianqi/imgcache", imageName);
 		Drawable d = null;
 		FileInputStream fis = null;
-		if (file.exists()) {// ÅĞ¶ÏÇëÇóµÄÍ¼ÏñÊÇ·ñÔÚ±¾µØ´æÔÚ
+		if (file.exists()) {// åˆ¤æ–­è¯·æ±‚çš„å›¾åƒæ˜¯å¦åœ¨æœ¬åœ°å­˜åœ¨
 			try {
 				fis = new FileInputStream(file);
 				d = Drawable.createFromStream(fis, "src");
@@ -39,13 +39,13 @@ public class LoaderImage {
 				e.printStackTrace();
 			}
 			return d;
-		} else {// Èç¹û±¾µØ²»´æÔÚÔò¿ªÊ¼ÏÂÔØ
+		} else {// å¦‚æœæœ¬åœ°ä¸å­˜åœ¨åˆ™å¼€å§‹ä¸‹è½½
 			final Handler handler = new Handler() {
 				public void handleMessage(Message message) {
 					imageCallback.imageLoaded((Drawable) message.obj, imageView, imageUrl);
 				}
 			};
-			// ½¨Á¢ĞÂÒ»¸öĞÂµÄÏß³ÌÏÂÔØÍ¼Æ¬
+			// å»ºç«‹æ–°ä¸€ä¸ªæ–°çš„çº¿ç¨‹ä¸‹è½½å›¾ç‰‡
 			new Thread() {
 				@Override
 				public void run() {
@@ -69,7 +69,7 @@ public class LoaderImage {
 	}
 
 	/*
-	 * Í¨¹ıÌá¹©µÄÁ¬½ÓÏÂÔØ¸ÃÍ¼Æ¬£¬²¢½«Æä´æ´¢ÔÚ±¾µØ
+	 * é€šè¿‡æä¾›çš„è¿æ¥ä¸‹è½½è¯¥å›¾ç‰‡ï¼Œå¹¶å°†å…¶å­˜å‚¨åœ¨æœ¬åœ°
 	 */
 	private  Drawable creatDrawable(final String url) throws Exception {
 		URL m = new URL(url);
@@ -89,7 +89,7 @@ public class LoaderImage {
 			} else {
 				file.delete();
 			}
-			// °Ñ¸ÃÍ¼Æ¬Ğ´Èëµ½sd¿¨
+			// æŠŠè¯¥å›¾ç‰‡å†™å…¥åˆ°sdå¡
 			FileOutputStream fos = new FileOutputStream(file, true);
 			b.compress(CompressFormat.PNG, 100, fos);
 			fos.close();
@@ -98,7 +98,7 @@ public class LoaderImage {
 		return bd;
 	}
 
-	// »Øµ÷½Ó¿Ú ÓÃÀ´¼ÓÔØÍ¼Æ¬
+	// å›è°ƒæ¥å£ ç”¨æ¥åŠ è½½å›¾ç‰‡
 	public interface ImageCallback {
 		public void imageLoaded(Drawable imageDrawable, ImageView imageView, String imageUrl);
 	}

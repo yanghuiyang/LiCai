@@ -5,7 +5,9 @@ import com.tust.tools.bean.User;
 import com.tust.tools.db.UserData;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -44,7 +46,14 @@ public class LoginActivity extends Activity implements OnClickListener{
 					showMsg("账号、密码不能为空");
 					return;
 				} else if(userData.checklogin(account.getText().toString(),pwd.getText().toString())){
+
+					//保存登陆用户信息 修改用户信息，查记录数据需要
+					SharedPreferences preferences=getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+					SharedPreferences.Editor editor=preferences.edit();
+					editor.putString("userName",account.getText().toString());
+					editor.commit();
 					changeActivity(ToolsMainActivity.class);
+
 				}else{
 					showMsg("账号密码错误");
 					return;

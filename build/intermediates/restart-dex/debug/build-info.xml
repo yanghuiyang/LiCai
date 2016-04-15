@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="19"
+    density="xhdpi"
+    format="7"
+    timestamp="10577238843588" >
+
+    <task
+        name="javac"
+        duration="1199" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="1518" />
+    <task
+        name="verifier"
+        duration="266" />
+
+    <artifact
+        location="C:\Java\workspace\LiCaiTools1.0\build\outputs\apk\LiCaiTools1.0-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="10577238843588" >
+        <artifact
+            location="C:\Java\workspace\LiCaiTools1.0\build\outputs\apk\LiCaiTools1.0-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

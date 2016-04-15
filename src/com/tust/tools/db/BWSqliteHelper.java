@@ -11,7 +11,7 @@ import com.tust.tools.bean.BWcontent;
 
 public class BWSqliteHelper extends SQLiteOpenHelper {
 	
-	public static final String BEIWANG = "BEIWANG";// ±¸Íü  ±í
+	public static final String BEIWANG = "BEIWANG";// å¤‡å¿˜  è¡¨
 	
 	public BWSqliteHelper(Context context, String name, CursorFactory factory, int version) {
 		super(context, name, factory, version);
@@ -46,20 +46,20 @@ public class BWSqliteHelper extends SQLiteOpenHelper {
 	}
 	
 	/*
-	 * ´æ´¢ÔÂÔ¤Ëã
+	 * å­˜å‚¨æœˆé¢„ç®—
 	 * */
 	public static void saveYuSuan(Context context, String filename, String name, int num) {
 		SharedPreferences preference = context.getSharedPreferences(filename, Context.MODE_PRIVATE);
-		// »ñÈ¡±à¼­Æ÷
+		// è·å–ç¼–è¾‘å™¨
 		Editor editor = preference.edit();
-		// Êı¾İÔİÊ±´æ·ÅÔÚÄÚ´æÖĞ
+		// æ•°æ®æš‚æ—¶å­˜æ”¾åœ¨å†…å­˜ä¸­
 		editor.putInt(name, num);
-		// Ìá½»ĞŞ¸Ä£¬½«ÄÚ´æÖĞµÄÊı¾İ±£´æÖÁxawx.xmlÎÄ¼şÖĞ
+		// æäº¤ä¿®æ”¹ï¼Œå°†å†…å­˜ä¸­çš„æ•°æ®ä¿å­˜è‡³xawx.xmlæ–‡ä»¶ä¸­
 		editor.commit();
 	}
 	
 	/*
-	 * ¶ÁÈ¡Preference²ÎÊı
+	 * è¯»å–Preferenceå‚æ•°
 	 */
 	public static int readPreferenceFile(Context context,String filename, String name) {
 		SharedPreferences preference = context.getSharedPreferences(filename, Context.MODE_PRIVATE);

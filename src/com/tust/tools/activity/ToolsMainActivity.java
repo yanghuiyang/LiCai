@@ -37,25 +37,25 @@ import com.tust.tools.service.PhoneInfoService;
 import com.tust.tools.service.SDrw;
 
 public class ToolsMainActivity extends Activity implements OnClickListener,OnLongClickListener,OnTouchListener, OnGestureListener  {
-    //¹¤¾ßÏäÖ÷½çÃæ  Í¼±ê²¼¾Ö
-    private LinearLayout jz_ll, bw_ll, js_ll, wz_ll, fy_ll,info_ll,icon_ll,top_bt;
-    //µ×²¿ÉÏÀ­½çÃæ
+    //å·¥å…·ç®±ä¸»ç•Œé¢  å›¾æ ‡å¸ƒå±€
+    private LinearLayout jz_ll, bw_ll, js_ll, wz_ll, fy_ll,info_ll,icon_ll,top_bt, user_manage;
+    //åº•éƒ¨ä¸Šæ‹‰ç•Œé¢
     private SlidingDrawer sd;
-    //µ×²¿ÉÏÀ­°´Å¥£¬¹ØÓÚÈí¼ş°´Å¥ £¬ÍË³ö°´Å¥¡£
+    //åº•éƒ¨ä¸Šæ‹‰æŒ‰é’®ï¼Œå…³äºè½¯ä»¶æŒ‰é’® ï¼Œé€€å‡ºæŒ‰é’®ã€‚
     private Button handlerBt,help_bt,hidden_bt,about_bt,exit_bt;
-    //3D·­×ª¶¯»­
+    //3Dç¿»è½¬åŠ¨ç”»
     private DongHua3d dh3;
-    //»ñÈ¡Ó²¼şĞÅÏ¢·şÎñ
+    //è·å–ç¡¬ä»¶ä¿¡æ¯æœåŠ¡
     private PhoneInfoService ps;
     private MessageHandler mh;
     private boolean flag=true;
-    //ÏÔÊ¾µ±Ç°ÊÖ»úµÄĞÅÏ¢
+    //æ˜¾ç¤ºå½“å‰æ‰‹æœºçš„ä¿¡æ¯
     private TextView cpu,cpuhz,rom,sdcard,memory,version,phone,system,time;
-    //»¬¶¯¼àÌı
+    //æ»‘åŠ¨ç›‘å¬
     private GestureDetector mGestureDetector;
-    //Ö÷½çÃæ²¼¾Ö  ÓÃÀ´¼àÌı»¬¶¯ÊÂ¼ş
+    //ä¸»ç•Œé¢å¸ƒå±€  ç”¨æ¥ç›‘å¬æ»‘åŠ¨äº‹ä»¶
     private FrameLayout mainTouch;
-    //ÓÃÀ´¿ØÖÆÈ«¾ÖÌáĞÑ
+    //ç”¨æ¥æ§åˆ¶å…¨å±€æé†’
     public static boolean isShow = true;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,7 +75,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         icon_ll.setLongClickable(true);
         sd = (SlidingDrawer)this.findViewById(R.id.main_slidingDrawer);
         handlerBt=(Button)sd.getHandle();
-        //ÉèÖÃSlidingDrawerµÄ¼àÌıÊÂ¼ş £¨ ´ò¿ªºÍ¹Ø±Õ£©
+        //è®¾ç½®SlidingDrawerçš„ç›‘å¬äº‹ä»¶ ï¼ˆ æ‰“å¼€å’Œå…³é—­ï¼‰
         sd.setOnDrawerOpenListener(new OnDrawerOpenListener(){
             @Override
             public void onDrawerOpened() {
@@ -90,13 +90,13 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
             }
         });
         dh3 = new DongHua3d();
-        //»ñÈ¡µ±Ç°ÊÇ·ñÏÔÊ¾ÌáĞÑ
+        //è·å–å½“å‰æ˜¯å¦æ˜¾ç¤ºæé†’
         int i = JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN);
         if(i==0){
-            hidden_bt.setText("Òş²ØÌáĞÑ");
+            hidden_bt.setText("éšè—æé†’");
             isShow =true; 
         }else{
-            hidden_bt.setText("ÏÔÊ¾ÌáĞÑ");
+            hidden_bt.setText("æ˜¾ç¤ºæé†’");
             isShow =false;
         }
     }
@@ -105,26 +105,26 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     public void initInfoTextView(){
         cpu = (TextView)this.findViewById(R.id.maintext_cpu);
         String max = ps.getMaxCpu(PhoneInfoService.max);
-        cpu.setText("Ğ¾Æ¬ĞÍºÅ£º"+ps.getCpuName());
+        cpu.setText("èŠ¯ç‰‡å‹å·ï¼š"+ps.getCpuName());
         cpuhz = (TextView)this.findViewById(R.id.maintext_maxhz);
-        cpuhz.setText("×î´óÆµÂÊ£º"+changeCpuHZ(max));
+        cpuhz.setText("æœ€å¤§é¢‘ç‡ï¼š"+changeCpuHZ(max));
         noChange = cpuhz.getText().toString();
         rom =(TextView)this.findViewById(R.id.maintext_rom);
         String roms[]=ps.getRomMemroy();
-        rom.setText("ROM´óĞ¡£º"+roms[0]+"GB  Ê£Óà´óĞ¡£º"+roms[1]+"GB");
+        rom.setText("ROMå¤§å°ï¼š"+roms[0]+"GB  å‰©ä½™å¤§å°ï¼š"+roms[1]+"GB");
         //sdcard = (TextView)this.findViewById(R.id.maintext_sd);
-        //sdcard.setText("SD¿¨´óĞ¡£º"+ps.getSDCardMemory()[0]+"GB  Ê£Óà´óĞ¡£º"+ps.getSDCardMemory()[1]+"GB");
+        //sdcard.setText("SDå¡å¤§å°ï¼š"+ps.getSDCardMemory()[0]+"GB  å‰©ä½™å¤§å°ï¼š"+ps.getSDCardMemory()[1]+"GB");
         memory = (TextView)this.findViewById(R.id.maintext_memory);
         memory.setText(ps.getTotalMemory());
         String versions[] = ps.getVersion();
         version = (TextView)this.findViewById(R.id.maintext_version);
-        version.setText("°²×¿°æ±¾£º"+versions[1]);
+        version.setText("å®‰å“ç‰ˆæœ¬ï¼š"+versions[1]);
         phone = (TextView)this.findViewById(R.id.maintext_phonename);
-        phone.setText("ÊÖ»úĞÍºÅ£º"+versions[2]);
+        phone.setText("æ‰‹æœºå‹å·ï¼š"+versions[2]);
         system = (TextView)this.findViewById(R.id.maintext_system);
-        system.setText("ÏµÍ³°æ±¾£º"+versions[3]);
+        system.setText("ç³»ç»Ÿç‰ˆæœ¬ï¼š"+versions[3]);
         time = (TextView)this.findViewById(R.id.maintext_time);
-        time.setText("¿ª»úÊ±³¤£º"+ps.getTimes());
+        time.setText("å¼€æœºæ—¶é•¿ï¼š"+ps.getTimes());
         new Thread(){
             public void run(){
                 while(flag){
@@ -166,8 +166,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         help_bt.setOnClickListener(this);
         hidden_bt = (Button)this.findViewById(R.id.main_hidden_bt);
         hidden_bt.setOnClickListener(this);
-        about_bt = (Button)this.findViewById(R.id.main_about_bt);
-        about_bt.setOnClickListener(this);
+
         exit_bt = (Button)this.findViewById(R.id.main_exit_bt);
         exit_bt.setOnClickListener(this);
     }
@@ -192,10 +191,10 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     }
     
     /*
-     * ³õÊ¼»¯LinearLayout²¼¾Ö
+     * åˆå§‹åŒ–LinearLayoutå¸ƒå±€
      */
     public void initLinearLayout() {
-    	//Ö÷½çÃæ3¸ö×Ó¹¦ÄÜ
+    	//ä¸»ç•Œé¢3ä¸ªå­åŠŸèƒ½
         jz_ll = (LinearLayout) this.findViewById(R.id.main_ll_1);
         jz_ll.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
         jz_ll.setOnClickListener(this);
@@ -208,6 +207,10 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         js_ll.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
         js_ll.setOnClickListener(this);
         js_ll.setOnLongClickListener(this);
+
+        user_manage =(LinearLayout) this.findViewById(R.id.main_ll_4);
+        user_manage.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
+        user_manage.setOnClickListener(this);
 
         info_ll = (LinearLayout)this.findViewById(R.id.main_infolayout);
         info_ll.setVisibility(View.GONE);
@@ -224,7 +227,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {
-        case R.id.main_ll_1://¼ÇÕË
+        case R.id.main_ll_1://è®°è´¦
         	int mi1 = JZSqliteHelper.readPreferenceFile(this,JZSheZhiActivity.JZMIMA,JZSheZhiActivity.JZMIMA);
         	dh3.oneViewDongHua(jz_ll);
         	if(mi1==0){
@@ -233,7 +236,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
             	new DialogShuRuMiMa(this, this,JZSheZhiActivity.JZMIMA);
             }
             break;
-        case R.id.main_ll_2://¼ÇÊÂ
+        case R.id.main_ll_2://è®°äº‹
         	int mi2 = JZSqliteHelper.readPreferenceFile(this,DialogBWSheZhiMiMa.BWMIMA,DialogBWSheZhiMiMa.BWMIMA);
         	dh3.oneViewDongHua(bw_ll);
         	if(mi2==0){
@@ -242,11 +245,16 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
             	new DialogShuRuMiMa(this, this,DialogBWSheZhiMiMa.BWMIMA);
             }
             break;
-        case R.id.main_ll_3://¼ÆËã
+        case R.id.main_ll_3://è®¡ç®—
         	dh3.oneViewDongHua(js_ll);
             changeActivity(JSMainActivity.class);
             break;
-        case R.id.main_top_bt://ÓÒÉÏ½ÇÇĞ»»°´Å¥
+
+            case R.id.main_ll_4://ç”¨æˆ·ç®¡ç†
+                dh3.oneViewDongHua(user_manage);
+                changeActivity(UserEditActivity.class);
+                break;
+        case R.id.main_top_bt://å³ä¸Šè§’åˆ‡æ¢æŒ‰é’®
             if(click==0){
                 top_bt.setBackgroundResource(R.drawable.main_top_btl);
                 DongHuaYanChi.dongHuaSandE(icon_ll, info_ll, this, handler, R.anim.mainpush_left_out, R.anim.mainpush_left_in, 10);
@@ -258,35 +266,25 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
             }
             break;
         case R.id.main_help_bt:
-            String texth ="Èç¹ûÄúÒªÁË½âÀí²ÆÖúÊÖÃ¿¸ö×Ó¹¦ÄÜµÄÌØµãºÍÊ¹ÓÃ·½·¨£¬ÇëÔÚ¸Ã¹¦ÄÜ¶ÔÓ¦µÄÍ¼±êÉÏ³¤°´²»·Å£¬³ÌĞò½«»áµ¯³öÏàÓ¦µÄÌáÊ¾ĞÅÏ¢¡£\r\n¸Ã³ÌĞòÄ¿Ç°ÊÊÓÃÓÚAndroid2.2¼°ÒÔÉÏµÄ°æ±¾";            
+            String texth ="å¦‚æœæ‚¨è¦äº†è§£ç†è´¢åŠ©æ‰‹æ¯ä¸ªå­åŠŸèƒ½çš„ç‰¹ç‚¹å’Œä½¿ç”¨æ–¹æ³•ï¼Œè¯·åœ¨è¯¥åŠŸèƒ½å¯¹åº”çš„å›¾æ ‡ä¸Šé•¿æŒ‰ä¸æ”¾ï¼Œç¨‹åºå°†ä¼šå¼¹å‡ºç›¸åº”çš„æç¤ºä¿¡æ¯ã€‚\r\nè¯¥ç¨‹åºç›®å‰é€‚ç”¨äºAndroid2.2åŠä»¥ä¸Šçš„ç‰ˆæœ¬";            
             new DialogAbout(this,texth);
             sd.animateClose();
             break;
         case R.id.main_hidden_bt:
             sd.animateClose();
             if(JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN)==0){
-              //Õâ¸öÓÃÀ´´æ´¢µ±Ç°ÊÇ·ñÏÔÊ¾ÌáĞÑ   ÏÔÊ¾Îª0£¬²»ÏÔÊ¾Îª1
+              //è¿™ä¸ªç”¨æ¥å­˜å‚¨å½“å‰æ˜¯å¦æ˜¾ç¤ºæé†’   æ˜¾ç¤ºä¸º0ï¼Œä¸æ˜¾ç¤ºä¸º1
                 JZSqliteHelper.saveYuSuan(this,JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN,1);
                 isShow = false;
-                hidden_bt.setText("ÏÔÊ¾ÌáĞÑ");
+                hidden_bt.setText("æ˜¾ç¤ºæé†’");
             }else{
                 JZSqliteHelper.saveYuSuan(this,JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN,0);
                 isShow = true;
-                hidden_bt.setText("Òş²ØÌáĞÑ");
+                hidden_bt.setText("éšè—æé†’");
             }
             break;
-        case R.id.main_about_bt://µ×²¿ÉÏÀ­ ¹ØÓÚ °´Å¥
-        	String text ="¸ÃÀí²ÆÖúÊÖ¼¯³ÉÁËN´óÊµÓÃ¹¦ÄÜ£º" +
-        			"\r\n1.¼ÇÕË¹¤¾ß     2.±¸Íü¼ÇÊÂ¡£" +
-        	        "\r\n3.¼òÒ×¼ÆËã    " +
-        			"\r\n»¶Ó­´ó¼ÒÌá³ö±¦¹óÒâ¼û¡£" +
-        			"\r\nQQ£ºxxxxx" +
-        			"\r\nÖØÇì´óÑ§"+
-        			"\r\n                      Èí¼ş°æ±¾ v1.0" ;
-        	new DialogAbout(this,text);
-        	sd.animateClose();
-            break;
-        case R.id.main_exit_bt://µ×²¿ÉÏÀ­ ÍË³ö  °´Å¥
+
+        case R.id.main_exit_bt://åº•éƒ¨ä¸Šæ‹‰ é€€å‡º  æŒ‰é’®
         	sd.animateClose(); 
         	this.finish();
             break;
@@ -302,30 +300,30 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         String text = "";
         dongHua(v);
         switch (id) {
-        case R.id.main_ll_1://¼ÇÕË
-            text ="¸Ã¡®¼ÇÕË¹¤¾ß¡¯¹¦ÄÜÊÇÎªÁË·½±ãÈÕ³£Éú»îÊ¹ÓÃ£¬ÇåÇå³ş³şµÄ¼ÇÂ¼ÄúÆ½Ê±Ïû·ÑĞÅÏ¢¡£" +
-            		"\r\n1.¸Ã¹¦ÄÜ¿ÉÒÔ¸ù¾İÃ¿ÔÂµÄÏû·ÑºÍÊäÈëÇé¿ö»æÖÆ³öÏû·ÑºÍÖ§³öµÄ×ßÏßÍ¼£¬ÈÃÄúÒ»Ä¿ÁËÈ»µÄ¿´µ½ÄúÃ¿ÔÂµÄÏû·ÑÇé¿ö¡£" +
-            		"\r\n2.¸Ã¹¦ÄÜÊ×Ò³µÄÖùĞÎÍ¼ÔÚ·Ö±æÂÊÎª480*800ÒÔÏÂµÄÆÁÄ»ÉÏ»á³öÏÖÆ«ÒÆºÍ²»ÍêÕû¡£ÒÔºóµÄ°æ±¾½«»á½â¾ö¸ÃÎÊÌâ¡£" +
-            		"\r\n3.Ìí¼Ó¼ÇÂ¼Ê±Ã¿¸öÑ¡ÏîÊÇ¿ÉÒÔÑ¡ÔñµÄ£¬ÀıÈç£º¸Ä±ä¡®Àà±ğ¡¯¾Íµã»÷¡®Àà±ğ¡¯ºóÃæ¶ÔÓ¦µÄÖµ½øĞĞÑ¡Ôñ£¬¸Ä±ä¡®Ê±¼ä¡¯Ò²ÊÇÍ¬Àí¡£" +
-            		"\r\n4.¸Ã¹¦ÄÜ¿ÉÒÔ¼ÓÃÜ£¬¼ÓÃÜ¹¦ÄÜÔÚ¡®ÉèÖÃ¡¯Ñ¡ÏîÖĞ£¬¼ÓÃÜºóÇë¼Ç×¡ÄúµÄÃÜÂë£¬Ä¿Ç°Ã»ÓĞÃÜÂëÕÒ»Ø¹¦ÄÜ¡£";            
+        case R.id.main_ll_1://è®°è´¦
+            text ="è¯¥â€˜è®°è´¦å·¥å…·â€™åŠŸèƒ½æ˜¯ä¸ºäº†æ–¹ä¾¿æ—¥å¸¸ç”Ÿæ´»ä½¿ç”¨ï¼Œæ¸…æ¸…æ¥šæ¥šçš„è®°å½•æ‚¨å¹³æ—¶æ¶ˆè´¹ä¿¡æ¯ã€‚" +
+            		"\r\n1.è¯¥åŠŸèƒ½å¯ä»¥æ ¹æ®æ¯æœˆçš„æ¶ˆè´¹å’Œè¾“å…¥æƒ…å†µç»˜åˆ¶å‡ºæ¶ˆè´¹å’Œæ”¯å‡ºçš„èµ°çº¿å›¾ï¼Œè®©æ‚¨ä¸€ç›®äº†ç„¶çš„çœ‹åˆ°æ‚¨æ¯æœˆçš„æ¶ˆè´¹æƒ…å†µã€‚" +
+            		"\r\n2.è¯¥åŠŸèƒ½é¦–é¡µçš„æŸ±å½¢å›¾åœ¨åˆ†è¾¨ç‡ä¸º480*800ä»¥ä¸‹çš„å±å¹•ä¸Šä¼šå‡ºç°åç§»å’Œä¸å®Œæ•´ã€‚ä»¥åçš„ç‰ˆæœ¬å°†ä¼šè§£å†³è¯¥é—®é¢˜ã€‚" +
+            		"\r\n3.æ·»åŠ è®°å½•æ—¶æ¯ä¸ªé€‰é¡¹æ˜¯å¯ä»¥é€‰æ‹©çš„ï¼Œä¾‹å¦‚ï¼šæ”¹å˜â€˜ç±»åˆ«â€™å°±ç‚¹å‡»â€˜ç±»åˆ«â€™åé¢å¯¹åº”çš„å€¼è¿›è¡Œé€‰æ‹©ï¼Œæ”¹å˜â€˜æ—¶é—´â€™ä¹Ÿæ˜¯åŒç†ã€‚" +
+            		"\r\n4.è¯¥åŠŸèƒ½å¯ä»¥åŠ å¯†ï¼ŒåŠ å¯†åŠŸèƒ½åœ¨â€˜è®¾ç½®â€™é€‰é¡¹ä¸­ï¼ŒåŠ å¯†åè¯·è®°ä½æ‚¨çš„å¯†ç ï¼Œç›®å‰æ²¡æœ‰å¯†ç æ‰¾å›åŠŸèƒ½ã€‚";            
             break;
-        case R.id.main_ll_2://¼ÇÊÂ
-            text ="¸Ã¡®±¸Íü¼ÇÊÂ¡¯¹¦ÄÜÊÇÎªÁË¼ÇÂ¼Æ½Ê±Éú»îÖĞµÄÖØÒªÊÂÇé¶øÉè¼ÆµÄ£¬ÈÃÄã²»ÔÙÎªÍü¼ÇÖØÒªÊÂÇé¶ø·³ÄÕ¡£" +
-            		"\r\n1.¸Ã¹¦ÄÜ¿ÉÒÔ±£´æÍ¼Æ¬ºÍÎÄ×Ö£¬µ¼³öÎÄ±¾µ½SD¿¨ÖĞ£¬¸ü»»±³¾°ÑÕÉ«ÒÔ¼°¸Ä±ä×ÖÌå´óĞ¡µÈ£¬²Ù×÷¼ò±ã£¬Ò×ÓÚÊ¹ÓÃ¡£" +
-            		"\r\n2.ÎŞÂÛÊÇĞÂ½¨»òÕßĞŞ¸ÄÖ»ÒªÊäÈëÍêºó°´·µ»Ø¼ü³ÌĞò½«×Ô¶¯±£´æÊäÈëµÄÄÚÈİ¡£" +
-                    "\r\n3.¸Ã¹¦ÄÜ¿ÉÒÔ¼ÓÃÜ£¬¼ÓÃÜ¹¦ÄÜÔÚ²Ëµ¥Ñ¡ÏîÖĞ£¬¼ÓÃÜºóÇë¼Ç×¡ÄúµÄÃÜÂë£¬Ä¿Ç°Ã»ÓĞÃÜÂëÕÒ»Ø¹¦ÄÜ¡£";            
+        case R.id.main_ll_2://è®°äº‹
+            text ="è¯¥â€˜å¤‡å¿˜è®°äº‹â€™åŠŸèƒ½æ˜¯ä¸ºäº†è®°å½•å¹³æ—¶ç”Ÿæ´»ä¸­çš„é‡è¦äº‹æƒ…è€Œè®¾è®¡çš„ï¼Œè®©ä½ ä¸å†ä¸ºå¿˜è®°é‡è¦äº‹æƒ…è€Œçƒ¦æ¼ã€‚" +
+            		"\r\n1.è¯¥åŠŸèƒ½å¯ä»¥ä¿å­˜å›¾ç‰‡å’Œæ–‡å­—ï¼Œå¯¼å‡ºæ–‡æœ¬åˆ°SDå¡ä¸­ï¼Œæ›´æ¢èƒŒæ™¯é¢œè‰²ä»¥åŠæ”¹å˜å­—ä½“å¤§å°ç­‰ï¼Œæ“ä½œç®€ä¾¿ï¼Œæ˜“äºä½¿ç”¨ã€‚" +
+            		"\r\n2.æ— è®ºæ˜¯æ–°å»ºæˆ–è€…ä¿®æ”¹åªè¦è¾“å…¥å®ŒåæŒ‰è¿”å›é”®ç¨‹åºå°†è‡ªåŠ¨ä¿å­˜è¾“å…¥çš„å†…å®¹ã€‚" +
+                    "\r\n3.è¯¥åŠŸèƒ½å¯ä»¥åŠ å¯†ï¼ŒåŠ å¯†åŠŸèƒ½åœ¨èœå•é€‰é¡¹ä¸­ï¼ŒåŠ å¯†åè¯·è®°ä½æ‚¨çš„å¯†ç ï¼Œç›®å‰æ²¡æœ‰å¯†ç æ‰¾å›åŠŸèƒ½ã€‚";            
             break;
-        case R.id.main_ll_3://¼ÆËã
-            text ="¸Ã¡®¼òÒ×¼ÆËã¡¯¹¦ÄÜÊÇÎªÁË·½±ãÈÕ³£Éú»îÖĞÅ¼¶ûÓöµ½±È½Ï¸´ÔÓµÄ»ìºÏÔËËã¶øÉè¼ÆµÄ¡£" +
-            		"\r\n1.Ä¿Ç°¹¦ÄÜ±È½Ï¼òµ¥£¬ÒÔºó°æ±¾½«»áÔö¼Ó¸ü¶à¹¦ÄÜ¡£"+
-                    "\r\n2.°²×¿×ÔÉíÔËËãµÄbug¿ÉÄÜ»á´æÔÚ£¨¾«¶Èµ¼ÖÂµÄ£©";            
+        case R.id.main_ll_3://è®¡ç®—
+            text ="è¯¥â€˜ç®€æ˜“è®¡ç®—â€™åŠŸèƒ½æ˜¯ä¸ºäº†æ–¹ä¾¿æ—¥å¸¸ç”Ÿæ´»ä¸­å¶å°”é‡åˆ°æ¯”è¾ƒå¤æ‚çš„æ··åˆè¿ç®—è€Œè®¾è®¡çš„ã€‚" +
+            		"\r\n1.ç›®å‰åŠŸèƒ½æ¯”è¾ƒç®€å•ï¼Œä»¥åç‰ˆæœ¬å°†ä¼šå¢åŠ æ›´å¤šåŠŸèƒ½ã€‚"+
+                    "\r\n2.å®‰å“è‡ªèº«è¿ç®—çš„bugå¯èƒ½ä¼šå­˜åœ¨ï¼ˆç²¾åº¦å¯¼è‡´çš„ï¼‰";            
             break;
         }
         new DialogAbout(this,text);
         return false;
     }
 
-    //Ìø×ªActivity·½·¨
+    //è·³è½¬Activityæ–¹æ³•
     public void changeActivity(final Class<?> c) {
         new Thread() {
             public void run() {
@@ -343,15 +341,15 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     }
 
     /*
-     * ÍË³öµ¯³ö¿ò
+     * é€€å‡ºå¼¹å‡ºæ¡†
      */
     public void exitDialog() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         String confrimStr = "";
         String cancelStr = "";
-        builder.setTitle("ÊÇ·ñÈ·ÈÏÍË³öĞ¡ÖúÊÖ£¿");
-        confrimStr = "È·¶¨";
-        cancelStr = "È¡Ïû";
+        builder.setTitle("æ˜¯å¦ç¡®è®¤é€€å‡ºå°åŠ©æ‰‹ï¼Ÿ");
+        confrimStr = "ç¡®å®š";
+        cancelStr = "å–æ¶ˆ";
         builder.setPositiveButton(confrimStr, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -369,16 +367,16 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     Handler handler = new Handler();
     public boolean onKeyDown(int kCode, KeyEvent kEvent) {
         switch (kCode) {
-        case KeyEvent.KEYCODE_BACK://·µ»Ø¼ü
-            if(sd.isOpened()){//ÉÏÀ­½çÃæÊÇ·ñÏÔÊ¾
+        case KeyEvent.KEYCODE_BACK://è¿”å›é”®
+            if(sd.isOpened()){//ä¸Šæ‹‰ç•Œé¢æ˜¯å¦æ˜¾ç¤º
             	sd.animateClose();
                 return false;
             }else{
                 exitDialog();
             }
             break;
-        case KeyEvent.KEYCODE_MENU://²Ëµ¥¼ü
-           if(sd.isOpened()){//ÉÏÀ­½çÃæÊÇ·ñÏÔÊ¾
+        case KeyEvent.KEYCODE_MENU://èœå•é”®
+           if(sd.isOpened()){//ä¸Šæ‹‰ç•Œé¢æ˜¯å¦æ˜¾ç¤º
         	   sd.animateClose();
            }else{
                sd.animateOpen();
@@ -389,7 +387,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     }
     
     /*
-     * µã»÷Í¼Æ¬ÒÔºóµÄ¶¯»­Ğ§¹û
+     * ç‚¹å‡»å›¾ç‰‡ä»¥åçš„åŠ¨ç”»æ•ˆæœ
      */
     public void dongHua(View v) {
         v.setAnimation(AnimationUtils.loadAnimation(this, R.anim.shake));
@@ -398,14 +396,14 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     public void showMsg(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
-    //handler¸üĞÂ½çÃæÀà
+    //handleræ›´æ–°ç•Œé¢ç±»
     class MessageHandler extends Handler{
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
             case 1:
                 String cur = ps.getMaxCpu(PhoneInfoService.cur);
-                cpuhz.setText(noChange+"  µ±Ç°ÆµÂÊ£º"+changeCpuHZ(cur));
+                cpuhz.setText(noChange+"  å½“å‰é¢‘ç‡ï¼š"+changeCpuHZ(cur));
                 break;
             case -1:
                 break;
@@ -415,7 +413,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         
     }
     
-    //ÏÂÃæÊÇonTouchListener ºÍ OnGestureListenerµÄÊµÏÖ·½·¨  ÓÃÀ´ÊµÏÖ×óÓÒ»¬¶¯
+    //ä¸‹é¢æ˜¯onTouchListener å’Œ OnGestureListenerçš„å®ç°æ–¹æ³•  ç”¨æ¥å®ç°å·¦å³æ»‘åŠ¨
     @Override
     public boolean onDown(MotionEvent e) {
         return false;
@@ -440,11 +438,11 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     public void onLongPress(MotionEvent e) {
     }
 
-    private int click = 0, Min = 10;//»®¹ıµÄ×îĞ¡³¤¶È
+    private int click = 0, Min = 10;//åˆ’è¿‡çš„æœ€å°é•¿åº¦
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        if (e1.getX() - e2.getX() > Min && Math.abs(velocityX) > 0) {//Math.abs  float ÖµµÄ¾ø¶ÔÖµ
-            // "Ïò×óÊÖÊÆ"
+        if (e1.getX() - e2.getX() > Min && Math.abs(velocityX) > 0) {//Math.abs  float å€¼çš„ç»å¯¹å€¼
+            // "å‘å·¦æ‰‹åŠ¿"
             click++;
             if (click == 1) {
                 top_bt.setBackgroundResource(R.drawable.main_top_btl);
@@ -453,7 +451,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
                 click=1;
             }
         } else if (e2.getX() - e1.getX() > Min && Math.abs(velocityX) > 0) {
-            // "ÏòÓÒÊÖÊÆ"
+            // "å‘å³æ‰‹åŠ¿"
             click--;
                 if (click == 0) {
                     top_bt.setBackgroundResource(R.drawable.main_top_btr);

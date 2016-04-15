@@ -5,7 +5,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-//ÅÜÂíµÆTextView ÖØĞ´ÊÇÎªÁË·ÀÖ¹µ±TextViewÊ§È¥½¹µãÊ±ÅÜÂíµÆÍ£Ö¹¡£
+//è·‘é©¬ç¯TextView é‡å†™æ˜¯ä¸ºäº†é˜²æ­¢å½“TextViewå¤±å»ç„¦ç‚¹æ—¶è·‘é©¬ç¯åœæ­¢ã€‚
 public class Marrquee extends TextView {
     public Marrquee(Context context) {
         super(context);

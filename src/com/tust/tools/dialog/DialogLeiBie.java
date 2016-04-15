@@ -20,20 +20,20 @@ import com.tust.tools.service.DongHuaYanChi;
 import com.tust.tools.service.JZLeibieAdapter;
 
 /*
- * Àà±ğÑ¡Ôñdialog
+ * ç±»åˆ«é€‰æ‹©dialog
  * */
 public class DialogLeiBie extends Dialog implements OnClickListener{
-	//Àà±ğÁĞ±íºÍÀà±ğ×ÓÀàÁĞ±í
+	//ç±»åˆ«åˆ—è¡¨å’Œç±»åˆ«å­ç±»åˆ—è¡¨
 	private ListView lbList,lbsubList;
-	//¶¥²¿±³¾° 
+	//é¡¶éƒ¨èƒŒæ™¯ 
 	private RelativeLayout rLayout;
 	private Context context;
 	private View lbView;
-	//Àà±ğÁĞ±íÊÊÅäÆ÷
+	//ç±»åˆ«åˆ—è¡¨é€‚é…å™¨
 	private JZLeibieAdapter adapter;
-	//Àà±ğºÍÀà±ğ×ÓÀà±êÊ¶
+	//ç±»åˆ«å’Œç±»åˆ«å­ç±»æ ‡è¯†
 	public static final int flagsubleibie=3020;
-	//µ±Ç°Ñ¡ÔñµÄÑ¡Ïî£¬ÊÕÈë£¬Ö§³ö£¬½è´û
+	//å½“å‰é€‰æ‹©çš„é€‰é¡¹ï¼Œæ”¶å…¥ï¼Œæ”¯å‡ºï¼Œå€Ÿè´·
 	private int now_flag=0;
 	public DialogLeiBie(Context context,int now_flag) {
 		super(context, R.style.leibiedialog);
@@ -41,13 +41,13 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 		this.now_flag = now_flag;
 		lbView = View.inflate(context, R.layout.dialog_leibie, null);
 		this.setContentView(lbView);
-		//Àà±ğÊÊÅäÆ÷
+		//ç±»åˆ«é€‚é…å™¨
 		adapter = new JZLeibieAdapter(context,now_flag,null);
-		//Àà±ğÁĞ±í
+		//ç±»åˆ«åˆ—è¡¨
 		lbList = (ListView) lbView.findViewById(R.id.leibie_dialog_list);
 		lbList.setAdapter(adapter);
 		lbList.setOnItemClickListener(new clickItem());
-		//Àà±ğ×ÓÀàÁĞ±í
+		//ç±»åˆ«å­ç±»åˆ—è¡¨
 		lbsubList = (ListView) lbView.findViewById(R.id.leibie_dialog_sub_list);
 		lbsubList.setVisibility(View.GONE);
 		rLayout  = (RelativeLayout) lbView.findViewById(R.id.leibie_dialog_rl);
@@ -60,7 +60,7 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 	public void onClick(View v) {
 	}
 	
-	String flagShow;//ÅĞ¶Ïµ±Ç°¸ÃÁĞ±íÊÇ·ñÒÑÏÔÊ¾
+	String flagShow;//åˆ¤æ–­å½“å‰è¯¥åˆ—è¡¨æ˜¯å¦å·²æ˜¾ç¤º
 	Handler handler = new Handler();
 	private class clickItem implements OnItemClickListener{
 		@Override
@@ -69,14 +69,14 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 			    String leibieString = (String)view.getTag();
 				lbsubList.setAdapter(new JZLeibieAdapter(context,flagsubleibie,leibieString));
 				if(lbsubList.isShown()&&flagShow.equals(leibieString)){
-					//Ö÷list»Ö¸´¶¯»­
+					//ä¸»listæ¢å¤åŠ¨ç”»
 					lbList.setAnimation(AnimationUtils.loadAnimation(context, R.anim.picpush_right_in));
-					//×ÓlistÒş²Ø
+					//å­listéšè—
 					lbsubList.setVisibility(View.GONE);	
 				}else{
-					//Ö÷listÊÕËõ¶¯»­
+					//ä¸»listæ”¶ç¼©åŠ¨ç”»
 					lbList.setAnimation(AnimationUtils.loadAnimation(context, R.anim.picpush_left_out));
-					//×Ólist½øÈë¶¯»­
+					//å­listè¿›å…¥åŠ¨ç”»
 					lbsubList.setAnimation(AnimationUtils.loadAnimation(context, R.anim.push_left_in));
 					lbsubList.setVisibility(View.VISIBLE);
 					lbsubList.setLayoutAnimation(DongHua3d.listDongHua());
@@ -92,7 +92,7 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 	}
 	
 	/*
-	 * ×ÓÌõÄ¿µã»÷ÊÂ¼ş
+	 * å­æ¡ç›®ç‚¹å‡»äº‹ä»¶
 	 * */
 	private class clickSubItem implements OnItemClickListener{
 		@Override
@@ -103,11 +103,11 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 	
 	public void getTextandSend(View view){
 		String string = (String)view.getTag();
-		//dialogÍË³ö¶¯»­
+		//dialogé€€å‡ºåŠ¨ç”»
 		DongHuaYanChi.dongHuaDialogEnd(this, lbView, context, handler, R.anim.push_up_out, 300);
 		Message msg  =Message.obtain();
 		msg.what=JZAddActivity.leibie_msg;
-		msg.obj = string;//·¢ËÍµ±Ç°Ñ¡Ôñ¸øToolsJiZhangAddActivity£¬ÈÃÆä½çÃæ×÷³öÏàÓ¦¸Ä±ä
+		msg.obj = string;//å‘é€å½“å‰é€‰æ‹©ç»™ToolsJiZhangAddActivityï¼Œè®©å…¶ç•Œé¢ä½œå‡ºç›¸åº”æ”¹å˜
 		JZAddActivity.mh.sendMessage(msg);
 	}
 	

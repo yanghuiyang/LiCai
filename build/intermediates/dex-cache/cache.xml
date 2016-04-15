@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Java\workspace\LiCaiTools1.0\libs\achartengine-1.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b2bb0af9f390c0edd4d7d95f613f38da3abe0144">
+        <dex dex="C:\Java\workspace\LiCaiTools1.0\build\intermediates\pre-dexed\debug\achartengine-1.0.0_fb50f2bae2023d4bd3f4170d7d3f1f0dd27f4b30.jar" />
+    </item>
+    <item
+        jar="C:\Java\workspace\LiCaiTools1.0\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a1449a67adb0d2805348f78bc82d8fa3007351a5">
+        <dex dex="C:\Java\workspace\LiCaiTools1.0\build\intermediates\pre-dexed\debug\instant-run-bootstrap_0f69007b6c4d9a77aa5a9d6d1bce3ef8d5967767.jar" />
+    </item>
+    <item
+        jar="C:\Java\workspace\LiCaiTools1.0\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="92699d60d01e689431d46e7a621118a5e581d18f">
+        <dex dex="C:\Java\workspace\LiCaiTools1.0\build\intermediates\pre-dexed\debug\instant-run_e9b6e7bf75f093cb386ff923c0e8f321e2348ec5.jar" />
+    </item>
+
+</items>

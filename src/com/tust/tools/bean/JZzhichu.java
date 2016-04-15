@@ -13,27 +13,27 @@ public class JZzhichu {
 	public static final String ZC_COUNT = "ZC_COUNT";
 	public static final String ZC_BEIZHU = "ZC_BEIZHU";
 	public static final String ZC_PIC = "ZC_PIC";
-	// Ö§³öÌõÄ¿ID
+	// æ”¯å‡ºæ¡ç›®ID
 	private int zc_Id;
-	// ÔÚÄÇ·½ÃæÖ§³ö
+	// åœ¨é‚£æ–¹é¢æ”¯å‡º
 	private String zc_Item = "";
-	//ÏîÄ¿µÄ×ÓÏîÄ¿
+	//é¡¹ç›®çš„å­é¡¹ç›®
 	private String zc_SubItem = "";
-	// Ö§³öÄê·İ
+	// æ”¯å‡ºå¹´ä»½
 	private int zc_Year = GetTime.getYear();
-	// Ö§³öÔÂ·İ
+	// æ”¯å‡ºæœˆä»½
 	private int zc_Month = GetTime.getMonth();
-	// Ö§³öĞÇÆÚ£¨Ò»ÔÂÖĞµÄÄ³Ò»ÖÜ£©
+	// æ”¯å‡ºæ˜ŸæœŸï¼ˆä¸€æœˆä¸­çš„æŸä¸€å‘¨ï¼‰
 	private int zc_Week = GetTime.getWeekOfYear();
-	// Ö§³öÌì
+	// æ”¯å‡ºå¤©
 	private int zc_Day = GetTime.getDay();
-	// Ö§³öÊ±¼ä
+	// æ”¯å‡ºæ—¶é—´
 	private String zc_Time = GetTime.getHour()+":"+GetTime.getMinute();
-	// Ö§³öÊıÁ¿
+	// æ”¯å‡ºæ•°é‡
 	private double zc_Count = 0;
-	// Ö§³ö±¸×¢
+	// æ”¯å‡ºå¤‡æ³¨
 	private String zc_Beizhu ="";
-	//ÕÕÆ¬Î»ÖÃ
+	//ç…§ç‰‡ä½ç½®
 	private String zc_Pic = "";
 	
 	public int getZc_Id() {

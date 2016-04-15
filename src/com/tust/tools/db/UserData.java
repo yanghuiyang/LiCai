@@ -52,13 +52,25 @@ public class UserData {
 	    	cursor.close();
 	    	return flag;	    	
 	    }
-	    
+	/*
+ * 根据用户名查询用户信息
+ * */
+	public User getUserByUserName(String userName){
+		User user = new User();
+		Cursor cursor=db.query("User", null,"username ='"+userName+"'", null, null, null, null);
+		cursor.moveToFirst();
+		user.setUsername(userName);
+		user.setPwd(cursor.getString(cursor.getColumnIndex("pwd")));
+		user.setSex(cursor.getInt(cursor.getColumnIndex("sex")));
+		user.setTel(cursor.getString(cursor.getColumnIndex("tel")));
+		return user;
+	}
 	    /*
 	     * 更新用户表的记录
 	     * */	
 	    public int UpdateUserInfo(User user){
 	        ContentValues values = new ContentValues();
-	        values.put("username", user.getUsername());
+	       // values.put("username", user.getUsername());
 	        values.put("pwd", user.getPwd());
 	        values.put("sex", user.getSex());
 	        values.put("tel", user.getTel());

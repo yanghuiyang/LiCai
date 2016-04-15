@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sprinnerSex">
+     	<item>男</item>  
+     	<item>女</item>  
+    </string-array>
+    <color name="black">#000000</color>
+    <color name="gray">#9e9d9a</color>
+    <color name="green">#99c344</color>
+    <color name="innum">#f66607</color>
+    <color name="pink">#fdc9a7</color>
+    <color name="qing">#b6f2f9</color>
+    <color name="red">#ff0000</color>
+    <color name="touming">#00000000</color>
+    <color name="warn">#c4bebe</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yybottom">#121111</color>
+    <color name="yybottom_press">#3c3535</color>
+    <color name="zj_text_bg">#e6e1e1</color>
+    <string name="app_name">理财小助手</string>
+    <string name="beizhu_item_bt">备注</string>
+    <string name="bw_hint">输入完后直接按返回键，程序将自动保存。</string>
+    <string name="bw_main_del">删除选中</string>
+    <string name="bw_main_quanxuan">全选所有</string>
+    <string name="bw_mian_quxiaoquanze">取消选择</string>
+    <string name="bw_text_size">T</string>
+    <string name="dialog_about">如果您要了解理财助手每个子功能的特点和使用方法，请在该功能对应的图标上长按不放，程序将会弹出相应的提示信息。该程序目前适用于Android2.2及以上的版本，如有问题反馈请发送邮件至XXXXX@qq.com</string>
+    <string name="dialog_mima">请输入记账器密码</string>
+    <string name="hello">Hello World, ToolsActivity!</string>
+    <string name="js_cheng">*</string>
+    <string name="js_chu">/</string>
+    <string name="js_deng">=</string>
+    <string name="js_dian">．</string>
+    <string name="js_jia">+</string>
+    <string name="js_jian">-</string>
+    <string name="js_qingchu">清除</string>
+    <string name="js_shanchu">删除</string>
+    <string name="jz_0">0</string>
+    <string name="jz_1">1</string>
+    <string name="jz_2">2</string>
+    <string name="jz_3">3</string>
+    <string name="jz_4">4</string>
+    <string name="jz_5">5</string>
+    <string name="jz_6">6</string>
+    <string name="jz_7">7</string>
+    <string name="jz_8">8</string>
+    <string name="jz_9">9</string>
+    <string name="jz_add_del">删除</string>
+    <string name="jz_add_nowtime">15:15</string>
+    <string name="jz_add_quxiao">取消</string>
+    <string name="jz_add_save">保存</string>
+    <string name="jz_benyue_shouru">本月收入</string>
+    <string name="jz_benyue_zhichu">本月支出</string>
+    <string name="jz_benyueyusuan">本月预算</string>
+    <string name="jz_benzhou_zhichu">本周支出</string>
+    <string name="jz_d">.</string>
+    <string name="jz_del">del</string>
+    <string name="jz_jiami">程序加密</string>
+    <string name="jz_jiami_hint1">请输入新密码（六位）</string>
+    <string name="jz_jiami_hint2">请确认密码</string>
+    <string name="jz_main_add">添加</string>
+    <string name="jz_main_baobiao">报表</string>
+    <string name="jz_main_mingxi">明细</string>
+    <string name="jz_main_setting">设置</string>
+    <string name="jz_main_yusuan">预算</string>
+    <string name="jz_mingxi_huizhong">汇总</string>
+    <string name="jz_mingxi_shengyu">本月剩余</string>
+    <string name="jz_mingxi_tittle">账目明细</string>
+    <string name="jz_name">小日子计帐器</string>
+    <string name="jz_shezhi">程序设置</string>
+    <string name="jz_shezhi_about">关于软件</string>
+    <string name="jz_shezhi_jiumima">请输入旧密码</string>
+    <string name="jz_shezhi_qingchu">清除所有消费记录</string>
+    <string name="jz_shezhi_shanchumima">删除密码</string>
+    <string name="jz_shouru">当前收入</string>
+    <string name="jz_shouru_bennian">本年收入</string>
+    <string name="jz_shouru_benyue">本月收入</string>
+    <string name="jz_shouru_jintian">今天收入</string>
+    <string name="jz_tab2_beizhu">备注</string>
+    <string name="jz_tab2_beizhures">无备注</string>
+    <string name="jz_tab2_fanhui">返回</string>
+    <string name="jz_tab2_jiedai">借贷</string>
+    <string name="jz_tab2_jine">金额</string>
+    <string name="jz_tab2_jinenum">0.00</string>
+    <string name="jz_tab2_leibie">类别</string>
+    <string name="jz_tab2_leibieres">餐饮>晚餐</string>
+    <string name="jz_tab2_queding">确定</string>
+    <string name="jz_tab2_shijian">时间</string>
+    <string name="jz_tab2_shouru">收入</string>
+    <string name="jz_tab2_tianjiapic">照片</string>
+    <string name="jz_tab2_timeres">20160406</string>
+    <string name="jz_tab2_zhichu">支出</string>
+    <string name="jz_yusuan">当前本月预算：</string>
+    <string name="jz_yusuanshengyu">预算余额</string>
+    <string name="jz_zhichu">当前支出</string>
+    <string name="leibie_item0_bt">明细类别</string>
+    <string name="leibie_item_bt">添加子类</string>
+    <string name="login">登 录</string>
+    <string name="main_benwang">备忘记事</string>
+    <string name="main_bt_about">关于软件</string>
+    <string name="main_bt_exit">退出程序</string>
+    <string name="main_bt_zhuangtai">手机状态</string>
+    <string name="main_help">使用帮助</string>
+    <string name="main_hiddenguanggao">隐藏提醒</string>
+    <string name="main_jisuan">简易计算</string>
+    <string name="main_jizhangqi">记账工具</string>
+    <string name="main_set_quanjushezhi">全局设置</string>
+    <string name="opt_remember">记住密码</string>
+    <string name="register">注册</string>
+    <string name="save">保存</string>
+    <string name="sex">性别</string>
+    <string name="strAccInputLabel">帐号</string>
+    <string name="strInputAccHint">输入帐号</string>
+    <string name="strInputPwdHint">输入密码</string>
+    <string name="strPswInputLabel">密码</string>
+    <string name="tel">手机</string>
+    <string name="time_item_bt">时间</string>
+    <string name="usermanager">用户管理</string>
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/qq_checkbox_text_color</item>
+        <item name="android:paddingLeft">28.0px</item>
+        <item name="android:button">@drawable/qq_btn_check</item>
+    </style>
+    <style name="js_button_style">
+    <item name="android:background">@drawable/js_bt_selector</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:textSize">35dp</item>
+    </style>
+    <style name="jz_add_button_style">
+    <item name="android:background">@drawable/jz_add_numbt_selector</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:textSize">13dp</item>
+    </style>
+    <style name="jz_mian_button_style">
+    <item name="android:background">@drawable/blank</item>
+    <item name="android:textColor">#ffffff</item>
+    <item name="android:textSize">13dp</item>
+    </style>
+    <style name="leibiedialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@drawable/blank</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="maindialog" parent="@android:style/Theme.Dialog">
+        <!--<item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item> 
+        <item name="android:windowNoTitle">true</item>-->
+        <item name="android:windowBackground">@drawable/blank</item>
+    </style>
+</resources>

@@ -12,9 +12,9 @@ import com.tust.tools.bean.JZzhichu;
 
 public class JZSqliteHelper extends SQLiteOpenHelper {
 	
-	public static final String ZHICHU = "ZHICHU";// Ö§³ö
-	public static final String SHOURU = "SHOURU";// ÊÕÈë
-	public static final String YUSUAN_MONTH = "YUSUAN_MONTH";//ÔÂÔ¤Ëã
+	public static final String ZHICHU = "ZHICHU";// æ”¯å‡º
+	public static final String SHOURU = "SHOURU";// æ”¶å…¥
+	public static final String YUSUAN_MONTH = "YUSUAN_MONTH";//æœˆé¢„ç®—
 	public static final String ISHIDDEN ="HIDDEN";
 	public Context context;
 	public JZSqliteHelper(Context context, String name, CursorFactory factory, int version) {
@@ -25,7 +25,7 @@ public class JZSqliteHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 	    saveYuSuan(context,YUSUAN_MONTH,YUSUAN_MONTH,3000);
-	    //Õâ¸öÓÃÀ´´æ´¢µ±Ç°ÊÇ·ñÏÔÊ¾ÌáĞÑ   ÏÔÊ¾Îª1£¬²»ÏÔÊ¾Îª0
+	    //è¿™ä¸ªç”¨æ¥å­˜å‚¨å½“å‰æ˜¯å¦æ˜¾ç¤ºæé†’   æ˜¾ç¤ºä¸º1ï¼Œä¸æ˜¾ç¤ºä¸º0
 	    saveYuSuan(context,ISHIDDEN,ISHIDDEN,1);
 	    db.execSQL("CREATE TABLE IF NOT EXISTS " + 
 					ZHICHU + "(" + "ID" + " integer primary key," + 
@@ -69,21 +69,21 @@ public class JZSqliteHelper extends SQLiteOpenHelper {
 	}
 	
 	/*
-	 * ´æ´¢ÔÂÔ¤Ëã»òÕß¼ÓÃÜÃÜÂë
+	 * å­˜å‚¨æœˆé¢„ç®—æˆ–è€…åŠ å¯†å¯†ç 
 	 * */
 	public static void saveYuSuan(Context context, String filename, String name, int num) {
 		SharedPreferences preference = context.getSharedPreferences(filename, Context.MODE_PRIVATE);
-		// »ñÈ¡±à¼­Æ÷
+		// è·å–ç¼–è¾‘å™¨
 		Editor editor = preference.edit();
-		// Êı¾İÔİÊ±´æ·ÅÔÚÄÚ´æÖĞ
+		// æ•°æ®æš‚æ—¶å­˜æ”¾åœ¨å†…å­˜ä¸­
 		editor.putInt(name, num);
-		// Ìá½»ĞŞ¸Ä£¬½«ÄÚ´æÖĞµÄÊı¾İ±£´æÖÁxawx.xmlÎÄ¼şÖĞ
+		// æäº¤ä¿®æ”¹ï¼Œå°†å†…å­˜ä¸­çš„æ•°æ®ä¿å­˜è‡³xawx.xmlæ–‡ä»¶ä¸­
 		editor.commit();
 	}
 
 	
 	/*
-	 * ¶ÁÈ¡Preference²ÎÊı
+	 * è¯»å–Preferenceå‚æ•°
 	 */
 	public static int readPreferenceFile(Context context,String filename, String name) {
 		SharedPreferences preference = context.getSharedPreferences(filename, Context.MODE_PRIVATE);
