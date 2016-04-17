@@ -26,7 +26,7 @@ import android.widget.Toast;
 import com.tust.tools.R;
 import com.tust.tools.bean.BWcontent;
 import com.tust.tools.db.BWData;
-import com.tust.tools.dialog.DialogBWSheZhiMiMa;
+//import com.tust.tools.dialog.DialogBWSheZhiMiMa;
 import com.tust.tools.service.BWAdapter;
 import com.tust.tools.service.DongHua3d;
 import com.tust.tools.service.DongHuaYanChi;
@@ -228,7 +228,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 	public boolean onCreateOptionsMenu(Menu menu) {
 		menu.add(0, 100, 0, "导出所有");
 		menu.add(0, 200, 0, "选择删除");
-		menu.add(0, 300, 0, "设置密码");
+//		menu.add(0, 300, 0, "设置密码");
 		return super.onCreateOptionsMenu(menu);
 	}
 
@@ -258,9 +258,9 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 				adapter.notifyDataSetChanged();
 			}
 			break;
-		case 300:
-			new DialogBWSheZhiMiMa(this);
-			break;
+//		case 300:
+//			new DialogBWSheZhiMiMa(this);
+//			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}

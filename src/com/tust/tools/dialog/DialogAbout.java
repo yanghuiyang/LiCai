@@ -18,7 +18,7 @@ public class DialogAbout extends Dialog{
 	private View diaView ;
 	private Context context;
 	private Handler handler ;
-	// flag标识转发还是评论，id标识当前微博的id，where标识从哪里启动该dialog，两个地方可以启动，home界面，和内容界面
+
 	public DialogAbout(Context context,String text) {
 		super(context, R.style.maindialog);
 		this.context = context;

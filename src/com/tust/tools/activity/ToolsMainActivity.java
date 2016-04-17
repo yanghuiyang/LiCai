@@ -29,8 +29,8 @@ import android.widget.Toast;
 import com.tust.tools.R;
 import com.tust.tools.db.JZSqliteHelper;
 import com.tust.tools.dialog.DialogAbout;
-import com.tust.tools.dialog.DialogBWSheZhiMiMa;
-import com.tust.tools.dialog.DialogShuRuMiMa;
+//import com.tust.tools.dialog.DialogBWSheZhiMiMa;
+//import com.tust.tools.dialog.DialogShuRuMiMa;
 import com.tust.tools.service.DongHua3d;
 import com.tust.tools.service.DongHuaYanChi;
 import com.tust.tools.service.PhoneInfoService;
@@ -231,20 +231,20 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         case R.id.main_ll_1://记账
         	int mi1 = JZSqliteHelper.readPreferenceFile(this,JZSheZhiActivity.JZMIMA,JZSheZhiActivity.JZMIMA);
         	dh3.oneViewDongHua(jz_ll);
-        	if(mi1==0){
+//        	if(mi1==0){
                 changeActivity(JZMainActivity.class);
-            }else{
-            	new DialogShuRuMiMa(this, this,JZSheZhiActivity.JZMIMA);
-            }
+//            }else{
+//            	new DialogShuRuMiMa(this, this,JZSheZhiActivity.JZMIMA);
+//            }
             break;
         case R.id.main_ll_2://记事
-        	int mi2 = JZSqliteHelper.readPreferenceFile(this,DialogBWSheZhiMiMa.BWMIMA,DialogBWSheZhiMiMa.BWMIMA);
+//        	int mi2 = JZSqliteHelper.readPreferenceFile(this,DialogBWSheZhiMiMa.BWMIMA,DialogBWSheZhiMiMa.BWMIMA);
         	dh3.oneViewDongHua(bw_ll);
-        	if(mi2==0){
-                changeActivity(BWMainActivity.class);
-            }else{
-            	new DialogShuRuMiMa(this, this,DialogBWSheZhiMiMa.BWMIMA);
-            }
+//        	if(mi2==0){
+               changeActivity(BWMainActivity.class);
+//            }else{
+//            	new DialogShuRuMiMa(this, this,DialogBWSheZhiMiMa.BWMIMA);
+//            }
             break;
         case R.id.main_ll_3://计算
         	dh3.oneViewDongHua(js_ll);

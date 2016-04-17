@@ -18,7 +18,7 @@
 	        android:layout_marginLeft="15.0px"
 	        android:layout_marginRight="15.0px"
 	        android:layout_marginTop="62.0px"
-	        android:layout_weight="0.18"
+	        android:layout_weight="0.05"
 	        android:background="@drawable/login_back"
 	        android:paddingBottom="10.0px"
 	        android:paddingTop="21.0px" >
@@ -88,7 +88,7 @@
 	            android:textColor="#ff3f3f3f"
 	            android:textSize="16.0dip" />
 
-	        <CheckBox
+	        CheckBox
 	            android:id="@+id/cb_savepwd"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
@@ -105,22 +105,22 @@
 	            android:id="@+id/btn_register"
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
-	            android:layout_alignLeft="@+id/cb_savepwd"
-	            android:layout_below="@+id/cb_savepwd"
-	            android:layout_marginTop="34dp"
-	            android:textSize="16.0dip"
-	            android:text="@string/register" />
+				android:textSize="16.0dip"
+	            android:text="@string/register"
+				android:layout_above="@+id/btn_login"
+				android:layout_alignLeft="@+id/btn_login" />
 
 	        <Button
 	            android:id="@+id/btn_login"
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
-	            android:layout_alignLeft="@+id/btn_register"
-	            android:layout_below="@+id/btn_register"
-	            android:textSize="16.0dip"
-	            android:text="@string/login" />
+				android:textSize="16.0dip"
+	            android:text="@string/login"
+				android:layout_marginBottom="99dp"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true" />
 
-	    </RelativeLayout>
+		</RelativeLayout>
 
 	    <TableLayout
 	        android:id="@+id/TableLayout01"
