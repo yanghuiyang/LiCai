@@ -15,11 +15,13 @@ import com.tust.tools.R;
 import com.tust.tools.db.UserData;
 
 public class LoginActivity extends Activity implements OnClickListener{
+	/* 注册，登陆按钮 */
 	private Button btn_login, btn_register;
 	private EditText account, pwd;
 	private UserData userData;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.loginpage);
 		btn_login = (Button) findViewById(R.id.btn_login);
