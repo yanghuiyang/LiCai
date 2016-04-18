@@ -1,9 +1,5 @@
 package com.tust.tools.activity;
 
-import com.tust.tools.R;
-import com.tust.tools.bean.User;
-import com.tust.tools.db.UserData;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -15,13 +11,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.tust.tools.R;
+import com.tust.tools.db.UserData;
+
 public class LoginActivity extends Activity implements OnClickListener{
+	/* 注册，登陆按钮 */
 	private Button btn_login, btn_register;
 	private EditText account, pwd;
 	private UserData userData;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.loginpage);
 		btn_login = (Button) findViewById(R.id.btn_login);
