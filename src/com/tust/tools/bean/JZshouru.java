@@ -3,6 +3,7 @@ package com.tust.tools.bean;
 import com.tust.tools.service.GetTime;
 
 public class JZshouru {
+	public static final String SR_USER= "SR_USER";
 	public static final String SR_ITEM = "SR_ITEM";
 	public static final String SR_YEAR = "SR_YEAR";
 	public static final String SR_MONTH = "SR_MONTH";
@@ -13,6 +14,7 @@ public class JZshouru {
 	public static final String SR_BEIZHU = "SR_BEIZHU";
 	// 收入条目id
 	private int sr_Id;
+	private String sr_User;//用户名
 	// 在那方面收入
 	private String sr_Item = "";
 	//收入年份
@@ -35,6 +37,12 @@ public class JZshouru {
 	}
 	public void setSr_Id(int sr_Id) {
 		this.sr_Id = sr_Id;
+	}
+	public String getSr_User() {
+		return sr_User;
+	}
+	public void setSr_User(String sr_User) {
+		this.sr_User = sr_User;
 	}
 	public String getSr_Item() {
 		return sr_Item;

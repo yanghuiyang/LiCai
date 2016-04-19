@@ -1,11 +1,14 @@
 package com.tust.tools.activity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -42,7 +45,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     private RelativeLayout zhichu_shang_rl, zhichu_xia_rl, shouru_shang_rl;
     // 底部环形按钮 添加， 明细，报表，预算，设置。
     private Button tianjia, mingxi, baobiao, yusuan, shezhi;
-    // tab1顶部支出和收入按钮选中后背景图像
+    // tab1顶部支出和收入按钮选中后背景图像-
     private ImageView ivZhichu, ivShuru, menu;
     // tab1顶部支出和收入按钮选中后下面显示的内容
     private LinearLayout zhichull, shourull;
@@ -50,6 +53,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     private boolean isShown = false;
     // button集合 方便管理按钮显示隐藏
     private Button bts[] = null;
+    private  String userName;
     // 数据库操作
     JZData dataHelper;
 
@@ -60,6 +64,9 @@ public class JZMainActivity extends Activity implements OnClickListener {
         dataHelper = new JZData(this);
         init();
         initButton();
+        //获取当前登陆用户
+        SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+        userName = preferences.getString("userName", "");
         TextView gg=(TextView)this.findViewById(R.id.jz_gg_text);
         if(!ToolsMainActivity.isShow){
             gg.setVisibility(View.INVISIBLE);
@@ -290,7 +297,8 @@ public class JZMainActivity extends Activity implements OnClickListener {
     public void getZhiChu() {
     	count_sr_yue = 0;
     	float count_zc_week = 0,count_zc_yue = 0;
-        String selectionWeek = JZzhichu.ZC_WEEK + "=" + GetTime.getWeekOfYear();
+        //String selectionWeek = JZzhichu.ZC_USER + "=" +userName + " and " + JZzhichu.ZC_WEEK + "=" + GetTime.getWeekOfYear();
+        String selectionWeek = JZzhichu.ZC_USER + "='" +userName + "'" +" and " + JZzhichu.ZC_WEEK + "=" + GetTime.getWeekOfYear();
         List<JZzhichu> zhichuWeekList = dataHelper.GetZhiChuList(selectionWeek);
         if (zhichuWeekList != null) {
             for (JZzhichu zhichu : zhichuWeekList) {
@@ -301,7 +309,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
             zhichu_week.setText(0 + "");
         }
 
-        String selectionMonth = JZzhichu.ZC_YEAR + "=" + GetTime.getYear() + " and " + JZzhichu.ZC_MONTH + "=" + GetTime.getMonth();
+        String selectionMonth =JZzhichu.ZC_USER + "='" +userName + "'" +" and " + JZzhichu.ZC_YEAR + "=" + GetTime.getYear() + " and " + JZzhichu.ZC_MONTH + "=" + GetTime.getMonth();
         List<JZzhichu> zhichuMonthList = dataHelper.GetZhiChuList(selectionMonth);
         if (zhichuMonthList != null) {
             for (JZzhichu zhichu : zhichuMonthList) {
@@ -312,7 +320,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
             zhichu_month.setText(0 + "");
         }
 
-        String selectionShouRuMonth = JZshouru.SR_YEAR + "=" + GetTime.getYear() + " and " + JZshouru.SR_MONTH + "=" + GetTime.getMonth();
+        String selectionShouRuMonth =JZshouru.SR_USER  + "='" +userName + "'" +" and " + JZshouru.SR_YEAR + "=" + GetTime.getYear() + " and " + JZshouru.SR_MONTH + "=" + GetTime.getMonth();
         List<JZshouru> shouruMonthList = dataHelper.GetShouRuList(selectionShouRuMonth);
         if (shouruMonthList != null) {
             for (JZshouru shouru : shouruMonthList) {
@@ -363,7 +371,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
      */
     public void getShouRu() {
     	float count_sr_year = 0,count_sr_day = 0;
-        String selectionShouRuYear = JZshouru.SR_YEAR + "=" + GetTime.getYear();
+        String selectionShouRuYear =JZshouru.SR_USER  + "='" +userName + "'" +" and " + JZshouru.SR_YEAR + "=" + GetTime.getYear();
         List<JZshouru> shouruYearList = dataHelper.GetShouRuList(selectionShouRuYear);
         if (shouruYearList != null) {
         	count_sr_year = 0;
@@ -375,7 +383,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
             shouru_year.setText(0 + "");
         }
 
-        String selectionShouRuDay = JZshouru.SR_YEAR + "=" + GetTime.getYear() + " and " +JZshouru.SR_MONTH + "=" + GetTime.getMonth()+" and "+ JZshouru.SR_DAY + "=" + GetTime.getDay();
+        String selectionShouRuDay = JZshouru.SR_USER + "='" +userName + "'" +" and " +  JZshouru.SR_YEAR + "=" + GetTime.getYear() + " and " +JZshouru.SR_MONTH + "=" + GetTime.getMonth()+" and "+ JZshouru.SR_DAY + "=" + GetTime.getDay();
         List<JZshouru> shouruDayList = dataHelper.GetShouRuList(selectionShouRuDay);
         if (shouruDayList != null) {
         	count_sr_day = 0;

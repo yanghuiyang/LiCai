@@ -17,6 +17,7 @@ import android.app.TimePickerDialog.OnTimeSetListener;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -90,11 +91,16 @@ public class JZAddActivity extends Activity implements OnClickListener {
     private File PHOTO_DIR;// 拍摄照片存储的文件夹路径
     private File capturefile;// 拍摄的照片文件
 
+    private String userName;//当前登陆用户
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.jz_add);
         mh = new MessageHandler();
+        //获取当前登陆用户
+        SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+        userName = preferences.getString("userName", "");
         initZhiChu();
         initBt(jine);
         initUpdate();
@@ -329,6 +335,9 @@ public class JZAddActivity extends Activity implements OnClickListener {
         if (now_flag == zhichu_flag) {
             zhichu.setZc_Item(items[0]);
             zhichu.setZc_SubItem(items[1]);
+
+            zhichu.setZc_User(userName);
+
             zhichu.setZc_Year(Integer.parseInt(dates[0]));
             zhichu.setZc_Month(Integer.parseInt(dates[1]));
             zhichu.setZc_Day(Integer.parseInt(dates[2]));
@@ -347,6 +356,9 @@ public class JZAddActivity extends Activity implements OnClickListener {
             }
         } else if (now_flag == shouru_flag) {
             shouru.setSr_Item(leibies);
+
+            shouru.setSr_User(userName);
+
             shouru.setSr_Year(Integer.parseInt(dates[0]));
             shouru.setSr_Month(Integer.parseInt(dates[1]));
             shouru.setSr_Day(Integer.parseInt(dates[2]));
@@ -365,6 +377,9 @@ public class JZAddActivity extends Activity implements OnClickListener {
             if (leibies.equals(JZItem.jiechu) || leibies.equals(JZItem.huankuan)) {
                 zhichu.setZc_Item(leibies);
                 zhichu.setZc_SubItem("");
+
+                zhichu.setZc_User(userName);
+
                 zhichu.setZc_Year(Integer.parseInt(dates[0]));
                 zhichu.setZc_Month(Integer.parseInt(dates[1]));
                 zhichu.setZc_Day(Integer.parseInt(dates[2]));
@@ -382,6 +397,9 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 }
             } else if (leibies.equals(JZItem.jieru) || leibies.equals(JZItem.shoukuan)) {
                 shouru.setSr_Item(leibies);
+
+                shouru.setSr_User(userName);
+
                 shouru.setSr_Year(Integer.parseInt(dates[0]));
                 shouru.setSr_Month(Integer.parseInt(dates[1]));
                 shouru.setSr_Day(Integer.parseInt(dates[2]));

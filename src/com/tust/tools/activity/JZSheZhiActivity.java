@@ -3,7 +3,9 @@ package com.tust.tools.activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,6 +37,7 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 	//记账数据库管理
 	private JZData jzdh;
 	public static final String JZMIMA = "JZMIMA";
+	private String userName;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -42,6 +45,8 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 		jzdh = new JZData(this);
 		init();
 		initJiaMi();
+		SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+		userName = preferences.getString("userName", "");
 //		jiami_text = (TextView)this.findViewById(R.id.jz_shezhi_jiami_text);
 //		mi = JZSqliteHelper.readPreferenceFile(this,JZMIMA,JZMIMA);
 //		if(mi==0){//密码为0则当前没密码
@@ -172,7 +177,7 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
     	builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				jzdh.delAll();
+				jzdh.delAll(userName);
 				showMsg("数据清除完成");
 			}
 		});

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -50,6 +51,7 @@ public class JZData {
 	    		zhichu.setZc_Pic(cursor.getString(8));
 	    		zhichu.setZc_Count(cursor.getDouble(9));
 	    		zhichu.setZc_Beizhu(cursor.getString(10));
+                zhichu.setZc_User(cursor.getString(11));//add
 	    		zhichulist.add(zhichu);
 	    		cursor.moveToNext();
     	}
@@ -61,8 +63,9 @@ public class JZData {
      * 获取收入表中的所有数据
      * */
     public ArrayList<JZshouru> GetShouRuList(String selection){
-        ArrayList<JZshouru> shourulist=new ArrayList<JZshouru>();
+        ArrayList<JZshouru>shourulist=new ArrayList<JZshouru>();
     	Cursor cursor=db.query(JZSqliteHelper.SHOURU, null, selection, null, null, null, "ID DESC");
+//        Cursor cursor=db.query(JZSqliteHelper.SHOURU, null, null, null, null, null, "ID DESC");
 	    	cursor.moveToFirst();
 	    	while(!cursor.isAfterLast()&&(cursor.getString(1)!=null)){
 	    		JZshouru shouru=new JZshouru();
@@ -75,6 +78,7 @@ public class JZData {
 	    		shouru.setSr_Time(cursor.getString(6));
 	    		shouru.setSr_Count(cursor.getDouble(7));
 	    		shouru.setSr_Beizhu(cursor.getString(8));
+                shouru.setSr_User(cursor.getString(9)); //add
 	    		shourulist.add(shouru);
 	    		cursor.moveToNext();
     	}
@@ -108,6 +112,9 @@ public class JZData {
         values.put(JZzhichu.ZC_PIC, zhichu.getZc_Pic());
         values.put(JZzhichu.ZC_COUNT, zhichu.getZc_Count());
         values.put(JZzhichu.ZC_BEIZHU, zhichu.getZc_Beizhu());
+
+        values.put(JZzhichu.ZC_USER, zhichu.getZc_User());//add
+
         int idupdate= db.update(JZSqliteHelper.ZHICHU, values, "ID ='"+id+"'", null);
         this.close();
         return idupdate;
@@ -125,6 +132,9 @@ public class JZData {
         values.put(JZshouru.SR_TIME, shouru.getSr_Time());
         values.put(JZshouru.SR_COUNT, shouru.getSr_Count());
         values.put(JZshouru.SR_BEIZHU, shouru.getSr_Beizhu());
+
+        values.put(JZshouru.SR_USER, shouru.getSr_User());//add
+
         int idupdate= db.update(JZSqliteHelper.SHOURU, values, "ID ='"+id+"'", null);
         this.close();
         return idupdate;
@@ -144,6 +154,9 @@ public class JZData {
         values.put(JZzhichu.ZC_PIC, zhichu.getZc_Pic());
         values.put(JZzhichu.ZC_COUNT, zhichu.getZc_Count());
         values.put(JZzhichu.ZC_BEIZHU, zhichu.getZc_Beizhu());
+
+        values.put(JZzhichu.ZC_USER, zhichu.getZc_User());//add
+
         Long uid = db.insert(JZSqliteHelper.ZHICHU, JZzhichu.ZC_YEAR, values);
         this.close();
         return uid;
@@ -161,7 +174,10 @@ public class JZData {
         values.put(JZshouru.SR_DAY, shouru.getSr_Day());
         values.put(JZshouru.SR_TIME, shouru.getSr_Time());
         values.put(JZshouru.SR_COUNT, shouru.getSr_Count()); 
-        values.put(JZshouru.SR_BEIZHU, shouru.getSr_Beizhu()); 
+        values.put(JZshouru.SR_BEIZHU, shouru.getSr_Beizhu());
+
+        values.put(JZshouru.SR_USER, shouru.getSr_User());
+
         Long uid = db.insert(JZSqliteHelper.SHOURU, JZshouru.SR_YEAR, values);
         this.close();
         return uid;
@@ -179,9 +195,10 @@ public class JZData {
     /*
      * 删除所有记录
      * */
-    public void delAll(){
+    public void delAll(String userName){
     	JZSqliteHelper.saveYuSuan(context,JZSqliteHelper.YUSUAN_MONTH,JZSqliteHelper.YUSUAN_MONTH, 0);
-    	db.delete(JZSqliteHelper.ZHICHU, null, null);
+
+    	db.delete(JZSqliteHelper.ZHICHU,"ZC_USER ="+userName, null);
     	db.delete(JZSqliteHelper.SHOURU, null, null);
     }
     

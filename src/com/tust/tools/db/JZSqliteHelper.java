@@ -28,8 +28,9 @@ public class JZSqliteHelper extends SQLiteOpenHelper {
 	    //这个用来存储当前是否显示提醒   显示为1，不显示为0
 	    saveYuSuan(context,ISHIDDEN,ISHIDDEN,1);
 	    db.execSQL("CREATE TABLE IF NOT EXISTS " + 
-					ZHICHU + "(" + "ID" + " integer primary key," + 
-					JZzhichu.ZC_ITEM + " varchar," + 
+					ZHICHU + "(" + "ID" + " integer primary key," +
+
+					JZzhichu.ZC_ITEM + " varchar," +
 					JZzhichu.ZC_SUBITEM + " varchar," + 
 					JZzhichu.ZC_YEAR + " Integer," + 
 					JZzhichu.ZC_MONTH + " Integer," + 
@@ -38,10 +39,12 @@ public class JZSqliteHelper extends SQLiteOpenHelper {
 					JZzhichu.ZC_TIME + " varchar," + 
 					JZzhichu.ZC_PIC + " varchar," + 
 					JZzhichu.ZC_COUNT + " REAL," + 
-					JZzhichu.ZC_BEIZHU + " varchar" + ");");
+					JZzhichu.ZC_BEIZHU + " varchar," +
+					JZzhichu.ZC_USER + " varchar" +");");
 			
 			db.execSQL("CREATE TABLE IF NOT EXISTS " + 
-					SHOURU + "(" + "ID" + " integer primary key," + 
+					SHOURU + "(" + "ID" + " integer primary key," +
+
 					JZshouru.SR_ITEM + " varchar," + 
 					JZshouru.SR_YEAR + " Integer," + 
 					JZshouru.SR_MONTH + " Integer," + 
@@ -49,7 +52,8 @@ public class JZSqliteHelper extends SQLiteOpenHelper {
 					JZshouru.SR_DAY + " Integer," + 
 					JZshouru.SR_TIME + " varchar," + 
 					JZshouru.SR_COUNT + " REAL," + 
-					JZshouru.SR_BEIZHU + " varchar" + ");");
+					JZshouru.SR_BEIZHU + " varchar," +
+					JZshouru.SR_USER + " varchar" +");");
 	}
 
 	@Override
@@ -69,7 +73,7 @@ public class JZSqliteHelper extends SQLiteOpenHelper {
 	}
 	
 	/*
-	 * 存储月预算或者加密密码
+	 * 存储月预算
 	 * */
 	public static void saveYuSuan(Context context, String filename, String name, int num) {
 		SharedPreferences preference = context.getSharedPreferences(filename, Context.MODE_PRIVATE);

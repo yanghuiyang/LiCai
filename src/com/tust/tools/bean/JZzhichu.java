@@ -3,6 +3,7 @@ package com.tust.tools.bean;
 import com.tust.tools.service.GetTime;
 
 public class JZzhichu {
+	public static final String ZC_USER = "ZC_USER";
 	public static final String ZC_ITEM = "ZC_ITEM";
 	public static final String ZC_SUBITEM = "ZC_SUBITEM";
 	public static final String ZC_YEAR = "ZC_YEAR";
@@ -15,6 +16,7 @@ public class JZzhichu {
 	public static final String ZC_PIC = "ZC_PIC";
 	// 支出条目ID
 	private int zc_Id;
+	private String zc_User;//用户名
 	// 在那方面支出
 	private String zc_Item = "";
 	//项目的子项目
@@ -41,6 +43,12 @@ public class JZzhichu {
 	}
 	public void setZc_Id(int zc_Id) {
 		this.zc_Id = zc_Id;
+	}
+	public String getZc_User() {
+		return zc_User;
+	}
+	public void setZc_User(String zc_User) {
+		this.zc_User = zc_User;
 	}
 	public String getZc_Item() {
 		return zc_Item;
