@@ -10,6 +10,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -68,9 +69,13 @@ public class BWNewActivity extends Activity implements OnClickListener {
 	private int updateBgColorId=R.drawable.bw_new_et_bg_1;
 	private int ids[] = new int[]{R.drawable.bw_new_et_bg_1,R.drawable.bw_new_et_bg_2,R.drawable.bw_new_et_bg_3,R.drawable.bw_new_et_bg_4,R.drawable.bw_new_et_bg_5}; 
     private Handler handler;
+    private String userName;
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //获取当前登陆用户
+        SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+        userName = preferences.getString("userName", "");
         setContentView(R.layout.bw_new);
         time = (TextView)this.findViewById(R.id.bw_new_time_text);
         et = (EditText)this.findViewById(R.id.bw_et);
@@ -253,7 +258,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
         }
     }
     /*
-	 * 存储支出收入借贷到数据库
+	 * 存储到数据库
 	 * */
 	public void saveToDB(){
 		BWcontent beiwang = new BWcontent();
@@ -277,6 +282,7 @@ public class BWNewActivity extends Activity implements OnClickListener {
 		beiwang.setContent(content);
 		beiwang.setColor(color);
 		beiwang.setSize(textSize);
+        beiwang.setUser(userName);//add
 		if(!isUpdate){//判断当前是新建还是修改
 		    if(!"".equals(picpath)&&!picpath.equals(null)){
 		        beiwang.setPic(picpath);

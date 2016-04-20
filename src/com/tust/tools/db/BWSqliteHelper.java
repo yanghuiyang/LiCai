@@ -28,7 +28,8 @@ public class BWSqliteHelper extends SQLiteOpenHelper {
 					BWcontent.CONTENT + " varchar," + 
 					BWcontent.PIC + " varchar," +
 					BWcontent.COLOR + " Integer," +
-					BWcontent.SIZE + " REAL" + ");");
+					BWcontent.SIZE + " REAL," +
+					BWcontent.USER + " varchar" +");");
 	}
 
 	@Override

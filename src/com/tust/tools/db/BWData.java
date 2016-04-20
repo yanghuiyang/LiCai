@@ -45,6 +45,7 @@ public class BWData {
 	    		beiwang.setPic(cursor.getString(7));
 	    		beiwang.setColor(cursor.getInt(8));
 	    		beiwang.setSize(cursor.getFloat(9));
+                beiwang.setSize(cursor.getFloat(10));//add
 	    		beiwanglist.add(beiwang);
 	    		cursor.moveToNext();
     	}
@@ -78,6 +79,7 @@ public class BWData {
         values.put(BWcontent.PIC, beiwang.getPic());
         values.put(BWcontent.COLOR, beiwang.getColor());
         values.put(BWcontent.SIZE, beiwang.getSize());
+        values.put(BWcontent.USER, beiwang.getUser());//add
         int idupdate= db.update(BWSqliteHelper.BEIWANG, values, "ID ='"+id+"'", null);
         this.close();
         return idupdate;
@@ -96,6 +98,7 @@ public class BWData {
         values.put(BWcontent.PIC, beiwang.getPic());
         values.put(BWcontent.COLOR, beiwang.getColor());
         values.put(BWcontent.SIZE, beiwang.getSize());
+        values.put(BWcontent.USER, beiwang.getUser());//add
         Long uid = db.insert(BWSqliteHelper.BEIWANG, BWcontent.YEAR, values);
 //        this.close();
         return uid;

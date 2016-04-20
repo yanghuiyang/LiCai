@@ -1,6 +1,7 @@
 package com.tust.tools.bean;
 
 public class BWcontent {
+	public static final String USER = "USER";//用户名
 	public static final String YEAR = "YEAR";
 	public static final String MONTH = "MONTH";
 	public static final String WEEK = "WEEK";
@@ -12,6 +13,9 @@ public class BWcontent {
 	public static final String SIZE = "SIZE";
 	
 	private int id;
+	private String user;//用户名
+
+
 	private int year;//记事年
 	private int month;//记事月
 	private int week;//记事周（星期几）
@@ -21,6 +25,15 @@ public class BWcontent {
 	private String pic;//记事图片路径
 	private int color;//记事背景色
 	private float size;//记事字体大小
+
+	public String getUser() {
+		return user;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
 	public int getYear() {
 		return year;
 	}

@@ -5,8 +5,10 @@ import java.util.Date;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.KeyEvent;
@@ -47,9 +49,14 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 	private Handler handler;
 	// 创建数据库对象
 	BWData dataHelper;
+	private String userName;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//获取当前登陆用户
+		SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+		userName = preferences.getString("userName", "");
+
 		setContentView(R.layout.bw_main);
 		del_ll = (LinearLayout) this.findViewById(R.id.bw_main_select_ll);
 		del_ll.setVisibility(View.GONE);

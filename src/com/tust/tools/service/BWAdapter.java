@@ -3,6 +3,7 @@ package com.tust.tools.service;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,7 @@ public class BWAdapter extends BaseAdapter implements OnCheckedChangeListener{
 		this.context = context;
 		bWlist = new ArrayList<BWcontent>();
 		idList=new ArrayList<Integer>();
+
 		getList();
 		isShowCheck=false;
 		isSelectAll=false;
@@ -38,7 +40,11 @@ public class BWAdapter extends BaseAdapter implements OnCheckedChangeListener{
 
 	public void getList(){
 		BWData dataHelper = new BWData(context);
-		bWlist = dataHelper.GetBWList("");	
+		//获取当前登陆用户
+		SharedPreferences preferences = this.context.getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+		String userName = preferences.getString("userName", "");
+		String selection = "USER = '" +userName + "'";
+		bWlist = dataHelper.GetBWList(selection);
 	}
 
 	@Override
