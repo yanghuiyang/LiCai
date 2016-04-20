@@ -63,6 +63,7 @@ public class UserData {
 		user.setPwd(cursor.getString(cursor.getColumnIndex("pwd")));
 		user.setSex(cursor.getInt(cursor.getColumnIndex("sex")));
 		user.setTel(cursor.getString(cursor.getColumnIndex("tel")));
+		user.setBudget(cursor.getInt(cursor.getColumnIndex("budget")));
 		return user;
 	}
 	    /*
@@ -74,6 +75,7 @@ public class UserData {
 	        values.put("pwd", user.getPwd());
 	        values.put("sex", user.getSex());
 	        values.put("tel", user.getTel());
+			values.put("budget", user.getBudget());
 	        int idupdate= db.update("User", values, "username ='"+user.getUsername()+"'", null);
 	        this.close();
 	        return idupdate;
@@ -88,6 +90,7 @@ public class UserData {
 	        values.put("pwd", user.getPwd());
 	        values.put("sex", user.getSex());
 	        values.put("tel", user.getTel());
+			values.put("budget",user.getBudget());
 	        Long uid = db.insert("USER",null,values);
 	        this.close();
 	        return uid;

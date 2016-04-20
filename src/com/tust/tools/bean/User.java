@@ -6,6 +6,15 @@ public class User {
 	private String pwd ;//密码
 	private int sex; //性别 男 1 女 2
 	private String tel;//电话号码
+	private int budget;//预算
+
+	public int getBudget() {
+		return budget;
+	}
+	public void setBudget(int budget) {
+		this.budget = budget;
+	}
+
 
 //	public int getId() {
 //		return id;

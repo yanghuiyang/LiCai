@@ -229,7 +229,7 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         int id = v.getId();
         switch (id) {
         case R.id.main_ll_1://记账
-        	int mi1 = JZSqliteHelper.readPreferenceFile(this,JZSheZhiActivity.JZMIMA,JZSheZhiActivity.JZMIMA);
+  //      	int mi1 = JZSqliteHelper.readPreferenceFile(this,JZSheZhiActivity.JZMIMA,JZSheZhiActivity.JZMIMA);
         	dh3.oneViewDongHua(jz_ll);
 //        	if(mi1==0){
                 changeActivity(JZMainActivity.class);

@@ -27,8 +27,10 @@ import android.widget.Toast;
 import com.tust.tools.R;
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
+import com.tust.tools.bean.User;
 import com.tust.tools.db.JZData;
 import com.tust.tools.db.JZSqliteHelper;
+import com.tust.tools.db.UserData;
 import com.tust.tools.service.DongHua3d;
 import com.tust.tools.service.GetTime;
 import com.tust.tools.service.JZPaintViewYuE;
@@ -54,6 +56,8 @@ public class JZMainActivity extends Activity implements OnClickListener {
     // button集合 方便管理按钮显示隐藏
     private Button bts[] = null;
     private  String userName;
+    private User user;
+    private UserData userData;
     // 数据库操作
     JZData dataHelper;
 
@@ -67,6 +71,8 @@ public class JZMainActivity extends Activity implements OnClickListener {
         //获取当前登陆用户
         SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
         userName = preferences.getString("userName", "");
+        userData = new UserData(this);
+        user = userData.getUserByUserName(userName);
         TextView gg=(TextView)this.findViewById(R.id.jz_gg_text);
         if(!ToolsMainActivity.isShow){
             gg.setVisibility(View.INVISIBLE);
@@ -343,13 +349,14 @@ public class JZMainActivity extends Activity implements OnClickListener {
         	zhichu_shang_rl.setBackgroundResource(R.drawable.jz_empty_zhichu_zhuxing);
         }
 
-        final float yusuan_yue = JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.YUSUAN_MONTH, JZSqliteHelper.YUSUAN_MONTH);
+        user = userData.getUserByUserName(userName);
+         float yusuan_yue =user.getBudget();
+//        final float yusuan_yue = JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.YUSUAN_MONTH, JZSqliteHelper.YUSUAN_MONTH);
         // 月预算
         yusuan_month.setText(yusuan_yue + "");
         // 月预算余额
         final float zhichu_yue = Float.parseFloat(zhichu_month.getText().toString().trim());
         yusuanyue_month.setText((yusuan_yue - zhichu_yue) + "");
-        
         int bujin=0;//根据不同的剩余调整步进速度
         if((yusuan_yue/zhichu_yue)<0.3){
         	bujin = 1;

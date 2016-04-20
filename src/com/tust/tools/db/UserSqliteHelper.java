@@ -24,7 +24,7 @@ public class UserSqliteHelper extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		// TODO Auto-generated method stub
 		db.execSQL("CREATE TABLE IF NOT EXISTS USER"
-		 		+ "(username VARCHAR(20) PRIMARY KEY , pwd VARCHAR(20) not null, sex INTEGER, tel VARCHAR)");
+		 		+ "(username VARCHAR(20) PRIMARY KEY , pwd VARCHAR(20) not null, sex INTEGER, tel VARCHAR,budget INTEGER)");
 		//添加2个默认账号
 		//User user = new User();
 		ContentValues values = new ContentValues();
@@ -32,6 +32,7 @@ public class UserSqliteHelper extends SQLiteOpenHelper {
         values.put("pwd", "123456");
         values.put("sex", "1");
         values.put("tel", "15922771234");
+		values.put("budget", 5000);
         db.insert("USER",null,values);
         values = new ContentValues();
         values.put("username", "admin2");
