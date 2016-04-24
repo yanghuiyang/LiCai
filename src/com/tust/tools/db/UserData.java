@@ -13,16 +13,19 @@ import com.tust.tools.bean.User;
 
 public class UserData {
 	//数据库名称
-		private String DB_NAME="user.db";
+		//private String DB_NAME="user.db";
+
 		//数据库版本
-		private static int DB_VERSION=1;
+	//	private static int DB_VERSION=1;
 		private SQLiteDatabase db;
-		private UserSqliteHelper dbHelper;
+		//private UserSqliteHelper dbHelper;
+		private DBOpenHelper dbHelper;// 创建DBOpenHelper对象
 		private Context context;
 
 	    public UserData(Context context){
 	    	this.context = context;
-	        dbHelper=new UserSqliteHelper(context,DB_NAME, null, DB_VERSION);
+	    //    dbHelper=new UserSqliteHelper(context,DB_NAME, null, DB_VERSION);
+			dbHelper = new DBOpenHelper(context);// 初始化DBOpenHelper对象
 	        db= dbHelper.getWritableDatabase();
 	    }
 

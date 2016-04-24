@@ -13,16 +13,19 @@ import java.util.List;
  */
 public class IncomeTypeData {
     //数据库名称
-    private String DB_NAME="IncomeType.db";
+   // private String DB_NAME="IncomeType.db";
+
     //数据库版本
-    private static int DB_VERSION=1;
+ //   private static int DB_VERSION=1;
     private SQLiteDatabase db;
-    private IncomeTypeSqliteHelper dbHelper;
+    private DBOpenHelper dbHelper;// 创建DBOpenHelper对象
+   // private IncomeTypeSqliteHelper dbHelper;
     private Context context;
 
     public IncomeTypeData(Context context){
         this.context = context;
-        dbHelper=new IncomeTypeSqliteHelper(context,DB_NAME, null, DB_VERSION);
+      //  dbHelper=new IncomeTypeSqliteHelper(context,DB_NAME, null, DB_VERSION);
+        dbHelper = new DBOpenHelper(context);// 初始化DBOpenHelper对象
         db= dbHelper.getWritableDatabase();
     }
 

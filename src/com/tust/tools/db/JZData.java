@@ -13,16 +13,19 @@ import com.tust.tools.bean.JZzhichu;
 //记账数据库操作
 public class JZData {
 	//数据库名称
-	private String DB_NAME="jizhang.db";
+	//private String DB_NAME="jizhang.db";
+
 	//数据库版本
 	private static int DB_VERSION=1;
 	private SQLiteDatabase db;
-	private JZSqliteHelper dbHelper;
+//	private JZSqliteHelper dbHelper;
+    private DBOpenHelper dbHelper;// 创建DBOpenHelper对象
 	private Context context;
 	 
     public JZData(Context context){
     	this.context = context;
-        dbHelper=new JZSqliteHelper(context,DB_NAME, null, DB_VERSION);
+     //   dbHelper=new JZSqliteHelper(context,DB_NAME, null, DB_VERSION);
+        dbHelper = new DBOpenHelper(context);// 初始化DBOpenHelper对象
         db= dbHelper.getWritableDatabase();
     }
     
@@ -36,7 +39,7 @@ public class JZData {
      * */
     public ArrayList<JZzhichu> GetZhiChuList(String selection){
         ArrayList<JZzhichu> zhichulist=new ArrayList<JZzhichu>();
-    	Cursor cursor=db.query(JZSqliteHelper.ZHICHU, null, selection, null, null, null, "ID DESC");
+    	Cursor cursor=db.query("zhichu", null, selection, null, null, null, "ID DESC");
 	    	cursor.moveToFirst();
 	    	while(!cursor.isAfterLast()&&(cursor.getString(1)!=null)){
 	    		JZzhichu zhichu=new JZzhichu();
@@ -64,7 +67,7 @@ public class JZData {
      * */
     public ArrayList<JZshouru> GetShouRuList(String selection){
         ArrayList<JZshouru>shourulist=new ArrayList<JZshouru>();
-    	Cursor cursor=db.query(JZSqliteHelper.SHOURU, null, selection, null, null, null, "ID DESC");
+    	Cursor cursor=db.query("shouru", null, selection, null, null, null, "ID DESC");
 //        Cursor cursor=db.query(JZSqliteHelper.SHOURU, null, null, null, null, null, "ID DESC");
 	    	cursor.moveToFirst();
 	    	while(!cursor.isAfterLast()&&(cursor.getString(1)!=null)){
@@ -91,7 +94,7 @@ public class JZData {
      * */
     public boolean haveZhiChuInfo(int id){
     	boolean flag=false;
-    	Cursor cursor=db.query(JZSqliteHelper.ZHICHU, null,"ID ='"+id+"'", null, null, null, null);
+    	Cursor cursor=db.query("zhichu", null,"ID ='"+id+"'", null, null, null, null);
     	flag=cursor.moveToFirst();
     	cursor.close();
     	return flag;
@@ -115,7 +118,7 @@ public class JZData {
 
         values.put(JZzhichu.ZC_USER, zhichu.getZc_User());//add
 
-        int idupdate= db.update(JZSqliteHelper.ZHICHU, values, "ID ='"+id+"'", null);
+        int idupdate= db.update("zhichu", values, "ID ='"+id+"'", null);
         this.close();
         return idupdate;
     }
@@ -135,7 +138,7 @@ public class JZData {
 
         values.put(JZshouru.SR_USER, shouru.getSr_User());//add
 
-        int idupdate= db.update(JZSqliteHelper.SHOURU, values, "ID ='"+id+"'", null);
+        int idupdate= db.update("shouru", values, "ID ='"+id+"'", null);
         this.close();
         return idupdate;
     }
@@ -157,7 +160,7 @@ public class JZData {
 
         values.put(JZzhichu.ZC_USER, zhichu.getZc_User());//add
 
-        Long uid = db.insert(JZSqliteHelper.ZHICHU, JZzhichu.ZC_YEAR, values);
+        Long uid = db.insert("zhichu", JZzhichu.ZC_YEAR, values);
         this.close();
         return uid;
     }
@@ -178,7 +181,7 @@ public class JZData {
 
         values.put(JZshouru.SR_USER, shouru.getSr_User());
 
-        Long uid = db.insert(JZSqliteHelper.SHOURU, JZshouru.SR_YEAR, values);
+        Long uid = db.insert("shouru", JZshouru.SR_YEAR, values);
         this.close();
         return uid;
     }
@@ -187,7 +190,7 @@ public class JZData {
      * 删除支出表的记录
      * */
     public int DelZhiChuInfo(int id){
-        int iddel=  db.delete(JZSqliteHelper.ZHICHU, "ID ="+id, null);
+        int iddel=  db.delete("zhichu", "ID ="+id, null);
         this.close();
         return iddel;
     }
@@ -196,17 +199,17 @@ public class JZData {
      * 删除所有记录
      * */
     public void delAll(String userName){
-    	JZSqliteHelper.saveYuSuan(context,JZSqliteHelper.YUSUAN_MONTH,JZSqliteHelper.YUSUAN_MONTH, 0);
+    	//JZSqliteHelper.saveYuSuan(context,JZSqliteHelper.YUSUAN_MONTH,JZSqliteHelper.YUSUAN_MONTH, 0);
 
-    	db.delete(JZSqliteHelper.ZHICHU,"ZC_USER ="+userName, null);
-    	db.delete(JZSqliteHelper.SHOURU, null, null);
+    	db.delete("zhichu","ZC_USER ="+userName, null);
+    	db.delete("shouru", "SR_USER ="+userName, null);
     }
     
     /*
      * 删除收入表的记录
      * */
     public int DelShouRuInfo(int id){
-        int iddel=  db.delete(JZSqliteHelper.SHOURU, "ID ="+id, null);
+        int iddel=  db.delete("shouru", "ID ="+id, null);
         this.close();
         return iddel;
     }

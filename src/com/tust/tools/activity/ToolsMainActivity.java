@@ -27,7 +27,6 @@ import android.widget.SlidingDrawer.OnDrawerOpenListener;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.tust.tools.R;
-import com.tust.tools.db.JZSqliteHelper;
 import com.tust.tools.dialog.DialogAbout;
 //import com.tust.tools.dialog.DialogBWSheZhiMiMa;
 //import com.tust.tools.dialog.DialogShuRuMiMa;
@@ -92,14 +91,14 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         });
         dh3 = new DongHua3d();
         //获取当前是否显示提醒
-        int i = JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN);
-        if(i==0){
-            hidden_bt.setText("隐藏提醒");
-            isShow =true; 
-        }else{
-            hidden_bt.setText("显示提醒");
-            isShow =false;
-        }
+//        int i = JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN);
+//        if(i==0){
+//            hidden_bt.setText("隐藏提醒");
+//            isShow =true;
+//        }else{
+//            hidden_bt.setText("显示提醒");
+//            isShow =false;
+//        }
     }
     
     String noChange="";
@@ -272,16 +271,16 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
             break;
         case R.id.main_hidden_bt:
             sd.animateClose();
-            if(JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN)==0){
-              //这个用来存储当前是否显示提醒   显示为0，不显示为1
-                JZSqliteHelper.saveYuSuan(this,JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN,1);
-                isShow = false;
-                hidden_bt.setText("显示提醒");
-            }else{
-                JZSqliteHelper.saveYuSuan(this,JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN,0);
-                isShow = true;
-                hidden_bt.setText("隐藏提醒");
-            }
+//            if(JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN)==0){
+//              //这个用来存储当前是否显示提醒   显示为0，不显示为1
+//                JZSqliteHelper.saveYuSuan(this,JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN,1);
+//                isShow = false;
+//                hidden_bt.setText("显示提醒");
+//            }else{
+//                JZSqliteHelper.saveYuSuan(this,JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN,0);
+//                isShow = true;
+//                hidden_bt.setText("隐藏提醒");
+//            }
             break;
         case R.id.main_exit_bt://底部上拉 退出  按钮
         	sd.animateClose(); 

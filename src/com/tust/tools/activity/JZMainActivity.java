@@ -29,7 +29,6 @@ import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
 import com.tust.tools.bean.User;
 import com.tust.tools.db.JZData;
-import com.tust.tools.db.JZSqliteHelper;
 import com.tust.tools.db.UserData;
 import com.tust.tools.service.DongHua3d;
 import com.tust.tools.service.GetTime;
@@ -74,9 +73,9 @@ public class JZMainActivity extends Activity implements OnClickListener {
         userData = new UserData(this);
         user = userData.getUserByUserName(userName);
         TextView gg=(TextView)this.findViewById(R.id.jz_gg_text);
-        if(!ToolsMainActivity.isShow){
-            gg.setVisibility(View.INVISIBLE);
-        }
+//        if(!ToolsMainActivity.isShow){
+//            gg.setVisibility(View.INVISIBLE);
+//        }
     }
 
     @Override

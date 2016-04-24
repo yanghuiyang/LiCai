@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.tust.tools.R;
 import com.tust.tools.bean.User;
-import com.tust.tools.db.JZSqliteHelper;
+
 import com.tust.tools.db.UserData;
 
 public class JZYuSuanActivity extends Activity implements OnClickListener {

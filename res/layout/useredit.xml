@@ -148,7 +148,18 @@
 				android:text="@string/save"
 				android:textSize="16.0dip" />
 
-	    </RelativeLayout>
+			<Button
+				android:id="@+id/edit_btn_exit"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/exit"
+				android:textSize="16.0dip"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginBottom="46dp"
+				android:layout_toRightOf="@+id/spinner_sex" />
+
+		</RelativeLayout>
 
 	    <TableLayout
 	        android:id="@+id/TableLayout01"

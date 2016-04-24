@@ -94,7 +94,7 @@
     <string name="sex">性别</string>
     <string name="tel">手机</string>
     <!-- 登陆使用-end -->
-    
+    <string name="exit">注销</string>
      <string-array name="sprinnerSex">
      	<item>男</item>  
      	<item>女</item>  

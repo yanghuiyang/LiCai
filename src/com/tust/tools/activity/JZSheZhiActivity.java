@@ -19,7 +19,6 @@ import android.widget.Toast;
 
 import com.tust.tools.R;
 import com.tust.tools.db.JZData;
-import com.tust.tools.db.JZSqliteHelper;
 import com.tust.tools.dialog.DialogAbout;
 
 public class JZSheZhiActivity extends Activity implements OnClickListener {

@@ -13,16 +13,19 @@ import java.util.List;
  */
 public class ExpenditureTypeData {
     //数据库名称
-    private String DB_NAME="ExpenditureType.db";
+    //private String DB_NAME="ExpenditureType.db";
+
     //数据库版本
-    private static int DB_VERSION=1;
+   // private static int DB_VERSION=1;
     private SQLiteDatabase db;
-    private ExpenditureTypeSqliteHelper dbHelper;
+ //   private ExpenditureTypeSqliteHelper dbHelper;
+    private DBOpenHelper dbHelper;// 创建DBOpenHelper对象
     private Context context;
 
     public ExpenditureTypeData(Context context){
         this.context = context;
-        dbHelper=new ExpenditureTypeSqliteHelper(context,DB_NAME, null, DB_VERSION);
+        //dbHelper=new ExpenditureTypeSqliteHelper(context,DB_NAME, null, DB_VERSION);
+        dbHelper = new DBOpenHelper(context);// 初始化DBOpenHelper对象
         db= dbHelper.getWritableDatabase();
     }
 

@@ -10,14 +10,16 @@ import android.database.sqlite.SQLiteDatabase;
 import com.tust.tools.bean.BWcontent;
 public class BWData {
 	//数据库名称
-	private String DB_NAME="beiwang.db";
+	//private String DB_NAME="beiwang.db";
+
 	//数据库版本
 	private static int DB_VERSION=1;
 	private SQLiteDatabase db;
-	private BWSqliteHelper dbHelper;
-	 
+	//private BWSqliteHelper dbHelper;
+    private DBOpenHelper dbHelper;// 创建DBOpenHelper对象
     public BWData(Context context){
-        dbHelper=new BWSqliteHelper(context,DB_NAME, null, DB_VERSION);
+       // dbHelper=new BWSqliteHelper(context,DB_NAME, null, DB_VERSION);
+        dbHelper = new DBOpenHelper(context);// 初始化DBOpenHelper对象
         db= dbHelper.getWritableDatabase();
     }
     
@@ -31,7 +33,7 @@ public class BWData {
      * */
     public ArrayList<BWcontent> GetBWList(String selection){
         ArrayList<BWcontent> beiwanglist=new ArrayList<BWcontent>();
-    	Cursor cursor=db.query(BWSqliteHelper.BEIWANG, null, selection, null, null, null, "ID DESC");
+    	Cursor cursor=db.query("beiwang", null, selection, null, null, null, "ID DESC");
 	    	cursor.moveToFirst();
 	    	while(!cursor.isAfterLast()&&(cursor.getString(1)!=null)){
 	    		BWcontent beiwang=new BWcontent();
@@ -59,7 +61,7 @@ public class BWData {
      * */
     public boolean haveBeiWangInfo(int id){
     	boolean flag=false;
-    	Cursor cursor=db.query(BWSqliteHelper.BEIWANG, null,"ID ='"+id+"'", null, null, null, null);
+    	Cursor cursor=db.query("beiwang", null,"ID ='"+id+"'", null, null, null, null);
     	flag=cursor.moveToFirst();
     	cursor.close();
     	return flag;
@@ -80,7 +82,7 @@ public class BWData {
         values.put(BWcontent.COLOR, beiwang.getColor());
         values.put(BWcontent.SIZE, beiwang.getSize());
         values.put(BWcontent.USER, beiwang.getUser());//add
-        int idupdate= db.update(BWSqliteHelper.BEIWANG, values, "ID ='"+id+"'", null);
+        int idupdate= db.update("beiwang", values, "ID ='"+id+"'", null);
         this.close();
         return idupdate;
     }
@@ -99,7 +101,7 @@ public class BWData {
         values.put(BWcontent.COLOR, beiwang.getColor());
         values.put(BWcontent.SIZE, beiwang.getSize());
         values.put(BWcontent.USER, beiwang.getUser());//add
-        Long uid = db.insert(BWSqliteHelper.BEIWANG, BWcontent.YEAR, values);
+        Long uid = db.insert("beiwang", BWcontent.YEAR, values);
 //        this.close();
         return uid;
     }
@@ -108,7 +110,7 @@ public class BWData {
      * 删除备忘表的记录
      * */
     public int DelBWInfo(int id){
-        int iddel=  db.delete(BWSqliteHelper.BEIWANG, "ID ="+id, null);
+        int iddel=  db.delete("beiwang", "ID ="+id, null);
 //        this.close();
         return iddel;
     }
