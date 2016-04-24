@@ -14,333 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="857498a8-8e81-4a41-b4df-718de3da846e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/jz_mingxi_title.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/common_lv_item_divider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/common_lv_item_selected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/selector.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/expenditure_typemanage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/income_typemanage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/activity/IncomeTypeManageActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/bean/ExpenditureType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/bean/IncomeType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeSqliteHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeSqliteHelper.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/achartengine_1_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/dialog/DialogBWSheZhiMiMa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/dialog/DialogShuRuMiMa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/achartengine-1.0.0_fb50f2bae2023d4bd3f4170d7d3f1f0dd27f4b30.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/instant-run-bootstrap_0f69007b6c4d9a77aa5a9d6d1bce3ef8d5967767.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/instant-run_e9b6e7bf75f093cb386ff923c0e8f321e2348ec5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/main_9cc3b4763fa408c0dc4c8572b6d0a067ed3f587b.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable-hdpi-v4/jz_main_bt_mingxi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable-hdpi-v4/jz_mingxi_title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/main_botton.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/dialog_bwmima.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/dialog_mima.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$id$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$layout$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$string$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$style$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/BWMainActivity$1$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/BWMainActivity$2$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/BWMainActivity$3$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/BWMainActivity$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/JZSheZhiActivity$1$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/JZSheZhiActivity$2$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/JZSheZhiActivity$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/JZYuSuanActivity$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/LoginActivity$1$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/LoginActivity$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$1$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$2$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$3$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$4$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$5$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$6$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$MessageHandler$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/UserEditActivity$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/UserRegisterActivity$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/service/Marrquee$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/jz_mingxi_title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/dialog_bwmima.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/dialog_mima.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/jz_main_bt_mingxi.png" afterPath="$PROJECT_DIR$/res/drawable/jz_main_bt_mingxi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$drawable.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$style.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$4.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$5.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$MyClick.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$MyClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$TextClick.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$TextClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZBaoBiaoActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZBaoBiaoActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$1$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZYuSuanActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZYuSuanActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$4.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$5.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$6.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/BWcontent.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/BWcontent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/JZshouru.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/JZshouru.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/JZzhichu.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/JZzhichu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/BWData.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/BWData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/BWSqliteHelper.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/BWSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/JZData.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/JZData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/JZSqliteHelper.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/JZSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/service/BWAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/service/BWAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/service/Marrquee.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/service/Marrquee.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-19.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-19.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$color.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$drawable.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$style.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JSMainActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JSMainActivity$MyClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JSMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JSMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$MyClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$TextClick.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$TextClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZBaoBiaoActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZBaoBiaoActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$1$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMingXiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMingXiActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZYuSuanActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZYuSuanActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/LoginActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/UserEditActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/UserEditActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/UserRegisterActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/UserRegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/BWcontent.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/BWcontent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/JZshouru.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/JZshouru.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/JZzhichu.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/JZzhichu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/User.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/BWData.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/BWData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/BWSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/BWSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/JZData.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/JZData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/JZSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/JZSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/UserData.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/UserData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/UserSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/UserSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogAbout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogAbout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogBeiZhu.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogBeiZhu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogLeiBie.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogLeiBie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/BWAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/BWAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/JZLeibieAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/JZLeibieAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/JZMingXiAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/JZMingXiAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$color.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$drawable.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$style.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JSMainActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JSMainActivity$MyClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JSMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JSMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$MyClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$TextClick.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$TextClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZBaoBiaoActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZBaoBiaoActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$1$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMingXiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMingXiActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZYuSuanActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZYuSuanActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/LoginActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/UserEditActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/UserEditActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/UserRegisterActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/UserRegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/BWcontent.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/BWcontent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/JZshouru.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/JZshouru.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/JZzhichu.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/JZzhichu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/User.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/BWData.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/BWData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/BWSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/BWSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/JZData.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/JZData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/JZSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/JZSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/UserData.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/UserData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/UserSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/UserSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogAbout.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogAbout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogBeiZhu.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogBeiZhu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogLeiBie.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogLeiBie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/BWAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/BWAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/JZLeibieAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/JZLeibieAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/JZMingXiAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/JZMingXiAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$color.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$drawable.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$style.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JSMainActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JSMainActivity$MyClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JSMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JSMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$MyClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$TextClick.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$TextClick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZBaoBiaoActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZBaoBiaoActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$1$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMingXiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMingXiActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZYuSuanActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZYuSuanActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/LoginActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/UserEditActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/UserEditActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/UserRegisterActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/UserRegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/BWcontent.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/BWcontent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/JZshouru.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/JZshouru.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/JZzhichu.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/JZzhichu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/User.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/BWData.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/BWData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/BWSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/BWSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/JZData.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/JZData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/JZSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/JZSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/UserData.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/UserData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/UserSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/UserSqliteHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogAbout.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogAbout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogBeiZhu.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogBeiZhu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogLeiBie.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogLeiBie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/BWAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/BWAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/JZLeibieAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/JZLeibieAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/JZMingXiAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/JZMingXiAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/LiCaiTools1.0-debug-unaligned.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/LiCaiTools1.0-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/LiCaiTools1.0-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/LiCaiTools1.0-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiCaiTools1.0.iml" afterPath="$PROJECT_DIR$/LiCaiTools1.0.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/anim.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/anim.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/reload-changes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/jz_shezhi.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/jz_shezhi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/loginpage.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/loginpage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/tust/tools/R.java" afterPath="$PROJECT_DIR$/gen/com/tust/tools/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/jz_shezhi.xml" afterPath="$PROJECT_DIR$/res/layout/jz_shezhi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/activity/JZBaoBiaoActivity.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/activity/JZBaoBiaoActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/db/JZSqliteHelper.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/JZSqliteHelper.java" />
     </list>
     <ignored path="LiCaiTools1.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -393,7 +67,7 @@
       <file leaf-file-name="ExpenditureTypeManageActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/ExpenditureTypeManageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.243309">
+            <state vertical-scroll-proportion="0.37878788">
               <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1843,12 +1517,18 @@
       <option name="project" value="LOCAL" />
       <updated>1461165931410</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加支出类型管理，收入类型管理。暂未将类型关联到收支">
+      <created>1461502569956</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1461502569956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1384" height="738" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SQLite Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5500911" sideWeight="0.45731708" order="7" side_tool="false" content_ui="tabs" />
@@ -1859,9 +1539,9 @@
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18943533" sideWeight="0.44207317" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SQLite Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.089176826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19125684" sideWeight="0.5205793" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45901638" sideWeight="0.5205793" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19125684" sideWeight="0.47942072" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45901638" sideWeight="0.47942072" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18363637" sideWeight="0.4870427" order="10" side_tool="false" content_ui="tabs" />
@@ -1897,7 +1577,8 @@
     <MESSAGE value="实现记账收入、支出对应到账户。注意，预算还未实现对应到用户" />
     <MESSAGE value="实现备忘录对应到账户。" />
     <MESSAGE value="账户添加预算字段并实现预算对应到账户" />
-    <option name="LAST_COMMIT_MESSAGE" value="账户添加预算字段并实现预算对应到账户" />
+    <MESSAGE value="添加支出类型管理，收入类型管理。暂未将类型关联到收支" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加支出类型管理，收入类型管理。暂未将类型关联到收支" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2178,6 +1859,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31779662">
           <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2185,6 +1867,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3339921">
           <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2203,6 +1886,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6916996">
           <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2237,6 +1921,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2244,6 +1929,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2251,6 +1937,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.08225108">
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2306,7 +1993,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/ExpenditureTypeManageActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.243309">
+        <state vertical-scroll-proportion="0.37878788">
           <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
