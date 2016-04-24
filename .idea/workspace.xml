@@ -8,19 +8,127 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/res/layout/loginpage.xml" line="120" />
+    <bookmark url="file://$PROJECT_DIR$" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="857498a8-8e81-4a41-b4df-718de3da846e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/com/tust/tools/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogBWSheZhiMiMa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogShuRuMiMa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogBWSheZhiMiMa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogShuRuMiMa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogBWSheZhiMiMa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogShuRuMiMa.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/jz_mingxi_title.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/common_lv_item_divider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/common_lv_item_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/expenditure_typemanage.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/income_typemanage.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/activity/IncomeTypeManageActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/bean/ExpenditureType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/bean/IncomeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeSqliteHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeSqliteHelper.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/achartengine_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/dialog/DialogBWSheZhiMiMa.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/dialog/DialogShuRuMiMa.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/achartengine-1.0.0_fb50f2bae2023d4bd3f4170d7d3f1f0dd27f4b30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/instant-run-bootstrap_0f69007b6c4d9a77aa5a9d6d1bce3ef8d5967767.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/instant-run_e9b6e7bf75f093cb386ff923c0e8f321e2348ec5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/main_9cc3b4763fa408c0dc4c8572b6d0a067ed3f587b.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable-hdpi-v4/jz_main_bt_mingxi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable-hdpi-v4/jz_mingxi_title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/main_botton.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/dialog_bwmima.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/dialog_mima.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$id$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$layout$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$string$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/R$style$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/BWMainActivity$1$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/BWMainActivity$2$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/BWMainActivity$3$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/BWMainActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/JZSheZhiActivity$1$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/JZSheZhiActivity$2$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/JZSheZhiActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/JZYuSuanActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/LoginActivity$1$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/LoginActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$1$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$2$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$3$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$4$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$5$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$6$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$MessageHandler$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/UserEditActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/UserRegisterActivity$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/service/Marrquee$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/jz_mingxi_title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/dialog_bwmima.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/dialog_mima.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/jz_main_bt_mingxi.png" afterPath="$PROJECT_DIR$/res/drawable/jz_main_bt_mingxi.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$drawable.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$style.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$4.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$5.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/BWNewActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$MessageHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$MyClick.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$MyClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$TextClick.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity$TextClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZAddActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZBaoBiaoActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZBaoBiaoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$1$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZSheZhiActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZYuSuanActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/JZYuSuanActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$4.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$5.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$6.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity$MessageHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/activity/ToolsMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/BWcontent.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/BWcontent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/JZshouru.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/JZshouru.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/JZzhichu.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/bean/JZzhichu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/BWData.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/BWData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/BWSqliteHelper.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/BWSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/JZData.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/JZData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/JZSqliteHelper.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/db/JZSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/service/BWAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/service/BWAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/tust/tools/service/Marrquee.class" afterPath="$PROJECT_DIR$/bin/classes/com/tust/tools/service/Marrquee.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-19.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-19.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$color.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$drawable.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/R$string.class" />
@@ -30,16 +138,59 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/BWNewActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JSMainActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JSMainActivity$MyClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JSMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JSMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$MessageHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$MyClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$TextClick.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity$TextClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZAddActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZBaoBiaoActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZBaoBiaoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$1$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMingXiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZMingXiActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZSheZhiActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZYuSuanActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/JZYuSuanActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/LoginActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/LoginActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/LoginActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/ToolsMainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/UserEditActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/UserEditActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/UserRegisterActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/activity/UserRegisterActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/BWcontent.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/BWcontent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/JZshouru.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/JZshouru.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/JZzhichu.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/JZzhichu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/User.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/bean/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/BWData.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/BWData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/BWSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/BWSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/JZData.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/JZData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/JZSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/JZSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/UserData.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/UserData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/UserSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/db/UserSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogAbout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogAbout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogBeiZhu.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogBeiZhu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogLeiBie.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/dialog/DialogLeiBie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/BWAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/BWAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/JZLeibieAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/JZLeibieAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/JZMingXiAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/tust/tools/service/JZMingXiAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$color.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$drawable.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/R$string.class" />
@@ -49,19 +200,59 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/BWNewActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JSMainActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JSMainActivity$MyClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JSMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JSMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$MessageHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$MyClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$TextClick.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity$TextClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZAddActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZBaoBiaoActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZBaoBiaoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$1$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMingXiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZMingXiActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZSheZhiActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZYuSuanActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/JZYuSuanActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/LoginActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/LoginActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/LoginActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/ToolsMainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/UserEditActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/UserEditActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/UserRegisterActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/activity/UserRegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/instant-run-bootstrap_0f69007b6c4d9a77aa5a9d6d1bce3ef8d5967767.jar" afterPath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/instant-run-bootstrap_0f69007b6c4d9a77aa5a9d6d1bce3ef8d5967767.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/main_9cc3b4763fa408c0dc4c8572b6d0a067ed3f587b.jar" afterPath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/main_9cc3b4763fa408c0dc4c8572b6d0a067ed3f587b.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/BWcontent.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/BWcontent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/JZshouru.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/JZshouru.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/JZzhichu.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/JZzhichu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/User.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/bean/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/BWData.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/BWData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/BWSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/BWSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/JZData.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/JZData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/JZSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/JZSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/UserData.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/UserData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/UserSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/db/UserSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogAbout.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogAbout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogBeiZhu.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogBeiZhu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogLeiBie.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/dialog/DialogLeiBie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/BWAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/BWAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/JZLeibieAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/JZLeibieAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/JZMingXiAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/tust/tools/service/JZMingXiAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$color.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$drawable.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/R$string.class" />
@@ -71,43 +262,85 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/BWNewActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JSMainActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JSMainActivity$MyClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JSMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JSMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$MessageHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$MyClick.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$MyClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$TextClick.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity$TextClick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZAddActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZBaoBiaoActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZBaoBiaoActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$1$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMingXiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZMingXiActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZSheZhiActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZYuSuanActivity$MessageHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZYuSuanActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/JZYuSuanActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/LoginActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/LoginActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/LoginActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/ToolsMainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/UserEditActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/UserEditActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/UserRegisterActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/activity/UserRegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$override.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/tust/tools/activity/ToolsMainActivity$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/BWcontent.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/BWcontent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/JZshouru.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/JZshouru.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/JZzhichu.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/JZzhichu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/User.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/bean/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/BWData.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/BWData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/BWSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/BWSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/JZData.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/JZData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/JZSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/JZSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/UserData.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/UserData.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/UserSqliteHelper.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/db/UserSqliteHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogAbout.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogAbout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogBeiZhu.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogBeiZhu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogLeiBie.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/dialog/DialogLeiBie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/BWAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/BWAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/JZLeibieAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/JZLeibieAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/JZMingXiAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/tust/tools/service/JZMingXiAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/LiCaiTools1.0-debug-unaligned.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/LiCaiTools1.0-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/LiCaiTools1.0-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/LiCaiTools1.0-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiCaiTools1.0.iml" afterPath="$PROJECT_DIR$/LiCaiTools1.0.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/anim.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/anim.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/reload-changes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/jz_shezhi.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/jz_shezhi.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/loginpage.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/loginpage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/main.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/tust/tools/R.java" afterPath="$PROJECT_DIR$/gen/com/tust/tools/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/jz_shezhi.xml" afterPath="$PROJECT_DIR$/res/layout/jz_shezhi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/loginpage.xml" afterPath="$PROJECT_DIR$/res/layout/loginpage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/activity/BWMainActivity.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/activity/BWMainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/colors.xml" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/activity/JZBaoBiaoActivity.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/activity/JZBaoBiaoActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/activity/ToolsMainActivity.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/activity/ToolsMainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogAbout.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogAbout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogBWSheZhiMiMa.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogBWSheZhiMiMa.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogShuRuMiMa.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogShuRuMiMa.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/tust/tools/db/JZSqliteHelper.java" afterPath="$PROJECT_DIR$/src/com/tust/tools/db/JZSqliteHelper.java" />
     </list>
     <ignored path="LiCaiTools1.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,7 +373,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="true" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -157,35 +390,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BWMainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/BWMainActivity.java">
+      <file leaf-file-name="ExpenditureTypeManageActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/ExpenditureTypeManageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.243309">
+              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7890#7891#0" expanded="true" />
-                <element signature="e#7961#7962#0" expanded="true" />
+                <element signature="method#onCreate#0;class#ExpenditureTypeManageActivity#0" expanded="false" />
+                <element signature="e#2862#3562#0" expanded="true" />
+                <element signature="e#3561#3562#0" expanded="true" />
+                <element signature="e#4145#4562#0" expanded="true" />
+                <element signature="e#4561#4562#0" expanded="true" />
+                <element signature="e#4605#4804#0" expanded="true" />
+                <element signature="e#4803#4804#0" expanded="true" />
+                <element signature="e#5059#5067#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JZAddActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/JZAddActivity.java">
+      <file leaf-file-name="IncomeTypeManageActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/IncomeTypeManageActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="361" column="30" selection-start-line="361" selection-start-column="30" selection-end-line="361" selection-end-column="30" />
+              <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+              <folding>
+                <element signature="e#3138#3828#0" expanded="true" />
+                <element signature="e#3827#3828#0" expanded="true" />
+                <element signature="e#4401#4813#0" expanded="true" />
+                <element signature="e#4812#4813#0" expanded="true" />
+                <element signature="e#4856#5055#0" expanded="true" />
+                <element signature="e#5054#5055#0" expanded="true" />
+                <element signature="e#5310#5318#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IncomeTypeData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <file leaf-file-name="ExpenditureTypeData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.253732">
-              <caret line="266" column="12" selection-start-line="266" selection-start-column="12" selection-end-line="266" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="income_typemanage.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/income_typemanage.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -194,42 +461,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JZMainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/JZMainActivity.java">
+      <file leaf-file-name="ExpenditureTypeSqliteHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeSqliteHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
-              <folding />
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/LoginActivity.java">
+      <file leaf-file-name="JZSheZhiActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
+              <caret line="120" column="47" selection-start-line="120" selection-start-column="47" selection-end-line="120" selection-end-column="47" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginpage.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/loginpage.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56980056">
-              <caret line="120" column="56" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="yang" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -843,7 +1111,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1460522876430" />
+        <entry key="$PROJECT_DIR$" value="1461403695515" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1024,29 +1292,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/tust/tools/db/UserData.java" />
-        <option value="$PROJECT_DIR$/res/layout/userEdit.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/tust/tools/db/UserSqliteHelper.java" />
         <option value="$PROJECT_DIR$/res/layout/useredit.xml" />
         <option value="$PROJECT_DIR$/res/layout/register.xml" />
-        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/UserEditActivity.java" />
         <option value="$PROJECT_DIR$/src/com/tust/tools/service/Marrquee.java" />
-        <option value="$PROJECT_DIR$/src/com/tust/tools/bean/JZshouru.java" />
         <option value="$PROJECT_DIR$/src/com/tust/tools/activity/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/jz_shezhi.xml" />
         <option value="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogShuRuMiMa.java" />
         <option value="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogBWSheZhiMiMa.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/dialog_mima.xml" />
-        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/ToolsMainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/tust/tools/dialog/DialogAbout.java" />
-        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/BWMainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main_botton.xml" />
         <option value="$PROJECT_DIR$/res/drawable-xxhdpi/main_botton.xml" />
         <option value="$PROJECT_DIR$/res/layout/loginpage.xml" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/bean/JZzhichu.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/UserEditActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/bean/JZshouru.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/JZAddActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/JZData.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/bean/BWcontent.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/BWSqliteHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/BWData.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/BWNewActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/service/BWAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/UserData.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/ToolsMainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/BWMainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/UserSqliteHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/JZYuSuanActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/JZMainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/JZBaoBiaoActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/jz_shezhi.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/incometypemanage.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/JZSqliteHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeSqliteHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeSqliteHelper.java" />
+        <option value="$PROJECT_DIR$/res/drawable/selector.xml" />
+        <option value="$PROJECT_DIR$/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/res/layout/expenditure_typemanage.xml" />
+        <option value="$PROJECT_DIR$/res/layout/income_typemanage.xml" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/bean/IncomeType.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/bean/ExpenditureType.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeData.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/service/CustomDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/ExpenditureTypeManageActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeData.java" />
+        <option value="$PROJECT_DIR$/src/com/tust/tools/activity/IncomeTypeManageActivity.java" />
       </list>
     </option>
   </component>
@@ -1081,9 +1377,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1116,30 +1413,16 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LiCaiTools1.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="LiCaiTools1.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1152,12 +1435,16 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dialog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1170,8 +1457,16 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1216,22 +1511,28 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="C:/Program Files (x86)/Android/android-sdk" />
-    <property name="device.picker.selection" value="192.168.56.101:5555" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="device.picker.selection" value="APU0215C05014611" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="321" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="317" />
     <property name="android.project.structure.last.selected" value="LiCaiTools1.0" />
     <property name="android.project.structure.proportion" value="0.15" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/res/drawable" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.tust.tools.activity" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Java\workspace\LiCaiTools1.0\res\drawable-xxhdpi" />
+      <recent name="C:\Java\workspace\LiCaiTools1.0\src\com\tust\tools\service" />
+      <recent name="C:\Java\workspace\LiCaiTools1.0\res\drawable" />
       <recent name="C:\Java\workspace\LiCaiTools1.0\res\layout" />
+      <recent name="C:\Java\workspace\LiCaiTools1.0\res\drawable-hdpi" />
+      <recent name="C:\Java\workspace\LiCaiTools1.0\res\drawable-xxhdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.LiCaiTools1.0">
@@ -1497,6 +1798,22 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
   </component>
+  <component name="SQLiteDataSourceStorage">
+    <android-data-sources>
+      <data-source>
+        <option name="databaseName" value="user.db" />
+        <option name="deviceId" value="SERIAL_NUMBER_192_168_56_101_5555" />
+        <option name="name" value="Database1" />
+        <option name="packageName" value="com.tust.tools" />
+      </data-source>
+      <data-source>
+        <option name="databaseName" value="ExpenditureType.db" />
+        <option name="deviceId" value="SERIAL_NUMBER_APU0215C05014611" />
+        <option name="name" value="Database2" />
+        <option name="packageName" value="com.tust.tools" />
+      </data-source>
+    </android-data-sources>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
     <configuration />
@@ -1508,37 +1825,58 @@
       <option name="number" value="Default" />
       <updated>1460522845325</updated>
     </task>
+    <task id="LOCAL-00001" summary="实现记账收入、支出对应到账户。注意，预算还未实现对应到用户">
+      <created>1461080913603</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1461080913603</updated>
+    </task>
+    <task id="LOCAL-00002" summary="实现备忘录对应到账户。">
+      <created>1461143915294</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1461143915294</updated>
+    </task>
+    <task id="LOCAL-00003" summary="账户添加预算字段并实现预算对应到账户">
+      <created>1461165931410</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1461165931410</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1384" height="738" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SQLite Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5500911" sideWeight="0.45731708" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32012194" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.010909091" sideWeight="0.49693722" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18943533" sideWeight="0.44207317" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43636364" sideWeight="0.49387443" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SQLite Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.089176826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19125684" sideWeight="0.5205793" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43636364" sideWeight="0.50612557" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19125684" sideWeight="0.47942072" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18363637" sideWeight="0.4870427" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.121818185" sideWeight="0.49390244" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49908924" sideWeight="0.47865853" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2942073" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909092" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30487806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09836066" sideWeight="0.49695122" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22713415" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1555,337 +1893,48 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="实现记账收入、支出对应到账户。注意，预算还未实现对应到用户" />
+    <MESSAGE value="实现备忘录对应到账户。" />
+    <MESSAGE value="账户添加预算字段并实现预算对应到账户" />
+    <option name="LAST_COMMIT_MESSAGE" value="账户添加预算字段并实现预算对应到账户" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="74" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/BWData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2083335">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/BWSqliteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.8935184">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/JZYuSuanActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        <state vertical-scroll-proportion="1.058548">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/JZSqliteHelper.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/jz_shezhi.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19305019">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="33" />
+        <state vertical-scroll-proportion="-0.36764705">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#2107#2144#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/UserSqliteHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/JZData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/Instrumentation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1088" column="0" selection-start-line="1088" selection-start-column="0" selection-end-line="1088" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/jz_yusuan.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/jz_mingxi_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/register.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.238806">
-          <caret line="143" column="37" selection-start-line="143" selection-start-column="37" selection-end-line="143" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2558594">
-          <caret line="2181" column="0" selection-start-line="2181" selection-start-column="0" selection-end-line="2181" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18422" column="0" selection-start-line="18422" selection-start-column="0" selection-end-line="18422" selection-end-column="0" />
-          <folding>
-            <element signature="e#717286#717287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1928" column="0" selection-start-line="1928" selection-start-column="0" selection-end-line="1928" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#228949#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#35483#35484#0" expanded="false" />
-            <element signature="e#35544#35545#0" expanded="false" />
-            <element signature="e#36819#36820#0" expanded="false" />
-            <element signature="e#36849#36850#0" expanded="false" />
-            <element signature="e#37245#37246#0" expanded="false" />
-            <element signature="e#37280#37281#0" expanded="false" />
-            <element signature="e#37388#37389#0" expanded="false" />
-            <element signature="e#37423#37424#0" expanded="false" />
-            <element signature="e#37526#37527#0" expanded="false" />
-            <element signature="e#37564#37565#0" expanded="false" />
-            <element signature="e#37682#37683#0" expanded="false" />
-            <element signature="e#37712#37713#0" expanded="false" />
-            <element signature="e#37826#37827#0" expanded="false" />
-            <element signature="e#37863#37864#0" expanded="false" />
-            <element signature="e#38212#38213#0" expanded="false" />
-            <element signature="e#38242#38243#0" expanded="false" />
-            <element signature="e#39497#39498#0" expanded="false" />
-            <element signature="e#39570#39571#0" expanded="false" />
-            <element signature="e#45262#45263#0" expanded="false" />
-            <element signature="e#45314#45315#0" expanded="false" />
-            <element signature="e#48307#48308#0" expanded="false" />
-            <element signature="e#48337#48338#0" expanded="false" />
-            <element signature="e#59940#59941#0" expanded="false" />
-            <element signature="e#59968#59969#0" expanded="false" />
-            <element signature="e#60737#60738#0" expanded="false" />
-            <element signature="e#60764#60765#0" expanded="false" />
-            <element signature="e#68462#68463#0" expanded="false" />
-            <element signature="e#68503#68504#0" expanded="false" />
-            <element signature="e#72785#72786#0" expanded="false" />
-            <element signature="e#72812#72813#0" expanded="false" />
-            <element signature="e#74492#74493#0" expanded="false" />
-            <element signature="e#74519#74520#0" expanded="false" />
-            <element signature="e#76490#76491#0" expanded="false" />
-            <element signature="e#76523#76524#0" expanded="false" />
-            <element signature="e#83942#83943#0" expanded="false" />
-            <element signature="e#83993#83994#0" expanded="false" />
-            <element signature="e#87552#87553#0" expanded="false" />
-            <element signature="e#87606#87607#0" expanded="false" />
-            <element signature="e#95087#95088#0" expanded="false" />
-            <element signature="e#95115#95116#0" expanded="false" />
-            <element signature="e#96495#96496#0" expanded="false" />
-            <element signature="e#96523#96524#0" expanded="false" />
-            <element signature="e#97436#97437#0" expanded="false" />
-            <element signature="e#97464#97465#0" expanded="false" />
-            <element signature="e#98930#98931#0" expanded="false" />
-            <element signature="e#98958#98959#0" expanded="false" />
-            <element signature="e#100188#100189#0" expanded="false" />
-            <element signature="e#100216#100217#0" expanded="false" />
-            <element signature="e#108776#108777#0" expanded="false" />
-            <element signature="e#108803#108804#0" expanded="false" />
-            <element signature="e#120627#120628#0" expanded="false" />
-            <element signature="e#120664#120665#0" expanded="false" />
-            <element signature="e#123146#123147#0" expanded="false" />
-            <element signature="e#123215#123216#0" expanded="false" />
-            <element signature="e#123393#123394#0" expanded="false" />
-            <element signature="e#123457#123458#0" expanded="false" />
-            <element signature="e#124683#124684#0" expanded="false" />
-            <element signature="e#124740#124741#0" expanded="false" />
-            <element signature="e#125081#125082#0" expanded="false" />
-            <element signature="e#125138#125139#0" expanded="false" />
-            <element signature="e#125445#125446#0" expanded="false" />
-            <element signature="e#125483#125484#0" expanded="false" />
-            <element signature="e#125623#125624#0" expanded="false" />
-            <element signature="e#125686#125687#0" expanded="false" />
-            <element signature="e#127289#127290#0" expanded="false" />
-            <element signature="e#127316#127317#0" expanded="false" />
-            <element signature="e#129004#129005#0" expanded="false" />
-            <element signature="e#129045#129046#0" expanded="false" />
-            <element signature="e#129239#129240#0" expanded="false" />
-            <element signature="e#129284#129285#0" expanded="false" />
-            <element signature="e#130996#130997#0" expanded="false" />
-            <element signature="e#131032#131033#0" expanded="false" />
-            <element signature="e#140157#140158#0" expanded="false" />
-            <element signature="e#140203#140204#0" expanded="false" />
-            <element signature="e#141934#141935#0" expanded="false" />
-            <element signature="e#141988#141989#0" expanded="false" />
-            <element signature="e#153595#153596#0" expanded="false" />
-            <element signature="e#153638#153639#0" expanded="false" />
-            <element signature="e#155441#155442#0" expanded="false" />
-            <element signature="e#155487#155488#0" expanded="false" />
-            <element signature="e#177739#177740#0" expanded="false" />
-            <element signature="e#177771#177772#0" expanded="false" />
-            <element signature="e#177950#177951#0" expanded="false" />
-            <element signature="e#177983#177984#0" expanded="false" />
-            <element signature="e#178548#178549#0" expanded="false" />
-            <element signature="e#178594#178595#0" expanded="false" />
-            <element signature="e#182021#182022#0" expanded="false" />
-            <element signature="e#182045#182046#0" expanded="false" />
-            <element signature="e#191039#191040#0" expanded="false" />
-            <element signature="e#191072#191073#0" expanded="false" />
-            <element signature="e#193304#193305#0" expanded="false" />
-            <element signature="e#193346#193347#0" expanded="false" />
-            <element signature="e#193520#193521#0" expanded="false" />
-            <element signature="e#193549#193550#0" expanded="false" />
-            <element signature="e#193589#193590#0" expanded="false" />
-            <element signature="e#193623#193624#0" expanded="false" />
-            <element signature="e#198548#198549#0" expanded="false" />
-            <element signature="e#198607#198608#0" expanded="false" />
-            <element signature="e#199740#199741#0" expanded="false" />
-            <element signature="e#199767#199768#0" expanded="false" />
-            <element signature="e#218614#218615#0" expanded="false" />
-            <element signature="e#218646#218647#0" expanded="false" />
-            <element signature="e#227110#227111#0" expanded="false" />
-            <element signature="e#227141#227142#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/UserEditActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/bean/JZshouru.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="e#953#954#0" expanded="false" />
-            <element signature="e#972#973#0" expanded="false" />
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1032#1033#0" expanded="false" />
-            <element signature="e#1062#1063#0" expanded="false" />
-            <element signature="e#1083#1084#0" expanded="false" />
-            <element signature="e#1125#1126#0" expanded="false" />
-            <element signature="e#1154#1155#0" expanded="false" />
-            <element signature="e#1181#1182#0" expanded="false" />
-            <element signature="e#1202#1203#0" expanded="false" />
-            <element signature="e#1241#1242#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-            <element signature="e#1298#1299#0" expanded="false" />
-            <element signature="e#1320#1321#0" expanded="false" />
-            <element signature="e#1361#1362#0" expanded="false" />
-            <element signature="e#1392#1393#0" expanded="false" />
-            <element signature="e#1419#1420#0" expanded="false" />
-            <element signature="e#1440#1441#0" expanded="false" />
-            <element signature="e#1479#1480#0" expanded="false" />
-            <element signature="e#1508#1509#0" expanded="false" />
-            <element signature="e#1534#1535#0" expanded="false" />
-            <element signature="e#1554#1555#0" expanded="false" />
-            <element signature="e#1591#1592#0" expanded="false" />
-            <element signature="e#1618#1619#0" expanded="false" />
-            <element signature="e#1648#1649#0" expanded="false" />
-            <element signature="e#1669#1670#0" expanded="false" />
-            <element signature="e#1711#1712#0" expanded="false" />
-            <element signature="e#1740#1741#0" expanded="false" />
-            <element signature="e#1771#1772#0" expanded="false" />
-            <element signature="e#1793#1794#0" expanded="false" />
-            <element signature="e#1837#1838#0" expanded="false" />
-            <element signature="e#1868#1869#0" expanded="false" />
-            <element signature="e#1903#1904#0" expanded="false" />
-            <element signature="e#1935#1936#0" expanded="false" />
-            <element signature="e#1984#1985#0" expanded="false" />
-            <element signature="e#2026#2027#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/service/Marrquee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#372#373#0" expanded="false" />
-            <element signature="e#409#410#0" expanded="false" />
-            <element signature="e#578#579#0" expanded="false" />
-            <element signature="e#605#606#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/useredit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="140" column="46" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/jz_mingxi.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1894,77 +1943,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.352941">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/dialog/DialogShuRuMiMa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/dialog/DialogLeiBie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33203125">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/dialog/DialogBWSheZhiMiMa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/jz_add.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/dialog_mima.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.238806">
-          <caret line="6" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.44968554">
+          <caret line="125" column="79" selection-start-line="125" selection-start-column="79" selection-end-line="125" selection-end-column="79" />
           <folding>
-            <element signature="e#675#696#0" expanded="true" />
-            <element signature="e#1343#1368#0" expanded="true" />
-            <element signature="e#1806#1829#0" expanded="true" />
+            <element signature="e#1165#1183#0" expanded="true" />
+            <element signature="e#1403#1421#0" expanded="true" />
+            <element signature="e#1762#1780#0" expanded="true" />
+            <element signature="e#2055#2073#0" expanded="true" />
+            <element signature="e#2343#2361#0" expanded="true" />
+            <element signature="e#2628#2646#0" expanded="true" />
+            <element signature="e#2912#2930#0" expanded="true" />
+            <element signature="e#3199#3217#0" expanded="true" />
+            <element signature="e#3486#3504#0" expanded="true" />
+            <element signature="e#3774#3792#0" expanded="true" />
+            <element signature="e#4061#4079#0" expanded="true" />
+            <element signature="e#4346#4364#0" expanded="true" />
+            <element signature="e#4630#4648#0" expanded="true" />
+            <element signature="e#4916#4934#0" expanded="true" />
+            <element signature="e#5211#5229#0" expanded="true" />
+            <element signature="e#5511#5529#0" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/dialog_bwmima.xml">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.2840909">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/dialog_beizhu.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/jz_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48591548">
+          <caret line="365" column="56" selection-start-line="365" selection-start-column="56" selection-end-line="365" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -1972,202 +1984,342 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/jz_shezhi.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4558823">
+          <caret line="105" column="50" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="50" />
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/jz_mingxi_title.jpg">
+      <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/dialog_about.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74626863">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/dialog/DialogAbout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/dialog/DialogBeiZhu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/BWNewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="304" column="38" selection-start-line="304" selection-start-column="19" selection-end-line="304" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/bw_list_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="20.149254">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/bw_new.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/service/JZPaintViewZandS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/service/JZPaintViewYuE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/ToolsMainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.065789">
+          <caret line="234" column="34" selection-start-line="234" selection-start-column="34" selection-end-line="234" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="274" column="72" selection-start-line="274" selection-start-column="72" selection-end-line="274" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4206" column="0" selection-start-line="4206" selection-start-column="0" selection-end-line="4206" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18422" column="0" selection-start-line="18422" selection-start-column="0" selection-end-line="18422" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/UserEditActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9977169">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/JZMainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
-          <folding />
+        <state vertical-scroll-proportion="0.11312217">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/BWMainActivity.java">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/LoadedApk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.21779859">
+          <caret line="470" column="0" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/database/sqlite/SQLiteClosable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2763466">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/database/sqlite/SQLiteOpenHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59786475">
+          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/database/sqlite/SQLiteDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33096084">
+          <caret line="693" column="13" selection-start-line="693" selection-start-column="13" selection-end-line="693" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7890#7891#0" expanded="true" />
-            <element signature="e#7961#7962#0" expanded="true" />
+            <element signature="e#2882#3035#0" expanded="false" />
+            <element signature="e#3034#3035#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/JZAddActivity.java">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/ActivityThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="361" column="30" selection-start-line="361" selection-start-column="30" selection-end-line="361" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="0.62763464">
+          <caret line="3208" column="42" selection-start-line="3208" selection-start-column="42" selection-end-line="3208" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/bw_main.xml">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/content/ContextWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2089553">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/jz_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/jz_add_numbt_selector.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.21779859">
+          <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/icon_selector.xml">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/app/ContextImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.45199063">
+          <caret line="961" column="0" selection-start-line="961" selection-start-column="0" selection-end-line="961" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/database/sqlite/SQLiteDatabaseConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.253732">
-          <caret line="266" column="12" selection-start-line="266" selection-start-column="12" selection-end-line="266" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.21779859">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/database/DefaultDatabaseErrorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21779859">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/LoginActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.765808">
+          <caret line="93" column="5" selection-start-line="78" selection-start-column="3" selection-end-line="93" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/JZData.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/loginpage.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/JZSqliteHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56980056">
-          <caret line="120" column="56" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/widget/ArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-19/android/widget/BaseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33043477">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeSqliteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33226836">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/JZSheZhiActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="120" column="47" selection-start-line="120" selection-start-column="47" selection-end-line="120" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7716895">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31779662">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/UserSqliteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3339921">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/income_typemanage.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/UserRegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6916996">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/UserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49407116">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/expenditure_typemanage.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="40" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41737288">
+          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/bean/JZshouru.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/bean/IncomeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.08225108">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/bean/ExpenditureType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055679288">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeSqliteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/ExpenditureTypeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/db/IncomeTypeData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/IncomeTypeManageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+          <folding>
+            <element signature="e#3138#3828#0" expanded="true" />
+            <element signature="e#3827#3828#0" expanded="true" />
+            <element signature="e#4401#4813#0" expanded="true" />
+            <element signature="e#4812#4813#0" expanded="true" />
+            <element signature="e#4856#5055#0" expanded="true" />
+            <element signature="e#5054#5055#0" expanded="true" />
+            <element signature="e#5310#5318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tust/tools/activity/ExpenditureTypeManageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.243309">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#ExpenditureTypeManageActivity#0" expanded="false" />
+            <element signature="e#2862#3562#0" expanded="true" />
+            <element signature="e#3561#3562#0" expanded="true" />
+            <element signature="e#4145#4562#0" expanded="true" />
+            <element signature="e#4561#4562#0" expanded="true" />
+            <element signature="e#4605#4804#0" expanded="true" />
+            <element signature="e#4803#4804#0" expanded="true" />
+            <element signature="e#5059#5067#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

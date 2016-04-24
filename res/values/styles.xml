@@ -6,4 +6,13 @@
         <item name="android:paddingLeft">28.0px</item>
         <item name="android:button">@drawable/qq_btn_check</item>
     </style>
+    <style name="Widget.ListView" parent="@android:style/Widget.ListView">
+        <item name="android:background">@null</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@drawable/common_lv_item_selected</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@drawable/common_lv_item_divider</item>
+    </style>
 </resources>

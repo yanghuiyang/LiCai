@@ -1,14 +1,10 @@
 [
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\user.png",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-xxhdpi\\user.png"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\main_botton.xml",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-xxhdpi\\main_botton.xml"
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\user.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-xxhdpi\\user.png"
     }
 ]

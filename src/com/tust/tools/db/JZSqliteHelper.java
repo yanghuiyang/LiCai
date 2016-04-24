@@ -29,7 +29,6 @@ public class JZSqliteHelper extends SQLiteOpenHelper {
 	    saveYuSuan(context,ISHIDDEN,ISHIDDEN,1);
 	    db.execSQL("CREATE TABLE IF NOT EXISTS " + 
 					ZHICHU + "(" + "ID" + " integer primary key," +
-
 					JZzhichu.ZC_ITEM + " varchar," +
 					JZzhichu.ZC_SUBITEM + " varchar," + 
 					JZzhichu.ZC_YEAR + " Integer," + 

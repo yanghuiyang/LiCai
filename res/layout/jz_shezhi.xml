@@ -3,10 +3,10 @@
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jz_main_bg"
     android:orientation="vertical" >
 
     <RelativeLayout
+
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/jz_mingxi_title"
@@ -24,7 +24,40 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+
+        android:orientation="vertical"
+        android:background="#fcfcfc">
+
+        <RelativeLayout
+            android:id="@+id/jz_shezhi_expenditureType_Manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jz_paper_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/stockText30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jz_shezhi_expenditureType_Manage"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/jz_shezhi_incomeType_Manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jz_paper_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/stockText31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jz_shezhi_incomeType_Manage"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/jz_shezhi_qingchu_rl"

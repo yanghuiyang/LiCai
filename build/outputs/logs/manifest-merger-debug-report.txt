@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:2:1-148:12
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:2:1-134:12
 	xmlns:android
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:2:11-69
 	package
@@ -25,141 +25,137 @@ uses-permission#android.permission.PROCESS_OUTGOING_CALLS
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:9:5-97
 	android:name
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:9:22-78
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:10:5-91
-	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:10:22-72
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:11:4-80
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:10:4-80
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:11:21-77
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:16:5-92
-	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:16:22-73
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:10:21-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:18:5-95
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:12:5-95
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:18:22-76
-uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:20:5-92
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:14:5-91
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:20:22-73
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:14:22-72
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:24:5-97
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:16:5-97
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:24:22-78
-uses-permission#android.permission.INTERNET
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:26:5-67
-	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:26:22-64
-uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:28:5-100
-	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:28:22-81
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:16:22-78
 uses-permission#android.permission.READ_LOGS
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:30:5-84
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:18:5-84
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:30:22-65
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:18:22-65
 uses-sdk
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:32:5-43
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:19:5-43
 	android:minSdkVersion
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:32:15-40
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:19:15-40
 application
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:34:5-146:19
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:20:5-132:19
 	android:label
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:36:9-41
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:22:9-41
 	android:icon
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:35:9-45
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:21:9-45
 	android:theme
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:37:9-56
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:23:9-56
 activity#com.tust.tools.activity.LoginActivity
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:39:3-47:20
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:25:3-33:20
 	android:label
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:41:13-45
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:27:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:40:13-65
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:26:13-65
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:42:13-45:29
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:28:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:43:17-69
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:43:25-66
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:44:17-77
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:44:27-74
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:30:27-74
 activity#com.tust.tools.activity.UserEditActivity
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:48:11-54:20
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:34:11-40:20
+	android:label
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:36:13-45
+	android:name
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:35:13-68
+intent-filter#android.intent.category.LAUNCHER
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:37:13-39:29
+activity#com.tust.tools.activity.UserRegisterActivity
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:41:11-47:20
+	android:label
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:43:13-45
+	android:name
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:42:13-72
+activity#com.tust.tools.activity.ToolsMainActivity
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:48:9-54:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:50:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:49:13-68
-intent-filter#android.intent.category.LAUNCHER
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:51:13-53:29
-activity#com.tust.tools.activity.UserRegisterActivity
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:55:11-61:20
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:49:13-69
+activity#com.tust.tools.activity.JZMainActivity
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:55:9-61:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:57:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:56:13-72
-activity#com.tust.tools.activity.ToolsMainActivity
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:56:13-66
+activity#com.tust.tools.activity.JZAddActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:62:9-68:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:64:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:63:13-69
-activity#com.tust.tools.activity.JZMainActivity
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:63:13-65
+activity#com.tust.tools.activity.JZMingXiActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:69:9-75:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:71:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:70:13-66
-activity#com.tust.tools.activity.JZAddActivity
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:70:13-68
+activity#com.tust.tools.activity.JZYuSuanActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:76:9-82:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:78:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:77:13-65
-activity#com.tust.tools.activity.JZMingXiActivity
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:77:13-68
+activity#com.tust.tools.activity.JZBaoBiaoActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:83:9-89:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:85:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:84:13-68
-activity#com.tust.tools.activity.JZYuSuanActivity
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:84:13-69
+activity#com.tust.tools.activity.JZSheZhiActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:90:9-96:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:92:13-45
 	android:name
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:91:13-68
-activity#com.tust.tools.activity.JZBaoBiaoActivity
+activity#com.tust.tools.activity.BWMainActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:97:9-103:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:99:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:98:13-69
-activity#com.tust.tools.activity.JZSheZhiActivity
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:98:13-66
+activity#com.tust.tools.activity.BWNewActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:104:9-110:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:106:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:105:13-68
-activity#com.tust.tools.activity.BWMainActivity
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:105:13-65
+activity#com.tust.tools.activity.JSMainActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:111:9-117:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:113:13-45
 	android:name
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:112:13-66
-activity#com.tust.tools.activity.BWNewActivity
+activity#com.tust.tools.activity.IncomeTypeManageActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:118:9-124:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:120:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:119:13-65
-activity#com.tust.tools.activity.JSMainActivity
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:119:13-76
+activity#com.tust.tools.activity.ExpenditureTypeManageActivity
 ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:125:9-131:20
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:127:13-45
 	android:name
-		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:126:13-66
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:126:13-81

@@ -120,22 +120,6 @@
 				android:layout_alignParentBottom="true"
 				android:layout_alignParentLeft="true" />
 
-			<Main_Button
-				android:id="@+id/one"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="10dp"
-				android:background="@drawable/button"
-				android:paddingBottom="8dp"
-				android:paddingLeft="25dp"
-				android:paddingRight="25dp"
-				android:paddingTop="8dp"
-				android:text="我要赠送"
-				android:textColor="@color/White"
-				android:textSize="18sp" />
-
-
-
 		</RelativeLayout>
 
 	    <TableLayout

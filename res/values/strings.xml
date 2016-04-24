@@ -75,16 +75,8 @@
     <string name="js_deng">=</string>
     <string name="js_shanchu">删除</string>
     <string name="js_qingchu">清除</string>
-    <string name="jz_shezhi">程序设置</string>
-    <string name="jz_jiami">程序加密</string>
-    <string name="jz_jiami_hint1">请输入新密码（六位）</string>
-    <string name="jz_jiami_hint2">请确认密码</string>
-    <string name="jz_shezhi_about">关于软件</string>
-    <string name="jz_shezhi_qingchu">清除所有消费记录</string>
-    <string name="jz_shezhi_jiumima">请输入旧密码</string>
-    <string name="jz_shezhi_shanchumima">删除密码</string>
+
     <string name="jz_benyueyusuan">本月预算</string>
-    <string name="dialog_mima">请输入记账器密码</string>
     <string name="dialog_about">如果您要了解理财助手每个子功能的特点和使用方法，请在该功能对应的图标上长按不放，程序将会弹出相应的提示信息。该程序目前适用于Android2.2及以上的版本，如有问题反馈请发送邮件至XXXXX@qq.com</string>
     <string name="bw_hint">输入完后直接按返回键，程序将自动保存。</string>
     <string name="main_hiddenguanggao">隐藏提醒</string>
@@ -107,4 +99,11 @@
      	<item>男</item>  
      	<item>女</item>  
     </string-array>
+    <!-- 设置- -->
+    j
+    <string name="jz_shezhi">程序设置</string>
+    <string name="jz_shezhi_about">关于软件</string>
+    <string name="jz_shezhi_expenditureType_Manage">支出类型管理</string>
+    <string name="jz_shezhi_incomeType_Manage">收入类型管理</string>
+    <string name="jz_shezhi_qingchu">清除所有消费记录</string>
 </resources>

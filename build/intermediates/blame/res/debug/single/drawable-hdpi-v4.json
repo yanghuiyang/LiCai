@@ -144,10 +144,6 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\wz_dingwei_bt.png"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jz_mingxi_title.png",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\jz_mingxi_title.png"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bw_new_et_bg_4.png",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\bw_new_et_bg_4.png"
     },
@@ -236,6 +232,10 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\main_top_btl.png"
     },
     {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jz_mingxi_title.jpg",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\jz_mingxi_title.jpg"
+    },
+    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_bg.png",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\icon_bg.png"
     },
@@ -268,10 +268,6 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\bw_new_et_bg_1.png"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jz_main_bt_mingxi.png",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\jz_main_bt_mingxi.png"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\js_bt_bg_s.png",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\js_bt_bg_s.png"
     },
@@ -300,12 +296,12 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\jz_main_bg.png"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tianqi_main_bg.png",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\tianqi_main_bg.png"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jz_add_pic.png",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\jz_add_pic.png"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tianqi_main_bg.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\tianqi_main_bg.png"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jz_bg_main_paper.png",

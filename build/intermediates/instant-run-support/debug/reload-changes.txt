@@ -1,5 +1,0 @@
-CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\BWMainActivity$1$override.class
-CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\BWMainActivity$override.class
-CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\BWMainActivity$2$override.class
-CHANGED,C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\tust\tools\activity\BWMainActivity$3$override.class

@@ -148,7 +148,7 @@ public class JZBaoBiaoActivity extends Activity {
 	    ArrayList<JZzhichu> zhiChuList = new ArrayList<JZzhichu>();
 	    for(int i=1;i<=12;i++){
 	    	double countZhiChu=0;
-		    String selectionzhichu = JZzhichu.ZC_USER + "=" +userName + " and " +JZzhichu.ZC_YEAR+"="+GetTime.getYear()+" and "+JZzhichu.ZC_MONTH+"="+i+select;
+		    String selectionzhichu = JZzhichu.ZC_USER + "='" +userName + "'" +" and " +JZzhichu.ZC_YEAR+"="+GetTime.getYear()+" and "+JZzhichu.ZC_MONTH+"="+i+select;
 		    zhiChuList =  dataHelper.GetZhiChuList(selectionzhichu);
 	    	for(JZzhichu zhichu:zhiChuList){
 	    		countZhiChu += zhichu.getZc_Count();
@@ -165,7 +165,7 @@ public class JZBaoBiaoActivity extends Activity {
 	    ArrayList<JZshouru> shouRuList = new ArrayList<JZshouru>();
 	    for(int i=1;i<=12;i++){
 	    	double countShouRu=0;
-		    String selectionshouru = JZshouru.SR_USER + "=" +userName + " and " + JZshouru.SR_YEAR+"="+GetTime.getYear()+" and "+JZshouru.SR_MONTH+"="+i+select;
+		    String selectionshouru = JZshouru.SR_USER + "='" +userName + "'" +" and " + JZshouru.SR_YEAR+"="+GetTime.getYear()+" and "+JZshouru.SR_MONTH+"="+i+select;
 		    shouRuList =  dataHelper.GetShouRuList(selectionshouru);
 	    	for(JZshouru shouru:shouRuList){
 	    		countShouRu += shouru.getSr_Count();
