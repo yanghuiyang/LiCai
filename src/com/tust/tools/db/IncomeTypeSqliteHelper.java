@@ -20,7 +20,13 @@ public class IncomeTypeSqliteHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
         db.execSQL("CREATE TABLE IF NOT EXISTS incometype "
-                + "(id INTEGER  NOT NULL,username varchar not null ,typename varchar(50))");
+                + "(id INTEGER PRIMARY KEY,username varchar not null ,typename varchar(50))");
+
+        //初始化数据 收入类型表格
+        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"1","admin","工资"});
+        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"2","admin","奖金"});
+        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"3","admin","补贴"});;
+        ;
     }
 
 
