@@ -59,6 +59,17 @@ public class ExpenditureTypeData {
         this.close();
         return uid;
     }
+
+    /**
+     * 获取类型 随机 仅用于添加记账明细时 设置默认类型
+     * param id
+     * @return
+     * */
+    public String getFirstTypeByUserName(String userName){
+        Cursor cursor = db.rawQuery("select typename from expendituretype where username=? limit 1",new String[]{String.valueOf(userName) } );
+        cursor.moveToFirst();
+        return cursor.getString(cursor.getColumnIndex("typename"));
+    }
     /**
      * 获取类型名数组
      * param id

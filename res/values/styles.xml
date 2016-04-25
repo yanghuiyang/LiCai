@@ -6,6 +6,21 @@
         <item name="android:paddingLeft">28.0px</item>
         <item name="android:button">@drawable/qq_btn_check</item>
     </style>
+    <style name="Widget.KeyboardView" parent="android:Widget">
+        <item name="android:keyTextSize">22sp</item>
+        <item name="android:keyTextColor">#ffffffff</item>
+        <item name="android:keyPreviewOffset">-12dip</item>
+        <item name="android:keyPreviewHeight">80dip</item>
+        <item name="android:labelTextSize">14sp</item>
+        <item name="android:verticalCorrection">-10dip</item>
+        <item name="android:shadowColor">#bb000000</item>
+        <item name="android:shadowRadius">2.75</item>
+    </style>
+    <style name="common_bg">
+        <item name="android:background">@drawable/mymoney_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
     <style name="Widget.ListView" parent="@android:style/Widget.ListView">
         <item name="android:background">@null</item>
         <item name="android:scrollbars">none</item>

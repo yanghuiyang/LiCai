@@ -154,10 +154,8 @@
 				android:layout_height="wrap_content"
 				android:text="@string/exit"
 				android:textSize="16.0dip"
-				android:layout_alignParentBottom="true"
-				android:layout_alignParentRight="true"
-				android:layout_marginBottom="46dp"
-				android:layout_toRightOf="@+id/spinner_sex" />
+				android:layout_below="@+id/edit_btn_save"
+				android:layout_alignLeft="@+id/edit_btn_save" />
 
 		</RelativeLayout>
 

@@ -160,7 +160,10 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 				adapter.isShowCheck = false;
 				adapter.notifyDataSetChanged();
 			} else {
-				exitDialog("exit");
+				//exitDialog("exit");
+				Intent intent = new Intent(BWMainActivity.this, ToolsMainActivity.class);
+				BWMainActivity.this.startActivity(intent);
+				BWMainActivity.this.finish();
 			}
 			return false;
 		}
@@ -173,7 +176,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 	 */
 	String fileName;// 以当前时间命名的文件名
 
-	public void exitDialog(final String flag) {
+	/*public void exitDialog(final String flag) {
 		final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		String confrimStr = "";
 		String cancelStr = "";
@@ -220,7 +223,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 			}
 		});
 		builder.create().show();
-	}
+	}*/
 
 	/*
 	 * 通过相机回传图片的文件名
@@ -244,7 +247,10 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 		switch (item.getItemId()) {
 		case 100:
 			if (BWAdapter.bWlist != null && BWAdapter.bWlist.size() > 0) {
-				exitDialog("out");
+			//	exitDialog("out");
+				Intent intent = new Intent(BWMainActivity.this, ToolsMainActivity.class);
+				BWMainActivity.this.startActivity(intent);
+				BWMainActivity.this.finish();
 			} else {
 				showMsg("没有可导出条目");
 			}

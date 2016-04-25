@@ -164,8 +164,8 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
     public void initMenuBT(){
         help_bt = (Button)this.findViewById(R.id.main_help_bt);
         help_bt.setOnClickListener(this);
-        hidden_bt = (Button)this.findViewById(R.id.main_hidden_bt);
-        hidden_bt.setOnClickListener(this);
+//        hidden_bt = (Button)this.findViewById(R.id.main_hidden_bt);
+//        hidden_bt.setOnClickListener(this);
 
         exit_bt = (Button)this.findViewById(R.id.main_exit_bt);
         exit_bt.setOnClickListener(this);
@@ -228,22 +228,12 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         int id = v.getId();
         switch (id) {
         case R.id.main_ll_1://记账
-  //      	int mi1 = JZSqliteHelper.readPreferenceFile(this,JZSheZhiActivity.JZMIMA,JZSheZhiActivity.JZMIMA);
         	dh3.oneViewDongHua(jz_ll);
-//        	if(mi1==0){
                 changeActivity(JZMainActivity.class);
-//            }else{
-//            	new DialogShuRuMiMa(this, this,JZSheZhiActivity.JZMIMA);
-//            }
             break;
         case R.id.main_ll_2://记事
-//        	int mi2 = JZSqliteHelper.readPreferenceFile(this,DialogBWSheZhiMiMa.BWMIMA,DialogBWSheZhiMiMa.BWMIMA);
         	dh3.oneViewDongHua(bw_ll);
-//        	if(mi2==0){
                changeActivity(BWMainActivity.class);
-//            }else{
-//            	new DialogShuRuMiMa(this, this,DialogBWSheZhiMiMa.BWMIMA);
-//            }
             break;
         case R.id.main_ll_3://计算
         	dh3.oneViewDongHua(js_ll);
@@ -268,19 +258,6 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
             String texth ="如果您要了解理财助手每个子功能的特点和使用方法，请在该功能对应的图标上长按不放，程序将会弹出相应的提示信息。\r\n该程序目前适用于Android2.2及以上的版本";            
             new DialogAbout(this,texth);
             sd.animateClose();
-            break;
-        case R.id.main_hidden_bt:
-            sd.animateClose();
-//            if(JZSqliteHelper.readPreferenceFile(this, JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN)==0){
-//              //这个用来存储当前是否显示提醒   显示为0，不显示为1
-//                JZSqliteHelper.saveYuSuan(this,JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN,1);
-//                isShow = false;
-//                hidden_bt.setText("显示提醒");
-//            }else{
-//                JZSqliteHelper.saveYuSuan(this,JZSqliteHelper.ISHIDDEN,JZSqliteHelper.ISHIDDEN,0);
-//                isShow = true;
-//                hidden_bt.setText("隐藏提醒");
-//            }
             break;
         case R.id.main_exit_bt://底部上拉 退出  按钮
         	sd.animateClose(); 
@@ -309,12 +286,11 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
             text ="该‘备忘记事’功能是为了记录平时生活中的重要事情而设计的，让你不再为忘记重要事情而烦恼。" +
             		"\r\n1.该功能可以保存图片和文字，导出文本到SD卡中，更换背景颜色以及改变字体大小等，操作简便，易于使用。" +
             		"\r\n2.无论是新建或者修改只要输入完后按返回键程序将自动保存输入的内容。" +
-                    "\r\n3.该功能可以加密，加密功能在菜单选项中，加密后请记住您的密码，目前没有密码找回功能。";            
+                    "\r\n3.。";
             break;
         case R.id.main_ll_3://计算
             text ="该‘简易计算’功能是为了方便日常生活中偶尔遇到比较复杂的混合运算而设计的。" +
-            		"\r\n1.目前功能比较简单，以后版本将会增加更多功能。"+
-                    "\r\n2.安卓自身运算的bug可能会存在（精度导致的）";            
+            		"\r\n1.目前功能比较简单，以后版本将会增加更多功能。";
             break;
         }
         new DialogAbout(this,text);

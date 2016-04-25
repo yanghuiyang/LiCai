@@ -186,7 +186,10 @@ public class JSMainActivity extends Activity implements OnClickListener{
     public boolean onKeyDown(int kCode, KeyEvent kEvent) {
         switch (kCode) {
         case KeyEvent.KEYCODE_BACK: {
-                exitDialog();
+               // exitDialog();
+            Intent intent = new Intent(JSMainActivity.this, ToolsMainActivity.class);
+            JSMainActivity.this.startActivity(intent);
+            JSMainActivity.this.finish();
             return false;
         }
         }
@@ -197,7 +200,7 @@ public class JSMainActivity extends Activity implements OnClickListener{
      * 退出弹出框
      */
     String fileName;// 以当前时间命名的文件名
-    public void exitDialog() {
+    /*public void exitDialog() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         String confrimStr = "";
         String cancelStr = "";
@@ -220,7 +223,7 @@ public class JSMainActivity extends Activity implements OnClickListener{
             }
         });
         builder.create().show();
-    }
+    }*/
 
     /*
      * 输入数字监听

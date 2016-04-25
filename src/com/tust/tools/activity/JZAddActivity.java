@@ -47,6 +47,8 @@ import com.tust.tools.R;
 import com.tust.tools.bean.JZItem;
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
+import com.tust.tools.db.ExpenditureTypeData;
+import com.tust.tools.db.IncomeTypeData;
 import com.tust.tools.db.JZData;
 import com.tust.tools.dialog.DialogBeiZhu;
 import com.tust.tools.dialog.DialogLeiBie;
@@ -92,7 +94,6 @@ public class JZAddActivity extends Activity implements OnClickListener {
     private File capturefile;// 拍摄的照片文件
 
     private String userName;//当前登陆用户
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,7 +118,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
         if (intent.hasExtra("update")) {
             zhichu_text = (TextView) this.findViewById(R.id.jz_add_zhichu_text);
             shouru_text = (TextView) this.findViewById(R.id.jz_add_shouru_text);
-            jiedai_text = (TextView) this.findViewById(R.id.jz_add_jiedai_text);
+         //   jiedai_text = (TextView) this.findViewById(R.id.jz_add_jiedai_text);
             del_fl.setVisibility(View.VISIBLE);
             isUpdate = true;
             update_type = intent.getIntExtra("type", 0);
@@ -150,25 +151,26 @@ public class JZAddActivity extends Activity implements OnClickListener {
      */
     public void getZhiChuType(JZzhichu zc) {
         pic_ll.setVisibility(View.GONE);
-        if (zc.getZc_Item().equals(JZItem.jiechu) || zc.getZc_Item().equals(JZItem.huankuan)) {
+     /*   if (zc.getZc_Item().equals(JZItem.jiechu) || zc.getZc_Item().equals(JZItem.huankuan)) {
             now_flag = jiedai_flag;
             jiedai_text.setText("修改借贷");
             leibie.setText(zc.getZc_Item());
             setTopBG(now_flag, jiedai_iv);
             zhichu_fl.setVisibility(View.INVISIBLE);
             shouru_fl.setVisibility(View.INVISIBLE);
-        } else {
+        } else {*/
             now_flag = zhichu_flag;
             zhichu_text.setText("修改支出");
-            leibie.setText(zc.getZc_Item() + ">" + zc.getZc_SubItem());
+           // leibie.setText(zc.getZc_Item() + ">" + zc.getZc_SubItem());
+            leibie.setText(zc.getZc_Item());
             setTopBG(now_flag, zhichu_iv);
-            jiedai_fl.setVisibility(View.INVISIBLE);
+           // jiedai_fl.setVisibility(View.INVISIBLE);
             shouru_fl.setVisibility(View.INVISIBLE);
             picpath = zc.getZc_Pic();// 获取图片路径
             if (picpath != null && picpath.endsWith("jpg")) {
                 File filePic = new File(picpath);
                 pic.setImageBitmap(decodeFile(filePic));
-            }
+//            }
         }
         update_flag = zhichu_flag;// 用于删除当前数据功能
         jine.setText(zc.getZc_Count() + "");
@@ -182,19 +184,19 @@ public class JZAddActivity extends Activity implements OnClickListener {
      */
     public void getShouRuType(JZshouru sr) {
         pic_ll.setVisibility(View.GONE);
-        if (sr.getSr_Item().equals(JZItem.jieru) || sr.getSr_Item().equals(JZItem.shoukuan)) {
+/*        if (sr.getSr_Item().equals(JZItem.jieru) || sr.getSr_Item().equals(JZItem.shoukuan)) {
             now_flag = jiedai_flag;// 用于判断当前状态
             jiedai_text.setText("修改借贷");
             setTopBG(now_flag, jiedai_iv);
             zhichu_fl.setVisibility(View.INVISIBLE);
             shouru_fl.setVisibility(View.INVISIBLE);
-        } else {
+        } else {*/
             now_flag = shouru_flag;
             shouru_text.setText("修改收入");
             setTopBG(now_flag, shouru_iv);
-            jiedai_fl.setVisibility(View.INVISIBLE);
+          //  jiedai_fl.setVisibility(View.INVISIBLE);
             zhichu_fl.setVisibility(View.INVISIBLE);
-        }
+    //    }
         update_flag = shouru_flag;// 用于删除当前数据功能
         jine.setText(sr.getSr_Count() + "");
         leibie.setText(sr.getSr_Item());
@@ -209,6 +211,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
         jine.setOnClickListener(new TextClick());
         // 类别
         leibie = (TextView) findViewById(R.id.jz_add_leibie_text);
+        leibie.setText(new ExpenditureTypeData(this).getFirstTypeByUserName(userName));//一开始是支出 设置默认类别
         leibie.setOnClickListener(new TextClick());
         // 日期
         date = (TextView) findViewById(R.id.jz_add_date_text);
@@ -233,14 +236,14 @@ public class JZAddActivity extends Activity implements OnClickListener {
 
         zhichu_iv = (ImageView) findViewById(R.id.jz_add_zhichu_iv);
         shouru_iv = (ImageView) findViewById(R.id.jz_add_shouru_iv);
-        jiedai_iv = (ImageView) findViewById(R.id.jz_add_jiedai_iv);
+     //   jiedai_iv = (ImageView) findViewById(R.id.jz_add_jiedai_iv);
 
         zhichu_fl = (FrameLayout) findViewById(R.id.jz_add_zhichu_fl);
         zhichu_fl.setOnClickListener(this);
         shouru_fl = (FrameLayout) findViewById(R.id.jz_add_shouru_fl);
         shouru_fl.setOnClickListener(this);
-        jiedai_fl = (FrameLayout) findViewById(R.id.jz_add_jiedai_fl);
-        jiedai_fl.setOnClickListener(this);
+      //  jiedai_fl = (FrameLayout) findViewById(R.id.jz_add_jiedai_fl);
+     //   jiedai_fl.setOnClickListener(this);
         save_fl = (FrameLayout) findViewById(R.id.jz_add_save_fl);
         save_fl.setOnClickListener(this);
         cancel_fl = (FrameLayout) findViewById(R.id.jz_add_cancel_fl);
@@ -267,16 +270,16 @@ public class JZAddActivity extends Activity implements OnClickListener {
         switch (v.getId()) {
         case R.id.jz_add_zhichu_fl:// 支出tab
             setTopBG(zhichu_flag, zhichu_iv);
-            leibie.setText("餐饮>晚餐");
+            leibie.setText(new ExpenditureTypeData(this).getFirstTypeByUserName(userName));//设置默认类别
             break;
         case R.id.jz_add_shouru_fl:// 收入tab
             setTopBG(shouru_flag, shouru_iv);
-            leibie.setText("工资");
+            leibie.setText(new IncomeTypeData(this).getFirstTypeByUserName(userName));//设置默认类别
             break;
-        case R.id.jz_add_jiedai_fl:// 借贷tab
-            setTopBG(jiedai_flag, jiedai_iv);
-            leibie.setText("借出");
-            break;
+//        case R.id.jz_add_jiedai_fl:// 借贷tab
+//            setTopBG(jiedai_flag, jiedai_iv);
+//            leibie.setText("借出");
+//            break;
         case R.id.jz_add_save_fl:// 保存按钮
             saveToDB();
             break;
@@ -310,7 +313,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * 存储支出收入借贷到数据库
+     * 存储支出收入到数据库
      */
     public void saveToDB() {
         dataHelper = new JZData(this);
@@ -318,7 +321,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
         JZshouru shouru = new JZshouru();
         // 类别
         String leibies = leibie.getText().toString().trim();
-        String items[] = leibies.split(">");
+       // String items[] = leibies.split(">");
         // 日期
         String dateString = date.getText().toString().trim();
         String dates[] = dateString.split("-");
@@ -333,8 +336,9 @@ public class JZAddActivity extends Activity implements OnClickListener {
             return;
         }
         if (now_flag == zhichu_flag) {
-            zhichu.setZc_Item(items[0]);
-            zhichu.setZc_SubItem(items[1]);
+           // zhichu.setZc_Item(items[0]);
+          //  zhichu.setZc_SubItem(items[1]);
+            zhichu.setZc_Item(leibies);
 
             zhichu.setZc_User(userName);
 
@@ -373,7 +377,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 dataHelper.UpdateShouRuInfo(shouru, sr.getSr_Id());
                 showMsg("该条收入修改成功");
             }
-        } else if (now_flag == jiedai_flag) {// 借贷中包含借入和借出 分别存储到支出和收入中
+        } /*else if (now_flag == jiedai_flag) {// 借贷中包含借入和借出 分别存储到支出和收入中
             if (leibies.equals(JZItem.jiechu) || leibies.equals(JZItem.huankuan)) {
                 zhichu.setZc_Item(leibies);
                 zhichu.setZc_SubItem("");
@@ -395,7 +399,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                     dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
                     showMsg("该条支出修改成功");
                 }
-            } else if (leibies.equals(JZItem.jieru) || leibies.equals(JZItem.shoukuan)) {
+            } *//*else if (leibies.equals(JZItem.jieru) || leibies.equals(JZItem.shoukuan)) {
                 shouru.setSr_Item(leibies);
 
                 shouru.setSr_User(userName);
@@ -414,8 +418,8 @@ public class JZAddActivity extends Activity implements OnClickListener {
                     dataHelper.UpdateShouRuInfo(shouru, sr.getSr_Id());
                     showMsg("该条借贷修改成功");
                 }
-            }
-        }
+            }*//*
+        }*/
         this.finish();
     }
 
@@ -433,14 +437,15 @@ public class JZAddActivity extends Activity implements OnClickListener {
             if (pic_ll.isShown()) {
                 DongHuaYanChi.dongHuaEnd(pic_ll, this, mh, R.anim.push_left_out, 400);
             }
-        } else if (now_flag == jiedai_flag) {
-            if (pic_ll.isShown()) {
-                DongHuaYanChi.dongHuaEnd(pic_ll, this, mh, R.anim.push_left_out, 400);
-            }
         }
+/*        else if (now_flag == jiedai_flag) {
+           if (pic_ll.isShown()) {
+               DongHuaYanChi.dongHuaEnd(pic_ll, this, mh, R.anim.push_left_out, 400);
+            }
+        }*/
         shouru_iv.setImageDrawable(null);
         zhichu_iv.setImageDrawable(null);
-        jiedai_iv.setImageDrawable(null);
+    //    jiedai_iv.setImageDrawable(null);
         iv.setImageResource(R.drawable.jz_tab1_bt_bgs);
         iv.setAnimation(AnimationUtils.loadAnimation(this, R.anim.jz_top_right2left));
     }
@@ -479,7 +484,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * 输入数字监听
+     * 输入监听
      */
     private class TextClick implements OnClickListener {
         @Override
@@ -525,7 +530,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * 输入数字监听
+     * 输入监听
      */
     private class MyClick implements OnClickListener {
         private TextView tv;

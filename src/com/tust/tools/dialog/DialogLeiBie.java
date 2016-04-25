@@ -2,6 +2,7 @@ package com.tust.tools.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Message;
 import android.view.KeyEvent;
@@ -15,6 +16,7 @@ import android.widget.RelativeLayout;
 
 import com.tust.tools.R;
 import com.tust.tools.activity.JZAddActivity;
+import com.tust.tools.db.JZData;
 import com.tust.tools.service.DongHua3d;
 import com.tust.tools.service.DongHuaYanChi;
 import com.tust.tools.service.JZLeibieAdapter;
@@ -35,12 +37,20 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 	public static final int flagsubleibie=3020;
 	//当前选择的选项，收入，支出，借贷
 	private int now_flag=0;
+	private String userName;
+	private JZData jzData;
 	public DialogLeiBie(Context context,int now_flag) {
 		super(context, R.style.leibiedialog);
 		this.context = context;
 		this.now_flag = now_flag;
 		lbView = View.inflate(context, R.layout.dialog_leibie, null);
 		this.setContentView(lbView);
+		//获取当前登陆用户
+		SharedPreferences preferences = context.getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+		userName = preferences.getString("userName", "");
+		jzData = new JZData(context);
+
+
 		//类别适配器
 		adapter = new JZLeibieAdapter(context,now_flag,null);
 		//类别列表
@@ -48,8 +58,8 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 		lbList.setAdapter(adapter);
 		lbList.setOnItemClickListener(new clickItem());
 		//类别子类列表
-		lbsubList = (ListView) lbView.findViewById(R.id.leibie_dialog_sub_list);
-		lbsubList.setVisibility(View.GONE);
+//		lbsubList = (ListView) lbView.findViewById(R.id.leibie_dialog_sub_list);
+//		lbsubList.setVisibility(View.GONE);
 		rLayout  = (RelativeLayout) lbView.findViewById(R.id.leibie_dialog_rl);
 		rLayout.setOnClickListener(this);
 		this.show();
@@ -66,7 +76,8 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 			if(now_flag==JZAddActivity.zhichu_flag){
-			    String leibieString = (String)view.getTag();
+				getTextandSend(view);
+			  /*  String leibieString = (String)view.getTag();
 				lbsubList.setAdapter(new JZLeibieAdapter(context,flagsubleibie,leibieString));
 				if(lbsubList.isShown()&&flagShow.equals(leibieString)){
 					//主list恢复动画
@@ -82,7 +93,7 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 					lbsubList.setLayoutAnimation(DongHua3d.listDongHua());
 				}
 				flagShow = leibieString;
-				lbsubList.setOnItemClickListener(new clickSubItem());
+				lbsubList.setOnItemClickListener(new clickSubItem());*/
 			}else if(now_flag==JZAddActivity.shouru_flag){
 				getTextandSend(view);
 			}else if(now_flag==JZAddActivity.jiedai_flag){

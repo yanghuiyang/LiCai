@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
     <style name="jz_add_button_style" >
-    <item name="android:background">@drawable/jz_add_numbt_selector</item>
-    <item name="android:textColor">#ffffff</item>
-    <item name="android:textSize">13dp</item>
+    <!--<item name="android:background">@drawable/jz_add_numbt_selector</item>-->
+    <!--<item name="android:textColor">#ffffff</item>-->
+    <!--<item name="android:textSize">13dp</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#333333</item>
+        <!--<item name="android:background">@color/white</item>-->
+        <item name="android:background">@drawable/buttonstyle</item>
+
     </style>
 </resources>

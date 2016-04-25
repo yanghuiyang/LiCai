@@ -233,7 +233,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-              android:background="@drawable/icon_bg"
+                android:background="@drawable/icon_bg"
                 android:gravity="center_horizontal"
                 android:orientation="vertical" >
 
@@ -243,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:contentDescription="@string/usermanager"
-                    android:src="@drawable/user"/>
+                    />
 
                 <TextView
                     android:id="@+id/main_tv_4"
@@ -295,18 +295,6 @@
                 android:background="@drawable/mian_menu_bt_selector"
                 android:text="@string/main_help"
                 android:textColor="#ffffff" />
-
-            <Button
-                android:id="@+id/main_hidden_bt"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/mian_menu_bt_selector"
-                android:text="@string/main_hiddenguanggao"
-                android:textColor="#ffffff" />
-
             <Button
                 android:id="@+id/main_exit_bt"
                 android:layout_width="match_parent"

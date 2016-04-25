@@ -72,7 +72,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
         userName = preferences.getString("userName", "");
         userData = new UserData(this);
         user = userData.getUserByUserName(userName);
-        TextView gg=(TextView)this.findViewById(R.id.jz_gg_text);
+    //    TextView gg=(TextView)this.findViewById(R.id.jz_gg_text);
 //        if(!ToolsMainActivity.isShow){
 //            gg.setVisibility(View.INVISIBLE);
 //        }
@@ -257,7 +257,10 @@ public class JZMainActivity extends Activity implements OnClickListener {
                 menu.setImageResource(R.drawable.jz_main_more);
                 return false;
             } else {
-            	exitDialog();
+            	//exitDialog();
+                Intent intent = new Intent(JZMainActivity.this,ToolsMainActivity.class);
+                JZMainActivity.this.startActivity(intent);
+                JZMainActivity.this.finish();
             }
             break;
         case KeyEvent.KEYCODE_MENU:
@@ -276,7 +279,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     /*
      * 退出弹出框
      * */
-    public void exitDialog(){
+/*    public void exitDialog(){
     	final AlertDialog.Builder builder = new AlertDialog.Builder(this);
     	builder.setTitle("是否确认退出？");
     	builder.setPositiveButton("退出小助手", new DialogInterface.OnClickListener() {
@@ -294,7 +297,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
 			}
 		});
     	builder.create().show();
-    }
+    }*/
     /*
      * 获取支出 页面总数
      */
