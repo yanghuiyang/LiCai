@@ -1,6 +1,7 @@
 package com.tust.tools.activity;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.achartengine.ChartFactory;
 import org.achartengine.chart.PointStyle;
@@ -23,6 +24,8 @@ import com.tust.tools.R;
 import com.tust.tools.bean.JZItem;
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
+import com.tust.tools.db.ExpenditureTypeData;
+import com.tust.tools.db.IncomeTypeData;
 import com.tust.tools.db.JZData;
 import com.tust.tools.service.GetTime;
 
@@ -35,11 +38,8 @@ public class JZBaoBiaoActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        dataHelper = new JZData(this);
-        setContentView(setView(ZCSR));
-		//获取当前登陆用户
-		SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
-		userName = preferences.getString("userName", "");
+		dataHelper = new JZData(this);
+		setContentView(setView(ZCSR));
     }
     
     /*
@@ -51,10 +51,14 @@ public class JZBaoBiaoActivity extends Activity {
     	PointStyle[] styles= null;
     	List<double[]> values = null;
     	String title = "";
+		//获取当前登陆用户
+		SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+		userName = preferences.getString("userName", "");
+		//expenditureTypeData = new ExpenditureTypeData(this);
     	switch (flag) {
 		case ZCSR:
 			 titles = new String[] { "月收入", "月支出"};
-			 colors = new int[] { Color.WHITE, Color.GREEN};
+			 colors = new int[] { Color.RED, Color.GREEN};
 			 styles = new PointStyle[] { PointStyle.CIRCLE, PointStyle.DIAMOND};
 			 values = new ArrayList<double[]>();
 			 values.add(getShouRuYear(""));
@@ -62,57 +66,42 @@ public class JZBaoBiaoActivity extends Activity {
 	         title = "月收入和支出走势图";
 			 break;
 		case zcMingXi:
-			titles = new String[] {JZItem.canyin, JZItem.jiaotong,JZItem.gouwu,JZItem.yule,JZItem.yijiao,JZItem.jujia,JZItem.touzi,JZItem.renqing,JZItem.jiechu,JZItem.huankuan};
-			colors = new int[] { Color.WHITE, Color.GREEN, Color.CYAN, Color.YELLOW , Color.DKGRAY , Color.MAGENTA, Color.RED , Color.BLUE, Color.LTGRAY, Color.GRAY };
-			styles = new PointStyle[] { PointStyle.DIAMOND, PointStyle.DIAMOND, PointStyle.DIAMOND, PointStyle.DIAMOND , PointStyle.DIAMOND, PointStyle.DIAMOND, PointStyle.DIAMOND, PointStyle.DIAMOND, PointStyle.DIAMOND, PointStyle.DIAMOND};
+			List<String> typenames= new ExpenditureTypeData(this).getTypesByUserName(userName);//获取该用户所有支出类型
+			int typeSize = typenames.size();
+			titles = new String[typeSize];
+			colors = new int[typeSize];
 			values = new ArrayList<double[]>();
-			String selectCanYin = " and "+JZzhichu.ZC_ITEM+" = '"+JZItem.canyin+"'";
-	        values.add(getZhiChuYear(selectCanYin));
-	        String selectJiaoTong = " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.jiaotong+"'";
-	        values.add(getZhiChuYear(selectJiaoTong));
-	        String selectGouWu = " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.gouwu+"'";
-	        values.add(getZhiChuYear(selectGouWu));
-	        String selectYuLe = " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.yule+"'";
-	        values.add(getZhiChuYear(selectYuLe));
-	        String selectYiJiao = " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.yijiao+"'";
-	        values.add(getZhiChuYear(selectYiJiao));
-	        String selectJuJia = " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.jujia+"'";
-	        values.add(getZhiChuYear(selectJuJia));
-	        String selectTouZi = " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.touzi+"'";
-	        values.add(getZhiChuYear(selectTouZi));
-	        String selectRenQing= " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.renqing+"'";
-	        values.add(getZhiChuYear(selectRenQing));
-	        String selectJieChu= " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.jiechu+"'";
-	        values.add(getZhiChuYear(selectJieChu));
-	        String selectHuanKuan= " and "+JZzhichu.ZC_ITEM+" = '"+ JZItem.huankuan+"'";
-	        values.add(getZhiChuYear(selectHuanKuan));
-	        title = "支出走势图";
+			styles = new PointStyle[typeSize];
+			//动态获取该用户现有的支出类型
+			for(int i=0;i<typeSize;i++){
+				titles[i] = typenames.get(i).toString();
+				Random random = new Random();
+				colors[i] = Color.rgb(random.nextInt(256),random.nextInt(256), random.nextInt(256));
+				styles[i] = PointStyle.DIAMOND;
+				String selection = " and "+JZzhichu.ZC_ITEM+" = '"+typenames.get(i)+"'";
+				values.add(getZhiChuYear(selection));
+				selection = "";
+			}
+
+	         title = "支出走势图";
 			break;
 		case srMingXi:
-			titles = new String[] {JZItem.gongzi,JZItem.gupiao,JZItem.jiangjin,JZItem.lixi,JZItem.fenhong,JZItem.butie,JZItem.baoxiao,JZItem.qita,JZItem.jieru,JZItem.shoukuan};
-			colors = new int[] { Color.WHITE, Color.GREEN, Color.CYAN, Color.YELLOW , Color.DKGRAY , Color.MAGENTA, Color.RED , Color.BLUE, Color.LTGRAY, Color.GRAY };
-			styles = new PointStyle[] { PointStyle.CIRCLE, PointStyle.CIRCLE, PointStyle.CIRCLE, PointStyle.CIRCLE , PointStyle.CIRCLE, PointStyle.CIRCLE, PointStyle.CIRCLE, PointStyle.CIRCLE, PointStyle.CIRCLE, PointStyle.CIRCLE};
+			List<String> typenames2= new IncomeTypeData(this).getTypesByUserName(userName);//获取该用户所有收入类型
+			int typeSize2 = typenames2.size();
+			titles = new String[typeSize2];
+			colors = new int[typeSize2];
 			values = new ArrayList<double[]>();
-			String selectGongZi = " and "+JZshouru.SR_ITEM+" = '"+JZItem.gongzi+"'";
-	        values.add(getShouRuYear(selectGongZi));
-	        String selectGuPiao = " and "+JZshouru.SR_ITEM+" = '"+ JZItem.gupiao+"'";
-	        values.add(getShouRuYear(selectGuPiao));
-	        String selectJiangJin = " and "+JZshouru.SR_ITEM+" = '"+ JZItem.jiangjin+"'";
-	        values.add(getShouRuYear(selectJiangJin));
-	        String selectLiXi = " and "+JZshouru.SR_ITEM+" = '"+ JZItem.lixi+"'";
-	        values.add(getShouRuYear(selectLiXi));
-	        String selectFenHong = " and "+JZshouru.SR_ITEM+" = '"+ JZItem.fenhong+"'";
-	        values.add(getShouRuYear(selectFenHong));
-	        String selectBuTie = " and "+JZshouru.SR_ITEM+" = '"+ JZItem.butie+"'";
-	        values.add(getShouRuYear(selectBuTie));
-	        String selectBaoBiao = " and "+JZshouru.SR_ITEM+" = '"+ JZItem.baoxiao+"'";
-	        values.add(getShouRuYear(selectBaoBiao));
-	        String selectQiTa= " and "+JZshouru.SR_ITEM+" = '"+ JZItem.qita+"'";
-	        values.add(getShouRuYear(selectQiTa));
-	        String selectJieRu= " and "+JZshouru.SR_ITEM+" = '"+ JZItem.jieru+"'";
-	        values.add(getShouRuYear(selectJieRu));
-	        String selectShouKuan= " and "+JZshouru.SR_ITEM+" = '"+ JZItem.shoukuan+"'";
-	        values.add(getShouRuYear(selectShouKuan));
+			styles = new PointStyle[typeSize2];
+			//动态获取该用户现有的收入类型
+			for(int i=0;i<typeSize2;i++){
+				titles[i] = typenames2.get(i).toString();
+				Random random = new Random();
+				colors[i] = Color.rgb(random.nextInt(256),random.nextInt(256), random.nextInt(256));
+				styles[i] = PointStyle.DIAMOND;
+				String selection = " and "+JZshouru.SR_ITEM+" = '"+typenames2.get(i)+"'";
+				values.add(getShouRuYear(selection));
+				selection = "";
+			}
 			title = "收入走势图";
 			break;
 		}
@@ -126,7 +115,7 @@ public class JZBaoBiaoActivity extends Activity {
          for (int i = 0; i < length; i++) {
              ((XYSeriesRenderer) renderer.getSeriesRendererAt(i)).setFillPoints(true);
          }
-         setChartSettings(renderer, title, "月份", "金额", 1, 12, 0, 10000, Color.LTGRAY, Color.LTGRAY);
+         setChartSettings(renderer, title, "月份", "金额", 1, 12, 0, 10000, Color.BLACK, Color.BLACK);
          renderer.setXLabels(12);
          renderer.setYLabels(10);
          renderer.setShowGrid(true);
@@ -189,11 +178,14 @@ public class JZBaoBiaoActivity extends Activity {
     }
 
     private void setRenderer(XYMultipleSeriesRenderer renderer, int[] colors, PointStyle[] styles) {
-        renderer.setAxisTitleTextSize(16);
-        renderer.setChartTitleTextSize(20);
-        renderer.setLabelsTextSize(15);
-        renderer.setLegendTextSize(15);
-        renderer.setPointSize(5f);
+		renderer.setApplyBackgroundColor(true);//必须设置为true，颜色值才生效
+		renderer.setBackgroundColor(Color.rgb(188,159,119));//设置表格背景色
+		renderer.setMarginsColor(Color.rgb(135,102,51));//设置周边背景色
+		renderer.setAxisTitleTextSize(16);
+        renderer.setChartTitleTextSize(25);
+        renderer.setLabelsTextSize(20);
+        renderer.setLegendTextSize(20);
+        renderer.setPointSize(6f);
         renderer.setMargins(new int[] { 20, 30, 15, 20 });
         int length = colors.length;
         for (int i = 0; i < length; i++) {
@@ -240,6 +232,7 @@ public class JZBaoBiaoActivity extends Activity {
     	menu.add(0, 100, 0, "月收入和支出");
     	menu.add(0, 200, 0, "详细月收入");
     	menu.add(0, 300, 0, "详细月支出");
+
 		return true;
 	}
 

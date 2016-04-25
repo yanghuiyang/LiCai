@@ -57,9 +57,6 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 		lbList = (ListView) lbView.findViewById(R.id.leibie_dialog_list);
 		lbList.setAdapter(adapter);
 		lbList.setOnItemClickListener(new clickItem());
-		//类别子类列表
-//		lbsubList = (ListView) lbView.findViewById(R.id.leibie_dialog_sub_list);
-//		lbsubList.setVisibility(View.GONE);
 		rLayout  = (RelativeLayout) lbView.findViewById(R.id.leibie_dialog_rl);
 		rLayout.setOnClickListener(this);
 		this.show();
@@ -77,23 +74,6 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 			if(now_flag==JZAddActivity.zhichu_flag){
 				getTextandSend(view);
-			  /*  String leibieString = (String)view.getTag();
-				lbsubList.setAdapter(new JZLeibieAdapter(context,flagsubleibie,leibieString));
-				if(lbsubList.isShown()&&flagShow.equals(leibieString)){
-					//主list恢复动画
-					lbList.setAnimation(AnimationUtils.loadAnimation(context, R.anim.picpush_right_in));
-					//子list隐藏
-					lbsubList.setVisibility(View.GONE);	
-				}else{
-					//主list收缩动画
-					lbList.setAnimation(AnimationUtils.loadAnimation(context, R.anim.picpush_left_out));
-					//子list进入动画
-					lbsubList.setAnimation(AnimationUtils.loadAnimation(context, R.anim.push_left_in));
-					lbsubList.setVisibility(View.VISIBLE);
-					lbsubList.setLayoutAnimation(DongHua3d.listDongHua());
-				}
-				flagShow = leibieString;
-				lbsubList.setOnItemClickListener(new clickSubItem());*/
 			}else if(now_flag==JZAddActivity.shouru_flag){
 				getTextandSend(view);
 			}else if(now_flag==JZAddActivity.jiedai_flag){

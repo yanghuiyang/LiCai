@@ -202,8 +202,8 @@ public class JZData {
     public void delAll(String userName){
     	//JZSqliteHelper.saveYuSuan(context,JZSqliteHelper.YUSUAN_MONTH,JZSqliteHelper.YUSUAN_MONTH, 0);
 
-    	db.delete("zhichu","ZC_USER ="+userName, null);
-    	db.delete("shouru", "SR_USER ="+userName, null);
+    	db.delete("zhichu","ZC_USER ="+"'"+userName+"'", null);
+    	db.delete("shouru", "SR_USER ="+"'"+userName+"'", null);
     }
     
     /*

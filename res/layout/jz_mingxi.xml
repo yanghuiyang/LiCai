@@ -51,6 +51,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/jz_tab1_chose"
             android:orientation="vertical" >
 

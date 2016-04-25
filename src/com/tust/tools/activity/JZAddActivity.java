@@ -147,7 +147,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     }
 
     /*
-     * 判断该支出类型是否为借贷
+     *
      */
     public void getZhiChuType(JZzhichu zc) {
         pic_ll.setVisibility(View.GONE);

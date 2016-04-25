@@ -72,10 +72,6 @@ public class JZMainActivity extends Activity implements OnClickListener {
         userName = preferences.getString("userName", "");
         userData = new UserData(this);
         user = userData.getUserByUserName(userName);
-    //    TextView gg=(TextView)this.findViewById(R.id.jz_gg_text);
-//        if(!ToolsMainActivity.isShow){
-//            gg.setVisibility(View.INVISIBLE);
-//        }
     }
 
     @Override
@@ -142,7 +138,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
         menu = (ImageView) findViewById(R.id.jz_mian_menuiv);
         menu.setOnClickListener(this);
         bts = new Button[] { tianjia, mingxi, baobiao, yusuan, shezhi };
-        hiddenView();
+        //hiddenView();
     }
 
     /*
@@ -275,29 +271,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
         }
         return super.onKeyDown(kCode, kEvent);
     }
-    
-    /*
-     * 退出弹出框
-     * */
-/*    public void exitDialog(){
-    	final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-    	builder.setTitle("是否确认退出？");
-    	builder.setPositiveButton("退出小助手", new DialogInterface.OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				System.exit(0);
-			}
-		});
-    	builder.setNeutralButton("退出记账器", new DialogInterface.OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				 Intent intent = new Intent(JZMainActivity.this,ToolsMainActivity.class);
-                 JZMainActivity.this.startActivity(intent);
-				 JZMainActivity.this.finish();
-			}
-		});
-    	builder.create().show();
-    }*/
+
     /*
      * 获取支出 页面总数
      */

@@ -29,7 +29,6 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 	private RelativeLayout incomeType_Manage,expenditureType_Manage,qingchu_rl,guanyu_rl;
 	//记账数据库管理
 	private JZData jzdh;
-	//public static final String JZMIMA = "JZMIMA";
 	private String userName;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
