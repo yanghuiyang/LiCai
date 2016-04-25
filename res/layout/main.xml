@@ -23,8 +23,8 @@
         android:layout_gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/main_info_bg"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <TextView
             android:id="@+id/maintext_cpu"
@@ -146,13 +146,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:contentDescription="@string/main_jizhangqi"
-                    android:src="@drawable/jz_icon" />
+                />
 
                 <TextView
                     android:id="@+id/main_tv_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="25dp"
                     android:text="@string/main_jizhangqi"
                     android:textColor="#ffffff" />
 
@@ -176,13 +176,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:contentDescription="@string/main_benwang"
-                    android:src="@drawable/bw_icon" />
+                   />
+                <!--android:src="@drawable/bw_icon"-->
 
                 <TextView
                     android:id="@+id/main_tv_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="25dp"
                     android:text="@string/main_benwang"
                     android:textColor="#ffffff" />
 
@@ -212,13 +213,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:contentDescription="@string/main_jisuan"
-                    android:src="@drawable/js_icon" />
+                    />
+                <!--android:src="@drawable/js_icon"-->
 
                 <TextView
                     android:id="@+id/main_tv_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="25dp"
                     android:text="@string/main_jisuan"
                     android:textColor="#ffffff" />
 
@@ -263,49 +265,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <SlidingDrawer
-        android:id="@+id/main_slidingDrawer"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_gravity="bottom"
-        android:content="@+id/content"
-        android:handle="@+id/handle" >
-
-        <Button
-            android:id="@+id/handle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/main_up_pressed" />
-
-        <LinearLayout
-            android:id="@+id/content"
-            android:layout_width="292dp"
-            android:layout_height="106dp"
-            android:background="@drawable/main_menu"
-            android:orientation="vertical" >
-
-            <Button
-                android:id="@+id/main_help_bt"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/mian_menu_bt_selector"
-                android:text="@string/main_help"
-                android:textColor="#ffffff" />
-            <Button
-                android:id="@+id/main_exit_bt"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/mian_menu_bt_selector"
-                android:text="@string/main_bt_exit"
-                android:textColor="#ffffff" />
-        </LinearLayout>
-    </SlidingDrawer>
 
 </FrameLayout>
