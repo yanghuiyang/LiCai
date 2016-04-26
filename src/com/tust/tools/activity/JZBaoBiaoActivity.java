@@ -21,7 +21,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.tust.tools.R;
-import com.tust.tools.bean.JZItem;
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
 import com.tust.tools.db.ExpenditureTypeData;
@@ -54,6 +53,7 @@ public class JZBaoBiaoActivity extends Activity {
 		//获取当前登陆用户
 		SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
 		userName = preferences.getString("userName", "");
+
 		//expenditureTypeData = new ExpenditureTypeData(this);
     	switch (flag) {
 		case ZCSR:
@@ -120,10 +120,10 @@ public class JZBaoBiaoActivity extends Activity {
          renderer.setYLabels(10);
          renderer.setShowGrid(true);
          renderer.setXLabelsAlign(Align.RIGHT);
-         renderer.setYLabelsAlign(Align.RIGHT);
+         renderer.setYLabelsAlign(Align.CENTER);
          renderer.setZoomButtonsVisible(true);
-         renderer.setPanLimits(new double[] {0, 12, 0, 10000 });
-         renderer.setZoomLimits(new double[] {0, 12, 0, 10000});
+         renderer.setPanLimits(new double[] {0, 12, 0, 10000 });//设置拖动时X轴Y轴允许的最大值最小值
+         renderer.setZoomLimits(new double[] {0, 12, 0, 10000});//设置放大缩小时X轴Y轴允许的最大最小值.
          View view = ChartFactory.getLineChartView(this, buildDataset(titles, x, values), renderer);
          view.setBackgroundColor(Color.BLACK);
          return view;
@@ -181,12 +181,12 @@ public class JZBaoBiaoActivity extends Activity {
 		renderer.setApplyBackgroundColor(true);//必须设置为true，颜色值才生效
 		renderer.setBackgroundColor(Color.rgb(188,159,119));//设置表格背景色
 		renderer.setMarginsColor(Color.rgb(135,102,51));//设置周边背景色
-		renderer.setAxisTitleTextSize(16);
-        renderer.setChartTitleTextSize(25);
+		renderer.setAxisTitleTextSize(20);
+        renderer.setChartTitleTextSize(30);
         renderer.setLabelsTextSize(20);
         renderer.setLegendTextSize(20);
         renderer.setPointSize(6f);
-        renderer.setMargins(new int[] { 20, 30, 15, 20 });
+        renderer.setMargins(new int[] { 35, 45, 20, 20 });//控制你图的边距 上,左,下,右
         int length = colors.length;
         for (int i = 0; i < length; i++) {
             XYSeriesRenderer r = new XYSeriesRenderer();

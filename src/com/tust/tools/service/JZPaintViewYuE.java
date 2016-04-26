@@ -26,7 +26,7 @@ public  class JZPaintViewYuE extends View {
         mPaints = new Paint(mPaints);
         mPaints.setColor(color);
         mUseCenters = true;
-        mBigOval = new RectF(15, 0, 175, 160);//绘图区域 距左， 距上 ，左起点至右距离 ，上起点距下距离
+        mBigOval = new RectF(15, 15, 210, 180);//绘图区域 距左， 距上 ，左起点至右距离 ，上起点距下距离
         mFramePaint = new Paint();
         mFramePaint.setAntiAlias(true);
         mFramePaint.setStyle(Paint.Style.STROKE);

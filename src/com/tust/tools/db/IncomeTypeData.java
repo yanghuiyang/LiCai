@@ -12,14 +12,9 @@ import java.util.List;
  * Created by yang on 2016/4/23.
  */
 public class IncomeTypeData {
-    //数据库名称
-   // private String DB_NAME="IncomeType.db";
 
-    //数据库版本
- //   private static int DB_VERSION=1;
     private SQLiteDatabase db;
     private DBOpenHelper dbHelper;// 创建DBOpenHelper对象
-   // private IncomeTypeSqliteHelper dbHelper;
     private Context context;
 
     public IncomeTypeData(Context context){

@@ -23,19 +23,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
         db.execSQL("CREATE TABLE IF NOT EXISTS beiwang" +
-                  "(" + "ID" + " integer primary key," +
-                BWcontent.YEAR + " Integer," +
-                BWcontent.MONTH + " Integer," +
-                BWcontent.WEEK + " Integer," +
-                BWcontent.DAY + " Integer," +
-                BWcontent.TIME + " varchar," +
-                BWcontent.CONTENT + " varchar," +
-                BWcontent.PIC + " varchar," +
-                BWcontent.COLOR + " Integer," +
-                BWcontent.SIZE + " REAL," +
-                BWcontent.USER + " varchar" +");");
-
-
+                  "(" + "ID" + " integer primary key," + BWcontent.YEAR + " Integer," + BWcontent.MONTH + " Integer," + BWcontent.WEEK + " Integer," + BWcontent.DAY + " Integer," + BWcontent.TIME + " varchar," + BWcontent.CONTENT + " varchar," + BWcontent.PIC + " varchar," + BWcontent.COLOR + " Integer," + BWcontent.SIZE + " REAL," + BWcontent.USER + " varchar" +");");
 
         db.execSQL("CREATE TABLE IF NOT EXISTS expendituretype " +
                 "(id INTEGER PRIMARY KEY,username VARCHAR(20) not null ,typename varchar(50) )");
@@ -56,43 +44,26 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
 
         db.execSQL("CREATE TABLE IF NOT EXISTS zhichu " +
-                 "(" + "ID" + " integer primary key," +
-                JZzhichu.ZC_ITEM + " varchar," +
-                JZzhichu.ZC_SUBITEM + " varchar," +
-                JZzhichu.ZC_YEAR + " Integer," +
-                JZzhichu.ZC_MONTH + " Integer," +
-                JZzhichu.ZC_WEEK + " Integer," +
-                JZzhichu.ZC_DAY + " Integer," +
-                JZzhichu.ZC_TIME + " varchar," +
-                JZzhichu.ZC_PIC + " varchar," +
-                JZzhichu.ZC_COUNT + " REAL," +
-                JZzhichu.ZC_BEIZHU + " varchar," +
-                JZzhichu.ZC_USER + " varchar" +");");
+                 "(" + "ID" + " integer primary key," + JZzhichu.ZC_ITEM + " varchar," + JZzhichu.ZC_SUBITEM + " varchar," + JZzhichu.ZC_YEAR + " Integer," + JZzhichu.ZC_MONTH + " Integer," + JZzhichu.ZC_WEEK + " Integer," + JZzhichu.ZC_DAY + " Integer," + JZzhichu.ZC_TIME + " varchar," + JZzhichu.ZC_PIC + " varchar," + JZzhichu.ZC_COUNT + " REAL," + JZzhichu.ZC_BEIZHU + " varchar," + JZzhichu.ZC_USER + " varchar" +");");
 
         db.execSQL("CREATE TABLE IF NOT EXISTS shouru" +
-                "(" + "ID" + " integer primary key," +
-
-                JZshouru.SR_ITEM + " varchar," +
-                JZshouru.SR_YEAR + " Integer," +
-                JZshouru.SR_MONTH + " Integer," +
-                JZshouru.SR_WEEK + " Integer," +
-                JZshouru.SR_DAY + " Integer," +
-                JZshouru.SR_TIME + " varchar," +
-                JZshouru.SR_COUNT + " REAL," +
-                JZshouru.SR_BEIZHU + " varchar," +
-                JZshouru.SR_USER + " varchar" +");");
+                "(" + "ID" + " integer primary key," + JZshouru.SR_ITEM + " varchar," + JZshouru.SR_YEAR + " Integer," + JZshouru.SR_MONTH + " Integer," + JZshouru.SR_WEEK + " Integer," + JZshouru.SR_DAY + " Integer," + JZshouru.SR_TIME + " varchar," + JZshouru.SR_COUNT + " REAL," + JZshouru.SR_BEIZHU + " varchar," + JZshouru.SR_USER + " varchar" +");");
 
         db.execSQL("CREATE TABLE IF NOT EXISTS USER"
                 + "(username VARCHAR(20) PRIMARY KEY , pwd VARCHAR(20) not null, sex INTEGER, tel VARCHAR,budget INTEGER)");
-        //添加2个默认账号
+        //添加个默认账号
         //User user = new User();
         ContentValues values = new ContentValues();
         values.put("username", "admin");
         values.put("pwd", "123456");
         values.put("sex", "1");
         values.put("tel", "15922771234");
-        values.put("budget", 5000);
+        values.put("budget", 5000);  //user 的 budget作为当月的总预算
         db.insert("USER",null,values);
+        //创建预算表
+        db.execSQL("CREATE TABLE IF NOT EXISTS budget "
+                + "(id INTEGER PRIMARY KEY,username varchar not null ,typename varchar(50),year INTEGER,month INTEGER,money INTEGER)");
+
     }
 
 
@@ -105,6 +76,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS zhichu" );
         db.execSQL("DROP TABLE IF EXISTS shouru" );
         db.execSQL("DROP TABLE IF EXISTS USER" );
+        db.execSQL("DROP TABLE IF EXISTS budget" );
         onCreate(db);
     }
 

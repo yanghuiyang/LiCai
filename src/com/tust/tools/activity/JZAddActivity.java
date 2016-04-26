@@ -44,7 +44,6 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.tust.tools.R;
-import com.tust.tools.bean.JZItem;
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
 import com.tust.tools.db.ExpenditureTypeData;

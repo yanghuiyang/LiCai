@@ -96,9 +96,10 @@
             <LinearLayout
                 android:id="@+id/jz_ll_zhichu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="343dp"
                 android:orientation="vertical"
-                android:visibility="visible" >
+                android:visibility="visible"
+                android:weightSum="1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -175,15 +176,16 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/jz_paper_bg" >
+                    android:background="@drawable/jz_paper_bg">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="127dp"
                         android:layout_marginLeft="10dp"
                         android:orientation="vertical" >
 
@@ -221,12 +223,12 @@
                     <RelativeLayout
                         android:id="@+id/jz_main_zhichu_pic_xia_rl"
                         android:layout_width="match_parent"
-                        android:layout_height="107dp"
+                        android:layout_height="118dp"
                         android:layout_gravity="right"
                         android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="15dp"
                         android:layout_marginRight="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="15dp"
                         android:background="@drawable/jz_empty_yusuan" >
 
                     </RelativeLayout>
@@ -264,7 +266,6 @@
                         android:layout_height="wrap_content"
                         android:text="@string/jz_0"
                         android:textColor="#ff0000" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

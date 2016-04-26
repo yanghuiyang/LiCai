@@ -35,7 +35,7 @@ import com.tust.tools.service.DongHuaYanChi;
 import com.tust.tools.service.PhoneInfoService;
 import com.tust.tools.service.SDrw;
 
-public class ToolsMainActivity extends Activity implements OnClickListener,OnLongClickListener {
+public class ToolsMainActivity extends Activity implements OnClickListener {
     //工具箱主界面  图标布局
     private LinearLayout jz_ll, bw_ll, js_ll, info_ll, icon_ll, user_manage;
     //3D翻转动画
@@ -59,11 +59,6 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         File dirWZ = new File(SDrw.SDPATH + "weizhi");
 //        File dirs[] = new File[]{dirJZ,dirBW,dirTQ,dirWZ};
         File dirs[] = new File[]{dirJZ, dirBW, dirWZ};
-//        for(int i=0;i<4;i++){
-//            if(!dirs[i].exists()){
-//              dirs[i].mkdirs();  
-//            }
-//        }
         for (int i = 0; i < 3; i++) {
             if (!dirs[i].exists()) {
                 dirs[i].mkdirs();
@@ -79,15 +74,15 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         jz_ll = (LinearLayout) this.findViewById(R.id.main_ll_1);
         jz_ll.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
         jz_ll.setOnClickListener(this);
-        jz_ll.setOnLongClickListener(this);
+
         bw_ll = (LinearLayout) this.findViewById(R.id.main_ll_2);
         bw_ll.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
         bw_ll.setOnClickListener(this);
-        bw_ll.setOnLongClickListener(this);
+
         js_ll = (LinearLayout) this.findViewById(R.id.main_ll_3);
         js_ll.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
         js_ll.setOnClickListener(this);
-        js_ll.setOnLongClickListener(this);
+
 
         user_manage = (LinearLayout) this.findViewById(R.id.main_ll_4);
         user_manage.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
@@ -129,34 +124,6 @@ public class ToolsMainActivity extends Activity implements OnClickListener,OnLon
         }
     }
 
-
-    @Override
-    public boolean onLongClick(View v) {
-        int id = v.getId();
-        String text = "";
-        dongHua(v);
-        switch (id) {
-            case R.id.main_ll_1://记账
-                text = "该‘记账工具’功能是为了方便日常生活使用，清清楚楚的记录您平时消费信息。" +
-                        "\r\n1.该功能可以根据每月的消费和输入情况绘制出消费和支出的走线图，让您一目了然的看到您每月的消费情况。" +
-                        "\r\n2.该功能首页的柱形图在分辨率为480*800以下的屏幕上会出现偏移和不完整。以后的版本将会解决该问题。" +
-                        "\r\n3.添加记录时每个选项是可以选择的，例如：改变‘类别’就点击‘类别’后面对应的值进行选择，改变‘时间’也是同理。" +
-                        "\r\n4.该功能可以加密，加密功能在‘设置’选项中，加密后请记住您的密码，目前没有密码找回功能。";
-                break;
-            case R.id.main_ll_2://记事
-                text = "该‘备忘记事’功能是为了记录平时生活中的重要事情而设计的，让你不再为忘记重要事情而烦恼。" +
-                        "\r\n1.该功能可以保存图片和文字，导出文本到SD卡中，更换背景颜色以及改变字体大小等，操作简便，易于使用。" +
-                        "\r\n2.无论是新建或者修改只要输入完后按返回键程序将自动保存输入的内容。" +
-                        "\r\n3.。";
-                break;
-            case R.id.main_ll_3://计算
-                text = "该‘简易计算’功能是为了方便日常生活中偶尔遇到比较复杂的混合运算而设计的。" +
-                        "\r\n1.目前功能比较简单，以后版本将会增加更多功能。";
-                break;
-        }
-        new DialogAbout(this, text);
-        return false;
-    }
 
     //跳转Activity方法
     public void changeActivity(final Class<?> c) {

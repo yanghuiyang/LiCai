@@ -279,7 +279,6 @@ public class JZMainActivity extends Activity implements OnClickListener {
     public void getZhiChu() {
     	count_sr_yue = 0;
     	float count_zc_week = 0,count_zc_yue = 0;
-        //String selectionWeek = JZzhichu.ZC_USER + "=" +userName + " and " + JZzhichu.ZC_WEEK + "=" + GetTime.getWeekOfYear();
         String selectionWeek = JZzhichu.ZC_USER + "='" +userName + "'" +" and " + JZzhichu.ZC_WEEK + "=" + GetTime.getWeekOfYear();
         List<JZzhichu> zhichuWeekList = dataHelper.GetZhiChuList(selectionWeek);
         if (zhichuWeekList != null) {
@@ -316,11 +315,11 @@ public class JZMainActivity extends Activity implements OnClickListener {
         }
         //判断当前状态确定是否绘图
         if(count_zc_week>0||count_zc_yue>0||count_sr_yue>0){
-        	// 创建绘图区域
+        	// 创建绘图区域 柱状图 当前支出
         	zhichu_shang_rl.setBackgroundDrawable(null);
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.BLUE,30,count_zc_week/20,"本周支出"));
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.BLACK,100,count_zc_yue/20,"本月支出"));
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.CYAN,170,count_sr_yue/20,"本月收入"));
+            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(102,153,161),30,count_zc_week/20,"本周支出"));
+            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(77,81,57),100,count_zc_yue/20,"本月支出"));
+            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(28,28,28),170,count_sr_yue/20,"本月收入"));
         }else{
         	zhichu_shang_rl.setBackgroundResource(R.drawable.jz_empty_zhichu_zhuxing);
         }
@@ -343,8 +342,8 @@ public class JZMainActivity extends Activity implements OnClickListener {
         }
         if(yusuan_yue>0||zhichu_yue>0){
         	zhichu_xia_rl.setBackgroundDrawable(null);
-	        zhichu_xia_rl.addView(new JZPaintViewYuE(this,0,0,Color.BLUE,50));
-	        zhichu_xia_rl.addView(new JZPaintViewYuE(JZMainActivity.this,yusuan_yue,zhichu_yue,Color.RED,bujin));	
+	        zhichu_xia_rl.addView(new JZPaintViewYuE(this,0,0,Color.rgb(102,153,161),50));
+	        zhichu_xia_rl.addView(new JZPaintViewYuE(JZMainActivity.this,yusuan_yue,zhichu_yue,Color.rgb(88,178,220),bujin));
         }else{
         	zhichu_xia_rl.setBackgroundResource(R.drawable.jz_empty_yusuan);
         }
@@ -379,11 +378,11 @@ public class JZMainActivity extends Activity implements OnClickListener {
         }
         //判断当前状态确定是否绘图
         if(count_sr_year>0||count_sr_yue>0||count_sr_day>0){
-        	// 创建绘图区域
+        	// 创建绘图区域 柱状图
         	shouru_shang_rl.setBackgroundDrawable(null);
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.BLUE,30,count_sr_year/40,"本年收入"));
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.BLACK,100,count_sr_yue/40,"本月收入"));
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.CYAN,170,count_sr_day/40,"今天收入"));
+        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(102,153,161),30,count_sr_year/40,"本年收入"));
+        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(77,81,57),100,count_sr_yue/40,"本月收入"));
+        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(28,28,28),170,count_sr_day/40,"今天收入"));
         }else{
         	shouru_shang_rl.setBackgroundResource(R.drawable.jz_empty_zhichu_zhuxing);
         }

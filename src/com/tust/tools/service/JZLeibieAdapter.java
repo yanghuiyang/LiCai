@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 import com.tust.tools.R;
 import com.tust.tools.activity.JZAddActivity;
-import com.tust.tools.bean.JZItem;
 import com.tust.tools.db.ExpenditureTypeData;
 import com.tust.tools.db.IncomeTypeData;
 import com.tust.tools.db.JZData;
@@ -46,10 +45,6 @@ public class JZLeibieAdapter extends BaseAdapter{
 			leibielist=incomeTypeData.getTypesByUserName(userName);//获取该用户所有收入类型
 			leibiearr = new ArrayList<String>();
 			leibiearr = new ArrayList(leibielist);
-		}else if(flag==JZAddActivity.jiedai_flag){
-			getLeibieList(JZItem.jiedai_s);
-		}else if(flag==DialogLeiBie.flagsubleibie){
-			//getLeibieSubList(subitem);
 		}
 	}
 
@@ -62,35 +57,6 @@ public class JZLeibieAdapter extends BaseAdapter{
 			leibiearr.add(str);
 		}
 	}
-
-/*	*//*
-	 * 获取类别子类的列表集合（根据传入的当前选中类别来判断）
-	 * *//*
-	public void getLeibieSubList(String subitem) {
-		leibiearr = new ArrayList<String>();
-		String strs[]=null;
-		if(subitem.equals("餐饮")){
-			strs=JZItem.cy_s;
-		}else if(subitem.equals("交通")){
-			strs=JZItem.jt_s;
-		}else if(subitem.equals("购物")){
-			strs=JZItem.gw_s;
-		}else if(subitem.equals("娱乐")){
-			strs=JZItem.yl_s;
-		}else if(subitem.equals("医教")){
-			strs=JZItem.yj_s;
-		}else if(subitem.equals("居家")){
-			strs=JZItem.jj_s;
-		}else if(subitem.equals("投资")){
-			strs=JZItem.tz_s;
-		}else if(subitem.equals("人情")){
-			strs=JZItem.rq_s;
-		}
-		this.subItem = subitem;
-		for (String str : strs) {
-			leibiearr.add(str);
-		}
-	}*/
 
 	@Override
 	public int getCount() {

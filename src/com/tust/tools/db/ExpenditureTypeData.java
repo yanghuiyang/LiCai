@@ -70,6 +70,7 @@ public class ExpenditureTypeData {
         cursor.moveToFirst();
         return cursor.getString(cursor.getColumnIndex("typename"));
     }
+
     /**
      * 获取类型名数组
      * param id

@@ -12,19 +12,12 @@ import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
 //记账数据库操作
 public class JZData {
-	//数据库名称
-	//private String DB_NAME="jizhang.db";
-
-	//数据库版本
-	private static int DB_VERSION=1;
 	private SQLiteDatabase db;
-//	private JZSqliteHelper dbHelper;
     private DBOpenHelper dbHelper;// 创建DBOpenHelper对象
 	private Context context;
 	 
     public JZData(Context context){
     	this.context = context;
-     //   dbHelper=new JZSqliteHelper(context,DB_NAME, null, DB_VERSION);
         dbHelper = new DBOpenHelper(context);// 初始化DBOpenHelper对象
         db= dbHelper.getWritableDatabase();
     }
