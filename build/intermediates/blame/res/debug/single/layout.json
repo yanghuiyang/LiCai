@@ -4,12 +4,12 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\income_typemanage.xml"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\jz_add.xml",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_add.xml"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\bw_list_item.xml",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\bw_list_item.xml"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\jz_add.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_add.xml"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_beizhu.xml",
@@ -24,16 +24,24 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_leibie_subitem.xml"
     },
     {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\list_item.xml"
+    },
+    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\bw_new.xml",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\bw_new.xml"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_about.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\dialog_about.xml"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\js_main.xml",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\js_main.xml"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_about.xml",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\dialog_about.xml"
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\preview_layout.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\preview_layout.xml"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
@@ -44,12 +52,12 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\register.xml"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\jz_shezhi.xml",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_shezhi.xml"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\jz_mingxi_item.xml",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_mingxi_item.xml"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\jz_shezhi.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_shezhi.xml"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\bw_main.xml",
@@ -72,12 +80,12 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_mingxi.xml"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\jz_main.xml",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_main.xml"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_leibie.xml",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\dialog_leibie.xml"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\jz_main.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\layout\\jz_main.xml"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\layout\\jz_yusuan.xml",

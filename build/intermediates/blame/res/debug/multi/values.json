@@ -16,10 +16,10 @@
                     "position": {
                         "startLine": 97,
                         "startColumn": 5,
-                        "startOffset": 4342,
+                        "startOffset": 4373,
                         "endLine": 100,
                         "endColumn": 19,
-                        "endOffset": 4444
+                        "endOffset": 4475
                     }
                 }
             },
@@ -36,9 +36,9 @@
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
-                        "startOffset": 1836,
+                        "startOffset": 1834,
                         "endColumn": 48,
-                        "endOffset": 1880
+                        "endOffset": 1878
                     }
                 }
             },
@@ -55,9 +55,9 @@
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
-                        "startOffset": 1791,
+                        "startOffset": 1789,
                         "endColumn": 43,
-                        "endOffset": 1830
+                        "endOffset": 1828
                     }
                 }
             },
@@ -66,8 +66,8 @@
                     "startLine": 8,
                     "startColumn": 4,
                     "startOffset": 252,
-                    "endColumn": 41,
-                    "endOffset": 289
+                    "endColumn": 39,
+                    "endOffset": 287
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
@@ -75,8 +75,8 @@
                         "startLine": 4,
                         "startColumn": 4,
                         "startOffset": 148,
-                        "endColumn": 41,
-                        "endOffset": 185
+                        "endColumn": 39,
+                        "endOffset": 183
                     }
                 }
             },
@@ -84,18 +84,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 294,
+                    "startOffset": 292,
                     "endColumn": 44,
-                    "endOffset": 334
+                    "endOffset": 332
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 236,
+                        "startOffset": 234,
                         "endColumn": 44,
-                        "endOffset": 276
+                        "endOffset": 274
                     }
                 }
             },
@@ -103,18 +103,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 339,
+                    "startOffset": 337,
                     "endColumn": 44,
-                    "endOffset": 379
+                    "endOffset": 377
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 282,
+                        "startOffset": 280,
                         "endColumn": 44,
-                        "endOffset": 322
+                        "endOffset": 320
                     }
                 }
             },
@@ -122,18 +122,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 384,
+                    "startOffset": 382,
                     "endColumn": 46,
-                    "endOffset": 426
+                    "endOffset": 424
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
-                        "startOffset": 2185,
+                        "startOffset": 2183,
                         "endColumn": 46,
-                        "endOffset": 2227
+                        "endOffset": 2225
                     }
                 }
             },
@@ -141,18 +141,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 431,
+                    "startOffset": 429,
                     "endColumn": 51,
-                    "endOffset": 478
+                    "endOffset": 476
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
-                        "startOffset": 2077,
+                        "startOffset": 2075,
                         "endColumn": 51,
-                        "endOffset": 2124
+                        "endOffset": 2122
                     }
                 }
             },
@@ -160,18 +160,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 483,
+                    "startOffset": 481,
                     "endColumn": 53,
-                    "endOffset": 532
+                    "endOffset": 530
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
-                        "startOffset": 2130,
+                        "startOffset": 2128,
                         "endColumn": 53,
-                        "endOffset": 2179
+                        "endOffset": 2177
                     }
                 }
             },
@@ -179,18 +179,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 537,
+                    "startOffset": 535,
                     "endColumn": 77,
-                    "endOffset": 610
+                    "endOffset": 608
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 1442,
+                        "startOffset": 1440,
                         "endColumn": 77,
-                        "endOffset": 1515
+                        "endOffset": 1513
                     }
                 }
             },
@@ -198,18 +198,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 615,
+                    "startOffset": 613,
                     "endColumn": 74,
-                    "endOffset": 685
+                    "endOffset": 683
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
-                        "startOffset": 1521,
+                        "startOffset": 1519,
                         "endColumn": 74,
-                        "endOffset": 1591
+                        "endOffset": 1589
                     }
                 }
             },
@@ -217,18 +217,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 690,
+                    "startOffset": 688,
                     "endColumn": 66,
-                    "endOffset": 752
+                    "endOffset": 750
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
-                        "startOffset": 1723,
+                        "startOffset": 1721,
                         "endColumn": 66,
-                        "endOffset": 1785
+                        "endOffset": 1783
                     }
                 }
             },
@@ -236,18 +236,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 757,
+                    "startOffset": 755,
                     "endColumn": 46,
-                    "endOffset": 799
+                    "endOffset": 797
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
-                        "startOffset": 2577,
+                        "startOffset": 2575,
                         "endColumn": 46,
-                        "endOffset": 2619
+                        "endOffset": 2617
                     }
                 }
             },
@@ -255,18 +255,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 804,
+                    "startOffset": 802,
                     "endColumn": 42,
-                    "endOffset": 842
+                    "endOffset": 840
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 53,
                         "startColumn": 4,
-                        "startOffset": 2673,
+                        "startOffset": 2671,
                         "endColumn": 42,
-                        "endOffset": 2711
+                        "endOffset": 2709
                     }
                 }
             },
@@ -274,18 +274,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 847,
+                    "startOffset": 845,
                     "endColumn": 46,
-                    "endOffset": 889
+                    "endOffset": 887
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
-                        "startOffset": 2625,
+                        "startOffset": 2623,
                         "endColumn": 46,
-                        "endOffset": 2667
+                        "endOffset": 2665
                     }
                 }
             },
@@ -293,18 +293,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 894,
+                    "startOffset": 892,
                     "endColumn": 42,
-                    "endOffset": 932
+                    "endOffset": 930
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
-                        "startOffset": 2717,
+                        "startOffset": 2715,
                         "endColumn": 42,
-                        "endOffset": 2755
+                        "endOffset": 2753
                     }
                 }
             },
@@ -312,18 +312,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 937,
+                    "startOffset": 935,
                     "endColumn": 59,
-                    "endOffset": 992
+                    "endOffset": 990
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 1192,
+                        "startOffset": 1190,
                         "endColumn": 59,
-                        "endOffset": 1247
+                        "endOffset": 1245
                     }
                 }
             },
@@ -331,18 +331,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 997,
+                    "startOffset": 995,
                     "endColumn": 63,
-                    "endOffset": 1056
+                    "endOffset": 1054
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 1253,
+                        "startOffset": 1251,
                         "endColumn": 63,
-                        "endOffset": 1312
+                        "endOffset": 1310
                     }
                 }
             },
@@ -350,18 +350,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1061,
+                    "startOffset": 1059,
                     "endColumn": 57,
-                    "endOffset": 1114
+                    "endOffset": 1112
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 1318,
+                        "startOffset": 1316,
                         "endColumn": 57,
-                        "endOffset": 1371
+                        "endOffset": 1369
                     }
                 }
             },
@@ -369,18 +369,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1119,
+                    "startOffset": 1117,
                     "endColumn": 63,
-                    "endOffset": 1178
+                    "endOffset": 1176
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 1377,
+                        "startOffset": 1375,
                         "endColumn": 63,
-                        "endOffset": 1436
+                        "endOffset": 1434
                     }
                 }
             },
@@ -388,18 +388,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1183,
+                    "startOffset": 1181,
                     "endColumn": 47,
-                    "endOffset": 1226
+                    "endOffset": 1224
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 505,
+                        "startOffset": 503,
                         "endColumn": 47,
-                        "endOffset": 548
+                        "endOffset": 546
                     }
                 }
             },
@@ -407,18 +407,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 1231,
+                    "startOffset": 1229,
                     "endColumn": 45,
-                    "endOffset": 1272
+                    "endOffset": 1270
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 4,
-                        "startOffset": 2030,
+                        "startOffset": 2028,
                         "endColumn": 45,
-                        "endOffset": 2071
+                        "endOffset": 2069
                     }
                 }
             },
@@ -426,18 +426,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 1277,
+                    "startOffset": 1275,
                     "endColumn": 52,
-                    "endOffset": 1325
+                    "endOffset": 1323
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
-                        "startOffset": 2287,
+                        "startOffset": 2285,
                         "endColumn": 52,
-                        "endOffset": 2335
+                        "endOffset": 2333
                     }
                 }
             },
@@ -445,18 +445,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 1330,
+                    "startOffset": 1328,
                     "endColumn": 49,
-                    "endOffset": 1375
+                    "endOffset": 1373
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
-                        "startOffset": 1932,
+                        "startOffset": 1930,
                         "endColumn": 49,
-                        "endOffset": 1977
+                        "endOffset": 1975
                     }
                 }
             },
@@ -464,18 +464,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 1380,
+                    "startOffset": 1378,
                     "endColumn": 44,
-                    "endOffset": 1420
+                    "endOffset": 1418
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
-                        "startOffset": 2485,
+                        "startOffset": 2483,
                         "endColumn": 44,
-                        "endOffset": 2525
+                        "endOffset": 2523
                     }
                 }
             },
@@ -483,18 +483,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 1425,
+                    "startOffset": 1423,
                     "endColumn": 44,
-                    "endOffset": 1465
+                    "endOffset": 1463
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
-                        "startOffset": 2807,
+                        "startOffset": 2805,
                         "endColumn": 44,
-                        "endOffset": 2847
+                        "endOffset": 2845
                     }
                 }
             },
@@ -502,18 +502,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 1470,
+                    "startOffset": 1468,
                     "endColumn": 44,
-                    "endOffset": 1510
+                    "endOffset": 1508
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
-                        "startOffset": 2439,
+                        "startOffset": 2437,
                         "endColumn": 44,
-                        "endOffset": 2479
+                        "endOffset": 2477
                     }
                 }
             },
@@ -521,18 +521,18 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 1515,
+                    "startOffset": 1513,
                     "endColumn": 44,
-                    "endOffset": 1555
+                    "endOffset": 1553
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
-                        "startOffset": 2531,
+                        "startOffset": 2529,
                         "endColumn": 44,
-                        "endOffset": 2571
+                        "endOffset": 2569
                     }
                 }
             },
@@ -540,18 +540,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 1560,
+                    "startOffset": 1558,
                     "endColumn": 44,
-                    "endOffset": 1600
+                    "endOffset": 1598
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
-                        "startOffset": 2393,
+                        "startOffset": 2391,
                         "endColumn": 44,
-                        "endOffset": 2433
+                        "endOffset": 2431
                     }
                 }
             },
@@ -559,18 +559,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 1605,
+                    "startOffset": 1603,
                     "endColumn": 44,
-                    "endOffset": 1645
+                    "endOffset": 1643
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 55,
                         "startColumn": 4,
-                        "startOffset": 2761,
+                        "startOffset": 2759,
                         "endColumn": 44,
-                        "endOffset": 2801
+                        "endOffset": 2799
                     }
                 }
             },
@@ -578,18 +578,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 1650,
+                    "startOffset": 1648,
                     "endColumn": 43,
-                    "endOffset": 1689
+                    "endOffset": 1687
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 191,
+                        "startOffset": 189,
                         "endColumn": 43,
-                        "endOffset": 230
+                        "endOffset": 228
                     }
                 }
             },
@@ -597,18 +597,18 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 1694,
+                    "startOffset": 1692,
                     "endColumn": 54,
-                    "endOffset": 1744
+                    "endOffset": 1742
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 616,
+                        "startOffset": 614,
                         "endColumn": 54,
-                        "endOffset": 666
+                        "endOffset": 664
                     }
                 }
             },
@@ -616,18 +616,18 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 1749,
+                    "startOffset": 1747,
                     "endColumn": 38,
-                    "endOffset": 1783
+                    "endOffset": 1781
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 64,
                         "startColumn": 4,
-                        "startOffset": 3168,
+                        "startOffset": 3166,
                         "endColumn": 38,
-                        "endOffset": 3202
+                        "endOffset": 3200
                     }
                 }
             },
@@ -635,18 +635,18 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 1788,
+                    "startOffset": 1786,
                     "endColumn": 39,
-                    "endOffset": 1823
+                    "endOffset": 1821
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 66,
                         "startColumn": 4,
-                        "startOffset": 3248,
+                        "startOffset": 3246,
                         "endColumn": 39,
-                        "endOffset": 3283
+                        "endOffset": 3281
                     }
                 }
             },
@@ -654,18 +654,18 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 1828,
+                    "startOffset": 1826,
                     "endColumn": 40,
-                    "endOffset": 1864
+                    "endOffset": 1862
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 463,
+                        "startOffset": 461,
                         "endColumn": 40,
-                        "endOffset": 499
+                        "endOffset": 497
                     }
                 }
             },
@@ -673,18 +673,18 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 1869,
+                    "startOffset": 1867,
                     "endColumn": 52,
-                    "endOffset": 1917
+                    "endOffset": 1915
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
-                        "startOffset": 2233,
+                        "startOffset": 2231,
                         "endColumn": 52,
-                        "endOffset": 2281
+                        "endOffset": 2279
                     }
                 }
             },
@@ -692,18 +692,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 1922,
+                    "startOffset": 1920,
                     "endColumn": 39,
-                    "endOffset": 1957
+                    "endOffset": 1955
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 71,
                         "startColumn": 4,
-                        "startOffset": 3468,
+                        "startOffset": 3466,
                         "endColumn": 39,
-                        "endOffset": 3503
+                        "endOffset": 3501
                     }
                 }
             },
@@ -711,18 +711,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 1962,
+                    "startOffset": 1960,
                     "endColumn": 50,
-                    "endOffset": 2008
+                    "endOffset": 2006
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
-                        "startOffset": 2341,
+                        "startOffset": 2339,
                         "endColumn": 50,
-                        "endOffset": 2387
+                        "endOffset": 2385
                     }
                 }
             },
@@ -730,18 +730,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2013,
+                    "startOffset": 2011,
                     "endColumn": 61,
-                    "endOffset": 2070
+                    "endOffset": 2068
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 1025,
+                        "startOffset": 1023,
                         "endColumn": 61,
-                        "endOffset": 1082
+                        "endOffset": 1080
                     }
                 }
             },
@@ -749,18 +749,18 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 2075,
+                    "startOffset": 2073,
                     "endColumn": 52,
-                    "endOffset": 2123
+                    "endOffset": 2121
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 672,
+                        "startOffset": 670,
                         "endColumn": 52,
-                        "endOffset": 720
+                        "endOffset": 718
                     }
                 }
             },
@@ -768,18 +768,18 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 2128,
+                    "startOffset": 2126,
                     "endColumn": 53,
-                    "endOffset": 2177
+                    "endOffset": 2175
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 782,
+                        "startOffset": 780,
                         "endColumn": 53,
-                        "endOffset": 831
+                        "endOffset": 829
                     }
                 }
             },
@@ -787,18 +787,18 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 2182,
+                    "startOffset": 2180,
                     "endColumn": 60,
-                    "endOffset": 2238
+                    "endOffset": 2236
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 963,
+                        "startOffset": 961,
                         "endColumn": 60,
-                        "endOffset": 1019
+                        "endOffset": 1017
                     }
                 }
             },
@@ -806,18 +806,18 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 2243,
+                    "startOffset": 2241,
                     "endColumn": 64,
-                    "endOffset": 2303
+                    "endOffset": 2301
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 837,
+                        "startOffset": 835,
                         "endColumn": 64,
-                        "endOffset": 897
+                        "endOffset": 895
                     }
                 }
             },
@@ -825,18 +825,18 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 2308,
+                    "startOffset": 2306,
                     "endColumn": 58,
-                    "endOffset": 2362
+                    "endOffset": 2360
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 903,
+                        "startOffset": 901,
                         "endColumn": 58,
-                        "endOffset": 957
+                        "endOffset": 955
                     }
                 }
             },
@@ -844,18 +844,18 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 2367,
+                    "startOffset": 2365,
                     "endColumn": 54,
-                    "endOffset": 2417
+                    "endOffset": 2415
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 726,
+                        "startOffset": 724,
                         "endColumn": 54,
-                        "endOffset": 776
+                        "endOffset": 774
                     }
                 }
             },
@@ -863,18 +863,18 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 2422,
+                    "startOffset": 2420,
                     "endColumn": 53,
-                    "endOffset": 2471
+                    "endOffset": 2469
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 1088,
+                        "startOffset": 1086,
                         "endColumn": 53,
-                        "endOffset": 1137
+                        "endOffset": 1135
                     }
                 }
             },
@@ -882,18 +882,18 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 2476,
+                    "startOffset": 2474,
                     "endColumn": 45,
-                    "endOffset": 2517
+                    "endOffset": 2515
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
-                        "startOffset": 1983,
+                        "startOffset": 1981,
                         "endColumn": 45,
-                        "endOffset": 2024
+                        "endOffset": 2022
                     }
                 }
             },
@@ -901,18 +901,18 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2522,
+                    "startOffset": 2520,
                     "endColumn": 38,
-                    "endOffset": 2556
+                    "endOffset": 2554
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
-                        "startOffset": 3128,
+                        "startOffset": 3126,
                         "endColumn": 38,
-                        "endOffset": 3162
+                        "endOffset": 3160
                     }
                 }
             },
@@ -920,18 +920,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2561,
+                    "startOffset": 2559,
                     "endColumn": 38,
-                    "endOffset": 2595
+                    "endOffset": 2593
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
-                        "startOffset": 3208,
+                        "startOffset": 3206,
                         "endColumn": 38,
-                        "endOffset": 3242
+                        "endOffset": 3240
                     }
                 }
             },
@@ -939,9 +939,9 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 2600,
+                    "startOffset": 2598,
                     "endColumn": 39,
-                    "endOffset": 2635
+                    "endOffset": 2633
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
@@ -958,9 +958,9 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 2640,
+                    "startOffset": 2638,
                     "endColumn": 48,
-                    "endOffset": 2684
+                    "endOffset": 2682
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
@@ -977,18 +977,18 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 2689,
+                    "startOffset": 2687,
                     "endColumn": 44,
-                    "endOffset": 2729
+                    "endOffset": 2727
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
-                        "startOffset": 1886,
+                        "startOffset": 1884,
                         "endColumn": 44,
-                        "endOffset": 1926
+                        "endOffset": 1924
                     }
                 }
             },
@@ -996,18 +996,18 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 2734,
+                    "startOffset": 2732,
                     "endColumn": 43,
-                    "endOffset": 2773
+                    "endOffset": 2771
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 67,
                         "startColumn": 4,
-                        "startOffset": 3289,
+                        "startOffset": 3287,
                         "endColumn": 43,
-                        "endOffset": 3328
+                        "endOffset": 3326
                     }
                 }
             },
@@ -1015,18 +1015,18 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 2778,
+                    "startOffset": 2776,
                     "endColumn": 61,
-                    "endOffset": 2835
+                    "endOffset": 2833
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 4,
-                        "startOffset": 1660,
+                        "startOffset": 1658,
                         "endColumn": 61,
-                        "endOffset": 1717
+                        "endOffset": 1715
                     }
                 }
             },
@@ -1034,18 +1034,18 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 2840,
+                    "startOffset": 2838,
                     "endColumn": 61,
-                    "endOffset": 2897
+                    "endOffset": 2895
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
-                        "startOffset": 1597,
+                        "startOffset": 1595,
                         "endColumn": 61,
-                        "endOffset": 1654
+                        "endOffset": 1652
                     }
                 }
             },
@@ -1053,18 +1053,18 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 2902,
+                    "startOffset": 2900,
                     "endColumn": 47,
-                    "endOffset": 2945
+                    "endOffset": 2943
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 1143,
+                        "startOffset": 1141,
                         "endColumn": 47,
-                        "endOffset": 1186
+                        "endOffset": 1184
                     }
                 }
             },
@@ -1072,18 +1072,18 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 2950,
+                    "startOffset": 2948,
                     "endColumn": 49,
-                    "endOffset": 2995
+                    "endOffset": 2993
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
-                        "startOffset": 2909,
+                        "startOffset": 2907,
                         "endColumn": 49,
-                        "endOffset": 2954
+                        "endOffset": 2952
                     }
                 }
             },
@@ -1091,18 +1091,18 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 3000,
+                    "startOffset": 2998,
                     "endColumn": 54,
-                    "endOffset": 3050
+                    "endOffset": 3048
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 57,
                         "startColumn": 4,
-                        "startOffset": 2853,
+                        "startOffset": 2851,
                         "endColumn": 54,
-                        "endOffset": 2903
+                        "endOffset": 2901
                     }
                 }
             },
@@ -1110,18 +1110,18 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 3055,
+                    "startOffset": 3053,
                     "endColumn": 47,
-                    "endOffset": 3098
+                    "endOffset": 3096
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 59,
                         "startColumn": 4,
-                        "startOffset": 2960,
+                        "startOffset": 2958,
                         "endColumn": 47,
-                        "endOffset": 3003
+                        "endOffset": 3001
                     }
                 }
             },
@@ -1129,18 +1129,18 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 3103,
+                    "startOffset": 3101,
                     "endColumn": 65,
-                    "endOffset": 3164
+                    "endOffset": 3162
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
-                        "startOffset": 3009,
+                        "startOffset": 3007,
                         "endColumn": 65,
-                        "endOffset": 3070
+                        "endOffset": 3068
                     }
                 }
             },
@@ -1148,18 +1148,18 @@
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 3169,
+                    "startOffset": 3167,
                     "endColumn": 48,
-                    "endOffset": 3213
+                    "endOffset": 3211
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
-                        "startOffset": 3076,
+                        "startOffset": 3074,
                         "endColumn": 48,
-                        "endOffset": 3120
+                        "endOffset": 3118
                     }
                 }
             },
@@ -1167,18 +1167,18 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 3218,
+                    "startOffset": 3216,
                     "endColumn": 38,
-                    "endOffset": 3252
+                    "endOffset": 3250
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 70,
                         "startColumn": 4,
-                        "startOffset": 3428,
+                        "startOffset": 3426,
                         "endColumn": 38,
-                        "endOffset": 3462
+                        "endOffset": 3460
                     }
                 }
             },
@@ -1186,18 +1186,18 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 3257,
+                    "startOffset": 3255,
                     "endColumn": 41,
-                    "endOffset": 3294
+                    "endOffset": 3292
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 328,
+                        "startOffset": 326,
                         "endColumn": 41,
-                        "endOffset": 365
+                        "endOffset": 363
                     }
                 }
             },
@@ -1205,18 +1205,18 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 3299,
+                    "startOffset": 3297,
                     "endColumn": 44,
-                    "endOffset": 3339
+                    "endOffset": 3337
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 371,
+                        "startOffset": 369,
                         "endColumn": 44,
-                        "endOffset": 411
+                        "endOffset": 409
                     }
                 }
             },
@@ -1224,18 +1224,18 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 3344,
+                    "startOffset": 3342,
                     "endColumn": 44,
-                    "endOffset": 3384
+                    "endOffset": 3382
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 417,
+                        "startOffset": 415,
                         "endColumn": 44,
-                        "endOffset": 457
+                        "endOffset": 455
                     }
                 }
             },
@@ -1243,18 +1243,18 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 3389,
+                    "startOffset": 3387,
                     "endColumn": 42,
-                    "endOffset": 3427
+                    "endOffset": 3425
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
-                        "startOffset": 3334,
+                        "startOffset": 3332,
                         "endColumn": 42,
-                        "endOffset": 3372
+                        "endOffset": 3370
                     }
                 }
             },
@@ -1262,18 +1262,18 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 3432,
+                    "startOffset": 3430,
                     "endColumn": 48,
-                    "endOffset": 3476
+                    "endOffset": 3474
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 69,
                         "startColumn": 4,
-                        "startOffset": 3378,
+                        "startOffset": 3376,
                         "endColumn": 48,
-                        "endOffset": 3422
+                        "endOffset": 3420
                     }
                 }
             },
@@ -1281,18 +1281,18 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 3481,
+                    "startOffset": 3479,
                     "endColumn": 44,
-                    "endOffset": 3521
+                    "endOffset": 3519
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 4,
-                        "startOffset": 3509,
+                        "startOffset": 3507,
                         "endColumn": 44,
-                        "endOffset": 3549
+                        "endOffset": 3547
                     }
                 }
             },
@@ -1300,18 +1300,18 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 3526,
+                    "startOffset": 3524,
                     "endColumn": 56,
-                    "endOffset": 3578
+                    "endOffset": 3576
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 556,
+                        "startOffset": 554,
                         "endColumn": 56,
-                        "endOffset": 608
+                        "endOffset": 606
                     }
                 }
             },
@@ -1319,9 +1319,9 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 3583,
+                    "startOffset": 3581,
                     "endColumn": 42,
-                    "endOffset": 3621
+                    "endOffset": 3619
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1338,9 +1338,9 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 3626,
+                    "startOffset": 3624,
                     "endColumn": 45,
-                    "endOffset": 3667
+                    "endOffset": 3665
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1357,9 +1357,9 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 3672,
+                    "startOffset": 3670,
                     "endColumn": 55,
-                    "endOffset": 3723
+                    "endOffset": 3721
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1376,9 +1376,9 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 3728,
+                    "startOffset": 3726,
                     "endColumn": 44,
-                    "endOffset": 3768
+                    "endOffset": 3766
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1395,9 +1395,9 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 3773,
+                    "startOffset": 3771,
                     "endColumn": 49,
-                    "endOffset": 3818
+                    "endOffset": 3816
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1414,9 +1414,9 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 3823,
+                    "startOffset": 3821,
                     "endColumn": 53,
-                    "endOffset": 3872
+                    "endOffset": 3870
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1433,9 +1433,9 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 3877,
+                    "startOffset": 3875,
                     "endColumn": 42,
-                    "endOffset": 3915
+                    "endOffset": 3913
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1452,9 +1452,9 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 3920,
+                    "startOffset": 3918,
                     "endColumn": 144,
-                    "endOffset": 4060
+                    "endOffset": 4058
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1471,9 +1471,28 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 4065,
+                    "startOffset": 4063,
+                    "endColumn": 35,
+                    "endOffset": 4094
+                },
+                "from": {
+                    "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 4,
+                        "startOffset": 4335,
+                        "endColumn": 35,
+                        "endOffset": 4366
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 4099,
                     "endColumn": 61,
-                    "endOffset": 4122
+                    "endOffset": 4156
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1488,11 +1507,11 @@
             },
             {
                 "to": {
-                    "startLine": 83,
+                    "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 4127,
+                    "startOffset": 4161,
                     "endColumn": 38,
-                    "endOffset": 4161
+                    "endOffset": 4195
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1507,11 +1526,11 @@
             },
             {
                 "to": {
-                    "startLine": 84,
+                    "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 4166,
+                    "startOffset": 4200,
                     "endColumn": 36,
-                    "endOffset": 4198
+                    "endOffset": 4232
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1526,11 +1545,11 @@
             },
             {
                 "to": {
-                    "startLine": 85,
+                    "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 4203,
+                    "startOffset": 4237,
                     "endColumn": 37,
-                    "endOffset": 4236
+                    "endOffset": 4270
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1545,11 +1564,11 @@
             },
             {
                 "to": {
-                    "startLine": 86,
+                    "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 4241,
+                    "startOffset": 4275,
                     "endColumn": 37,
-                    "endOffset": 4274
+                    "endOffset": 4308
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1564,11 +1583,11 @@
             },
             {
                 "to": {
-                    "startLine": 87,
+                    "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 4279,
+                    "startOffset": 4313,
                     "endColumn": 36,
-                    "endOffset": 4311
+                    "endOffset": 4345
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1583,11 +1602,11 @@
             },
             {
                 "to": {
-                    "startLine": 88,
+                    "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 4316,
+                    "startOffset": 4350,
                     "endColumn": 37,
-                    "endOffset": 4349
+                    "endOffset": 4383
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1602,11 +1621,11 @@
             },
             {
                 "to": {
-                    "startLine": 89,
+                    "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 4354,
+                    "startOffset": 4388,
                     "endColumn": 41,
-                    "endOffset": 4391
+                    "endOffset": 4425
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1621,11 +1640,11 @@
             },
             {
                 "to": {
-                    "startLine": 90,
+                    "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 4396,
+                    "startOffset": 4430,
                     "endColumn": 41,
-                    "endOffset": 4433
+                    "endOffset": 4467
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1640,11 +1659,11 @@
             },
             {
                 "to": {
-                    "startLine": 91,
+                    "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 4438,
+                    "startOffset": 4472,
                     "endColumn": 34,
-                    "endOffset": 4468
+                    "endOffset": 4502
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1659,11 +1678,11 @@
             },
             {
                 "to": {
-                    "startLine": 92,
+                    "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 4473,
+                    "startOffset": 4507,
                     "endColumn": 34,
-                    "endOffset": 4503
+                    "endOffset": 4537
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1678,11 +1697,11 @@
             },
             {
                 "to": {
-                    "startLine": 93,
+                    "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 4508,
+                    "startOffset": 4542,
                     "endColumn": 34,
-                    "endOffset": 4538
+                    "endOffset": 4572
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1697,11 +1716,11 @@
             },
             {
                 "to": {
-                    "startLine": 94,
+                    "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 4543,
+                    "startOffset": 4577,
                     "endColumn": 34,
-                    "endOffset": 4573
+                    "endOffset": 4607
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1716,11 +1735,11 @@
             },
             {
                 "to": {
-                    "startLine": 95,
+                    "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 4578,
+                    "startOffset": 4612,
                     "endColumn": 34,
-                    "endOffset": 4608
+                    "endOffset": 4642
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1735,11 +1754,11 @@
             },
             {
                 "to": {
-                    "startLine": 96,
+                    "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 4613,
+                    "startOffset": 4647,
                     "endColumn": 34,
-                    "endOffset": 4643
+                    "endOffset": 4677
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1754,11 +1773,11 @@
             },
             {
                 "to": {
-                    "startLine": 97,
+                    "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 4648,
+                    "startOffset": 4682,
                     "endColumn": 34,
-                    "endOffset": 4678
+                    "endOffset": 4712
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1773,11 +1792,11 @@
             },
             {
                 "to": {
-                    "startLine": 98,
+                    "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 4683,
+                    "startOffset": 4717,
                     "endColumn": 34,
-                    "endOffset": 4713
+                    "endOffset": 4747
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1792,11 +1811,11 @@
             },
             {
                 "to": {
-                    "startLine": 99,
+                    "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 4718,
+                    "startOffset": 4752,
                     "endColumn": 34,
-                    "endOffset": 4748
+                    "endOffset": 4782
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1811,11 +1830,11 @@
             },
             {
                 "to": {
-                    "startLine": 100,
+                    "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 4753,
+                    "startOffset": 4787,
                     "endColumn": 34,
-                    "endOffset": 4783
+                    "endOffset": 4817
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1830,11 +1849,11 @@
             },
             {
                 "to": {
-                    "startLine": 101,
+                    "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 4788,
+                    "startOffset": 4822,
                     "endColumn": 41,
-                    "endOffset": 4825
+                    "endOffset": 4859
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1849,11 +1868,11 @@
             },
             {
                 "to": {
-                    "startLine": 102,
+                    "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 4830,
+                    "startOffset": 4864,
                     "endColumn": 48,
-                    "endOffset": 4874
+                    "endOffset": 4908
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1868,11 +1887,11 @@
             },
             {
                 "to": {
-                    "startLine": 103,
+                    "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 4879,
+                    "startOffset": 4913,
                     "endColumn": 44,
-                    "endOffset": 4919
+                    "endOffset": 4953
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1887,11 +1906,11 @@
             },
             {
                 "to": {
-                    "startLine": 104,
+                    "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 4924,
+                    "startOffset": 4958,
                     "endColumn": 42,
-                    "endOffset": 4962
+                    "endOffset": 4996
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1906,11 +1925,11 @@
             },
             {
                 "to": {
-                    "startLine": 105,
+                    "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 4967,
+                    "startOffset": 5001,
                     "endColumn": 49,
-                    "endOffset": 5012
+                    "endOffset": 5046
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1925,11 +1944,11 @@
             },
             {
                 "to": {
-                    "startLine": 106,
+                    "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 5017,
+                    "startOffset": 5051,
                     "endColumn": 49,
-                    "endOffset": 5062
+                    "endOffset": 5096
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1944,11 +1963,11 @@
             },
             {
                 "to": {
-                    "startLine": 107,
+                    "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 5067,
+                    "startOffset": 5101,
                     "endColumn": 48,
-                    "endOffset": 5111
+                    "endOffset": 5145
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1963,11 +1982,11 @@
             },
             {
                 "to": {
-                    "startLine": 108,
+                    "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 5116,
+                    "startOffset": 5150,
                     "endColumn": 50,
-                    "endOffset": 5162
+                    "endOffset": 5196
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -1982,11 +2001,11 @@
             },
             {
                 "to": {
-                    "startLine": 109,
+                    "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 5167,
+                    "startOffset": 5201,
                     "endColumn": 34,
-                    "endOffset": 5197
+                    "endOffset": 5231
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2001,11 +2020,11 @@
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 5202,
+                    "startOffset": 5236,
                     "endColumn": 38,
-                    "endOffset": 5236
+                    "endOffset": 5270
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2020,11 +2039,11 @@
             },
             {
                 "to": {
-                    "startLine": 111,
+                    "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 5241,
+                    "startOffset": 5275,
                     "endColumn": 42,
-                    "endOffset": 5279
+                    "endOffset": 5313
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2039,11 +2058,11 @@
             },
             {
                 "to": {
-                    "startLine": 112,
+                    "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 5284,
+                    "startOffset": 5318,
                     "endColumn": 46,
-                    "endOffset": 5326
+                    "endOffset": 5360
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2058,11 +2077,11 @@
             },
             {
                 "to": {
-                    "startLine": 113,
+                    "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 5331,
+                    "startOffset": 5365,
                     "endColumn": 45,
-                    "endOffset": 5372
+                    "endOffset": 5406
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2077,11 +2096,11 @@
             },
             {
                 "to": {
-                    "startLine": 114,
+                    "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 5377,
+                    "startOffset": 5411,
                     "endColumn": 46,
-                    "endOffset": 5419
+                    "endOffset": 5453
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2096,11 +2115,11 @@
             },
             {
                 "to": {
-                    "startLine": 115,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 5424,
+                    "startOffset": 5458,
                     "endColumn": 45,
-                    "endOffset": 5465
+                    "endOffset": 5499
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2115,11 +2134,11 @@
             },
             {
                 "to": {
-                    "startLine": 116,
+                    "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 5470,
+                    "startOffset": 5504,
                     "endColumn": 49,
-                    "endOffset": 5515
+                    "endOffset": 5549
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2134,11 +2153,11 @@
             },
             {
                 "to": {
-                    "startLine": 117,
+                    "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 5520,
+                    "startOffset": 5554,
                     "endColumn": 50,
-                    "endOffset": 5566
+                    "endOffset": 5600
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2153,11 +2172,11 @@
             },
             {
                 "to": {
-                    "startLine": 118,
+                    "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 5571,
+                    "startOffset": 5605,
                     "endColumn": 49,
-                    "endOffset": 5616
+                    "endOffset": 5650
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2172,11 +2191,11 @@
             },
             {
                 "to": {
-                    "startLine": 119,
+                    "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 5621,
+                    "startOffset": 5655,
                     "endColumn": 42,
-                    "endOffset": 5659
+                    "endOffset": 5693
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2191,39 +2210,20 @@
             },
             {
                 "to": {
-                    "startLine": 120,
-                    "startColumn": 4,
-                    "startOffset": 5664,
-                    "endColumn": 42,
-                    "endOffset": 5702
-                },
-                "from": {
-                    "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 103,
-                        "startColumn": 4,
-                        "startOffset": 4475,
-                        "endColumn": 42,
-                        "endOffset": 4513
-                    }
-                }
-            },
-            {
-                "to": {
                     "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 5707,
-                    "endColumn": 48,
-                    "endOffset": 5751
+                    "startOffset": 5698,
+                    "endColumn": 42,
+                    "endOffset": 5736
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 104,
+                        "startLine": 102,
                         "startColumn": 4,
-                        "startOffset": 4519,
-                        "endColumn": 48,
-                        "endOffset": 4563
+                        "startOffset": 4499,
+                        "endColumn": 42,
+                        "endOffset": 4537
                     }
                 }
             },
@@ -2231,18 +2231,18 @@
                 "to": {
                     "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 5756,
-                    "endColumn": 67,
-                    "endOffset": 5819
+                    "startOffset": 5741,
+                    "endColumn": 48,
+                    "endOffset": 5785
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 105,
+                        "startLine": 103,
                         "startColumn": 4,
-                        "startOffset": 4569,
-                        "endColumn": 67,
-                        "endOffset": 4632
+                        "startOffset": 4543,
+                        "endColumn": 48,
+                        "endOffset": 4587
                     }
                 }
             },
@@ -2250,18 +2250,18 @@
                 "to": {
                     "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 5824,
-                    "endColumn": 62,
-                    "endOffset": 5882
+                    "startOffset": 5790,
+                    "endColumn": 67,
+                    "endOffset": 5853
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 106,
+                        "startLine": 104,
                         "startColumn": 4,
-                        "startOffset": 4638,
-                        "endColumn": 62,
-                        "endOffset": 4696
+                        "startOffset": 4593,
+                        "endColumn": 67,
+                        "endOffset": 4656
                     }
                 }
             },
@@ -2269,18 +2269,18 @@
                 "to": {
                     "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 5887,
-                    "endColumn": 54,
-                    "endOffset": 5937
+                    "startOffset": 5858,
+                    "endColumn": 62,
+                    "endOffset": 5916
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 107,
+                        "startLine": 105,
                         "startColumn": 4,
-                        "startOffset": 4702,
-                        "endColumn": 54,
-                        "endOffset": 4752
+                        "startOffset": 4662,
+                        "endColumn": 62,
+                        "endOffset": 4720
                     }
                 }
             },
@@ -2288,9 +2288,28 @@
                 "to": {
                     "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 5942,
+                    "startOffset": 5921,
+                    "endColumn": 54,
+                    "endOffset": 5971
+                },
+                "from": {
+                    "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 106,
+                        "startColumn": 4,
+                        "startOffset": 4726,
+                        "endColumn": 54,
+                        "endOffset": 4776
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 126,
+                    "startColumn": 4,
+                    "startOffset": 5976,
                     "endColumn": 42,
-                    "endOffset": 5980
+                    "endOffset": 6014
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2305,11 +2324,11 @@
             },
             {
                 "to": {
-                    "startLine": 126,
+                    "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 5985,
+                    "startOffset": 6019,
                     "endColumn": 50,
-                    "endOffset": 6031
+                    "endOffset": 6065
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2324,11 +2343,11 @@
             },
             {
                 "to": {
-                    "startLine": 127,
+                    "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 6036,
+                    "startOffset": 6070,
                     "endColumn": 49,
-                    "endOffset": 6081
+                    "endOffset": 6115
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2343,11 +2362,11 @@
             },
             {
                 "to": {
-                    "startLine": 128,
+                    "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 6086,
+                    "startOffset": 6120,
                     "endColumn": 50,
-                    "endOffset": 6132
+                    "endOffset": 6166
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2362,11 +2381,11 @@
             },
             {
                 "to": {
-                    "startLine": 129,
+                    "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 6137,
+                    "startOffset": 6171,
                     "endColumn": 45,
-                    "endOffset": 6178
+                    "endOffset": 6212
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2381,11 +2400,11 @@
             },
             {
                 "to": {
-                    "startLine": 130,
+                    "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 6183,
+                    "startOffset": 6217,
                     "endColumn": 49,
-                    "endOffset": 6228
+                    "endOffset": 6262
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2400,11 +2419,11 @@
             },
             {
                 "to": {
-                    "startLine": 131,
+                    "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 6233,
+                    "startOffset": 6267,
                     "endColumn": 45,
-                    "endOffset": 6274
+                    "endOffset": 6308
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2419,11 +2438,11 @@
             },
             {
                 "to": {
-                    "startLine": 132,
+                    "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 6279,
+                    "startOffset": 6313,
                     "endColumn": 45,
-                    "endOffset": 6320
+                    "endOffset": 6354
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2438,11 +2457,11 @@
             },
             {
                 "to": {
-                    "startLine": 133,
+                    "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 6325,
+                    "startOffset": 6359,
                     "endColumn": 43,
-                    "endOffset": 6364
+                    "endOffset": 6398
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2457,11 +2476,11 @@
             },
             {
                 "to": {
-                    "startLine": 134,
+                    "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 6369,
+                    "startOffset": 6403,
                     "endColumn": 48,
-                    "endOffset": 6413
+                    "endOffset": 6447
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2476,11 +2495,11 @@
             },
             {
                 "to": {
-                    "startLine": 135,
+                    "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 6418,
+                    "startOffset": 6452,
                     "endColumn": 45,
-                    "endOffset": 6459
+                    "endOffset": 6493
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2495,11 +2514,11 @@
             },
             {
                 "to": {
-                    "startLine": 136,
+                    "startLine": 137,
                     "startColumn": 4,
-                    "startOffset": 6464,
+                    "startOffset": 6498,
                     "endColumn": 51,
-                    "endOffset": 6511
+                    "endOffset": 6545
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2514,11 +2533,11 @@
             },
             {
                 "to": {
-                    "startLine": 137,
+                    "startLine": 138,
                     "startColumn": 4,
-                    "startOffset": 6516,
+                    "startOffset": 6550,
                     "endColumn": 46,
-                    "endOffset": 6558
+                    "endOffset": 6592
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2533,11 +2552,11 @@
             },
             {
                 "to": {
-                    "startLine": 138,
+                    "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 6563,
+                    "startOffset": 6597,
                     "endColumn": 46,
-                    "endOffset": 6605
+                    "endOffset": 6639
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2552,11 +2571,11 @@
             },
             {
                 "to": {
-                    "startLine": 139,
+                    "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 6610,
+                    "startOffset": 6644,
                     "endColumn": 45,
-                    "endOffset": 6651
+                    "endOffset": 6685
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2571,11 +2590,11 @@
             },
             {
                 "to": {
-                    "startLine": 140,
+                    "startLine": 141,
                     "startColumn": 4,
-                    "startOffset": 6656,
+                    "startOffset": 6690,
                     "endColumn": 49,
-                    "endOffset": 6701
+                    "endOffset": 6735
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2590,11 +2609,11 @@
             },
             {
                 "to": {
-                    "startLine": 141,
+                    "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 6706,
+                    "startOffset": 6740,
                     "endColumn": 52,
-                    "endOffset": 6754
+                    "endOffset": 6788
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2609,11 +2628,11 @@
             },
             {
                 "to": {
-                    "startLine": 142,
+                    "startLine": 143,
                     "startColumn": 4,
-                    "startOffset": 6759,
+                    "startOffset": 6793,
                     "endColumn": 45,
-                    "endOffset": 6800
+                    "endOffset": 6834
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2628,11 +2647,11 @@
             },
             {
                 "to": {
-                    "startLine": 143,
+                    "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 6805,
+                    "startOffset": 6839,
                     "endColumn": 45,
-                    "endOffset": 6846
+                    "endOffset": 6880
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2647,11 +2666,11 @@
             },
             {
                 "to": {
-                    "startLine": 144,
+                    "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 6851,
+                    "startOffset": 6885,
                     "endColumn": 49,
-                    "endOffset": 6896
+                    "endOffset": 6930
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2666,11 +2685,11 @@
             },
             {
                 "to": {
-                    "startLine": 145,
+                    "startLine": 146,
                     "startColumn": 4,
-                    "startOffset": 6901,
+                    "startOffset": 6935,
                     "endColumn": 42,
-                    "endOffset": 6939
+                    "endOffset": 6973
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2685,11 +2704,11 @@
             },
             {
                 "to": {
-                    "startLine": 146,
+                    "startLine": 147,
                     "startColumn": 4,
-                    "startOffset": 6944,
+                    "startOffset": 6978,
                     "endColumn": 48,
-                    "endOffset": 6988
+                    "endOffset": 7022
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2704,11 +2723,11 @@
             },
             {
                 "to": {
-                    "startLine": 147,
+                    "startLine": 148,
                     "startColumn": 4,
-                    "startOffset": 6993,
+                    "startOffset": 7027,
                     "endColumn": 47,
-                    "endOffset": 7036
+                    "endOffset": 7070
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2723,11 +2742,11 @@
             },
             {
                 "to": {
-                    "startLine": 148,
+                    "startLine": 149,
                     "startColumn": 4,
-                    "startOffset": 7041,
+                    "startOffset": 7075,
                     "endColumn": 37,
-                    "endOffset": 7074
+                    "endOffset": 7108
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2742,11 +2761,11 @@
             },
             {
                 "to": {
-                    "startLine": 149,
+                    "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 7079,
+                    "startOffset": 7113,
                     "endColumn": 45,
-                    "endOffset": 7120
+                    "endOffset": 7154
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2761,11 +2780,11 @@
             },
             {
                 "to": {
-                    "startLine": 150,
+                    "startLine": 151,
                     "startColumn": 4,
-                    "startOffset": 7125,
+                    "startOffset": 7159,
                     "endColumn": 46,
-                    "endOffset": 7167
+                    "endOffset": 7201
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2780,11 +2799,11 @@
             },
             {
                 "to": {
-                    "startLine": 151,
+                    "startLine": 152,
                     "startColumn": 4,
-                    "startOffset": 7172,
+                    "startOffset": 7206,
                     "endColumn": 45,
-                    "endOffset": 7213
+                    "endOffset": 7247
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2799,11 +2818,11 @@
             },
             {
                 "to": {
-                    "startLine": 152,
+                    "startLine": 153,
                     "startColumn": 4,
-                    "startOffset": 7218,
+                    "startOffset": 7252,
                     "endColumn": 50,
-                    "endOffset": 7264
+                    "endOffset": 7298
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2818,11 +2837,11 @@
             },
             {
                 "to": {
-                    "startLine": 153,
+                    "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 7269,
+                    "startOffset": 7303,
                     "endColumn": 42,
-                    "endOffset": 7307
+                    "endOffset": 7341
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2837,11 +2856,11 @@
             },
             {
                 "to": {
-                    "startLine": 154,
+                    "startLine": 155,
                     "startColumn": 4,
-                    "startOffset": 7312,
+                    "startOffset": 7346,
                     "endColumn": 52,
-                    "endOffset": 7360
+                    "endOffset": 7394
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2856,11 +2875,11 @@
             },
             {
                 "to": {
-                    "startLine": 155,
+                    "startLine": 156,
                     "startColumn": 4,
-                    "startOffset": 7365,
+                    "startOffset": 7399,
                     "endColumn": 44,
-                    "endOffset": 7405
+                    "endOffset": 7439
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2875,11 +2894,11 @@
             },
             {
                 "to": {
-                    "startLine": 156,
+                    "startLine": 157,
                     "startColumn": 4,
-                    "startOffset": 7410,
+                    "startOffset": 7444,
                     "endColumn": 47,
-                    "endOffset": 7453
+                    "endOffset": 7487
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2894,11 +2913,11 @@
             },
             {
                 "to": {
-                    "startLine": 157,
+                    "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 7458,
+                    "startOffset": 7492,
                     "endColumn": 54,
-                    "endOffset": 7508
+                    "endOffset": 7542
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2913,11 +2932,11 @@
             },
             {
                 "to": {
-                    "startLine": 158,
+                    "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 7513,
+                    "startOffset": 7547,
                     "endColumn": 45,
-                    "endOffset": 7554
+                    "endOffset": 7588
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2932,11 +2951,11 @@
             },
             {
                 "to": {
-                    "startLine": 159,
+                    "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 7559,
+                    "startOffset": 7593,
                     "endColumn": 39,
-                    "endOffset": 7594
+                    "endOffset": 7628
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2951,11 +2970,11 @@
             },
             {
                 "to": {
-                    "startLine": 160,
+                    "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 7599,
+                    "startOffset": 7633,
                     "endColumn": 35,
-                    "endOffset": 7630
+                    "endOffset": 7664
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2970,11 +2989,11 @@
             },
             {
                 "to": {
-                    "startLine": 161,
+                    "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 7635,
+                    "startOffset": 7669,
                     "endColumn": 34,
-                    "endOffset": 7665
+                    "endOffset": 7699
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -2989,11 +3008,11 @@
             },
             {
                 "to": {
-                    "startLine": 162,
+                    "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 7670,
+                    "startOffset": 7704,
                     "endColumn": 47,
-                    "endOffset": 7713
+                    "endOffset": 7747
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -3008,11 +3027,11 @@
             },
             {
                 "to": {
-                    "startLine": 163,
+                    "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 7718,
+                    "startOffset": 7752,
                     "endColumn": 48,
-                    "endOffset": 7762
+                    "endOffset": 7796
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -3027,11 +3046,11 @@
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 7767,
+                    "startOffset": 7801,
                     "endColumn": 48,
-                    "endOffset": 7811
+                    "endOffset": 7845
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -3046,11 +3065,11 @@
             },
             {
                 "to": {
-                    "startLine": 165,
+                    "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 7816,
+                    "startOffset": 7850,
                     "endColumn": 47,
-                    "endOffset": 7859
+                    "endOffset": 7893
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -3065,11 +3084,11 @@
             },
             {
                 "to": {
-                    "startLine": 166,
+                    "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 7864,
+                    "startOffset": 7898,
                     "endColumn": 34,
-                    "endOffset": 7894
+                    "endOffset": 7928
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -3084,11 +3103,11 @@
             },
             {
                 "to": {
-                    "startLine": 167,
+                    "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 7899,
+                    "startOffset": 7933,
                     "endColumn": 43,
-                    "endOffset": 7938
+                    "endOffset": 7972
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -3103,11 +3122,11 @@
             },
             {
                 "to": {
-                    "startLine": 168,
+                    "startLine": 169,
                     "startColumn": 4,
-                    "startOffset": 7943,
+                    "startOffset": 7977,
                     "endColumn": 44,
-                    "endOffset": 7983
+                    "endOffset": 8017
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
@@ -3122,12 +3141,69 @@
             },
             {
                 "to": {
-                    "startLine": 169,
+                    "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 7988,
-                    "endLine": 174,
+                    "startOffset": 8022,
+                    "endColumn": 44,
+                    "endOffset": 8062
+                },
+                "from": {
+                    "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 4877,
+                        "endColumn": 44,
+                        "endOffset": 4917
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 171,
+                    "startColumn": 4,
+                    "startOffset": 8067,
+                    "endColumn": 49,
+                    "endOffset": 8112
+                },
+                "from": {
+                    "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 109,
+                        "startColumn": 4,
+                        "startOffset": 4826,
+                        "endColumn": 49,
+                        "endOffset": 4871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 172,
+                    "startColumn": 4,
+                    "startOffset": 8117,
+                    "endColumn": 40,
+                    "endOffset": 8153
+                },
+                "from": {
+                    "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 108,
+                        "startColumn": 4,
+                        "startOffset": 4784,
+                        "endColumn": 40,
+                        "endOffset": 4820
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 173,
+                    "startColumn": 4,
+                    "startOffset": 8158,
+                    "endLine": 178,
                     "endColumn": 12,
-                    "endOffset": 8330
+                    "endOffset": 8500
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\styles.xml",
@@ -3143,12 +3219,12 @@
             },
             {
                 "to": {
-                    "startLine": 175,
+                    "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 8335,
-                    "endLine": 183,
+                    "startOffset": 8505,
+                    "endLine": 188,
                     "endColumn": 12,
-                    "endOffset": 8865
+                    "endOffset": 9036
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\styles.xml",
@@ -3156,20 +3232,62 @@
                         "startLine": 8,
                         "startColumn": 4,
                         "startOffset": 410,
-                        "endLine": 16,
+                        "endLine": 17,
                         "endColumn": 12,
-                        "endOffset": 948
+                        "endOffset": 950
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 184,
+                    "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 8870,
-                    "endLine": 188,
+                    "startOffset": 9041,
+                    "endLine": 197,
                     "endColumn": 12,
-                    "endOffset": 9077
+                    "endOffset": 9571
+                },
+                "from": {
+                    "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1196,
+                        "endLine": 31,
+                        "endColumn": 12,
+                        "endOffset": 1734
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 198,
+                    "startColumn": 4,
+                    "startOffset": 9576,
+                    "endLine": 202,
+                    "endColumn": 12,
+                    "endOffset": 9806
+                },
+                "from": {
+                    "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 956,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 1190
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 203,
+                    "startColumn": 4,
+                    "startOffset": 9811,
+                    "endLine": 207,
+                    "endColumn": 12,
+                    "endOffset": 10018
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\js_bt_styles.xml",
@@ -3185,33 +3303,33 @@
             },
             {
                 "to": {
-                    "startLine": 189,
+                    "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 9082,
-                    "endLine": 193,
+                    "startOffset": 10023,
+                    "endLine": 220,
                     "endColumn": 12,
-                    "endOffset": 9300
+                    "endOffset": 10671
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\jz_add_bt_styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 55,
-                        "endLine": 6,
+                        "startOffset": 104,
+                        "endLine": 14,
                         "endColumn": 12,
-                        "endOffset": 274
+                        "endOffset": 753
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 194,
+                    "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 9305,
-                    "endLine": 198,
+                    "startOffset": 10676,
+                    "endLine": 225,
                     "endColumn": 12,
-                    "endOffset": 9508
+                    "endOffset": 10879
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\jz_main_bt_styles.xml",
@@ -3227,12 +3345,12 @@
             },
             {
                 "to": {
-                    "startLine": 199,
+                    "startLine": 226,
                     "startColumn": 4,
-                    "startOffset": 9513,
-                    "endLine": 205,
+                    "startOffset": 10884,
+                    "endLine": 232,
                     "endColumn": 12,
-                    "endOffset": 9888
+                    "endOffset": 11259
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\leibiedialogStyles.xml",
@@ -3248,12 +3366,12 @@
             },
             {
                 "to": {
-                    "startLine": 206,
+                    "startLine": 233,
                     "startColumn": 4,
-                    "startOffset": 9893,
-                    "endLine": 212,
+                    "startOffset": 11264,
+                    "endLine": 239,
                     "endColumn": 12,
-                    "endOffset": 10274
+                    "endOffset": 11645
                 },
                 "from": {
                     "file": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\values\\maindialogStyles.xml",

@@ -6,7 +6,7 @@
     </string-array>
     <color name="LightSteelBlue">#B0C4DE</color>
     <color name="RoyalBlue">#4169E1</color>
-    <color name="black">#ff000000</color>
+    <color name="black">#000000</color>
     <color name="black_25">#40000000</color>
     <color name="black_50">#80000000</color>
     <color name="black_deep">#FF000000</color>
@@ -80,6 +80,7 @@
     <string name="bw_mian_quxiaoquanze">取消选择</string>
     <string name="bw_text_size">T</string>
     <string name="dialog_about">如果您要了解理财助手每个子功能的特点和使用方法，请在该功能对应的图标上长按不放，程序将会弹出相应的提示信息。该程序目前适用于Android2.2及以上的版本，如有问题反馈请发送邮件至XXXXX@qq.com</string>
+    <string name="exit">注销</string>
     <string name="hello">Hello World, ToolsActivity!</string>
     <string name="js_cheng">*</string>
     <string name="js_chu">/</string>
@@ -167,11 +168,24 @@
     <string name="tel">手机</string>
     <string name="time_item_bt">时间</string>
     <string name="usermanager">用户管理</string>
+    <string name="ys_actually">您的设置</string>
+    <string name="ys_recommendation">推荐值</string>
+    <string name="ys_type">预算类型</string>
     <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/qq_checkbox_text_color</item>
         <item name="android:paddingLeft">28.0px</item>
         <item name="android:button">@drawable/qq_btn_check</item>
+    </style>
+    <style name="Widget.KeyboardView" parent="android:Widget">
+        <item name="android:keyTextSize">22sp</item>
+        <item name="android:keyTextColor">#ffffffff</item>
+        <item name="android:keyPreviewOffset">-12dip</item>
+        <item name="android:keyPreviewHeight">80dip</item>
+        <item name="android:labelTextSize">14sp</item>
+        <item name="android:verticalCorrection">-10dip</item>
+        <item name="android:shadowColor">#bb000000</item>
+        <item name="android:shadowRadius">2.75</item>
     </style>
     <style name="Widget.ListView" parent="@android:style/Widget.ListView">
         <item name="android:background">@null</item>
@@ -182,15 +196,28 @@
         <item name="android:cacheColorHint">@color/transparent</item>
         <item name="android:divider">@drawable/common_lv_item_divider</item>
     </style>
+    <style name="common_bg">
+        <item name="android:background">@drawable/mymoney_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
     <style name="js_button_style">
     <item name="android:background">@drawable/js_bt_selector</item>
     <item name="android:textColor">#ffffff</item>
     <item name="android:textSize">35dp</item>
     </style>
     <style name="jz_add_button_style">
-    <item name="android:background">@drawable/jz_add_numbt_selector</item>
-    <item name="android:textColor">#ffffff</item>
-    <item name="android:textSize">13dp</item>
+    <!--<item name="android:background">@drawable/jz_add_numbt_selector</item>-->
+    <!--<item name="android:textColor">#ffffff</item>-->
+    <!--<item name="android:textSize">13dp</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#333333</item>
+        <!--<item name="android:background">@color/white</item>-->
+        <item name="android:background">@drawable/buttonstyle</item>
+
     </style>
     <style name="jz_mian_button_style">
     <item name="android:background">@drawable/blank</item>

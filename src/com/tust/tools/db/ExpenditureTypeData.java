@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import com.tust.tools.bean.ExpenditureType;
+import com.tust.tools.bean.User;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,19 +14,13 @@ import java.util.List;
  * Created by yang on 2016/4/23.
  */
 public class ExpenditureTypeData {
-    //数据库名称
-    //private String DB_NAME="ExpenditureType.db";
 
-    //数据库版本
-   // private static int DB_VERSION=1;
     private SQLiteDatabase db;
- //   private ExpenditureTypeSqliteHelper dbHelper;
     private DBOpenHelper dbHelper;// 创建DBOpenHelper对象
     private Context context;
 
     public ExpenditureTypeData(Context context){
         this.context = context;
-        //dbHelper=new ExpenditureTypeSqliteHelper(context,DB_NAME, null, DB_VERSION);
         dbHelper = new DBOpenHelper(context);// 初始化DBOpenHelper对象
         db= dbHelper.getWritableDatabase();
     }
@@ -35,7 +31,7 @@ public class ExpenditureTypeData {
     }
 
     /*
-     * 更新支出表的记录
+     * 更新支出表类型的记录
      * */
     public int UpdateExpenditureType(ExpenditureType type){
         ContentValues values = new ContentValues();
@@ -114,4 +110,11 @@ public class ExpenditureTypeData {
         db.execSQL("delete from expendituretype where id =? ", new Object[] { id});
     }
 
+    public void initType(User user) {
+            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"饮食&通讯"});
+            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"购物"});
+            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"娱乐"});
+            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"书本&其它资料"});
+            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"恋爱"});
+    }
 }

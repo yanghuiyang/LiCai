@@ -17,8 +17,10 @@ import android.widget.Toast;
 
 import com.tust.tools.R;
 import com.tust.tools.bean.User;
+import com.tust.tools.db.BudgetData;
 import com.tust.tools.db.ExpenditureTypeData;
 import com.tust.tools.db.UserData;
+import com.tust.tools.service.GetTime;
 import com.tust.tools.service.ListEditorAdapter;
 
 import java.util.ArrayList;
@@ -35,13 +37,14 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 	private String userName;
 	private User user;
 	private UserData userData;
+	private BudgetData budgetData;
 	private ExpenditureTypeData expenditureTypeData;
 	private List<String> typenames;//存放类型列表
 	private ListView listView;
 	private ListEditorAdapter mAdapter;
 
 	private List<Map<String, String>> mData = new ArrayList<Map<String,String>>();
-
+	private List<Map<String, Integer>> recommendation = new ArrayList<Map<String,Integer>>();//预算类型-推荐值
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -57,25 +60,28 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 		userName = preferences.getString("userName", "");
 		user = new User();
 		userData = new UserData(this);
+		budgetData = new BudgetData(this);
 		user = userData.getUserByUserName(userName);
 		yusuan.setText("当前本月预算：" + user.getBudget() + "");
+		et.setText(""+user.getBudget());
 
 		listView = (ListView) findViewById(R.id.list);
 		mAdapter = new ListEditorAdapter(this);
 		listView.setAdapter(mAdapter);
-//		for(int i = 0; i < 10; i++) {
-//			Map<String, String> item = new HashMap<String, String>();
-//			item.put(i+"", i+"");
-//			mData.add(item);
-//		}
 		expenditureTypeData = new ExpenditureTypeData(this);
 		typenames=expenditureTypeData.getTypesByUserName(userName);//获取该用户所有支出类型
 		for(int i=0;i<typenames.size();i++){
-			Map<String, String> item = new HashMap<String, String>();
-			item.put(typenames.get(i),""+888);
-			mData.add(item);
+			Map<String, String> budget = new HashMap<String, String>();//实际预算值
+			Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
+			int temp = 0;
+			temp = budgetData.getUserOneBudget(userName,typenames.get(i), GetTime.getYear(),GetTime.getMonth());
+			budget.put(typenames.get(i),""+temp);
+			//re.put(typenames.get(i),555);
+			re.put(typenames.get(i),budgetData.getTypeBudget(user,typenames.get(i)));
+			recommendation.add(re);
+			mData.add(budget);
 		}
-		mAdapter.setData(mData);
+		mAdapter.setData(mData,recommendation);
 
 	}
 
@@ -93,7 +99,11 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 			int num = Integer.parseInt(et.getText().toString());
 			user.setBudget(num);
 			userData.UpdateUserInfo(user);
-			yusuan.setText("当前本月预算：" + user.getBudget() + "");			this.finish();
+			budgetData.SaveOrUpdateUserBudget(mData,userName);//注意类型 string 和int转换
+			yusuan.setText("当前本月预算：" + user.getBudget() + "");
+			et.setText(""+num);
+			showMsg("保存成功");
+			this.finish();
 			break;
 		case R.id.jz_yusuan_cancelbt:
 			showMsg(mData.get(0).toString()+"---"+mData.get(0).get(0+"")+"\n");

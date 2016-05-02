@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:2:1-134:12
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:2:1-141:12
 	xmlns:android
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:2:11-69
 	package
@@ -50,7 +50,7 @@ ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:19:5-43
 	android:minSdkVersion
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:19:15-40
 application
-ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:20:5-132:19
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:20:5-139:19
 	android:label
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:22:9-41
 	android:icon
@@ -159,3 +159,9 @@ ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:125:9-131:20
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:127:13-45
 	android:name
 		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:126:13-81
+activity#com.tust.tools.activity.TestActivity
+ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:132:9-138:20
+	android:label
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:134:13-45
+	android:name
+		ADDED from C:\Java\workspace\LiCaiTools1.0\AndroidManifest.xml:133:13-64

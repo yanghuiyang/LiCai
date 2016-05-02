@@ -100,10 +100,13 @@
      	<item>女</item>  
     </string-array>
     <!-- 设置- -->
-    j
     <string name="jz_shezhi">程序设置</string>
     <string name="jz_shezhi_about">关于软件</string>
     <string name="jz_shezhi_expenditureType_Manage">支出类型管理</string>
     <string name="jz_shezhi_incomeType_Manage">收入类型管理</string>
     <string name="jz_shezhi_qingchu">清除所有消费记录</string>
+
+    <string name="ys_type">预算类型</string>
+    <string name="ys_recommendation">推荐值</string>
+    <string name="ys_actually">您的设置</string>
 </resources>

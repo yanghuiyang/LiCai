@@ -1,7 +1,9 @@
 package com.tust.tools.activity;
 
 import com.tust.tools.R;
+import com.tust.tools.bean.ExpenditureType;
 import com.tust.tools.bean.User;
+import com.tust.tools.db.ExpenditureTypeData;
 import com.tust.tools.db.UserData;
 
 import android.app.Activity;
@@ -25,7 +27,8 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 	private UserData userData;
 	private User user;
 	private ArrayAdapter<CharSequence> sprinnerSex = null;// 要使用的Adapter  
-
+	private ExpenditureTypeData expenditureTypeData;
+	private ExpenditureType type;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -65,10 +68,14 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 						user.setPwd(pwd.getText().toString());
 						user.setSex(sex);
 						user.setTel(tel.getText().toString());
+						user.setBudget(1200);//设置默认月预算
 						//String a = user.getUsername()+"-"+user.getPwd();
 						//待做数据校验 如重复用户等情况
 						long result = userData.SaveUser(user);
 						if (result != -1) {
+							//为改用户添加初始化的支出类型
+							expenditureTypeData = new ExpenditureTypeData(this);
+							expenditureTypeData.initType(user);
 							showMsg("注册成功");
 							changeActivity(LoginActivity.class);
 						} else {
@@ -84,6 +91,9 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 
 		
 	}
+
+
+
 	public void showMsg(String msg) {
 		Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
 	}

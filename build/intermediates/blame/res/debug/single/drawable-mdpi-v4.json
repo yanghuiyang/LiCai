@@ -80,10 +80,6 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-mdpi\\button2.png"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\user.png",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-mdpi\\user.png"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\option_normal.png",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-mdpi\\option_normal.png"
     }

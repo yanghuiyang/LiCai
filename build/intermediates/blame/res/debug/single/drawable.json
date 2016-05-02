@@ -1,11 +1,19 @@
 [
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\jz_main_bt_mingxi.png",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\jz_main_bt_mingxi.png"
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\bottom.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\bottom.png"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\jz_empty_zhichu_zhuxing.png",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\jz_empty_zhichu_zhuxing.png"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\corner_bdbdbd.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\corner_bdbdbd.xml"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\corner_f2f2f2.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\corner_f2f2f2.xml"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\jz_mingxi_btn_prev_p.png",
@@ -24,8 +32,8 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\jz_hzbt_selector.xml"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\selector.xml",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\selector.xml"
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\bkg_img_default.jpg",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\bkg_img_default.jpg"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\login_back.9.png",
@@ -44,12 +52,32 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\mian_menu_bt_selector.xml"
     },
     {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\bw_mian_add_selector.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\bw_mian_add_selector.xml"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\f2.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\f2.png"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\selector.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\selector.xml"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\corner_e0e0e0.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\corner_e0e0e0.xml"
+    },
+    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\jz_mingxi_back_selector.xml",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\jz_mingxi_back_selector.xml"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\bw_mian_add_selector.xml",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\bw_mian_add_selector.xml"
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\left_top.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\left_top.png"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\f3.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\f3.png"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\jz_bottombt_selector.xml",
@@ -68,12 +96,28 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\right.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\right.png"
+    },
+    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_selector.xml",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\icon_selector.xml"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\js_bt_selector.xml",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\js_bt_selector.xml"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\f4.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\f4.png"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\left_bottom.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\left_bottom.png"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\keyboard_key.xml",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\keyboard_key.xml"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\jz_addbt_selector.xml",
@@ -94,6 +138,10 @@
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\jz_empty_yusuan.png",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\jz_empty_yusuan.png"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\f1.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable\\f1.png"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable\\jz_mingxi_btn_prev_n.png",

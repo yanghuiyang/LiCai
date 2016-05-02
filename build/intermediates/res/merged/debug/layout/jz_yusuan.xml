@@ -1,34 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jz_main_bg" >
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+    style="@style/common_bg" >
 
     <LinearLayout
         android:id="@+id/jz_yusuan_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
-
+
+
         <TextView
             android:id="@+id/jz_yusuan_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/jz_yusuan"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
+
         <EditText
             android:id="@+id/jz_yusuan_et"
             android:layout_width="match_parent"
@@ -37,17 +30,14 @@
             android:layout_marginRight="20dp"
             android:inputType="number"
             android:maxLength="8" >
-
             <requestFocus />
         </EditText>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp" >
-
-            <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" >
+          <!--  <Button
                 android:id="@+id/jz_yusuan_savebt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,16 +45,78 @@
                 android:background="@drawable/jz_addbt_selector"
                 android:text="@string/jz_add_save"
                 android:textColor="#000000" />
-
             <Button
                 android:id="@+id/jz_yusuan_cancelbt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:background="@drawable/jz_addbt_selector"
-                android:text="@string/jz_add_quxiao" 
-                android:textColor="#000000" />
+                android:text="@string/jz_add_quxiao"
+                android:textColor="#000000" />-->
+            <TextView
+                android:id="@+id/ys_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ys_type"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/ys_recommendation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ys_recommendation"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/ys_actually_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ys_actually"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20dip"
+            android:focusableInTouchMode="true"
+            android:longClickable="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/jz_yusuan_savebt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/jz_add_save"/>
+
+            <Button
+                android:id="@+id/jz_yusuan_cancelbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/jz_add_quxiao"/>
         </LinearLayout>
     </LinearLayout>
 
-</FrameLayout>
+
+</LinearLayout>

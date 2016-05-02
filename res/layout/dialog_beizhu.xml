@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/main_info_bg"
+    android:background="@drawable/beizhu_bg"
     android:orientation="vertical"
     android:padding="4dip" >
 
@@ -19,7 +19,7 @@
         android:singleLine="false" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="342dp"
         android:layout_height="wrap_content" >
 
         <Button
