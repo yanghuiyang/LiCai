@@ -54,9 +54,10 @@ public class BudgetData {
     /**
      * 计算推荐值
      */
-    public Integer getTypeBudget(User user, String type) {
+    public Integer getTypeBudget(User user,int budget, String type) {
         int temp = 0;
-        int totalBudget = user.getBudget();
+       // int totalBudget = user.getBudget();
+        int totalBudget =  budget;
         if (user.getSex() == 1) {
             if (totalBudget >= 600 && totalBudget <= 1000) {
                 if (type.equals("饮食&通讯")) {

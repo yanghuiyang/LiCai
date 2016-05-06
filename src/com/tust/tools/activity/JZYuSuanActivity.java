@@ -7,6 +7,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -76,13 +78,53 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 			int temp = 0;
 			temp = budgetData.getUserOneBudget(userName,typenames.get(i), GetTime.getYear(),GetTime.getMonth());
 			budget.put(typenames.get(i),""+temp);
-			//re.put(typenames.get(i),555);
-			re.put(typenames.get(i),budgetData.getTypeBudget(user,typenames.get(i)));
+			re.put(typenames.get(i),budgetData.getTypeBudget(user,user.getBudget(),typenames.get(i)));
 			recommendation.add(re);
 			mData.add(budget);
 		}
 		mAdapter.setData(mData,recommendation);
+		editTextWatcher();
 
+	}
+/*
+ 	总预算watcher 输入月度预算 实时刷新推荐值列表
+ */
+	private void editTextWatcher() {
+		et.addTextChangedListener(new TextWatcher() {
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+			}
+
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+				//	textview.setText(edittext.getText());
+				//	int total = Integer.valueOf(et.getText().toString());
+				String newStr = s.toString().replaceFirst("^0*", "");
+				int total =Integer.parseInt(newStr);
+				mData.clear();
+				recommendation.clear();
+				if(total>=0) {
+					for (int i = 0; i < typenames.size(); i++) {
+						Map<String, String> budget = new HashMap<String, String>();//实际预算值
+						Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
+						int temp = 0;
+						temp = budgetData.getUserOneBudget(userName, typenames.get(i), GetTime.getYear(), GetTime.getMonth());
+						budget.put(typenames.get(i), "" + temp);
+						re.put(typenames.get(i), budgetData.getTypeBudget(user, total, typenames.get(i)));
+						recommendation.add(re);
+						mData.add(budget);
+					}
+
+					mAdapter.setData(mData, recommendation);
+					mAdapter.notifyDataSetChanged();
+				}
+			}
+		});
 	}
 
 	@Override
