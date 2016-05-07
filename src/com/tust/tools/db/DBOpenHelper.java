@@ -28,20 +28,19 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE IF NOT EXISTS expendituretype " +
                 "(id INTEGER PRIMARY KEY,username VARCHAR(20) not null ,typename varchar(50) )");
         //初始化数据 支出类型表格
-        db.execSQL("insert into expendituretype(id,username,typename) values(?,?,?)",new String[]{"1","admin","午餐"});
-        db.execSQL("insert into expendituretype(id,username,typename) values(?,?,?)",new String[]{"2","admin","晚餐"});
-        db.execSQL("insert into expendituretype(id,username,typename) values(?,?,?)",new String[]{"3","admin","夜宵"});
-        db.execSQL("insert into expendituretype(id,username,typename) values(?,?,?)",new String[]{"4","admin","生活用品"});
-        ;
+//        db.execSQL("insert into expendituretype(id,username,typename) values(?,?,?)",new String[]{"1","admin","午餐"});
+//        db.execSQL("insert into expendituretype(id,username,typename) values(?,?,?)",new String[]{"2","admin","晚餐"});
+//        db.execSQL("insert into expendituretype(id,username,typename) values(?,?,?)",new String[]{"3","admin","夜宵"});
+//        db.execSQL("insert into expendituretype(id,username,typename) values(?,?,?)",new String[]{"4","admin","生活用品"});
+//        ;
 
         db.execSQL("CREATE TABLE IF NOT EXISTS incometype "
                 + "(id INTEGER PRIMARY KEY,username varchar not null ,typename varchar(50))");
 
         //初始化数据 收入类型表格
-        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"1","admin","工资"});
-        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"2","admin","奖金"});
-        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"3","admin","补贴"});;
-
+//        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"1","admin","工资"});
+//        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"2","admin","奖金"});
+//        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"3","admin","补贴"});;
 
         db.execSQL("CREATE TABLE IF NOT EXISTS zhichu " +
                  "(" + "ID" + " integer primary key," + JZzhichu.ZC_ITEM + " varchar," + JZzhichu.ZC_SUBITEM + " varchar," + JZzhichu.ZC_YEAR + " Integer," + JZzhichu.ZC_MONTH + " Integer," + JZzhichu.ZC_WEEK + " Integer," + JZzhichu.ZC_DAY + " Integer," + JZzhichu.ZC_TIME + " varchar," + JZzhichu.ZC_PIC + " varchar," + JZzhichu.ZC_COUNT + " REAL," + JZzhichu.ZC_BEIZHU + " varchar," + JZzhichu.ZC_USER + " varchar" +");");

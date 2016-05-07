@@ -44,12 +44,12 @@
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\jz_tab1_chose.jpg"
     },
     {
-        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jz_add_bt_bg.png",
-        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\jz_add_bt_bg.png"
-    },
-    {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_2.jpg",
         "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\bg_2.jpg"
+    },
+    {
+        "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jz_add_bt_bg.png",
+        "source": "C:\\Java\\workspace\\LiCaiTools1.0\\res\\drawable-hdpi\\jz_add_bt_bg.png"
     },
     {
         "merged": "C:\\Java\\workspace\\LiCaiTools1.0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jz_main_bt_baobiao.png",

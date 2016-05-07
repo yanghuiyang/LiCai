@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -44,11 +45,15 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.tust.tools.R;
+import com.tust.tools.bean.ExpenditureType;
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
+import com.tust.tools.bean.User;
+import com.tust.tools.db.BudgetData;
 import com.tust.tools.db.ExpenditureTypeData;
 import com.tust.tools.db.IncomeTypeData;
 import com.tust.tools.db.JZData;
+import com.tust.tools.db.UserData;
 import com.tust.tools.dialog.DialogBeiZhu;
 import com.tust.tools.dialog.DialogLeiBie;
 import com.tust.tools.service.ChangePic;
@@ -60,8 +65,8 @@ import com.tust.tools.service.SDrw;
 public class JZAddActivity extends Activity implements OnClickListener {
     // TextView金额，类别，时间，备注。
     private TextView jine, leibie, date, time, beizhu;
-    // FrameLayout支出，收入，借贷，保存，取消。
-    private FrameLayout zhichu_fl, shouru_fl, jiedai_fl, save_fl, cancel_fl, del_fl;
+    // FrameLayout支出，收入，保存，取消。
+    private FrameLayout zhichu_fl, shouru_fl, save_fl, cancel_fl, del_fl;
     // LinearLayout图片，底部数字按钮
     private LinearLayout pic_ll, num_ll;
     // 顶部选中标识ImageView支出，收入，借贷，图片
@@ -73,8 +78,8 @@ public class JZAddActivity extends Activity implements OnClickListener {
     public static MessageHandler mh;
     // 当前界面收到的消息表示（msg.what）
     public static final int leibie_msg = 1010, beizhu_msg = 1020;
-    // 当前选择的添加类别支出，收入，借贷
-    public static final int zhichu_flag = 2010, shouru_flag = 2020, jiedai_flag = 2030;
+    // 当前选择的添加类别支出，收入
+    public static final int zhichu_flag = 2010, shouru_flag = 2020;//jiedai_flag = 2030;
     // 当前选择的类型
     private int now_flag = zhichu_flag;
     // 数据库操作
@@ -83,16 +88,17 @@ public class JZAddActivity extends Activity implements OnClickListener {
     private int update_type, update_id, update_flag;
     // 判断当前是初始创建还是二次更新
     private boolean isUpdate = false;
-    // 顶部支出 收入 借贷 文本，修改时需要改动文本内容
-    private TextView zhichu_text, shouru_text, jiedai_text;
-
+    // 顶部支出 收入  文本，修改时需要改动文本内容
+    private TextView zhichu_text, shouru_text;
     private String picpath = "";// 文件路径
     private static final int PHOTO_WITH_CAMERA = 1010;// 拍摄照片
     private static final int PHOTO_WITH_DATA = 1020;// 从SD中得到照片
     private File PHOTO_DIR;// 拍摄照片存储的文件夹路径
     private File capturefile;// 拍摄的照片文件
-
     private String userName;//当前登陆用户
+    private BudgetData budgetData;
+    private User user;
+    private UserData userData;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,6 +107,10 @@ public class JZAddActivity extends Activity implements OnClickListener {
         //获取当前登陆用户
         SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
         userName = preferences.getString("userName", "");
+        user = new User();
+        userData = new UserData(this);
+        user = userData.getUserByUserName(userName);
+        budgetData = new BudgetData(this);
         initZhiChu();
         initBt(jine);
         initUpdate();
@@ -117,7 +127,6 @@ public class JZAddActivity extends Activity implements OnClickListener {
         if (intent.hasExtra("update")) {
             zhichu_text = (TextView) this.findViewById(R.id.jz_add_zhichu_text);
             shouru_text = (TextView) this.findViewById(R.id.jz_add_shouru_text);
-         //   jiedai_text = (TextView) this.findViewById(R.id.jz_add_jiedai_text);
             del_fl.setVisibility(View.VISIBLE);
             isUpdate = true;
             update_type = intent.getIntExtra("type", 0);
@@ -150,20 +159,10 @@ public class JZAddActivity extends Activity implements OnClickListener {
      */
     public void getZhiChuType(JZzhichu zc) {
         pic_ll.setVisibility(View.GONE);
-     /*   if (zc.getZc_Item().equals(JZItem.jiechu) || zc.getZc_Item().equals(JZItem.huankuan)) {
-            now_flag = jiedai_flag;
-            jiedai_text.setText("修改借贷");
-            leibie.setText(zc.getZc_Item());
-            setTopBG(now_flag, jiedai_iv);
-            zhichu_fl.setVisibility(View.INVISIBLE);
-            shouru_fl.setVisibility(View.INVISIBLE);
-        } else {*/
             now_flag = zhichu_flag;
             zhichu_text.setText("修改支出");
-           // leibie.setText(zc.getZc_Item() + ">" + zc.getZc_SubItem());
             leibie.setText(zc.getZc_Item());
             setTopBG(now_flag, zhichu_iv);
-           // jiedai_fl.setVisibility(View.INVISIBLE);
             shouru_fl.setVisibility(View.INVISIBLE);
             picpath = zc.getZc_Pic();// 获取图片路径
             if (picpath != null && picpath.endsWith("jpg")) {
@@ -178,22 +177,12 @@ public class JZAddActivity extends Activity implements OnClickListener {
         beizhu.setText(zc.getZc_Beizhu());
     }
 
-    /*
-     * 判断该收入类型是否为借贷
-     */
+
     public void getShouRuType(JZshouru sr) {
         pic_ll.setVisibility(View.GONE);
-/*        if (sr.getSr_Item().equals(JZItem.jieru) || sr.getSr_Item().equals(JZItem.shoukuan)) {
-            now_flag = jiedai_flag;// 用于判断当前状态
-            jiedai_text.setText("修改借贷");
-            setTopBG(now_flag, jiedai_iv);
-            zhichu_fl.setVisibility(View.INVISIBLE);
-            shouru_fl.setVisibility(View.INVISIBLE);
-        } else {*/
             now_flag = shouru_flag;
             shouru_text.setText("修改收入");
             setTopBG(now_flag, shouru_iv);
-          //  jiedai_fl.setVisibility(View.INVISIBLE);
             zhichu_fl.setVisibility(View.INVISIBLE);
     //    }
         update_flag = shouru_flag;// 用于删除当前数据功能
@@ -226,7 +215,6 @@ public class JZAddActivity extends Activity implements OnClickListener {
         // 图片
         pic = (ImageView) findViewById(R.id.jz_add_zhichu_addpic_iv);
         pic.setOnClickListener(new TextClick());
-        // pic linerlayout当选择收入或借贷时隐藏该选项
         pic_ll = (LinearLayout) findViewById(R.id.jz_add_pic_ll);
         // 底部数字按钮
         num_ll = (LinearLayout) findViewById(R.id.jz_add_numbt_ll);
@@ -235,14 +223,11 @@ public class JZAddActivity extends Activity implements OnClickListener {
 
         zhichu_iv = (ImageView) findViewById(R.id.jz_add_zhichu_iv);
         shouru_iv = (ImageView) findViewById(R.id.jz_add_shouru_iv);
-     //   jiedai_iv = (ImageView) findViewById(R.id.jz_add_jiedai_iv);
 
         zhichu_fl = (FrameLayout) findViewById(R.id.jz_add_zhichu_fl);
         zhichu_fl.setOnClickListener(this);
         shouru_fl = (FrameLayout) findViewById(R.id.jz_add_shouru_fl);
         shouru_fl.setOnClickListener(this);
-      //  jiedai_fl = (FrameLayout) findViewById(R.id.jz_add_jiedai_fl);
-     //   jiedai_fl.setOnClickListener(this);
         save_fl = (FrameLayout) findViewById(R.id.jz_add_save_fl);
         save_fl.setOnClickListener(this);
         cancel_fl = (FrameLayout) findViewById(R.id.jz_add_cancel_fl);
@@ -275,10 +260,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
             setTopBG(shouru_flag, shouru_iv);
             leibie.setText(new IncomeTypeData(this).getFirstTypeByUserName(userName));//设置默认类别
             break;
-//        case R.id.jz_add_jiedai_fl:// 借贷tab
-//            setTopBG(jiedai_flag, jiedai_iv);
-//            leibie.setText("借出");
-//            break;
+
         case R.id.jz_add_save_fl:// 保存按钮
             saveToDB();
             break;
@@ -316,11 +298,10 @@ public class JZAddActivity extends Activity implements OnClickListener {
      */
     public void saveToDB() {
         dataHelper = new JZData(this);
-        JZzhichu zhichu = new JZzhichu();
+        final JZzhichu zhichu = new JZzhichu();
         JZshouru shouru = new JZshouru();
         // 类别
         String leibies = leibie.getText().toString().trim();
-       // String items[] = leibies.split(">");
         // 日期
         String dateString = date.getText().toString().trim();
         String dates[] = dateString.split("-");
@@ -335,12 +316,8 @@ public class JZAddActivity extends Activity implements OnClickListener {
             return;
         }
         if (now_flag == zhichu_flag) {
-           // zhichu.setZc_Item(items[0]);
-          //  zhichu.setZc_SubItem(items[1]);
             zhichu.setZc_Item(leibies);
-
             zhichu.setZc_User(userName);
-
             zhichu.setZc_Year(Integer.parseInt(dates[0]));
             zhichu.setZc_Month(Integer.parseInt(dates[1]));
             zhichu.setZc_Day(Integer.parseInt(dates[2]));
@@ -349,13 +326,47 @@ public class JZAddActivity extends Activity implements OnClickListener {
             zhichu.setZc_Pic(picpath);
             zhichu.setZc_Count(Double.parseDouble(jineString));
             zhichu.setZc_Beizhu(beizhuString);
-            if (!isUpdate) {
-                dataHelper.SaveZhiChuInfo(zhichu);
-                showMsg("该条支出存储成功");
-                picpath = "";
-            } else {
-                dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
-                showMsg("该条支出修改成功");
+            //判断支出是否超过预算 超出则提醒 超出总预算 超出个类型预算
+            int budget = budgetData.getUserOneBudget(userName,leibies,zhichu.getZc_Year(),zhichu.getZc_Month());
+            int spend = Integer.parseInt(jineString) + dataHelper.getTypeMonthSpend(userName,leibies,zhichu.getZc_Year(),zhichu.getZc_Month());
+            String selectionMonth =JZzhichu.ZC_USER + "='" +userName + "'" +" and " + JZzhichu.ZC_YEAR + "=" + GetTime.getYear() + " and " + JZzhichu.ZC_MONTH + "=" + GetTime.getMonth();
+            List<JZzhichu> zhichuMonthList = dataHelper.GetZhiChuList(selectionMonth);
+            int count=0;
+            String msg = "";
+            if (zhichuMonthList != null) {
+                for (JZzhichu zhichu2 : zhichuMonthList) {
+                    count += zhichu2.getZc_Count();
+                }
+            if(count+Integer.parseInt(jineString)>user.getBudget()){
+                msg = "超出总预算了，是否继续添加？";
+            }if (spend>budget){
+                    msg = "类别："+leibies+"已经超出预算了哟，是否继续添加？";
+                }
+                }
+            if(count+Integer.parseInt(jineString)>user.getBudget()||spend>budget){
+                final Context contex=this;
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+             //   builder.setTitle("类别："+leibies+"已经超出预算了哟，是否继续添加？")
+                builder.setTitle(msg)
+                        .setNegativeButton("取消", null);
+                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (!isUpdate) {
+                            dataHelper.SaveZhiChuInfo(zhichu);
+                            showMsg("该条支出存储成功");
+                            picpath = "";
+                        } else {
+                            dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                            showMsg("该条支出修改成功");
+                        }
+                       // Main.this.finish();
+                        Intent intent = new Intent(contex, JZMainActivity.class);
+                        contex.startActivity(intent);
+                        ((Activity) contex).finish();
+                    }
+                });
+                builder.show();
+             // showMsg("类型："+leibies+"已经超出预算了哟");
             }
         } else if (now_flag == shouru_flag) {
             shouru.setSr_Item(leibies);
@@ -376,50 +387,9 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 dataHelper.UpdateShouRuInfo(shouru, sr.getSr_Id());
                 showMsg("该条收入修改成功");
             }
-        } /*else if (now_flag == jiedai_flag) {// 借贷中包含借入和借出 分别存储到支出和收入中
-            if (leibies.equals(JZItem.jiechu) || leibies.equals(JZItem.huankuan)) {
-                zhichu.setZc_Item(leibies);
-                zhichu.setZc_SubItem("");
+            this.finish();
+        }
 
-                zhichu.setZc_User(userName);
-
-                zhichu.setZc_Year(Integer.parseInt(dates[0]));
-                zhichu.setZc_Month(Integer.parseInt(dates[1]));
-                zhichu.setZc_Day(Integer.parseInt(dates[2]));
-                zhichu.setZc_Time(timeString);
-                zhichu.setZc_Week(GetTime.getTheWeekOfYear(Integer.parseInt(dates[0]), Integer.parseInt(dates[1]), Integer.parseInt(dates[2])));
-                zhichu.setZc_Pic("");
-                zhichu.setZc_Count(Double.parseDouble(jineString));
-                zhichu.setZc_Beizhu(beizhuString);
-                if (!isUpdate) {
-                    dataHelper.SaveZhiChuInfo(zhichu);
-                    showMsg("该条支出存储成功");
-                } else {
-                    dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
-                    showMsg("该条支出修改成功");
-                }
-            } *//*else if (leibies.equals(JZItem.jieru) || leibies.equals(JZItem.shoukuan)) {
-                shouru.setSr_Item(leibies);
-
-                shouru.setSr_User(userName);
-
-                shouru.setSr_Year(Integer.parseInt(dates[0]));
-                shouru.setSr_Month(Integer.parseInt(dates[1]));
-                shouru.setSr_Day(Integer.parseInt(dates[2]));
-                shouru.setSr_Time(timeString);
-                shouru.setSr_Week(GetTime.getTheWeekOfYear(Integer.parseInt(dates[0]), Integer.parseInt(dates[1]), Integer.parseInt(dates[2])));
-                shouru.setSr_Count(Double.parseDouble(jineString));
-                shouru.setSr_Beizhu(beizhuString);
-                if (!isUpdate) {
-                    dataHelper.SaveShouRuInfo(shouru);
-                    showMsg("该条借贷存储成功");
-                } else {
-                    dataHelper.UpdateShouRuInfo(shouru, sr.getSr_Id());
-                    showMsg("该条借贷修改成功");
-                }
-            }*//*
-        }*/
-        this.finish();
     }
 
     /*
@@ -437,11 +407,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 DongHuaYanChi.dongHuaEnd(pic_ll, this, mh, R.anim.push_left_out, 400);
             }
         }
-/*        else if (now_flag == jiedai_flag) {
-           if (pic_ll.isShown()) {
-               DongHuaYanChi.dongHuaEnd(pic_ll, this, mh, R.anim.push_left_out, 400);
-            }
-        }*/
+
         shouru_iv.setImageDrawable(null);
         zhichu_iv.setImageDrawable(null);
     //    jiedai_iv.setImageDrawable(null);

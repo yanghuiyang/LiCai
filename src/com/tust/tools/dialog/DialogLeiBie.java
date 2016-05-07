@@ -76,8 +76,6 @@ public class DialogLeiBie extends Dialog implements OnClickListener{
 				getTextandSend(view);
 			}else if(now_flag==JZAddActivity.shouru_flag){
 				getTextandSend(view);
-			}else if(now_flag==JZAddActivity.jiedai_flag){
-				getTextandSend(view);
 			}
 		}
 	}

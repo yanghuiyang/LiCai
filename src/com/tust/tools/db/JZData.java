@@ -1,6 +1,7 @@
 package com.tust.tools.db;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -27,6 +28,19 @@ public class JZData {
         dbHelper.close();
     }
 
+    /*
+     * 获取某月某类型支出总额
+     * */
+    public int getTypeMonthSpend(String userName,String typeName,Integer year,Integer month){
+        int total=0;
+        Cursor cursor = db.rawQuery("select ZC_COUNT from zhichu where ZC_USER=? and ZC_ITEM=? And ZC_YEAR = ? and ZC_MONTH=?",
+                new String[]{String.valueOf(userName),String.valueOf(typeName), String.valueOf(year), String.valueOf(month) } );
+        while (cursor.moveToNext()) {// 访问Cursor中的最后一条数据
+            total +=Integer.parseInt(cursor.getString(cursor.getColumnIndex("ZC_COUNT")));
+        }
+        return total;
+
+    }
 
     /*
      * 获取支出表中的所有数据
@@ -62,7 +76,6 @@ public class JZData {
     public ArrayList<JZshouru> GetShouRuList(String selection){
         ArrayList<JZshouru>shourulist=new ArrayList<JZshouru>();
     	Cursor cursor=db.query("shouru", null, selection, null, null, null, "ID DESC");
-//        Cursor cursor=db.query(JZSqliteHelper.SHOURU, null, null, null, null, null, "ID DESC");
 	    	cursor.moveToFirst();
 	    	while(!cursor.isAfterLast()&&(cursor.getString(1)!=null)){
 	    		JZshouru shouru=new JZshouru();
@@ -86,14 +99,14 @@ public class JZData {
     /*
      * 判断某条是否存在
      * */
-    public boolean haveZhiChuInfo(int id){
-    	boolean flag=false;
-    	Cursor cursor=db.query("zhichu", null,"ID ='"+id+"'", null, null, null, null);
-    	flag=cursor.moveToFirst();
-    	cursor.close();
-    	return flag;
-    }
-    
+//    public boolean haveZhiChuInfo(int id){
+//    	boolean flag=false;
+//    	Cursor cursor=db.query("zhichu", null,"ID ='"+id+"'", null, null, null, null);
+//    	flag=cursor.moveToFirst();
+//    	cursor.close();
+//    	return flag;
+//    }
+//
     /*
      * 更新支出表的记录
      * */
@@ -109,9 +122,7 @@ public class JZData {
         values.put(JZzhichu.ZC_PIC, zhichu.getZc_Pic());
         values.put(JZzhichu.ZC_COUNT, zhichu.getZc_Count());
         values.put(JZzhichu.ZC_BEIZHU, zhichu.getZc_Beizhu());
-
         values.put(JZzhichu.ZC_USER, zhichu.getZc_User());//add
-
         int idupdate= db.update("zhichu", values, "ID ='"+id+"'", null);
         this.close();
         return idupdate;
@@ -151,9 +162,7 @@ public class JZData {
         values.put(JZzhichu.ZC_PIC, zhichu.getZc_Pic());
         values.put(JZzhichu.ZC_COUNT, zhichu.getZc_Count());
         values.put(JZzhichu.ZC_BEIZHU, zhichu.getZc_Beizhu());
-
         values.put(JZzhichu.ZC_USER, zhichu.getZc_User());//add
-
         Long uid = db.insert("zhichu", JZzhichu.ZC_YEAR, values);
         this.close();
         return uid;
@@ -172,9 +181,7 @@ public class JZData {
         values.put(JZshouru.SR_TIME, shouru.getSr_Time());
         values.put(JZshouru.SR_COUNT, shouru.getSr_Count()); 
         values.put(JZshouru.SR_BEIZHU, shouru.getSr_Beizhu());
-
         values.put(JZshouru.SR_USER, shouru.getSr_User());
-
         Long uid = db.insert("shouru", JZshouru.SR_YEAR, values);
         this.close();
         return uid;
@@ -193,8 +200,6 @@ public class JZData {
      * 删除所有记录
      * */
     public void delAll(String userName){
-    	//JZSqliteHelper.saveYuSuan(context,JZSqliteHelper.YUSUAN_MONTH,JZSqliteHelper.YUSUAN_MONTH, 0);
-
     	db.delete("zhichu","ZC_USER ="+"'"+userName+"'", null);
     	db.delete("shouru", "SR_USER ="+"'"+userName+"'", null);
     }
