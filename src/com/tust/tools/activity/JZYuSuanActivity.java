@@ -105,6 +105,7 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 				//	textview.setText(edittext.getText());
 				//	int total = Integer.valueOf(et.getText().toString());
 				String newStr = s.toString().replaceFirst("^0*", "");
+				if(!newStr.equals("")){
 				int total =Integer.parseInt(newStr);
 				mData.clear();
 				recommendation.clear();
@@ -123,6 +124,7 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 					mAdapter.setData(mData, recommendation);
 					mAdapter.notifyDataSetChanged();
 				}
+				}
 			}
 		});
 	}
@@ -139,17 +141,30 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 				return;
 			}
 			int num = Integer.parseInt(et.getText().toString());
-			user.setBudget(num);
-			userData.UpdateUserInfo(user);
-			budgetData.SaveOrUpdateUserBudget(mData,userName);//注意类型 string 和int转换
-			yusuan.setText("当前本月预算：" + user.getBudget() + "");
-			et.setText(""+num);
-			showMsg("保存成功");
-			this.finish();
+			int inputTotal=0;
+			for (Map<String, String> m : mData) {
+				for (String k : m.keySet()) {
+					String newStr = m.get(k).toString().replaceFirst("^0*", "");
+					if(!newStr.equals("")) {
+						inputTotal += Integer.parseInt(newStr);
+					}
+				}
+			}
+			if(inputTotal>num){
+				showMsg("各分类预算超过了总预算哟");
+			}else {
+				user.setBudget(num);
+				userData.UpdateUserInfo(user);
+				budgetData.SaveOrUpdateUserBudget(mData, userName);//注意类型 string 和int转换
+				yusuan.setText("当前本月预算：" + user.getBudget() + "");
+				et.setText("" + num);
+				showMsg("保存成功");
+				//this.finish();
+			}
 			break;
 		case R.id.jz_yusuan_cancelbt:
-			showMsg(mData.get(0).toString()+"---"+mData.get(0).get(0+"")+"\n");
-		//	this.finish();
+//			showMsg(mData.get(0).toString()+"---"+mData.get(0).get(0+"")+"\n");
+			this.finish();
 			break;
 		}
 	}
