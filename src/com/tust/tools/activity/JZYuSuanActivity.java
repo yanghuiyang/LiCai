@@ -102,8 +102,6 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 
 			@Override
 			public void afterTextChanged(Editable s) {
-				//	textview.setText(edittext.getText());
-				//	int total = Integer.valueOf(et.getText().toString());
 				String newStr = s.toString().replaceFirst("^0*", "");
 				if(!newStr.equals("")){
 				int total =Integer.parseInt(newStr);
