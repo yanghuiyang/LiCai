@@ -5,12 +5,13 @@ import java.util.List;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
+import com.tust.tools.service.GetTime;
+
 //记账数据库操作
 public class JZData {
 	private SQLiteDatabase db;
@@ -213,5 +214,38 @@ public class JZData {
         return iddel;
     }
 
-
+    /*
+     * 用于判断当月记账是否连续3天超出平均值
+     * */
+    public boolean isBeyond(JZzhichu zhichu, int budget) {
+//        boolean flag = false;
+        int flag = 0;
+        int average=0;//平均值
+        if(GetTime.getMonth()!= zhichu.getZc_Month()||zhichu.getZc_Day()<3){ //不在当前月份的记账不考虑 当月前记账两天不考虑
+            return false;
+        }
+        average=(int)Math.floor(budget/30);//假设一个月30天吧
+        int dayCount =0;
+        for(int i=2;i>=0;i--) {
+            String selectionMonth = JZzhichu.ZC_USER + "='" + zhichu.getZc_User() + "'" + " and " + JZzhichu.ZC_YEAR + "=" + GetTime.getYear() + " and " + JZzhichu.ZC_MONTH + "=" + GetTime.getMonth() + " and " + JZzhichu.ZC_DAY + "=" + (zhichu.getZc_Day() - i);
+            List<JZzhichu> zhichuMonthList = GetZhiChuList(selectionMonth);
+            if (zhichuMonthList != null) {
+                for (JZzhichu zhichu2 : zhichuMonthList) {
+                    dayCount += zhichu2.getZc_Count();
+                }
+                if (i == 0) {
+                    dayCount += zhichu.getZc_Count();//加上今天这次记账
+                }
+                if (dayCount > average) {
+//                    flag = flag & true;
+                    flag ++;
+                }
+                dayCount = 0;
+            }
+        }
+        if (flag==3){
+            return true;
+        }
+        return false;
+    }
 }

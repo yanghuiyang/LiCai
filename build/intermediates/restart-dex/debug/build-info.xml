@@ -4,25 +4,40 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="43696229618096" >
+    timestamp="13447490542518" >
 
     <task
         name="javac"
-        duration="1440" />
+        duration="908" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="220" />
+        duration="59" />
     <task
         name="verifier"
-        duration="31" />
+        duration="6" />
 
     <artifact
-        location="C:\Java\workspace\LiCaiTools1.0\build\outputs\apk\LiCaiTools1.0-debug.apk"
-        type="MAIN" />
+        location="C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+        type="DEX" />
 
+    <build timestamp="8957002635488" >
+        <artifact
+            location="C:\Java\workspace\LiCaiTools1.0\build\outputs\apk\LiCaiTools1.0-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="9692378789770" >
+        <artifact
+            location="C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="13447490542518" >
+        <artifact
+            location="C:\Java\workspace\LiCaiTools1.0\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            type="DEX" />
+    </build>
     <build timestamp="43696229618096" >
         <artifact
             location="C:\Java\workspace\LiCaiTools1.0\build\outputs\apk\LiCaiTools1.0-debug.apk"

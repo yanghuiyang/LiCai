@@ -74,7 +74,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     // 底部数字按钮
     private Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bd, bdel;
     // 按钮集合
-    private Button bt[] = new Button[] { b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bd, bdel };
+    private Button bt[] = new Button[]{b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, bd, bdel};
     public static MessageHandler mh;
     // 当前界面收到的消息表示（msg.what）
     public static final int leibie_msg = 1010, beizhu_msg = 1020;
@@ -99,6 +99,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     private BudgetData budgetData;
     private User user;
     private UserData userData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -159,15 +160,15 @@ public class JZAddActivity extends Activity implements OnClickListener {
      */
     public void getZhiChuType(JZzhichu zc) {
         pic_ll.setVisibility(View.GONE);
-            now_flag = zhichu_flag;
-            zhichu_text.setText("修改支出");
-            leibie.setText(zc.getZc_Item());
-            setTopBG(now_flag, zhichu_iv);
-            shouru_fl.setVisibility(View.INVISIBLE);
-            picpath = zc.getZc_Pic();// 获取图片路径
-            if (picpath != null && picpath.endsWith("jpg")) {
-                File filePic = new File(picpath);
-                pic.setImageBitmap(decodeFile(filePic));
+        now_flag = zhichu_flag;
+        zhichu_text.setText("修改支出");
+        leibie.setText(zc.getZc_Item());
+        setTopBG(now_flag, zhichu_iv);
+        shouru_fl.setVisibility(View.INVISIBLE);
+        picpath = zc.getZc_Pic();// 获取图片路径
+        if (picpath != null && picpath.endsWith("jpg")) {
+            File filePic = new File(picpath);
+            pic.setImageBitmap(decodeFile(filePic));
 //            }
         }
         update_flag = zhichu_flag;// 用于删除当前数据功能
@@ -180,11 +181,11 @@ public class JZAddActivity extends Activity implements OnClickListener {
 
     public void getShouRuType(JZshouru sr) {
         pic_ll.setVisibility(View.GONE);
-            now_flag = shouru_flag;
-            shouru_text.setText("修改收入");
-            setTopBG(now_flag, shouru_iv);
-            zhichu_fl.setVisibility(View.INVISIBLE);
-    //    }
+        now_flag = shouru_flag;
+        shouru_text.setText("修改收入");
+        setTopBG(now_flag, shouru_iv);
+        zhichu_fl.setVisibility(View.INVISIBLE);
+        //    }
         update_flag = shouru_flag;// 用于删除当前数据功能
         jine.setText(sr.getSr_Count() + "");
         leibie.setText(sr.getSr_Item());
@@ -242,7 +243,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
      * 初始化数字按钮
      */
     private void initBt(TextView tv) {
-        int id[] = new int[] { R.id.jz_add_bt_0, R.id.jz_add_bt_1, R.id.jz_add_bt_2, R.id.jz_add_bt_3, R.id.jz_add_bt_4, R.id.jz_add_bt_5, R.id.jz_add_bt_6, R.id.jz_add_bt_7, R.id.jz_add_bt_8, R.id.jz_add_bt_9, R.id.jz_add_bt_d, R.id.jz_add_bt_del };
+        int id[] = new int[]{R.id.jz_add_bt_0, R.id.jz_add_bt_1, R.id.jz_add_bt_2, R.id.jz_add_bt_3, R.id.jz_add_bt_4, R.id.jz_add_bt_5, R.id.jz_add_bt_6, R.id.jz_add_bt_7, R.id.jz_add_bt_8, R.id.jz_add_bt_9, R.id.jz_add_bt_d, R.id.jz_add_bt_del};
         for (int i = 0; i < bt.length; i++) {
             bt[i] = (Button) this.findViewById(id[i]);
             bt[i].setOnClickListener(new MyClick(tv));
@@ -252,44 +253,44 @@ public class JZAddActivity extends Activity implements OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-        case R.id.jz_add_zhichu_fl:// 支出tab
-            setTopBG(zhichu_flag, zhichu_iv);
-            leibie.setText(new ExpenditureTypeData(this).getFirstTypeByUserName(userName));//设置默认类别
-            break;
-        case R.id.jz_add_shouru_fl:// 收入tab
-            setTopBG(shouru_flag, shouru_iv);
-            leibie.setText(new IncomeTypeData(this).getFirstTypeByUserName(userName));//设置默认类别
-            break;
+            case R.id.jz_add_zhichu_fl:// 支出tab
+                setTopBG(zhichu_flag, zhichu_iv);
+                leibie.setText(new ExpenditureTypeData(this).getFirstTypeByUserName(userName));//设置默认类别
+                break;
+            case R.id.jz_add_shouru_fl:// 收入tab
+                setTopBG(shouru_flag, shouru_iv);
+                leibie.setText(new IncomeTypeData(this).getFirstTypeByUserName(userName));//设置默认类别
+                break;
 
-        case R.id.jz_add_save_fl:// 保存按钮
-            saveToDB();
-            break;
-        case R.id.jz_add_cancel_fl:// 取消按钮
-            this.finish();
-            break;
-        case R.id.jz_add_del_fl:// 取消按钮
-            dataHelper = new JZData(this);
-            switch (update_flag) {
-            case zhichu_flag:
-                int i1 = dataHelper.DelZhiChuInfo(update_id);
-                if (i1 > 0) {
-                    showMsg("删除成功");
-                    this.finish();
-                } else {
-                    showMsg("删除失败");
+            case R.id.jz_add_save_fl:// 保存按钮
+                saveToDB();
+                break;
+            case R.id.jz_add_cancel_fl:// 取消按钮
+                this.finish();
+                break;
+            case R.id.jz_add_del_fl:// 取消按钮
+                dataHelper = new JZData(this);
+                switch (update_flag) {
+                    case zhichu_flag:
+                        int i1 = dataHelper.DelZhiChuInfo(update_id);
+                        if (i1 > 0) {
+                            showMsg("删除成功");
+                            this.finish();
+                        } else {
+                            showMsg("删除失败");
+                        }
+                        break;
+                    case shouru_flag:
+                        int i2 = dataHelper.DelShouRuInfo(update_id);
+                        if (i2 > 0) {
+                            showMsg("删除成功");
+                            this.finish();
+                        } else {
+                            showMsg("删除失败");
+                        }
+                        break;
                 }
                 break;
-            case shouru_flag:
-                int i2 = dataHelper.DelShouRuInfo(update_id);
-                if (i2 > 0) {
-                    showMsg("删除成功");
-                    this.finish();
-                } else {
-                    showMsg("删除失败");
-                }
-                break;
-            }
-            break;
         }
     }
 
@@ -308,7 +309,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
         // 时间
         String timeString = time.getText().toString().trim();
         // 金额
-        String jineString = jine.getText().toString().trim();
+        final String jineString = jine.getText().toString().trim();
         // 备注
         String beizhuString = beizhu.getText().toString().trim();
         if (jineString.equals("0.00")) {
@@ -326,27 +327,108 @@ public class JZAddActivity extends Activity implements OnClickListener {
             zhichu.setZc_Pic(picpath);
             zhichu.setZc_Count(Double.parseDouble(jineString));
             zhichu.setZc_Beizhu(beizhuString);
-            //判断支出是否超过预算 超出则提醒 超出总预算 超出个类型预算
-            int budget = budgetData.getUserOneBudget(userName,leibies,zhichu.getZc_Year(),zhichu.getZc_Month());
-            int spend = Integer.parseInt(jineString) + dataHelper.getTypeMonthSpend(userName,leibies,zhichu.getZc_Year(),zhichu.getZc_Month());
-            String selectionMonth =JZzhichu.ZC_USER + "='" +userName + "'" +" and " + JZzhichu.ZC_YEAR + "=" + GetTime.getYear() + " and " + JZzhichu.ZC_MONTH + "=" + GetTime.getMonth();
+            //判断支出是否超过预算 超出则提醒 超出总预算 超出个类型预算 前三天连续超出月平均值(该提醒为当月记账)
+            final int budget = budgetData.getUserOneBudget(userName, leibies, zhichu.getZc_Year(), zhichu.getZc_Month());
+            final int spend = Integer.parseInt(jineString) + dataHelper.getTypeMonthSpend(userName, leibies, zhichu.getZc_Year(), zhichu.getZc_Month());
+            String selectionMonth = JZzhichu.ZC_USER + "='" + userName + "'" + " and " + JZzhichu.ZC_YEAR + "=" + GetTime.getYear() + " and " + JZzhichu.ZC_MONTH + "=" + GetTime.getMonth();
             List<JZzhichu> zhichuMonthList = dataHelper.GetZhiChuList(selectionMonth);
-            int count=0;
+            boolean beyondFlag = false;//连续三天超出平均值标志
+            beyondFlag = dataHelper.isBeyond(zhichu,user.getBudget());
+            int count = 0;
+            final int countTemp;
+           // final String msg = "";
             String msg = "";
+            final String msgTemp;
             if (zhichuMonthList != null) {
                 for (JZzhichu zhichu2 : zhichuMonthList) {
                     count += zhichu2.getZc_Count();
                 }
-            if(count+Integer.parseInt(jineString)>user.getBudget()){
-                msg = "超出总预算了，是否继续添加？";
-            }if (spend>budget){
-                    msg = "类别："+leibies+"已经超出预算了哟，是否继续添加？";
+                if (spend > budget) {
+                    msg = "类别：" + leibies + "已经超出预算了哟，是否继续添加？";
                 }
+                if (count + Integer.parseInt(jineString) > user.getBudget()) {
+                    msg = "超出总预算了，是否继续添加？";
                 }
-            if(count+Integer.parseInt(jineString)>user.getBudget()||spend>budget){
-                final Context contex=this;
+
+            }
+            countTemp = count;
+            msgTemp = msg;
+            SharedPreferences preferences=getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+            String tips = preferences.getString("tips", "");//tips 提醒标志 1为提醒 2位不提醒
+            if(tips.equals("1")) {
+                if (beyondFlag) {
+                    //           final Context contex = this;
+                    final Context contex = this;
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle("您已经连续3天都超过额度平均值了哟，建议去兼职赚取收入")
+                            //          .setNegativeButton("我知道了，不在提醒", null);
+                            .setNegativeButton("我知道了，不在提醒", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = preferences.edit();
+                                    editor.putString("tips", "2");
+                                    editor.commit();
+                                    if (countTemp + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+//                            final Context contex = this;
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(contex);
+                                        builder.setTitle(msgTemp)
+                                                .setNegativeButton("取消", null);
+                                        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                if (!isUpdate) {
+                                                    dataHelper.SaveZhiChuInfo(zhichu);
+                                                    showMsg("该条支出存储成功");
+                                                    picpath = "";
+                                                } else {
+                                                    dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                                                    showMsg("该条支出修改成功");
+                                                }
+                                                // Main.this.finish();
+                                                Intent intent = new Intent(contex, JZMainActivity.class);
+                                                contex.startActivity(intent);
+                                                ((Activity) contex).finish();
+                                            }
+                                        });
+                                        builder.show();
+                                    }
+                                }
+                            });
+                    builder.setPositiveButton("好的", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            if (countTemp + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+//                            final Context contex = this;
+                                AlertDialog.Builder builder = new AlertDialog.Builder(contex);
+                                builder.setTitle(msgTemp)
+                                        .setNegativeButton("取消", null);
+                                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        if (!isUpdate) {
+                                            dataHelper.SaveZhiChuInfo(zhichu);
+                                            showMsg("该条支出存储成功");
+                                            picpath = "";
+                                        } else {
+                                            dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                                            showMsg("该条支出修改成功");
+                                        }
+                                        // Main.this.finish();
+                                        Intent intent = new Intent(contex, JZMainActivity.class);
+                                        contex.startActivity(intent);
+                                        ((Activity) contex).finish();
+                                    }
+                                });
+                                builder.show();
+                            }
+//                        Intent intent = new Intent(contex, JZMainActivity.class);
+//                        contex.startActivity(intent);
+//                        ((Activity) contex).finish();
+                        }
+                    });
+                    builder.show();
+                }
+            }else {
+                if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+                final Context contex = this;
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-             //   builder.setTitle("类别："+leibies+"已经超出预算了哟，是否继续添加？")
                 builder.setTitle(msg)
                         .setNegativeButton("取消", null);
                 builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
@@ -359,15 +441,38 @@ public class JZAddActivity extends Activity implements OnClickListener {
                             dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
                             showMsg("该条支出修改成功");
                         }
-                       // Main.this.finish();
+                        // Main.this.finish();
                         Intent intent = new Intent(contex, JZMainActivity.class);
                         contex.startActivity(intent);
                         ((Activity) contex).finish();
                     }
                 });
                 builder.show();
-             // showMsg("类型："+leibies+"已经超出预算了哟");
             }
+            }
+//            if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+//                final Context contex = this;
+//                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//                builder.setTitle(msg)
+//                        .setNegativeButton("取消", null);
+//                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        if (!isUpdate) {
+//                            dataHelper.SaveZhiChuInfo(zhichu);
+//                            showMsg("该条支出存储成功");
+//                            picpath = "";
+//                        } else {
+//                            dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+//                            showMsg("该条支出修改成功");
+//                        }
+//                        // Main.this.finish();
+//                        Intent intent = new Intent(contex, JZMainActivity.class);
+//                        contex.startActivity(intent);
+//                        ((Activity) contex).finish();
+//                    }
+//                });
+//                builder.show();
+//            }
         } else if (now_flag == shouru_flag) {
             shouru.setSr_Item(leibies);
 
@@ -410,7 +515,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
 
         shouru_iv.setImageDrawable(null);
         zhichu_iv.setImageDrawable(null);
-    //    jiedai_iv.setImageDrawable(null);
+        //    jiedai_iv.setImageDrawable(null);
         iv.setImageResource(R.drawable.jz_tab1_bt_bgs);
         iv.setAnimation(AnimationUtils.loadAnimation(this, R.anim.jz_top_right2left));
     }
@@ -455,41 +560,41 @@ public class JZAddActivity extends Activity implements OnClickListener {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
-            case R.id.jz_add_jine_text:// 点击num显示数字按键
-                if (num_ll.isShown()) {
-                    DongHuaYanChi.dongHuaEnd(num_ll, JZAddActivity.this, mh, R.anim.jz_menu_down, 300);
-                } else {
-                    num_ll.setAnimation(AnimationUtils.loadAnimation(JZAddActivity.this, R.anim.jz_menu_up));
-                    num_ll.setVisibility(View.VISIBLE);
-                }
-                break;
-            case R.id.jz_add_leibie_text:// 更改类别
-                new DialogLeiBie(JZAddActivity.this, now_flag);
-                break;
-            case R.id.jz_add_date_text:// 更改日期
-                onCreateDialog(R.id.jz_add_date_text);
-                break;
-            case R.id.jz_add_time_text:// 更改时间
-                onCreateDialog(R.id.jz_add_time_text);
-                break;
-            case R.id.jz_add_beizhu_text:// 添加备注
-                String beizhuString = beizhu.getText().toString();
-                if(beizhuString.equals("无备注")){
-                    new DialogBeiZhu(JZAddActivity.this,"");
-                }else{
-                    new DialogBeiZhu(JZAddActivity.this,beizhuString);  
-                }
-                break;
-            case R.id.jz_add_zhichu_addpic_iv:
-                if (picpath != null && picpath.endsWith("jpg")) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    Uri uri = Uri.parse("file://" + picpath);
-                    intent.setDataAndType(uri, "image/*");
-                    startActivity(intent);
-                } else {
-                    choosePic(JZAddActivity.this);
-                }
-                break;
+                case R.id.jz_add_jine_text:// 点击num显示数字按键
+                    if (num_ll.isShown()) {
+                        DongHuaYanChi.dongHuaEnd(num_ll, JZAddActivity.this, mh, R.anim.jz_menu_down, 300);
+                    } else {
+                        num_ll.setAnimation(AnimationUtils.loadAnimation(JZAddActivity.this, R.anim.jz_menu_up));
+                        num_ll.setVisibility(View.VISIBLE);
+                    }
+                    break;
+                case R.id.jz_add_leibie_text:// 更改类别
+                    new DialogLeiBie(JZAddActivity.this, now_flag);
+                    break;
+                case R.id.jz_add_date_text:// 更改日期
+                    onCreateDialog(R.id.jz_add_date_text);
+                    break;
+                case R.id.jz_add_time_text:// 更改时间
+                    onCreateDialog(R.id.jz_add_time_text);
+                    break;
+                case R.id.jz_add_beizhu_text:// 添加备注
+                    String beizhuString = beizhu.getText().toString();
+                    if (beizhuString.equals("无备注")) {
+                        new DialogBeiZhu(JZAddActivity.this, "");
+                    } else {
+                        new DialogBeiZhu(JZAddActivity.this, beizhuString);
+                    }
+                    break;
+                case R.id.jz_add_zhichu_addpic_iv:
+                    if (picpath != null && picpath.endsWith("jpg")) {
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        Uri uri = Uri.parse("file://" + picpath);
+                        intent.setDataAndType(uri, "image/*");
+                        startActivity(intent);
+                    } else {
+                        choosePic(JZAddActivity.this);
+                    }
+                    break;
             }
         }
     }
@@ -548,14 +653,14 @@ public class JZAddActivity extends Activity implements OnClickListener {
 
     public boolean onKeyDown(int kCode, KeyEvent kEvent) {
         switch (kCode) {
-        case KeyEvent.KEYCODE_BACK: {
-            if (num_ll.isShown()) {
-                DongHuaYanChi.dongHuaEnd(num_ll, JZAddActivity.this, mh, R.anim.jz_menu_down, 300);
-                return false;
-            } else {
-                this.finish();
+            case KeyEvent.KEYCODE_BACK: {
+                if (num_ll.isShown()) {
+                    DongHuaYanChi.dongHuaEnd(num_ll, JZAddActivity.this, mh, R.anim.jz_menu_down, 300);
+                    return false;
+                } else {
+                    this.finish();
+                }
             }
-        }
         }
         return super.onKeyDown(kCode, kEvent);
     }
@@ -567,21 +672,21 @@ public class JZAddActivity extends Activity implements OnClickListener {
     public class MessageHandler extends Handler {
         public void handleMessage(Message msg) {
             switch (msg.what) {
-            case leibie_msg:
-                leibie.setText((String) msg.obj);
-                break;
-            case beizhu_msg:
-                beizhu.setText((String) msg.obj);
-                break;
-            default:
-                break;
+                case leibie_msg:
+                    leibie.setText((String) msg.obj);
+                    break;
+                case beizhu_msg:
+                    beizhu.setText((String) msg.obj);
+                    break;
+                default:
+                    break;
             }
         }
     }
 
     public void choosePic(Context context) {// 照片选择
         final Context dialogContext = new ContextThemeWrapper(context, android.R.style.Theme_Light);
-        PHOTO_DIR = new File(SDrw.SDPATH+ "jizhang/imgcache/");
+        PHOTO_DIR = new File(SDrw.SDPATH + "jizhang/imgcache/");
         if (!PHOTO_DIR.exists()) {
             PHOTO_DIR.mkdirs();
         }
@@ -605,32 +710,32 @@ public class JZAddActivity extends Activity implements OnClickListener {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
                 switch (which) {
-                case 0: {
-                    String status = Environment.getExternalStorageState();
-                    if (status.equals(Environment.MEDIA_MOUNTED)) {// 判断是否有SD卡
-                        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                        capturefile = new File(PHOTO_DIR, getPhotoFileName());
-                        try {
-                            capturefile.createNewFile();
-                            i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(capturefile));// 将拍摄的照片信息存到capturefile中
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                    case 0: {
+                        String status = Environment.getExternalStorageState();
+                        if (status.equals(Environment.MEDIA_MOUNTED)) {// 判断是否有SD卡
+                            Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                            capturefile = new File(PHOTO_DIR, getPhotoFileName());
+                            try {
+                                capturefile.createNewFile();
+                                i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(capturefile));// 将拍摄的照片信息存到capturefile中
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                            startActivityForResult(i, PHOTO_WITH_CAMERA);// 用户点击了从照相机获取
+                        } else {
+                            showMsg("没有SD卡");
                         }
-                        startActivityForResult(i, PHOTO_WITH_CAMERA);// 用户点击了从照相机获取
-                    } else {
-                        showMsg("没有SD卡");
+                        break;
                     }
-                    break;
-                }
-                case 1:// 从相册中去获取
-                    Intent intent = new Intent();
+                    case 1:// 从相册中去获取
+                        Intent intent = new Intent();
                     /* 开启Pictures画面Type设定为image */
-                    intent.setType("image/*");
+                        intent.setType("image/*");
                     /* 使用Intent.ACTION_GET_CONTENT这个Action */
-                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                        intent.setAction(Intent.ACTION_GET_CONTENT);
                     /* 取得相片后返回本画面 */
-                    startActivityForResult(intent, PHOTO_WITH_DATA);
-                    break;
+                        startActivityForResult(intent, PHOTO_WITH_DATA);
+                        break;
                 }
             }
         });
@@ -655,36 +760,36 @@ public class JZAddActivity extends Activity implements OnClickListener {
         ChangePic cp = new ChangePic();// 转换图片类
         if (resultCode == Activity.RESULT_OK) {
             switch (requestCode) {
-            case PHOTO_WITH_CAMERA:// 获取拍摄的文件
-                picpath = capturefile.getAbsolutePath();
-                System.out.println(picpath);
-                file = new File(picpath);
-                picb = decodeFile(file);
-                pic.setImageBitmap(picb);
-                System.out.println("++++++相机+++++");
-                break;
-
-            case PHOTO_WITH_DATA:// 获取从图库选择的文件
-                Uri uri = data.getData();
-                String scheme = uri.getScheme();
-                if (scheme.equalsIgnoreCase("file")) {
-                    picpath = uri.getPath();
+                case PHOTO_WITH_CAMERA:// 获取拍摄的文件
+                    picpath = capturefile.getAbsolutePath();
                     System.out.println(picpath);
                     file = new File(picpath);
                     picb = decodeFile(file);
                     pic.setImageBitmap(picb);
-                } else if (scheme.equalsIgnoreCase("content")) {
-                    Cursor cursor = getContentResolver().query(uri, null, null, null, null);
-                    cursor.moveToFirst();
-                    picpath = cursor.getString(1);
-                    file = new File(picpath);
-                    picb = decodeFile(file);
-                    pic.setImageBitmap(picb);
-                }
-                break;
+                    System.out.println("++++++相机+++++");
+                    break;
+
+                case PHOTO_WITH_DATA:// 获取从图库选择的文件
+                    Uri uri = data.getData();
+                    String scheme = uri.getScheme();
+                    if (scheme.equalsIgnoreCase("file")) {
+                        picpath = uri.getPath();
+                        System.out.println(picpath);
+                        file = new File(picpath);
+                        picb = decodeFile(file);
+                        pic.setImageBitmap(picb);
+                    } else if (scheme.equalsIgnoreCase("content")) {
+                        Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+                        cursor.moveToFirst();
+                        picpath = cursor.getString(1);
+                        file = new File(picpath);
+                        picb = decodeFile(file);
+                        pic.setImageBitmap(picb);
+                    }
+                    break;
             }
             // 存放照片的路径
-            String savePath = SDrw.SDPATH+"jizhang/imgcache/";
+            String savePath = SDrw.SDPATH + "jizhang/imgcache/";
             picpath = cp.changePic(picpath, savePath);
         }
         super.onActivityResult(requestCode, resultCode, data);

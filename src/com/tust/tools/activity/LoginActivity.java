@@ -52,6 +52,12 @@ public class LoginActivity extends Activity implements OnClickListener{
 					SharedPreferences.Editor editor=preferences.edit();
 					editor.putString("userName",account.getText().toString());
 					editor.putString("pwd",pwd.getText().toString());
+					String tips = preferences.getString("tips", "");//tips 提醒标志 1为提醒 2位不提醒
+					if(tips.equals("2")){
+
+					}else {
+						editor.putString("tips","1");
+					}
 					editor.commit();
 					changeActivity(ToolsMainActivity.class);
 
