@@ -70,8 +70,8 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 		huizong_ll.setVisibility(View.GONE);
 		list_ll = (LinearLayout)this.findViewById(R.id.jz_mingxi_list_ll);
 		time_text = (TextView)this.findViewById(R.id.jz_mingxi_time_text);
-		huizong_text = (TextView)this.findViewById(R.id.jz_mingxi_huizong);
-		huizong_text.setOnClickListener(this);
+		//huizong_text = (TextView)this.findViewById(R.id.jz_mingxi_huizong);
+		//huizong_text.setOnClickListener(this);
 		zhichu_text = (TextView)this.findViewById(R.id.jz_mingxi_benyuezhichu_text);
 		shouru_text = (TextView)this.findViewById(R.id.jz_mingxi_benyueshouru_text);
 		shengyu_text = (TextView)this.findViewById(R.id.jz_mingxi_benyueshengyu_text);
@@ -86,7 +86,12 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 		time_text.setText(nowTime);
 		listView  = (ListView) findViewById(R.id.jz_mingxi_list);
 		flag = zhichu_flag;
-		getHuiZong();
+		//getHuiZong();
+		double count[] = adapter.getList(year, month, 0, flag);
+		zhichu_text.setText(count[0]+"");
+		shouru_text.setText(count[1]+"");
+		shengyu_text.setText((count[1]-count[0])+"");
+		huizong_ll.setVisibility(View.VISIBLE);
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(this);
 		listView.setLayoutAnimation(DongHua3d.listDongHua());
@@ -97,6 +102,7 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 		switch (v.getId()) {
 		case R.id.jz_mingxi_back_rl:
 			backMonth(flag);
+
 			break;
 		case R.id.jz_mingxi_next_rl:
 			nextMonth(flag);
@@ -109,15 +115,20 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 			flag  =shouru_flag;
 			yanChiShow(list_ll);
 			break;
-		case R.id.jz_mingxi_huizong :
-			if(huizong_ll.isShown()){
-				DongHuaYanChi.dongHuaEnd(huizong_ll, JZMingXiActivity.this, mh, R.anim.jz_menu_down, 300);
-			}else{
-				huizong_ll.setAnimation(AnimationUtils.loadAnimation(JZMingXiActivity.this,R.anim.jz_menu_up));
-				huizong_ll.setVisibility(View.VISIBLE);
-			}
-			break;
+//		case R.id.jz_mingxi_huizong :
+//			if(huizong_ll.isShown()){
+//				DongHuaYanChi.dongHuaEnd(huizong_ll, JZMingXiActivity.this, mh, R.anim.jz_menu_down, 300);
+//			}else{
+//				huizong_ll.setAnimation(AnimationUtils.loadAnimation(JZMingXiActivity.this,R.anim.jz_menu_up));
+//				huizong_ll.setVisibility(View.VISIBLE);
+//			}
+//			break;
 		}
+		double count[] = adapter.getList(year, month, 0, flag);
+		zhichu_text.setText(count[0]+"");
+		shouru_text.setText(count[1]+"");
+		shengyu_text.setText((count[1]-count[0])+"");
+		huizong_ll.setVisibility(View.VISIBLE);
 	}
 	
 	/*

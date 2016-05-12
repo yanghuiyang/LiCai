@@ -418,15 +418,13 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                 });
                                 builder.show();
                             }
-//                        Intent intent = new Intent(contex, JZMainActivity.class);
-//                        contex.startActivity(intent);
-//                        ((Activity) contex).finish();
                         }
                     });
                     builder.show();
                 }
-            }else {
-                if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+            }
+            //else {
+               if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
                 final Context contex = this;
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle(msg)
@@ -448,8 +446,22 @@ public class JZAddActivity extends Activity implements OnClickListener {
                     }
                 });
                 builder.show();
-            }
-            }
+            }else{
+                   if (!isUpdate) {
+                       dataHelper.SaveZhiChuInfo(zhichu);
+                       showMsg("该条支出存储成功");
+                       picpath = "";
+                   } else {
+                       dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                       showMsg("该条支出修改成功");
+                   }
+                   // Main.this.finish();
+                   Context contex = this;
+                   Intent intent = new Intent(contex, JZMainActivity.class);
+                   contex.startActivity(intent);
+                   ((Activity) contex).finish();
+               }
+        //    }
 //            if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
 //                final Context contex = this;
 //                AlertDialog.Builder builder = new AlertDialog.Builder(this);

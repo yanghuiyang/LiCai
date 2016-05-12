@@ -30,10 +30,17 @@ public class BudgetData {
     public void SaveOrUpdateUserBudget(List<Map<String, String>> mData, String userName) {
         Integer year = GetTime.getYear();
         Integer month = GetTime.getMonth();
+        Integer count=0;
         for (Map<String, String> m : mData) {
             for (String k : m.keySet()) {
+                if(m.get(k).equals("")||m.get(k).equals("0")){
+                    count = 0;
+                }else {
+                    count = Integer.valueOf(m.get(k));
+                }
+
                 db.execSQL("insert or replace into budget values(?,?,?,?,?)",
-                        new Object[]{String.valueOf(userName), String.valueOf(k), year, month, Integer.valueOf(m.get(k))});
+                        new Object[]{String.valueOf(userName), String.valueOf(k), year, month, count});
             }
         }
     }

@@ -50,15 +50,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
         db.execSQL("CREATE TABLE IF NOT EXISTS USER"
                 + "(username VARCHAR(20) PRIMARY KEY , pwd VARCHAR(20) not null, sex INTEGER, tel VARCHAR,budget INTEGER)");
-        //添加个默认账号
-        //User user = new User();
-        ContentValues values = new ContentValues();
-        values.put("username", "admin");
-        values.put("pwd", "123456");
-        values.put("sex", "1");
-        values.put("tel", "15922771234");
-        values.put("budget", 5000);  //user 的 budget作为当月的总预算
-        db.insert("USER",null,values);
+
         //创建预算表
 //       db.execSQL("CREATE TABLE IF NOT EXISTS budget "
 //               + "(id INTEGER PRIMARY KEY,username varchar not null ,typename varchar(50),year INTEGER,month INTEGER,money INTEGER)");
