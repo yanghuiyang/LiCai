@@ -10,9 +10,7 @@ import com.tust.tools.bean.User;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by yang on 2016/4/23.
- */
+
 public class ExpenditureTypeData {
 
     private SQLiteDatabase db;

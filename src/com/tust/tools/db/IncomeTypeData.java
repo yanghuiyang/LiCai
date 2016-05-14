@@ -8,9 +8,7 @@ import android.content.ContentValues;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by yang on 2016/4/23.
- */
+
 public class IncomeTypeData {
 
     private SQLiteDatabase db;

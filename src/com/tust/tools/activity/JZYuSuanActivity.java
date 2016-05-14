@@ -55,7 +55,7 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 	private Runnable runnable = new Runnable() {
 		public void run() {
 			this.update();
-			handler.postDelayed(this, 1000 * 2);// 间隔120秒
+			handler.postDelayed(this, 1000 );// 间隔1秒
 		}
 		void update() {
 			Integer count=0;

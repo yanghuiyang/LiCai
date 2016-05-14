@@ -1,8 +1,6 @@
 package com.tust.tools.service;
 
-/**
- * Created by yang on 2016/4/27.
- */
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;

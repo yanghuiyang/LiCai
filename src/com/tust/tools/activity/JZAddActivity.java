@@ -527,7 +527,6 @@ public class JZAddActivity extends Activity implements OnClickListener {
 
         shouru_iv.setImageDrawable(null);
         zhichu_iv.setImageDrawable(null);
-        //    jiedai_iv.setImageDrawable(null);
         iv.setImageResource(R.drawable.jz_tab1_bt_bgs);
         iv.setAnimation(AnimationUtils.loadAnimation(this, R.anim.jz_top_right2left));
     }

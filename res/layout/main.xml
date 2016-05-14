@@ -25,96 +25,6 @@
         android:layout_marginRight="10dp"
         android:orientation="vertical"
         android:weightSum="1">
-
-        <TextView
-            android:id="@+id/maintext_cpu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="15dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/maintext_maxhz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/maintext_rom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/maintext_sd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/maintext_memory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/maintext_system"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/maintext_phonename"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/maintext_version"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
-
-        <TextView
-            android:id="@+id/maintext_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#ffffff"
-            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -244,7 +154,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:contentDescription="@string/usermanager"
+                    android:contentDescription="@string/main_licaiyoudao"
                     />
 
                 <TextView
@@ -252,7 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
-                    android:text="@string/usermanager"
+                    android:text="@string/main_licaiyoudao"
                     android:textColor="#ffffff" />
 
                 <TextView

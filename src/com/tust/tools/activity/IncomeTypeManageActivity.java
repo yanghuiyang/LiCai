@@ -26,9 +26,6 @@ import com.tust.tools.db.IncomeTypeData;
 
 import java.util.List;
 
-/**
- * Created by yang on 2016/4/23.
- */
 public class IncomeTypeManageActivity extends Activity implements OnClickListener {
     private Button btn_addType,btn_delete;
     private ListView lv;

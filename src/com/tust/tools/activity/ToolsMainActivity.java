@@ -37,7 +37,7 @@ import com.tust.tools.service.SDrw;
 
 public class ToolsMainActivity extends Activity implements OnClickListener {
     //工具箱主界面  图标布局
-    private LinearLayout jz_ll, bw_ll, js_ll, info_ll, icon_ll, user_manage;
+    private LinearLayout jz_ll, bw_ll, js_ll, info_ll, icon_ll, user_manage,lcyd;
     //3D翻转动画
     private DongHua3d dh3;
     private boolean flag = true;
@@ -84,9 +84,13 @@ public class ToolsMainActivity extends Activity implements OnClickListener {
         js_ll.setOnClickListener(this);
 
 
-        user_manage = (LinearLayout) this.findViewById(R.id.main_ll_4);
-        user_manage.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
+        user_manage = (LinearLayout) this.findViewById(R.id.main_top_bt);
+   //user_manage.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
         user_manage.setOnClickListener(this);
+
+        lcyd = (LinearLayout) this.findViewById(R.id.main_ll_4);
+        lcyd.setBackgroundDrawable(getResources().getDrawable(R.drawable.icon_selector));
+        lcyd.setOnClickListener(this);
 
         info_ll = (LinearLayout) this.findViewById(R.id.main_infolayout);
         info_ll.setVisibility(View.GONE);
@@ -115,7 +119,11 @@ public class ToolsMainActivity extends Activity implements OnClickListener {
                 dh3.oneViewDongHua(js_ll);
                 changeActivity(JSMainActivity.class);
                 break;
-            case R.id.main_ll_4://用户管理
+            case R.id.main_ll_4://理财有道
+                dh3.oneViewDongHua(lcyd);
+                changeActivity(ArticleActivity.class);
+                break;
+            case R.id.main_top_bt://用户管理
                 dh3.oneViewDongHua(user_manage);
                 changeActivity(UserEditActivity.class);
                 break;

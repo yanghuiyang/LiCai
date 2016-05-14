@@ -23,9 +23,7 @@ import com.tust.tools.R;
 import com.tust.tools.bean.ExpenditureType;
 import com.tust.tools.db.ExpenditureTypeData;
 
-/**
- * Created by yang on 2016/4/23.
- */
+
 public class ExpenditureTypeManageActivity extends Activity implements OnClickListener {
     private Button btn_addType,btn_delete;
     private ListView lv;

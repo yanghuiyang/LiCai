@@ -1,8 +1,6 @@
 package com.tust.tools.bean;
 
-/**
- * Created by yang on 2016/4/23.
- */
+
 public class IncomeType {
 
     private String userName;//用户名 id

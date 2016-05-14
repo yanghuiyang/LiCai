@@ -5,6 +5,7 @@
     <string name="main_jizhangqi">记账工具</string>
     <string name="main_benwang">备忘记事</string>
     <string name="main_jisuan">简易计算</string>
+    <string name="main_licaiyoudao">理财有道</string>
     <string name="main_set_quanjushezhi">全局设置</string>
     <string name="main_bt_exit">退出程序</string>
     <string name="main_bt_about">关于软件</string>
@@ -110,5 +111,15 @@
     <string name="ys_recommendation">推荐值</string>
     <string name="ys_actually">您的设置</string>
     <string name="jz_yusuan_yue">预算余额</string>
+
+    <string name="Article_1">把理财作为一种基本的生活方式 </string>
+    <string name="Article_2">宠爱自己的爱好，千万别吝啬 </string>
+    <string name="Article_3">记账是最常见的理财技巧</string>
+    <string name="Article_4">金钱不是人生的全部，别为金钱赌明天 </string>
+    <string name="Article_5">快乐网购，方便又省钱 </string>
+    <string name="Article_6">始于累积，存下人生的第一桶金 </string>
+    <string name="Article_7">制定理财目标，梦想照进现实 </string>
+    <string name="Article_8">自制力带来无穷的财富 </string>
+    <string name="text_null"> </string>
 
 </resources>

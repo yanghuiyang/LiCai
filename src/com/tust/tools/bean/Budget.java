@@ -1,8 +1,6 @@
 package com.tust.tools.bean;
 
-/**
- * Created by yang on 2016/5/2.
- */
+
 public class Budget {
   //  private int id;//支出类型id
     private String userName;//用户名 id

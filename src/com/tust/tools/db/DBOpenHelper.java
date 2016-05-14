@@ -9,9 +9,7 @@ import com.tust.tools.bean.BWcontent;
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
 
-/**
- * Created by yang on 2016/4/24.
- */
+
 public class DBOpenHelper extends SQLiteOpenHelper {
     private static final int VERSION=1;	//已经做出更新
     private static final String DBNAME="licai.db";
@@ -50,7 +48,6 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
         db.execSQL("CREATE TABLE IF NOT EXISTS USER"
                 + "(username VARCHAR(20) PRIMARY KEY , pwd VARCHAR(20) not null, sex INTEGER, tel VARCHAR,budget INTEGER)");
-
         //创建预算表
 //       db.execSQL("CREATE TABLE IF NOT EXISTS budget "
 //               + "(id INTEGER PRIMARY KEY,username varchar not null ,typename varchar(50),year INTEGER,month INTEGER,money INTEGER)");
