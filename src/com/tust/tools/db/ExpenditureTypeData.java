@@ -111,10 +111,11 @@ public class ExpenditureTypeData {
     }
 
     public void initType(User user) {
-            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"饮食&通讯"});
+            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"饮食"});
+            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"通讯"});
             db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"购物"});
             db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"娱乐"});
             db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"书本&其它资料"});
-            db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"恋爱"});
+     //     db.execSQL("insert into expendituretype values(null,?,?)", new Object[]{user.getUsername(),"恋爱"});
     }
 }

@@ -9,8 +9,11 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -34,7 +37,7 @@ import java.util.Map;
 public class JZYuSuanActivity extends Activity implements OnClickListener {
 
 	private EditText et;
-	private TextView yusuan;
+	private TextView yusuan,yue;
 	private Button saveBt, cancelBt;
 	private String userName;
 	private User user;
@@ -47,6 +50,30 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 
 	private List<Map<String, String>> mData = new ArrayList<Map<String,String>>();
 	private List<Map<String, Integer>> recommendation = new ArrayList<Map<String,Integer>>();//预算类型-推荐值
+	private int yue_int = 0;
+	private Handler handler = new Handler();
+	private Runnable runnable = new Runnable() {
+		public void run() {
+			this.update();
+			handler.postDelayed(this, 1000 * 2);// 间隔120秒
+		}
+		void update() {
+			Integer count=0;
+			for (Map<String, String> m : mData) {
+				for (String k : m.keySet()) {
+					if (!m.get(k).equals("") && !m.get(k).equals("0")) {
+						count = count + Integer.valueOf(m.get(k));
+					}
+				}
+			}
+			yue_int = Integer.parseInt(et.getText().toString()) - count; //
+			if (yue_int<0){
+					yue.setText("-"+yue_int);
+			}else {
+				yue.setText(yue_int+"");
+			}
+		}
+	};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -57,7 +84,9 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 		cancelBt = (Button) this.findViewById(R.id.jz_yusuan_cancelbt);
 		cancelBt.setOnClickListener(this);
 		yusuan = (TextView) this.findViewById(R.id.jz_yusuan_txt);
+		yue = (TextView) this.findViewById(R.id.jz_yusuan_yue_text);//预算余额
 		//获取当前登陆用户
+		handler.postDelayed(runnable, 1000);
 		SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
 		userName = preferences.getString("userName", "");
 		user = new User();
@@ -72,17 +101,21 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 		listView.setAdapter(mAdapter);
 		expenditureTypeData = new ExpenditureTypeData(this);
 		typenames=expenditureTypeData.getTypesByUserName(userName);//获取该用户所有支出类型
+		int n = 0;
 		for(int i=0;i<typenames.size();i++){
 			Map<String, String> budget = new HashMap<String, String>();//实际预算值
 			Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
 			int temp = 0;
 			temp = budgetData.getUserOneBudget(userName,typenames.get(i), GetTime.getYear(),GetTime.getMonth());
+			n += temp;
 			budget.put(typenames.get(i),""+temp);
 			re.put(typenames.get(i),budgetData.getTypeBudget(user,user.getBudget(),typenames.get(i)));
 			recommendation.add(re);
 			mData.add(budget);
 		}
 		mAdapter.setData(mData,recommendation);
+		yue_int = user.getBudget() - n; //第一次
+		yue.setText(yue_int+"");
 		editTextWatcher();
 
 	}
@@ -95,11 +128,9 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 			public void onTextChanged(CharSequence s, int start, int before, int count) {
 
 			}
-
 			@Override
 			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 			}
-
 			@Override
 			public void afterTextChanged(Editable s) {
 				String newStr = s.toString().replaceFirst("^0*", "");
@@ -112,13 +143,12 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 						Map<String, String> budget = new HashMap<String, String>();//实际预算值
 						Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
 						int temp = 0;
-						temp = budgetData.getUserOneBudget(userName, typenames.get(i), GetTime.getYear(), GetTime.getMonth());
+						temp = budgetData.getUserOneBudget(userName, typenames.get(i), GetTime.getYear(), GetTime.getMonth());;
 						budget.put(typenames.get(i), "" + temp);
 						re.put(typenames.get(i), budgetData.getTypeBudget(user, total, typenames.get(i)));
 						recommendation.add(re);
 						mData.add(budget);
 					}
-
 					mAdapter.setData(mData, recommendation);
 					mAdapter.notifyDataSetChanged();
 				}
@@ -157,6 +187,7 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 				yusuan.setText("当前本月预算：" + user.getBudget() + "");
 				et.setText("" + num);
 				showMsg("保存成功");
+
 				//this.finish();
 			}
 			break;
@@ -165,6 +196,30 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 			this.finish();
 			break;
 		}
+	}
+
+
+	//利用输入预算时 要按返回键盘收起这事件刷新预算额度
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+//			WindowManager.LayoutParams params = getWindow().getAttributes();
+//			// 判断隐藏软键盘是否弹出
+//			if (params.softInputMode == WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE) {
+//				// 隐藏软键盘
+//				getWindow().setSoftInputMode(
+//						WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+//				params.softInputMode = WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN;
+//				Integer count=0;
+//				for (Map<String, Integer> m : recommendation) {
+//					for (String k : m.keySet()) {
+//							count += Integer.valueOf(m.get(k));
+//						}
+//					}
+//				yue_int = Integer.parseInt(et.getText().toString()) - count; //
+//				yue.setText(yue_int+"");
+
+		//	}
+		return super.onKeyDown(keyCode,event);
 	}
 
 	@Override
@@ -179,8 +234,12 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 
 	public class MessageHandler extends Handler {
 		public void handleMessage(Message msg) {
-
 		}
+	}
+	@Override
+	protected void onDestroy() {
+		handler.removeCallbacks(runnable); //停止刷新
+		super.onDestroy();
 	}
 
 }

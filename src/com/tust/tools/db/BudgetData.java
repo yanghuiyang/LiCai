@@ -63,86 +63,167 @@ public class BudgetData {
      */
     public Integer getTypeBudget(User user,int budget, String type) {
         int temp = 0;
-       // int totalBudget = user.getBudget();
         int totalBudget =  budget;
-        if (user.getSex() == 1) {
-            if (totalBudget >= 600 && totalBudget <= 1000) {
-                if (type.equals("饮食&通讯")) {
-                    temp=350;
-                  //  return 350;
-                } else if (type.equals("购物")) {
-                    temp= 50;
+//        if (user.getSex() == 1) {
+//            if (totalBudget >= 600 && totalBudget <= 1000) {
+//                if (type.equals("饮食&通讯")) {
+//                    temp=350;
+//                  //  return 350;
+//                } else if (type.equals("购物")) {
+//                    temp= 50;
+//                } else if (type.equals("娱乐")) {
+//                    temp= 50;
+//                } else if (type.equals("书本&其它资料")) {
+//                    temp= 50;
+//                } else if (type.equals("恋爱")) {
+//                    temp= 100;
+//                }
+//
+//            } else if (totalBudget > 1000 && totalBudget <= 1500) {
+//                if (type.equals("饮食&通讯")) {
+//                    temp= 600;
+//                } else if (type.equals("购物")) {
+//                    temp= 100;
+//                } else if (type.equals("娱乐")) {
+//                    temp= 100;
+//                } else if (type.equals("书本&其它资料")) {
+//                    temp= 60;
+//                } else if (type.equals("恋爱")) {
+//                    temp= 140;
+//                }
+//            } else if (totalBudget > 1500) {
+//                if (type.equals("饮食&通讯")) {
+//                    temp= 800;
+//                } else if (type.equals("购物")) {
+//                    temp=250;
+//                } else if (type.equals("娱乐")) {
+//                    temp= 150;
+//                } else if (type.equals("书本&其它资料")) {
+//                    temp= 100;
+//                } else if (type.equals("恋爱")) {
+//                    temp= 200;
+//                }
+//            }
+//        } else {
+//            if (totalBudget >= 600 && totalBudget <= 1000) {
+//                if (type.equals("饮食&通讯")) {
+//                    temp= 290;
+//                } else if (type.equals("购物")) {
+//                    temp= 160;
+//                } else if (type.equals("娱乐")) {
+//                    temp= 50;
+//                } else if (type.equals("书本&其它资料")) {
+//                    temp=40;
+//                } else if (type.equals("恋爱")) {
+//                    temp= 60;
+//                }
+//
+//            } else if (totalBudget > 1000 && totalBudget <= 1500) {
+//                if (type.equals("饮食&通讯")) {
+//                    temp= 480;
+//                } else if (type.equals("购物")) {
+//                    temp= 300;
+//                } else if (type.equals("娱乐")) {
+//                    temp= 80;
+//                } else if (type.equals("书本&其它资料")) {
+//                    temp= 40;
+//                } else if (type.equals("恋爱")) {
+//                    temp= 100;
+//                }
+//            } else if (totalBudget > 1500) {
+//                if (type.equals("饮食&通讯")) {
+//                    temp= 650;
+//                } else if (type.equals("购物")) {
+//                    temp= 500;
+//                } else if (type.equals("娱乐")) {
+//                    temp=  100;
+//                } else if (type.equals("书本&其它资料")) {
+//                    temp= 100;
+//                } else if (type.equals("恋爱")) {
+//                    temp=  150;
+//                }
+//            }
+//        }
+
+
+        if (user.getSex() == 1) { //man
+            if (totalBudget >= 500 && totalBudget <= 1000) {
+                if (type.equals("饮食")) {
+                    temp= (int)(totalBudget*0.6);
+                } else if (type.equals("通讯")) {
+                    temp= (int)(totalBudget*0.08);
+                }else if (type.equals("购物")) {
+                    temp= (int)(totalBudget*0.16);
                 } else if (type.equals("娱乐")) {
-                    temp= 50;
+                    temp= (int)(totalBudget*0.1);
                 } else if (type.equals("书本&其它资料")) {
-                    temp= 50;
-                } else if (type.equals("恋爱")) {
-                    temp= 100;
+                    temp= (int)(totalBudget*0.06);
                 }
 
             } else if (totalBudget > 1000 && totalBudget <= 1500) {
-                if (type.equals("饮食&通讯")) {
-                    temp= 600;
-                } else if (type.equals("购物")) {
-                    temp= 100;
+                if (type.equals("饮食")) {
+                    temp= (int)(totalBudget*0.55);
+                } else if (type.equals("通讯")) {
+                    temp= (int)(totalBudget*0.08);
+                }else if (type.equals("购物")) {
+                    temp= (int)(totalBudget*0.2);
                 } else if (type.equals("娱乐")) {
-                    temp= 100;
+                    temp= (int)(totalBudget*0.12);
                 } else if (type.equals("书本&其它资料")) {
-                    temp= 60;
-                } else if (type.equals("恋爱")) {
-                    temp= 140;
+                    temp= (int)(totalBudget*0.05);
                 }
             } else if (totalBudget > 1500) {
-                if (type.equals("饮食&通讯")) {
-                    temp= 800;
-                } else if (type.equals("购物")) {
-                    temp=250;
+                if (type.equals("饮食")) {
+                    temp= (int)(totalBudget*0.4);
+                    //  return 350;
+                } else if (type.equals("通讯")) {
+                    temp= (int)(totalBudget*0.07);
+                }else if (type.equals("购物")) {
+                    temp= (int)(totalBudget*0.27);
                 } else if (type.equals("娱乐")) {
-                    temp= 150;
+                    temp= (int)(totalBudget*0.2);
                 } else if (type.equals("书本&其它资料")) {
-                    temp= 100;
-                } else if (type.equals("恋爱")) {
-                    temp= 200;
+                    temp= (int)(totalBudget*0.06);
                 }
             }
         } else {
-            if (totalBudget >= 600 && totalBudget <= 1000) {
-                if (type.equals("饮食&通讯")) {
-                    temp= 290;
-                } else if (type.equals("购物")) {
-                    temp= 160;
+            if (totalBudget >= 500 && totalBudget <= 1000) {
+                if (type.equals("饮食")) {
+                    temp= (int)(totalBudget*0.5);
+                } else if (type.equals("通讯")) {
+                    temp= (int)(totalBudget*0.07);
+                }else if (type.equals("购物")) {
+                    temp= (int)(totalBudget*0.25);
                 } else if (type.equals("娱乐")) {
-                    temp= 50;
+                    temp= (int)(totalBudget*0.12);
                 } else if (type.equals("书本&其它资料")) {
-                    temp=40;
-                } else if (type.equals("恋爱")) {
-                    temp= 60;
+                    temp= (int)(totalBudget*0.06);
                 }
 
             } else if (totalBudget > 1000 && totalBudget <= 1500) {
-                if (type.equals("饮食&通讯")) {
-                    temp= 480;
-                } else if (type.equals("购物")) {
-                    temp= 300;
-                } else if (type.equals("娱乐")) {
-                    temp= 80;
-                } else if (type.equals("书本&其它资料")) {
-                    temp= 40;
-                } else if (type.equals("恋爱")) {
-                    temp= 100;
-                }
+                    if (type.equals("饮食")) {
+                        temp= (int)(totalBudget*0.48);
+                    } else if (type.equals("通讯")) {
+                        temp= (int)(totalBudget*0.06);
+                    }else if (type.equals("购物")) {
+                        temp= (int)(totalBudget*0.3);
+                    } else if (type.equals("娱乐")) {
+                        temp= (int)(totalBudget*0.12);
+                    } else if (type.equals("书本&其它资料")) {
+                        temp= (int)(totalBudget*0.04);
+                    }
             } else if (totalBudget > 1500) {
-                if (type.equals("饮食&通讯")) {
-                    temp= 650;
-                } else if (type.equals("购物")) {
-                    temp= 500;
-                } else if (type.equals("娱乐")) {
-                    temp=  100;
-                } else if (type.equals("书本&其它资料")) {
-                    temp= 100;
-                } else if (type.equals("恋爱")) {
-                    temp=  150;
-                }
+                    if (type.equals("饮食")) {
+                        temp= (int)(totalBudget*0.36);
+                    } else if (type.equals("通讯")) {
+                        temp= (int)(totalBudget*0.07);
+                    }else if (type.equals("购物")) {
+                        temp= (int)(totalBudget*0.4);
+                    } else if (type.equals("娱乐")) {
+                        temp= (int)(totalBudget*0.13);
+                    } else if (type.equals("书本&其它资料")) {
+                        temp= (int)(totalBudget*0.04);
+                    }
             }
         }
         return temp;

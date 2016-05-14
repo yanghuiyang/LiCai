@@ -109,4 +109,6 @@
     <string name="ys_type">预算类型</string>
     <string name="ys_recommendation">推荐值</string>
     <string name="ys_actually">您的设置</string>
+    <string name="jz_yusuan_yue">预算余额</string>
+
 </resources>
