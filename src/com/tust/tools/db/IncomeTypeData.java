@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import com.tust.tools.bean.IncomeType;
+import com.tust.tools.bean.User;
+
 import android.content.ContentValues;
 import java.util.ArrayList;
 import java.util.List;
@@ -85,5 +87,13 @@ public class IncomeTypeData {
     public void deleteById(int id){
         // 执行删除操作
         db.execSQL("delete from incometype where id =? ", new Object[] { id});
+    }
+
+    public void initType(User user) {
+        db.execSQL("insert into incometype values(null,?,?)", new Object[]{user.getUsername(),"家里"});
+        db.execSQL("insert into incometype values(null,?,?)", new Object[]{user.getUsername(),"兼职"});
+        db.execSQL("insert into incometype values(null,?,?)", new Object[]{user.getUsername(),"奖学金"});
+        db.execSQL("insert into incometype values(null,?,?)", new Object[]{user.getUsername(),"助学金"});
+        db.execSQL("insert into incometype values(null,?,?)", new Object[]{user.getUsername(),"其它"});
     }
 }

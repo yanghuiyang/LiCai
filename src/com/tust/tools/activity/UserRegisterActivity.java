@@ -4,6 +4,7 @@ import com.tust.tools.R;
 import com.tust.tools.bean.ExpenditureType;
 import com.tust.tools.bean.User;
 import com.tust.tools.db.ExpenditureTypeData;
+import com.tust.tools.db.IncomeTypeData;
 import com.tust.tools.db.UserData;
 
 import android.app.Activity;
@@ -28,6 +29,7 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 	private User user;
 	private ArrayAdapter<CharSequence> sprinnerSex = null;// 要使用的Adapter  
 	private ExpenditureTypeData expenditureTypeData;
+	private IncomeTypeData incomeTypeData;
 	private ExpenditureType type;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +77,10 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 						if (result != -1) {
 							//为改用户添加初始化的支出类型
 							expenditureTypeData = new ExpenditureTypeData(this);
+							incomeTypeData = new IncomeTypeData(this);
 							expenditureTypeData.initType(user);
+							incomeTypeData.initType(user);
+
 							showMsg("注册成功");
 							changeActivity(LoginActivity.class);
 						} else {

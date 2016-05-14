@@ -124,6 +124,12 @@ public class ArticleActivity extends Activity implements OnClickListener {
 
 
     public boolean onKeyDown(int kCode, KeyEvent kEvent) {
+        if(kCode == KeyEvent.KEYCODE_BACK){
+            Intent myIntent = new Intent();
+            myIntent = new Intent(ArticleActivity.this, ToolsMainActivity.class);
+            startActivity(myIntent);
+            this.finish();
+        }
         return super.onKeyDown(kCode, kEvent);
     }
 

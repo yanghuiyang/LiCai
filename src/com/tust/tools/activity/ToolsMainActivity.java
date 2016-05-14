@@ -150,30 +150,6 @@ public class ToolsMainActivity extends Activity implements OnClickListener {
         }.start();
     }
 
-    /*
-     * 退出弹出框
-     */
-    public void exitDialog() {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        String confrimStr = "";
-        String cancelStr = "";
-        builder.setTitle("是否确认退出小助手？");
-        confrimStr = "确定";
-        cancelStr = "取消";
-        builder.setPositiveButton(confrimStr, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                ToolsMainActivity.this.finish();
-                System.exit(0);
-            }
-        });
-        builder.setNeutralButton(cancelStr, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-            }
-        });
-        builder.create().show();
-    }
 
     public boolean onKeyDown(int kCode, KeyEvent kEvent) {
         return super.onKeyDown(kCode, kEvent);
