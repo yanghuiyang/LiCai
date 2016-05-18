@@ -24,11 +24,14 @@ import com.tust.tools.R;
 import com.tust.tools.bean.User;
 import com.tust.tools.db.BudgetData;
 import com.tust.tools.db.ExpenditureTypeData;
+import com.tust.tools.db.JZData;
 import com.tust.tools.db.UserData;
 import com.tust.tools.service.GetTime;
 import com.tust.tools.service.ListEditorAdapter;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -47,9 +50,9 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 	private List<String> typenames;//存放类型列表
 	private ListView listView;
 	private ListEditorAdapter mAdapter;
-
 	private List<Map<String, String>> mData = new ArrayList<Map<String,String>>();
 	private List<Map<String, Integer>> recommendation = new ArrayList<Map<String,Integer>>();//预算类型-推荐值
+	private List<Map<String, Double>> typePercent = new ArrayList<Map<String,Double>>();
 	private int yue_int = 0;
 	private Handler handler = new Handler();
 	private Runnable runnable = new Runnable() {
@@ -73,7 +76,10 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 				yue.setText(yue_int+"");
 			}
 		}
-	};
+	};//刷新预算剩余额度
+	private JZData jzData ;
+	private int n = 0;
+	private boolean flag; //判断是否使用默认推荐设置（false）或者取往月个额度算数平均值（true）
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -95,33 +101,59 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 		user = userData.getUserByUserName(userName);
 		yusuan.setText("当前本月预算：" + user.getBudget() + "");
 		et.setText(""+user.getBudget());
-
 		listView = (ListView) findViewById(R.id.list);
 		mAdapter = new ListEditorAdapter(this);
 		listView.setAdapter(mAdapter);
 		expenditureTypeData = new ExpenditureTypeData(this);
 		typenames=expenditureTypeData.getTypesByUserName(userName);//获取该用户所有支出类型
-		int n = 0;
-		for(int i=0;i<typenames.size();i++){
-			Map<String, String> budget = new HashMap<String, String>();//实际预算值
-			Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
-			int temp = 0;
-			temp = budgetData.getUserOneBudget(userName,typenames.get(i), GetTime.getYear(),GetTime.getMonth());
-			n += temp;
-			budget.put(typenames.get(i),""+temp);
-			re.put(typenames.get(i),budgetData.getTypeBudget(user,user.getBudget(),typenames.get(i)));
-			recommendation.add(re);
-			mData.add(budget);
+		jzData = new JZData(this);
+
+		setFlag();
+		initData();
+		editTextWatcher();
+	}
+	private void initData() {
+		if(flag == false) {
+			for (int i = 0; i < typenames.size(); i++) {
+				Map<String, String> budget = new HashMap<String, String>();//实际预算值
+				Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
+				int temp = 0;
+				temp = budgetData.getUserOneBudget(userName, typenames.get(i), GetTime.getYear(), GetTime.getMonth());
+				n += temp;
+				budget.put(typenames.get(i), "" + temp);
+				re.put(typenames.get(i), budgetData.getTypeBudget(user, user.getBudget(), typenames.get(i)));
+				recommendation.add(re);
+				mData.add(budget);
+			}
+		}else{//根据平均值
+			for (int i = 0; i < typenames.size(); i++) {
+				Map<String, Double> per = new HashMap<String, Double>();//
+
+
+			}
 		}
 		mAdapter.setData(mData,recommendation);
+
 		yue_int = user.getBudget() - n; //第一次
 		yue.setText(yue_int+"");
-		editTextWatcher();
-
 	}
-/*
- 	总预算watcher 输入月度预算 实时刷新推荐值列表
- */
+
+	private void setFlag() {
+	Calendar c = Calendar.getInstance();
+		c.add(Calendar.MONTH,-4); //前4个月
+		int month =Calendar.YEAR;
+		int year=Calendar.MONTH;
+		int count = 0;
+		count = jzData.getMonthSpend(userName,year,month);
+		if (0 == count){
+			flag = false;
+		}else {
+			flag = true;
+		}
+	}
+	/*
+         总预算watcher 输入月度预算 实时刷新推荐值列表
+     */
 	private void editTextWatcher() {
 		et.addTextChangedListener(new TextWatcher() {
 			@Override
@@ -182,6 +214,9 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 				showMsg("各分类预算超过了总预算哟");
 			}else {
 				user.setBudget(num);
+				Calendar now = Calendar.getInstance();
+				user.setYm((now.get(Calendar.YEAR)+"")+(now.get(Calendar.MONTH) + 1) + "");
+
 				userData.UpdateUserInfo(user);
 				budgetData.SaveOrUpdateUserBudget(mData, userName);//注意类型 string 和int转换
 				yusuan.setText("当前本月预算：" + user.getBudget() + "");
@@ -196,30 +231,6 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 			this.finish();
 			break;
 		}
-	}
-
-
-	//利用输入预算时 要按返回键盘收起这事件刷新预算额度
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
-//			WindowManager.LayoutParams params = getWindow().getAttributes();
-//			// 判断隐藏软键盘是否弹出
-//			if (params.softInputMode == WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE) {
-//				// 隐藏软键盘
-//				getWindow().setSoftInputMode(
-//						WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-//				params.softInputMode = WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN;
-//				Integer count=0;
-//				for (Map<String, Integer> m : recommendation) {
-//					for (String k : m.keySet()) {
-//							count += Integer.valueOf(m.get(k));
-//						}
-//					}
-//				yue_int = Integer.parseInt(et.getText().toString()) - count; //
-//				yue.setText(yue_int+"");
-
-		//	}
-		return super.onKeyDown(keyCode,event);
 	}
 
 	@Override

@@ -42,6 +42,18 @@ public class JZData {
         return total;
 
     }
+    /*
+   * 获取某月支出总额
+   * */
+    public int getMonthSpend(String userName,Integer year,Integer month){
+        int total=0;
+        Cursor cursor = db.rawQuery("select SUM(ZC_COUNT) from zhichu where ZC_USER=? And ZC_YEAR = ? and ZC_MONTH=?",
+                new String[]{String.valueOf(userName), String.valueOf(year), String.valueOf(month) } );
+        while (cursor.moveToNext()) {// 访问Cursor中的最后一条数据
+            total = cursor.getInt(0);
+        }
+        return total;
+    }
 
     /*
      * 获取支出表中的所有数据
@@ -96,18 +108,7 @@ public class JZData {
     	cursor.close();
     	return shourulist;
     }
-    
-    /*
-     * 判断某条是否存在
-     * */
-//    public boolean haveZhiChuInfo(int id){
-//    	boolean flag=false;
-//    	Cursor cursor=db.query("zhichu", null,"ID ='"+id+"'", null, null, null, null);
-//    	flag=cursor.moveToFirst();
-//    	cursor.close();
-//    	return flag;
-//    }
-//
+
     /*
      * 更新支出表的记录
      * */

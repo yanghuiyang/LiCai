@@ -47,15 +47,14 @@ public class DBOpenHelper extends SQLiteOpenHelper {
                 "(" + "ID" + " integer primary key," + JZshouru.SR_ITEM + " varchar," + JZshouru.SR_YEAR + " Integer," + JZshouru.SR_MONTH + " Integer," + JZshouru.SR_WEEK + " Integer," + JZshouru.SR_DAY + " Integer," + JZshouru.SR_TIME + " varchar," + JZshouru.SR_COUNT + " REAL," + JZshouru.SR_BEIZHU + " varchar," + JZshouru.SR_USER + " varchar" +");");
 
         db.execSQL("CREATE TABLE IF NOT EXISTS USER"
-                + "(username VARCHAR(20) PRIMARY KEY , pwd VARCHAR(20) not null, sex INTEGER, tel VARCHAR,budget INTEGER)");
+                + "(username VARCHAR(20) PRIMARY KEY , pwd VARCHAR(20) not null, sex INTEGER, tel VARCHAR,budget INTEGER,ym varchar, mxjj int DEFAULT 0)");
         //创建预算表
 //       db.execSQL("CREATE TABLE IF NOT EXISTS budget "
 //               + "(id INTEGER PRIMARY KEY,username varchar not null ,typename varchar(50),year INTEGER,month INTEGER,money INTEGER)");
-//        db.execSQL("CREATE TABLE IF NOT EXISTS budget "
-//                + "(username varchar not null ,typename varchar(50) not null,year int not null,month int not null,money int，" +
-//                " primary key(username,typename,year,month))");
+
                db.execSQL("CREATE TABLE IF NOT EXISTS budget "
                + "(username varchar not null ,typename varchar(50),year int,month int,money int DEFAULT 0,primary key (username,typename,year,month))");
+
     }
 
 

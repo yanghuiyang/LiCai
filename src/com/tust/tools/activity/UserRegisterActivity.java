@@ -20,6 +20,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.Calendar;
+
 public class UserRegisterActivity extends Activity implements OnClickListener{
 	private Button btn_register;
 	private EditText account, pwd,tel;
@@ -71,6 +73,8 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 						user.setSex(sex);
 						user.setTel(tel.getText().toString());
 						user.setBudget(1200);//设置默认月预算
+						Calendar now = Calendar.getInstance();
+						user.setYm((now.get(Calendar.YEAR)+"")+(now.get(Calendar.MONTH) + 1) + "");
 						//String a = user.getUsername()+"-"+user.getPwd();
 						//待做数据校验 如重复用户等情况
 						long result = userData.SaveUser(user);
@@ -80,7 +84,6 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 							incomeTypeData = new IncomeTypeData(this);
 							expenditureTypeData.initType(user);
 							incomeTypeData.initType(user);
-
 							showMsg("注册成功");
 							changeActivity(LoginActivity.class);
 						} else {

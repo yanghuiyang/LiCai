@@ -60,6 +60,8 @@ public class UserData {
 		user.setSex(cursor.getInt(cursor.getColumnIndex("sex")));
 		user.setTel(cursor.getString(cursor.getColumnIndex("tel")));
 		user.setBudget(cursor.getInt(cursor.getColumnIndex("budget")));
+		user.setMxjj(cursor.getInt(cursor.getColumnIndex("mxjj")));
+		user.setYm(cursor.getString(cursor.getColumnIndex("ym")));
 		return user;
 	}
 	    /*
@@ -72,6 +74,8 @@ public class UserData {
 	        values.put("sex", user.getSex());
 	        values.put("tel", user.getTel());
 			values.put("budget", user.getBudget());
+			values.put("mxjj",user.getMxjj());
+			values.put("ym",user.getYm());
 	        int idupdate= db.update("User", values, "username ='"+user.getUsername()+"'", null);
 	        this.close();
 	        return idupdate;
@@ -87,20 +91,14 @@ public class UserData {
 	        values.put("sex", user.getSex());
 	        values.put("tel", user.getTel());
 			values.put("budget",user.getBudget());
+			values.put("mxjj",user.getMxjj());
+			values.put("ym",user.getYm());
 	        Long uid = db.insert("USER",null,values);
 	        this.close();
 	        return uid;
 	    }
 	    
-	    
-//	    /*
-//	     * 删除用户表的记录
-//	     * */
-//	    public int DelUser(int id){
-//	        int iddel=  db.delete("User", "ID ="+id, null);
-//	        this.close();
-//	        return iddel;
-//	    }
+
 	    
 	    /*
 	     * 删除所有记录

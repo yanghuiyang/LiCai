@@ -7,6 +7,24 @@ public class User {
 	private int sex; //性别 男 1 女 2
 	private String tel;//电话号码
 	private int budget;//预算
+	private String ym;
+	private int mxjj;
+
+	public String getYm() {
+		return ym;
+	}
+
+	public void setYm(String ym) {
+		this.ym = ym;
+	}
+
+	public int getMxjj() {
+		return mxjj;
+	}
+
+	public void setMxjj(int mxjj) {
+		this.mxjj = mxjj;
+	}
 
 	public int getBudget() {
 		return budget;
