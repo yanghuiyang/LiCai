@@ -78,12 +78,15 @@ public class LoginActivity extends Activity implements OnClickListener{
 						if (count < user.getBudget()){
 							//弹出对话框“恭喜你！这个月有结余哟~这笔钱放在哪里呢？ 存入梦想基 转入余额宝
 							Dialog dialog = null;
+							String s ;
+							s = (user.getBudget()-count)+"";
+							s = "恭喜你！这个月有结余:"+s+" 哟~这笔钱放在哪里呢？" ;
 							AlertDialog.Builder customBuilder = new AlertDialog.Builder(
 									LoginActivity.this);
 							customBuilder
 									.setTitle("提示")
 									// 创建标题
-									.setMessage("恭喜你！这个月有结余哟~这笔钱放在哪里呢？")
+									.setMessage(s)
 									.setPositiveButton("存入梦想基金", new DialogInterface.OnClickListener() {
 										public void onClick(DialogInterface dialog, int which) {
 											user.setMxjj(user.getMxjj()+(user.getBudget()-count));

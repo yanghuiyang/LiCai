@@ -37,7 +37,7 @@ import com.tust.tools.service.JZPaintViewZandS;
 
 public class JZMainActivity extends Activity implements OnClickListener {
     // 支出界面的TextView
-    TextView zhichu_week, zhichu_month, zhichu_shouru_month, yusuan_month, yusuanyue_month;
+    TextView zhichu_week, zhichu_month, zhichu_shouru_month, yusuan_month, yusuanyue_month,mxjj;
     // 收入界面的TextView
     TextView shouru_year, shouru_month, shouru_day;
     // 顶部framelayout支出和收入
@@ -72,6 +72,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
         userName = preferences.getString("userName", "");
         userData = new UserData(this);
         user = userData.getUserByUserName(userName);
+        mxjj.setText(user.getMxjj()+"");
     }
 
     @Override
@@ -111,6 +112,9 @@ public class JZMainActivity extends Activity implements OnClickListener {
         zhichu_shouru_month = (TextView) findViewById(R.id.jz_main_zhichu_shouru_text);
         yusuan_month = (TextView) findViewById(R.id.jz_main_zhichu_yusuan_text);
         yusuanyue_month = (TextView) findViewById(R.id.jz_main_zhichu_yusuanyue_text);
+
+        mxjj = (TextView) findViewById(R.id.mxjj);
+
         shouru_year = (TextView) findViewById(R.id.jz_main_shouru_year_text);
         shouru_month = (TextView) findViewById(R.id.jz_main_shouru_month_text);
         shouru_day = (TextView) findViewById(R.id.jz_main_shouru_day_text);
