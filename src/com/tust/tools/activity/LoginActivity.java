@@ -84,13 +84,13 @@ public class LoginActivity extends Activity implements OnClickListener{
 									.setTitle("提示")
 									// 创建标题
 									.setMessage("恭喜你！这个月有结余哟~这笔钱放在哪里呢？")
-									.setPositiveButton("存入梦想基", new DialogInterface.OnClickListener() {
+									.setPositiveButton("存入梦想基金", new DialogInterface.OnClickListener() {
 										public void onClick(DialogInterface dialog, int which) {
 											user.setMxjj(user.getMxjj()+(user.getBudget()-count));
 											user.setBudget(1200);
 											user.setYm((now.get(Calendar.YEAR)+"")+(now.get(Calendar.MONTH) + 1) + "");
 											userData.UpdateUserInfo(user);
-											Toast.makeText(LoginActivity.this, "已存入梦想基！",
+											Toast.makeText(LoginActivity.this, "已存入梦想基金！",
 													Toast.LENGTH_LONG).show();
 
 											dialog.dismiss();
