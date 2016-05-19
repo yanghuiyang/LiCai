@@ -46,7 +46,8 @@ public class BudgetData {
     }
 
     /**
-     * 获取某年某月预算值
+     * 获取某年某月某类型预算值
+     *
      */
     public int getUserOneBudget(String userName, String typeName, Integer year, Integer month) {
         Cursor cursor = db.rawQuery("select money from budget where username=? and typename =? and year = ? and month =?",
@@ -64,88 +65,6 @@ public class BudgetData {
     public Integer getTypeBudget(User user,int budget, String type) {
         int temp = 0;
         int totalBudget =  budget;
-//        if (user.getSex() == 1) {
-//            if (totalBudget >= 600 && totalBudget <= 1000) {
-//                if (type.equals("饮食&通讯")) {
-//                    temp=350;
-//                  //  return 350;
-//                } else if (type.equals("购物")) {
-//                    temp= 50;
-//                } else if (type.equals("娱乐")) {
-//                    temp= 50;
-//                } else if (type.equals("书本&其它资料")) {
-//                    temp= 50;
-//                } else if (type.equals("恋爱")) {
-//                    temp= 100;
-//                }
-//
-//            } else if (totalBudget > 1000 && totalBudget <= 1500) {
-//                if (type.equals("饮食&通讯")) {
-//                    temp= 600;
-//                } else if (type.equals("购物")) {
-//                    temp= 100;
-//                } else if (type.equals("娱乐")) {
-//                    temp= 100;
-//                } else if (type.equals("书本&其它资料")) {
-//                    temp= 60;
-//                } else if (type.equals("恋爱")) {
-//                    temp= 140;
-//                }
-//            } else if (totalBudget > 1500) {
-//                if (type.equals("饮食&通讯")) {
-//                    temp= 800;
-//                } else if (type.equals("购物")) {
-//                    temp=250;
-//                } else if (type.equals("娱乐")) {
-//                    temp= 150;
-//                } else if (type.equals("书本&其它资料")) {
-//                    temp= 100;
-//                } else if (type.equals("恋爱")) {
-//                    temp= 200;
-//                }
-//            }
-//        } else {
-//            if (totalBudget >= 600 && totalBudget <= 1000) {
-//                if (type.equals("饮食&通讯")) {
-//                    temp= 290;
-//                } else if (type.equals("购物")) {
-//                    temp= 160;
-//                } else if (type.equals("娱乐")) {
-//                    temp= 50;
-//                } else if (type.equals("书本&其它资料")) {
-//                    temp=40;
-//                } else if (type.equals("恋爱")) {
-//                    temp= 60;
-//                }
-//
-//            } else if (totalBudget > 1000 && totalBudget <= 1500) {
-//                if (type.equals("饮食&通讯")) {
-//                    temp= 480;
-//                } else if (type.equals("购物")) {
-//                    temp= 300;
-//                } else if (type.equals("娱乐")) {
-//                    temp= 80;
-//                } else if (type.equals("书本&其它资料")) {
-//                    temp= 40;
-//                } else if (type.equals("恋爱")) {
-//                    temp= 100;
-//                }
-//            } else if (totalBudget > 1500) {
-//                if (type.equals("饮食&通讯")) {
-//                    temp= 650;
-//                } else if (type.equals("购物")) {
-//                    temp= 500;
-//                } else if (type.equals("娱乐")) {
-//                    temp=  100;
-//                } else if (type.equals("书本&其它资料")) {
-//                    temp= 100;
-//                } else if (type.equals("恋爱")) {
-//                    temp=  150;
-//                }
-//            }
-//        }
-
-
         if (user.getSex() == 1) { //man
             if (totalBudget >= 500 && totalBudget <= 1000) {
                 if (type.equals("饮食")) {

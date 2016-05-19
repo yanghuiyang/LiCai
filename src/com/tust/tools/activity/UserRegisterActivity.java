@@ -20,7 +20,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class UserRegisterActivity extends Activity implements OnClickListener{
 	private Button btn_register;
@@ -48,8 +50,9 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 		sex_spinner = (Spinner) this.findViewById(R.id.spinner_sex);
 		sex_spinner.setPrompt("您的性别是:");// 设置Prompt  
 		sprinnerSex = ArrayAdapter.createFromResource(this, R.array.sprinnerSex,android.R.layout.simple_spinner_item);// 实例化ArrayAdapter  
-		sex_spinner.setAdapter(sprinnerSex);// 设置显示信息  
-		    
+		sex_spinner.setAdapter(sprinnerSex);// 设置显示信息
+
+
 	}
 	@Override
 	public void onClick(View v) {
@@ -58,15 +61,19 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 		    case R.id.btn_register: //注册
 				if(!isMobileNO(tel.getText().toString())){
 					showMsg("请输入合法的手机号码");
-				}else {
+//				}else if(account.toString().equals("")) {
+				}else if(TextUtils.isEmpty(account.getText())){
+					showMsg("账号不能为空，请输入账号");
+//				}else if(pwd.toString().equals("")){
+				}else if(TextUtils.isEmpty(pwd.getText())){
+					showMsg("密码不能为空，请输入密码");
+				}else
+				{
 					if (sex_spinner.getSelectedItem().toString().equals("男")) {
 						sex = 1;
 					} else {
 						sex = 2;
 					}
-					if (account.toString().equals("") || pwd.toString().equals("")) {
-
-					} else {
 						user = new User();
 						user.setUsername(account.getText().toString());
 						user.setPwd(pwd.getText().toString());
@@ -75,8 +82,6 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 						user.setBudget(1200);//设置默认月预算
 						Calendar now = Calendar.getInstance();
 						user.setYm((now.get(Calendar.YEAR)+"")+(now.get(Calendar.MONTH) + 1) + "");
-						//String a = user.getUsername()+"-"+user.getPwd();
-						//待做数据校验 如重复用户等情况
 						long result = userData.SaveUser(user);
 						if (result != -1) {
 							//为改用户添加初始化的支出类型
@@ -84,19 +89,17 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 							incomeTypeData = new IncomeTypeData(this);
 							expenditureTypeData.initType(user);
 							incomeTypeData.initType(user);
-							showMsg("注册成功");
+							showMsg("注册成功,请登录");
 							changeActivity(LoginActivity.class);
 						} else {
 							showMsg("注册失败");
 						}
-					}
+
 				}
 		    	break;
-
 		    default:
 			      break;
 			    }
-
 		
 	}
 

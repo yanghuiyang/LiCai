@@ -137,11 +137,5 @@
 
 	<RelativeLayout android:id="@+id/RelativeLayout01"
 		android:background="@drawable/bottom" android:layout_width="fill_parent"
-		android:layout_height="44.0dip">
-		<ImageButton android:id="@+id/login_option"
-			android:background="@drawable/option" android:clickable="true"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"
-			android:layout_marginLeft="13.0dip" android:layout_marginTop="2.0dip"
-			android:layout_centerVertical="true" />
-	</RelativeLayout>
+		android:layout_height="44.0dip"></RelativeLayout>
 </LinearLayout>

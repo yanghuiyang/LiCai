@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tust.tools.R;
+import com.tust.tools.bean.JZzhichu;
 import com.tust.tools.bean.User;
 import com.tust.tools.db.BudgetData;
 import com.tust.tools.db.ExpenditureTypeData;
@@ -149,8 +150,25 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 			flag = false;
 		}else {
 			flag = true;
+
 		}
 	}
+
+	private double getTypePercent(String userName,String type) {
+		double p = 0;
+		String selectionMonth = JZzhichu.ZC_USER + "='" + userName + "'"  +" and " + JZzhichu.ZC_ITEM + "=" + type + " and (" + JZzhichu.ZC_YEAR + "!=" + GetTime.getYear() + " AND " + JZzhichu.ZC_MONTH + "!=" + GetTime.getMonth() + ")";//排除当月
+		List<JZzhichu> zhichuList = jzData.GetZhiChuList(selectionMonth);
+		if (zhichuList != null) {
+			int typeCount = 0;
+			for (JZzhichu zhichu : zhichuList) {
+//				typeCount += zhichu.getZc_Count();
+
+			}
+
+		}
+		return p;
+	}
+
 	/*
          总预算watcher 输入月度预算 实时刷新推荐值列表
      */
