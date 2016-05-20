@@ -54,6 +54,13 @@ public class IncomeTypeData {
         this.close();
         return uid;
     }
+    public boolean haveIncomeType(String username, String type){
+        boolean flag=false;
+        Cursor cursor=db.query("incometype", null,"username ='"+username+"' AND typeName ='"+type+"'", null, null, null, null);
+        flag=cursor.moveToFirst();
+        cursor.close();
+        return flag;
+    }
     /**
      * 获取类型 随机 仅用于添加记账明细时 设置默认类型
      * param id

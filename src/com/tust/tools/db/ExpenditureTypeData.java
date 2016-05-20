@@ -41,6 +41,13 @@ public class ExpenditureTypeData {
         return idupdate;
     }
 
+    public boolean haveExpenditureType(String username, String type){
+        boolean flag=false;
+        Cursor cursor=db.query("expendituretype", null,"username ='"+username+"' AND typeName ='"+type+"'", null, null, null, null);
+        flag=cursor.moveToFirst();
+        cursor.close();
+        return flag;
+    }
     /*
      * 添加支出类型
      * */
@@ -79,24 +86,7 @@ public class ExpenditureTypeData {
         return lisString;
 
     }
-    /**
-     * 删除收入类型 多选
-     * @param  ids
-     */
-    public void delete(Integer... ids){
-        if (ids.length > 0)// 判断是否存在要删除的id
-        {
-            StringBuffer sb = new StringBuffer();// 创建StringBuffer对象
-            for (int i = 0; i < ids.length-1; i++)// 遍历要删除的id集合
-            {
-                sb.append('?').append(',');// 将删除条件添加到StringBuffer对象中
-            }
-            sb.deleteCharAt(sb.length() - 1);// 去掉最后一个“,“字符
-            // 执行删除
-            db.execSQL("delete from expendituretype where id in (?) and no in (" + sb + ")",
-                    (Object[]) ids);
-        }
-    }
+
 
     public void deleteByName(String username,String typename){
         // 执行删除

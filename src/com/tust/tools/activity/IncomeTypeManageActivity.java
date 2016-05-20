@@ -73,24 +73,29 @@ public class IncomeTypeManageActivity extends Activity implements OnClickListene
     private void addtype() {
         final EditText inputServer = new EditText(this);
         inputServer.setFocusable(true);
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("添加类型").setView(inputServer)
-                .setNegativeButton("取消", null);
-        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-                inputStr = inputServer.getText().toString();
-                if (inputStr.trim().equals("")) {
-                    Toast.makeText(getApplicationContext(), "输入内容不能为空！", Toast.LENGTH_LONG).show();
-                } else {
-                    type = new IncomeType();
-                    type.setUserName(userName);
-                    type.setTypeName(inputStr);
-                    incomeTypeData.SaveIncomeType(type);
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("添加类型").setView(inputServer)
+                    .setNegativeButton("取消", null);
+            builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    inputStr = inputServer.getText().toString();
+                    boolean flag = incomeTypeData.haveIncomeType(userName,inputStr);
+                    if (inputStr.trim().equals("")) {
+                        Toast.makeText(getApplicationContext(), "输入内容不能为空！", Toast.LENGTH_LONG).show();
+                    }else if(flag){
+                        Toast.makeText(getApplicationContext(), "收入类型不能重复哦！", Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        type = new IncomeType();
+                        type.setUserName(userName);
+                        type.setTypeName(inputStr);
+                        incomeTypeData.SaveIncomeType(type);
+                    }
+                    refresh();
                 }
-                refresh();
-            }
-        });
-        builder.show();
+            });
+            builder.show();
 
     }
 
