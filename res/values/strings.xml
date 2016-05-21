@@ -91,7 +91,8 @@
     <string name="save">保存</string>
     <string name="login">登 录</string> 
     <string name="register">注册</string>
-    <string name="strInputPwdHint">输入密码</string>  
+    <string name="strInputPwdHint">输入密码</string>
+    <string name="strPswConfirmLabel">确认密码</string>
     <string name="sex">性别</string>
     <string name="tel">手机</string>
     <!-- 登陆使用-end -->

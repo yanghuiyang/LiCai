@@ -26,7 +26,7 @@ import java.util.Date;
 
 public class UserRegisterActivity extends Activity implements OnClickListener{
 	private Button btn_register;
-	private EditText account, pwd,tel;
+	private EditText account, pwd,pwd_confirm,tel;
 	private Spinner sex_spinner = null;//性别下拉框
 	private int sex;
 	private UserData userData;
@@ -44,6 +44,8 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 		btn_register.setOnClickListener(this);
 		account = (EditText) this.findViewById(R.id.edit_username);
 		pwd = (EditText) this.findViewById(R.id.edit_pwd);
+		pwd_confirm=(EditText) this.findViewById(R.id.pwd_confirm);
+
 		tel = (EditText) this.findViewById(R.id.edit_tel);
 		userData = new UserData(this);
 		//性别下拉
@@ -67,6 +69,8 @@ public class UserRegisterActivity extends Activity implements OnClickListener{
 //				}else if(pwd.toString().equals("")){
 				}else if(TextUtils.isEmpty(pwd.getText())){
 					showMsg("密码不能为空，请输入密码");
+				}else if(!pwd.getText().toString().equals(pwd_confirm.getText().toString())){
+					showMsg("密码前后不一致，请重新输入");
 				}else
 				{
 					if (sex_spinner.getSelectedItem().toString().equals("男")) {

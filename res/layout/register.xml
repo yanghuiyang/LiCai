@@ -87,16 +87,15 @@
  			    android:id="@+id/edit_tel"
  			    android:layout_width="wrap_content"
  			    android:layout_height="wrap_content"
- 			    android:layout_alignLeft="@+id/edit_pwd"
- 			    android:layout_alignRight="@+id/edit_pwd"
- 			    android:layout_below="@+id/edit_pwd"
- 			    android:layout_marginTop="16dp"
- 			    android:background="@drawable/qq_edit_login"
+				android:background="@drawable/qq_edit_login"
  			    android:ems="10"
  			    android:inputType="text"
  			    android:maxLength="16"
  			    android:paddingLeft="45.0sp"
- 			    android:saveEnabled="true" >
+ 			    android:saveEnabled="true"
+				android:layout_below="@+id/pwd_confirm"
+				android:layout_alignLeft="@+id/pwd_confirm"
+				android:layout_alignRight="@+id/edit_pwd">
 
  			    <requestFocus />
  			</EditText>
@@ -118,14 +117,14 @@
  			    android:id="@+id/TextView03"
  			    android:layout_width="wrap_content"
  			    android:layout_height="wrap_content"
- 			    android:layout_alignLeft="@+id/edit_tel"
- 			    android:layout_below="@+id/edit_tel"
- 			    android:layout_marginTop="18dp"
- 			    android:gravity="center_vertical"
+				android:gravity="center_vertical"
  			    android:paddingLeft="7.0sp"
  			    android:text="@string/sex"
  			    android:textColor="#ff3f3f3f"
- 			    android:textSize="16.0dip" />
+ 			    android:textSize="16.0dip"
+				android:layout_marginTop="25dp"
+				android:layout_below="@+id/edit_tel"
+				android:layout_alignLeft="@+id/edit_tel" />
 
 
 
@@ -140,12 +139,39 @@
 			<Button
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="保存"
+				android:text="完成注册"
 				android:id="@+id/btn_register"
+				android:layout_marginTop="46dp"
 				android:layout_below="@+id/spinner_sex"
-				android:layout_alignParentLeft="true"
-				android:layout_marginTop="75dp"
-				android:layout_alignRight="@+id/edit_tel" />
+				android:layout_alignParentRight="true"
+				android:layout_alignLeft="@+id/TextView03" />
+
+			<EditText
+				android:id="@+id/pwd_confirm"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/qq_edit_login"
+				android:inputType="textPassword"
+				android:maxLength="16"
+				android:paddingLeft="45.0sp"
+				android:saveEnabled="true"
+				android:layout_below="@+id/edit_pwd"
+				android:layout_alignRight="@+id/edit_username"
+				android:layout_alignLeft="@+id/edit_pwd" />
+
+			<TextView
+				android:id="@+id/textView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:paddingLeft="7.0sp"
+				android:text="@string/strPswConfirmLabel"
+				android:textColor="#ff3f3f3f"
+				android:textSize="16.0dip"
+				android:layout_below="@+id/edit_pwd"
+				android:layout_above="@+id/edit_tel"
+				android:layout_alignRight="@+id/TextView02"
+				android:layout_alignLeft="@+id/edit_pwd" />
 
 		</RelativeLayout>
 
