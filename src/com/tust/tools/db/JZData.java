@@ -36,7 +36,7 @@ public class JZData {
         int total=0;
         Cursor cursor = db.rawQuery("select ZC_COUNT from zhichu where ZC_USER=? and ZC_ITEM=? And ZC_YEAR = ? and ZC_MONTH=?",
                 new String[]{String.valueOf(userName),String.valueOf(typeName), String.valueOf(year), String.valueOf(month) } );
-        while (cursor.moveToNext()) {// 访问Cursor中的最后一条数据
+        while (cursor.moveToNext()) {
             total +=Integer.parseInt(cursor.getString(cursor.getColumnIndex("ZC_COUNT")));
         }
         return total;
@@ -47,10 +47,12 @@ public class JZData {
    * */
     public int getMonthSpend(String userName,Integer year,Integer month){
         int total=0;
-        Cursor cursor = db.rawQuery("select SUM(ZC_COUNT) from zhichu where ZC_USER=? And ZC_YEAR = ? and ZC_MONTH=?",
+     //   Cursor cursor = db.rawQuery("select SUM(ZC_COUNT) from zhichu where ZC_USER=? And ZC_YEAR = ? and ZC_MONTH=?",
+        Cursor cursor = db.rawQuery("select ZC_COUNT from zhichu where ZC_USER=? And ZC_YEAR = ? AND ZC_MONTH=?",
                 new String[]{String.valueOf(userName), String.valueOf(year), String.valueOf(month) } );
-        while (cursor.moveToNext()) {// 访问Cursor中的最后一条数据
-            total = cursor.getInt(0);
+        while (cursor.moveToNext()) {
+//            total = cursor.getInt(0);
+            total +=Integer.parseInt(cursor.getString(cursor.getColumnIndex("ZC_COUNT")));
         }
         return total;
     }

@@ -39,7 +39,6 @@ import java.util.List;
 import java.util.Map;
 
 public class JZYuSuanActivity extends Activity implements OnClickListener {
-
 	private EditText et;
 	private TextView yusuan,yue;
 	private Button saveBt, cancelBt;
@@ -51,9 +50,10 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 	private List<String> typenames;//存放类型列表
 	private ListView listView;
 	private ListEditorAdapter mAdapter;
-	private List<Map<String, String>> mData = new ArrayList<Map<String,String>>();
+	private List<Map<String, String>> mData = new ArrayList<Map<String,String>>();//预算暖类型-实际分配的值
 	private List<Map<String, Integer>> recommendation = new ArrayList<Map<String,Integer>>();//预算类型-推荐值
-	private List<Map<String, Double>> typePercent = new ArrayList<Map<String,Double>>();
+//	private List<Map<String, Double>> typePercent = new ArrayList<Map<String,Double>>();
+	private Map<String, Double> typePercent = new HashMap<String, Double>();
 	private int yue_int = 0;
 	private Handler handler = new Handler();
 	private Runnable runnable = new Runnable() {
@@ -93,7 +93,7 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 		yusuan = (TextView) this.findViewById(R.id.jz_yusuan_txt);
 		yue = (TextView) this.findViewById(R.id.jz_yusuan_yue_text);//预算余额
 		//获取当前登陆用户
-		handler.postDelayed(runnable, 1000);
+		handler.postDelayed(runnable, 1000);//定时刷新更新剩余额度
 		SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
 		userName = preferences.getString("userName", "");
 		user = new User();
@@ -103,18 +103,18 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 		yusuan.setText("当前本月预算：" + user.getBudget() + "");
 		et.setText(""+user.getBudget());
 		listView = (ListView) findViewById(R.id.list);
-		mAdapter = new ListEditorAdapter(this);
+		mAdapter = new ListEditorAdapter(this);//ListEditorAdapter 预算界面 listview封装
 		listView.setAdapter(mAdapter);
 		expenditureTypeData = new ExpenditureTypeData(this);
 		typenames=expenditureTypeData.getTypesByUserName(userName);//获取该用户所有支出类型
 		jzData = new JZData(this);
 
-		setFlag();
-		initData();
-		editTextWatcher();
+		setFlag();////设置标志 推荐预算值是自己的默认算法还是根据过去支出情况
+		initData();//初始化界面数据
+		editTextWatcher();//设置textwathcer 输入预算值时更改推荐值
 	}
+	//第一次进入 初始化数据
 	private void initData() {
-		if(flag == false) {
 			for (int i = 0; i < typenames.size(); i++) {
 				Map<String, String> budget = new HashMap<String, String>();//实际预算值
 				Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
@@ -122,52 +122,60 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 				temp = budgetData.getUserOneBudget(userName, typenames.get(i), GetTime.getYear(), GetTime.getMonth());
 				n += temp;
 				budget.put(typenames.get(i), "" + temp);
-				re.put(typenames.get(i), budgetData.getTypeBudget(user, user.getBudget(), typenames.get(i)));
+				if (flag == false){
+					re.put(typenames.get(i), budgetData.getTypeBudget(user, user.getBudget(), typenames.get(i)));
+				}else{
+					re.put(typenames.get(i) ,(int)(user.getBudget()*typePercent.get(typenames.get(i))));
+				}
 				recommendation.add(re);
 				mData.add(budget);
 			}
-		}else{//根据平均值
-			for (int i = 0; i < typenames.size(); i++) {
-				Map<String, Double> per = new HashMap<String, Double>();//
-
-
-			}
-		}
 		mAdapter.setData(mData,recommendation);
-
 		yue_int = user.getBudget() - n; //第一次
 		yue.setText(yue_int+"");
 	}
-
+//设置标志 推荐预算值是自己的默认算法还是根据过去支出情况 判断依据前几个月有记账数据是flag = true
 	private void setFlag() {
 	Calendar c = Calendar.getInstance();
-		c.add(Calendar.MONTH,-4); //前4个月
-		int month =Calendar.YEAR;
-		int year=Calendar.MONTH;
+		c.add(Calendar.MONTH,-4); //前4个月 日历 JANUARY，它为 0
+//		int year =Calendar.YEAR;
+//		int month=Calendar.MONTH+1;
 		int count = 0;
-		count = jzData.getMonthSpend(userName,year,month);
+//		count = jzData.getMonthSpend(userName,year,month);
+		count = jzData.getMonthSpend(userName,c.get(Calendar.YEAR),c.get(Calendar.MONTH)+1);
 		if (0 == count){
 			flag = false;
 		}else {
 			flag = true;
-
+			getTypesPercent();
 		}
 	}
-
-	private double getTypePercent(String userName,String type) {
-		double p = 0;
-		String selectionMonth = JZzhichu.ZC_USER + "='" + userName + "'"  +" and " + JZzhichu.ZC_ITEM + "=" + type + " and (" + JZzhichu.ZC_YEAR + "!=" + GetTime.getYear() + " AND " + JZzhichu.ZC_MONTH + "!=" + GetTime.getMonth() + ")";//排除当月
-		List<JZzhichu> zhichuList = jzData.GetZhiChuList(selectionMonth);
-		if (zhichuList != null) {
-			int typeCount = 0;
-			for (JZzhichu zhichu : zhichuList) {
-//				typeCount += zhichu.getZc_Count();
-
+	//获取个类型的近几个月的所占支出总额的百分比 用来计算推荐预算值
+	private void getTypesPercent() {
+		for (int i = 0; i < typenames.size(); i++) {
+			Double temp = 0.00;
+//			Map<String, Double> per = new HashMap<String, Double>();
+			for (int j= 1 ;j<4;j++){
+				double a , b = 0.00; //a 分母 每月支出总额 b 分子 每月某类型支出总额 必须是double 如果是int 整数相除还是为整数
+				Calendar c = Calendar.getInstance();
+				c.add(Calendar.MONTH,-j);
+				int year =c.get(Calendar.YEAR);
+				int month=c.get(Calendar.MONTH)+1;
+				a = jzData.getMonthSpend(userName,year,month);//获得该用户某年某月支出总额
+				String test = typenames.get(i);
+				b = jzData.getTypeMonthSpend(userName,typenames.get(i),year,month);//获得某用户某年某月某支出类型的支出总额
+				if (a != 0){
+					temp += b/a;
+				}
 			}
+			temp = temp/3;
+			typePercent.put(typenames.get(i),temp);
 
+//			per.put(typenames.get(i),temp);
+//			typePercent.add(per);
 		}
-		return p;
 	}
+
 
 	/*
          总预算watcher 输入月度预算 实时刷新推荐值列表
@@ -195,7 +203,11 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 						int temp = 0;
 						temp = budgetData.getUserOneBudget(userName, typenames.get(i), GetTime.getYear(), GetTime.getMonth());;
 						budget.put(typenames.get(i), "" + temp);
-						re.put(typenames.get(i), budgetData.getTypeBudget(user, total, typenames.get(i)));
+						if (flag == false){
+							re.put(typenames.get(i), budgetData.getTypeBudget(user, total, typenames.get(i)));
+						}else{
+							re.put(typenames.get(i) ,(int)(total*typePercent.get(typenames.get(i))));
+						}
 						recommendation.add(re);
 						mData.add(budget);
 					}
