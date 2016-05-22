@@ -137,11 +137,8 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 //设置标志 推荐预算值是自己的默认算法还是根据过去支出情况 判断依据前几个月有记账数据是flag = true
 	private void setFlag() {
 	Calendar c = Calendar.getInstance();
-		c.add(Calendar.MONTH,-4); //前4个月 日历 JANUARY，它为 0
-//		int year =Calendar.YEAR;
-//		int month=Calendar.MONTH+1;
+		c.add(Calendar.MONTH,-3); //前3个月 日历 JANUARY，它为 0
 		int count = 0;
-//		count = jzData.getMonthSpend(userName,year,month);
 		count = jzData.getMonthSpend(userName,c.get(Calendar.YEAR),c.get(Calendar.MONTH)+1);
 		if (0 == count){
 			flag = false;

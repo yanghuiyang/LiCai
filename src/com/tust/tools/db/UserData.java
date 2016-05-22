@@ -48,6 +48,7 @@ public class UserData {
 	    	cursor.close();
 	    	return flag;	    	
 	    }
+
 	/*
  * 根据用户名查询用户信息
  * */

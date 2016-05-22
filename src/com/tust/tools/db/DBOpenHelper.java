@@ -41,7 +41,8 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 //        db.execSQL("insert into incometype(id,username,typename) values(?,?,?)",new String[]{"3","admin","补贴"});;
 
         db.execSQL("CREATE TABLE IF NOT EXISTS zhichu " +
-                 "(" + "ID" + " integer primary key," + JZzhichu.ZC_ITEM + " varchar," + JZzhichu.ZC_SUBITEM + " varchar," + JZzhichu.ZC_YEAR + " Integer," + JZzhichu.ZC_MONTH + " Integer," + JZzhichu.ZC_WEEK + " Integer," + JZzhichu.ZC_DAY + " Integer," + JZzhichu.ZC_TIME + " varchar," + JZzhichu.ZC_PIC + " varchar," + JZzhichu.ZC_COUNT + " REAL," + JZzhichu.ZC_BEIZHU + " varchar," + JZzhichu.ZC_USER + " varchar" +");");
+                "(" + "ID" + " integer primary key," + JZzhichu.ZC_ITEM + " varchar," + JZzhichu.ZC_SUBITEM + " varchar," + JZzhichu.ZC_YEAR + " Integer," + JZzhichu.ZC_MONTH + " Integer," + JZzhichu.ZC_WEEK + " Integer," + JZzhichu.ZC_DAY + " Integer," + JZzhichu.ZC_TIME + " varchar," + JZzhichu.ZC_PIC + " varchar," + JZzhichu.ZC_COUNT + " REAL," + JZzhichu.ZC_BEIZHU + " varchar," + JZzhichu.ZC_USER + " varchar" +");");
+//                "(" + "ID" + " integer primary key," + JZzhichu.ZC_ITEM + " varchar," + JZzhichu.ZC_YEAR + " Integer," + JZzhichu.ZC_MONTH + " Integer," + JZzhichu.ZC_WEEK + " Integer," + JZzhichu.ZC_DAY + " Integer," + JZzhichu.ZC_TIME + " varchar," + JZzhichu.ZC_PIC + " varchar," + JZzhichu.ZC_COUNT + " REAL," + JZzhichu.ZC_BEIZHU + " varchar," + JZzhichu.ZC_USER + " varchar" +");");
 
         db.execSQL("CREATE TABLE IF NOT EXISTS shouru" +
                 "(" + "ID" + " integer primary key," + JZshouru.SR_ITEM + " varchar," + JZshouru.SR_YEAR + " Integer," + JZshouru.SR_MONTH + " Integer," + JZshouru.SR_WEEK + " Integer," + JZshouru.SR_DAY + " Integer," + JZshouru.SR_TIME + " varchar," + JZshouru.SR_COUNT + " REAL," + JZshouru.SR_BEIZHU + " varchar," + JZshouru.SR_USER + " varchar" +");");

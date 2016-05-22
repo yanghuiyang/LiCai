@@ -9,7 +9,6 @@
     <string name="main_set_quanjushezhi">全局设置</string>
     <string name="main_bt_exit">退出程序</string>
     <string name="main_bt_about">关于软件</string>
-    <string name="main_bt_zhuangtai">手机状态</string>
     <string name="jz_name">小日子计帐器</string>
     <string name="jz_zhichu">当前支出</string>
     <string name="jz_shouru">当前收入</string>
@@ -23,14 +22,13 @@
     <string name="jz_shouru_jintian">今天收入</string>
     <string name="jz_tab2_zhichu">支出</string>
     <string name="jz_tab2_shouru">收入</string>
-    <string name="jz_tab2_jiedai">借贷</string>
     <string name="jz_tab2_jine">金额</string>
     <string name="jz_tab2_leibie">类别</string>
     <string name="jz_tab2_shijian">时间</string>
     <string name="jz_tab2_beizhu">备注</string>
     <string name="jz_tab2_tianjiapic">照片</string>
     <string name="jz_tab2_jinenum">0.00</string>
-    <string name="jz_tab2_leibieres">餐饮>晚餐</string>
+    <!--<string name="jz_tab2_leibieres">餐饮>晚餐</string>-->
     <string name="jz_tab2_timeres">20160406</string>
     <string name="jz_tab2_beizhures">无备注</string>
     <string name="jz_1">1</string>
@@ -78,7 +76,6 @@
     <string name="js_qingchu">清除</string>
 
     <string name="jz_benyueyusuan">本月预算</string>
-    <string name="dialog_about">如果您要了解理财助手每个子功能的特点和使用方法，请在该功能对应的图标上长按不放，程序将会弹出相应的提示信息。该程序目前适用于Android2.2及以上的版本，如有问题反馈请发送邮件至XXXXX@qq.com</string>
     <string name="bw_hint">输入完后直接按返回键，程序将自动保存。</string>
     <string name="main_hiddenguanggao">隐藏提醒</string>
     <string name="main_help">使用帮助</string>
@@ -91,10 +88,13 @@
     <string name="save">保存</string>
     <string name="login">登 录</string> 
     <string name="register">注册</string>
+    <string name="forgetPwd">忘记密码</string>
     <string name="strInputPwdHint">输入密码</string>
     <string name="strPswConfirmLabel">确认密码</string>
     <string name="sex">性别</string>
     <string name="tel">手机</string>
+    <string name="account">账号</string>
+    <string name="tel2">注册的手机号</string>
     <!-- 登陆使用-end -->
     <string name="exit">注销</string>
      <string-array name="sprinnerSex">

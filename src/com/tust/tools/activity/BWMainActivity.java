@@ -176,7 +176,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 	 */
 	String fileName;// 以当前时间命名的文件名
 
-	/*public void exitDialog(final String flag) {
+	public void exitDialog(final String flag) {
 		final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		String confrimStr = "";
 		String cancelStr = "";
@@ -187,7 +187,6 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 		} else if (flag.equals("out")) {
 			fileName = getFileName("all.txt");
 			builder.setMessage("确定后导出的文件名为"+fileName+"存放在SD/tust/tools/beiwang/txt/文件夹下");
-			//builder.setTitle("确定后导出的文件名为" + fileName + "存放在SD/tust/tools/beiwang/txt/文件夹下");
 			confrimStr = "确定";
 			cancelStr = "取消";
 		}
@@ -223,7 +222,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 			}
 		});
 		builder.create().show();
-	}*/
+	}
 
 	/*
 	 * 通过相机回传图片的文件名
@@ -238,7 +237,6 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 	public boolean onCreateOptionsMenu(Menu menu) {
 		menu.add(0, 100, 0, "导出所有");
 		menu.add(0, 200, 0, "选择删除");
-//		menu.add(0, 300, 0, "设置密码");
 		return super.onCreateOptionsMenu(menu);
 	}
 
@@ -247,7 +245,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 		switch (item.getItemId()) {
 		case 100:
 			if (BWAdapter.bWlist != null && BWAdapter.bWlist.size() > 0) {
-			//	exitDialog("out");
+				exitDialog("out");
 				Intent intent = new Intent(BWMainActivity.this, ToolsMainActivity.class);
 				BWMainActivity.this.startActivity(intent);
 				BWMainActivity.this.finish();
@@ -271,9 +269,6 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 				adapter.notifyDataSetChanged();
 			}
 			break;
-//		case 300:
-//			new DialogBWSheZhiMiMa(this);
-//			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}

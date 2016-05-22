@@ -120,6 +120,15 @@
 				android:layout_alignParentBottom="true"
 				android:layout_alignParentLeft="true" />
 
+			<Button
+				android:id="@+id/forgetPwd"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="16.0dip"
+				android:text="@string/forgetPwd"
+				android:layout_below="@+id/btn_register"
+				android:layout_marginTop="49dp" />
+
 		</RelativeLayout>
 
 	    <TableLayout

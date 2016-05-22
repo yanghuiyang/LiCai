@@ -5,7 +5,7 @@ import com.tust.tools.service.GetTime;
 public class JZzhichu {
 	public static final String ZC_USER = "ZC_USER";
 	public static final String ZC_ITEM = "ZC_ITEM";
-	public static final String ZC_SUBITEM = "ZC_SUBITEM";
+	public static final String ZC_SUBITEM = "ZC_SUBITEM"; //原设计 两层级别。。现在就弄一层
 	public static final String ZC_YEAR = "ZC_YEAR";
 	public static final String ZC_MONTH = "ZC_MONTH";
 	public static final String ZC_WEEK = "ZC_WEEK";

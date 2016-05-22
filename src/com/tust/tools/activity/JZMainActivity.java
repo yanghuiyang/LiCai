@@ -243,6 +243,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
     public void changeActivity(Class<?> c) {
         Intent intent = new Intent(JZMainActivity.this, c);
         startActivity(intent);
+        this.finish();
     }
 
     public void showMsg(String msg) {
