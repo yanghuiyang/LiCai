@@ -386,7 +386,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                                 // Main.this.finish();
                                                 Intent intent = new Intent(contex, JZMainActivity.class);
                                                 contex.startActivity(intent);
-                                                ((Activity) contex).finish();
+                                         //       ((Activity) contex).finish();
                                             }
                                         });
                                         builder.show();
@@ -413,7 +413,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                         // Main.this.finish();
                                         Intent intent = new Intent(contex, JZMainActivity.class);
                                         contex.startActivity(intent);
-                                        ((Activity) contex).finish();
+                                 //       ((Activity) contex).finish();
                                     }
                                 });
                                 builder.show();
@@ -442,7 +442,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                         // Main.this.finish();
                         Intent intent = new Intent(contex, JZMainActivity.class);
                         contex.startActivity(intent);
-                        ((Activity) contex).finish();
+           //             ((Activity) contex).finish();
                     }
                 });
                 builder.show();
@@ -459,7 +459,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                    Context contex = this;
                    Intent intent = new Intent(contex, JZMainActivity.class);
                    contex.startActivity(intent);
-                   ((Activity) contex).finish();
+               //    ((Activity) contex).finish();
                }
         } else if (now_flag == shouru_flag) {
             shouru.setSr_Item(leibies);
@@ -480,7 +480,10 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 dataHelper.UpdateShouRuInfo(shouru, sr.getSr_Id());
                 showMsg("该条收入修改成功");
             }
-            this.finish();
+           // this.finish();
+            Context contex = this;
+            Intent intent = new Intent(contex, JZMainActivity.class);
+            contex.startActivity(intent);
         }
 
     }
