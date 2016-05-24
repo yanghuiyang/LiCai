@@ -266,9 +266,11 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 saveToDB();
                 break;
             case R.id.jz_add_cancel_fl:// 取消按钮
-                this.finish();
+                Intent intent = new Intent( JZAddActivity.this,JZMainActivity.class);
+                JZAddActivity.this.startActivity(intent);
+                JZAddActivity.this.finish();
                 break;
-            case R.id.jz_add_del_fl:// 取消按钮
+            case R.id.jz_add_del_fl:// 按钮
                 dataHelper = new JZData(this);
                 switch (update_flag) {
                     case zhichu_flag:
