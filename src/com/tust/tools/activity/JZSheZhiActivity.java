@@ -70,7 +70,7 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 				showDialog();
 				break;
 			case R.id.jz_shezhi_about_rl :
-				String text = "理财-记账" +
+				String text = "理财小助手" +
         			"\r\n   软件版本 v1.0" ;
 				new DialogAbout(this,text);
 				break;
@@ -108,7 +108,7 @@ public class JZSheZhiActivity extends Activity implements OnClickListener {
 	public void showMsg(String msg) {
 		Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
 	}
-	//跳转Activity方法
+
 	//跳转Activity方法
 	public void changeActivity(final Class<?> c) {
 		new Thread() {

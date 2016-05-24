@@ -388,7 +388,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                                 // Main.this.finish();
                                                 Intent intent = new Intent(contex, JZMainActivity.class);
                                                 contex.startActivity(intent);
-                                         //       ((Activity) contex).finish();
+                                                ((Activity) contex).finish();
                                             }
                                         });
                                         builder.show();
@@ -415,7 +415,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                         // Main.this.finish();
                                         Intent intent = new Intent(contex, JZMainActivity.class);
                                         contex.startActivity(intent);
-                                 //       ((Activity) contex).finish();
+                                        ((Activity) contex).finish();
                                     }
                                 });
                                 builder.show();
@@ -423,10 +423,46 @@ public class JZAddActivity extends Activity implements OnClickListener {
                         }
                     });
                     builder.show();
+                }else if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+                    final Context contex = this;
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle(msg)
+                            .setNegativeButton("取消", null);
+                    builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            if (!isUpdate) {
+                                dataHelper.SaveZhiChuInfo(zhichu);
+                                showMsg("该条支出存储成功");
+                                picpath = "";
+                            } else {
+                                dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                                showMsg("该条支出修改成功");
+                            }
+                            // Main.this.finish();
+                            Intent intent = new Intent(contex, JZMainActivity.class);
+                            contex.startActivity(intent);
+                            ((Activity) contex).finish();
+                        }
+                    });
+                    builder.show();
+                }else{
+                    if (!isUpdate) {
+                        dataHelper.SaveZhiChuInfo(zhichu);
+                        showMsg("该条支出存储成功");
+                        picpath = "";
+                    } else {
+                        dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                        showMsg("该条支出修改成功");
+                    }
+                    // Main.this.finish();
+                    Context contex = this;
+                    Intent intent = new Intent(contex, JZMainActivity.class);
+                    contex.startActivity(intent);
                 }
+
             }
-            //else {
-               if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+          //d--------
+               else if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
                 final Context contex = this;
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle(msg)
@@ -444,7 +480,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                         // Main.this.finish();
                         Intent intent = new Intent(contex, JZMainActivity.class);
                         contex.startActivity(intent);
-           //             ((Activity) contex).finish();
+                       ((Activity) contex).finish();
                     }
                 });
                 builder.show();

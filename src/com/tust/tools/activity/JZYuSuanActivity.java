@@ -27,6 +27,7 @@ import com.tust.tools.db.BudgetData;
 import com.tust.tools.db.ExpenditureTypeData;
 import com.tust.tools.db.JZData;
 import com.tust.tools.db.UserData;
+import com.tust.tools.service.DongHuaYanChi;
 import com.tust.tools.service.GetTime;
 import com.tust.tools.service.ListEditorAdapter;
 
@@ -255,7 +256,9 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.jz_yusuan_cancelbt:
 //			showMsg(mData.get(0).toString()+"---"+mData.get(0).get(0+"")+"\n");
-			this.finish();
+			Intent intent = new Intent( JZYuSuanActivity.this,JZMainActivity.class);
+			JZYuSuanActivity.this.startActivity(intent);
+			JZYuSuanActivity.this.finish();
 			break;
 		}
 	}

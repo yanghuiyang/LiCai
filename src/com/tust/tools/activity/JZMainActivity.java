@@ -227,6 +227,7 @@ public class JZMainActivity extends Activity implements OnClickListener {
             break;
         case R.id.jz_main_bt_yusuan:// 预算
             changeActivity(JZYuSuanActivity.class);
+
             break;
         case R.id.jz_main_bt_baobiao://报表
         	changeActivity(JZBaoBiaoActivity.class);
@@ -240,10 +241,20 @@ public class JZMainActivity extends Activity implements OnClickListener {
     /*
      * 切换界面
      */
-    public void changeActivity(Class<?> c) {
-        Intent intent = new Intent(JZMainActivity.this, c);
-        startActivity(intent);
-        this.finish();
+    public void changeActivity(final Class<?> c) {
+        new Thread() {
+            public void run() {
+                try {
+                    sleep(300);
+                    Intent intent = new Intent(JZMainActivity.this, c);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                    JZMainActivity.this.startActivity(intent);
+                  //  JZMainActivity.this.finish();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
     }
 
     public void showMsg(String msg) {
