@@ -3,8 +3,7 @@ package com.tust.tools.service;
 import java.util.Calendar;
 
 public class GetTime {
-	static final Calendar c = Calendar.getInstance();  
-    
+    static final Calendar c = Calendar.getInstance();
     public static int getYear(){
     	return c.get(Calendar.YEAR);
     }
@@ -42,13 +41,13 @@ public class GetTime {
     //获取指定日期的星期
     public static int getTheWeekOfDay(int year , int month, int day){
         Calendar cd = Calendar.getInstance();
-        cd.set(year, month-1, day-1); 
-       return cd.get(Calendar.DAY_OF_WEEK); 
+        cd.set(year, month-1, day-1);
+       return cd.get(Calendar.DAY_OF_WEEK);
     }
     //获取指定日期在当月中的第几个星期
     public static int getTheWeekOfYear(int year , int month, int day){
         Calendar cd = Calendar.getInstance();
-        cd.set(year, month-1, day-1); 
-       return cd.get(Calendar.WEEK_OF_YEAR); 
+        cd.set(year, month-1, day-1);
+       return cd.get(Calendar.WEEK_OF_YEAR);
     }
 }

@@ -79,7 +79,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     // 当前界面收到的消息表示（msg.what）
     public static final int leibie_msg = 1010, beizhu_msg = 1020;
     // 当前选择的添加类别支出，收入
-    public static final int zhichu_flag = 2010, shouru_flag = 2020;//jiedai_flag = 2030;
+    public static final int zhichu_flag = 2010, shouru_flag = 2020;
     // 当前选择的类型
     private int now_flag = zhichu_flag;
     // 数据库操作
@@ -208,7 +208,9 @@ public class JZAddActivity extends Activity implements OnClickListener {
         date.setOnClickListener(new TextClick());
         // 时间
         time = (TextView) findViewById(R.id.jz_add_time_text);
-        time.setText(GetTime.getHour() + ":" + GetTime.getMinute());
+        Calendar ca = Calendar.getInstance();
+       // time.setText(GetTime.getHour() + ":" + GetTime.getMinute());
+        time.setText(ca.get(Calendar.HOUR) + ":" + ca.get(Calendar.MINUTE));
         time.setOnClickListener(new TextClick());
         // 备注
         beizhu = (TextView) findViewById(R.id.jz_add_beizhu_text);
@@ -364,7 +366,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                     AlertDialog.Builder builder = new AlertDialog.Builder(this);
                     builder.setTitle("您已经连续3天都超过额度平均值了哟，建议去兼职赚取收入")
                             //          .setNegativeButton("我知道了，不在提醒", null);
-                            .setNegativeButton("我知道了，不在提醒", new DialogInterface.OnClickListener() {
+                            .setNegativeButton("我知道了，不再提醒", new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
                                     SharedPreferences.Editor editor = preferences.edit();
@@ -392,6 +394,21 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                             }
                                         });
                                         builder.show();
+                                    }else{
+
+                                        if (!isUpdate) {
+                                            dataHelper.SaveZhiChuInfo(zhichu);
+                                            showMsg("该条支出存储成功");
+                                            picpath = "";
+                                        } else {
+                                            dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                                            showMsg("该条支出修改成功");
+                                        }
+                                        // Main.this.finish();
+
+                                        Intent intent = new Intent(contex, JZMainActivity.class);
+                                        contex.startActivity(intent);
+                                        ((Activity) contex).finish();//-0527
                                     }
                                 }
                             });
@@ -419,6 +436,21 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                     }
                                 });
                                 builder.show();
+                            }else{
+
+                                if (!isUpdate) {
+                                    dataHelper.SaveZhiChuInfo(zhichu);
+                                    showMsg("该条支出存储成功");
+                                    picpath = "";
+                                } else {
+                                    dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                                    showMsg("该条支出修改成功");
+                                }
+                                // Main.this.finish();
+
+                                Intent intent = new Intent(contex, JZMainActivity.class);
+                                contex.startActivity(intent);
+                                ((Activity) contex).finish();//-0527
                             }
                         }
                     });
@@ -458,6 +490,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                     Context contex = this;
                     Intent intent = new Intent(contex, JZMainActivity.class);
                     contex.startActivity(intent);
+                    ((Activity) contex).finish();//-0527
                 }
 
             }
@@ -497,7 +530,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                    Context contex = this;
                    Intent intent = new Intent(contex, JZMainActivity.class);
                    contex.startActivity(intent);
-               //    ((Activity) contex).finish();
+                   ((Activity) contex).finish();// -0527
                }
         } else if (now_flag == shouru_flag) {
             shouru.setSr_Item(leibies);
@@ -518,10 +551,11 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 dataHelper.UpdateShouRuInfo(shouru, sr.getSr_Id());
                 showMsg("该条收入修改成功");
             }
-           // this.finish();
+
             Context contex = this;
             Intent intent = new Intent(contex, JZMainActivity.class);
             contex.startActivity(intent);
+             this.finish();
         }
 
     }
@@ -682,6 +716,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
     public boolean onKeyDown(int kCode, KeyEvent kEvent) {
         switch (kCode) {
             case KeyEvent.KEYCODE_BACK: {
+
                 if (num_ll.isShown()) {
                     DongHuaYanChi.dongHuaEnd(num_ll, JZAddActivity.this, mh, R.anim.jz_menu_down, 300);
                     return false;

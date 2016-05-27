@@ -71,9 +71,13 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
 					}
 				}
 			}
-			yue_int = Integer.parseInt(et.getText().toString()) - count; //
+			if(et.getText().toString().equals("")){
+				yue_int = 0 - count;
+			}else{
+				yue_int = Integer.parseInt(et.getText().toString()) - count; //
+			}
 			if (yue_int<0){
-					yue.setText("-"+yue_int);
+				yue.setText("-"+yue_int);
 			}else {
 				yue.setText(yue_int+"");
 			}
@@ -179,40 +183,45 @@ public class JZYuSuanActivity extends Activity implements OnClickListener {
          总预算watcher 输入月度预算 实时刷新推荐值列表
      */
 	private void editTextWatcher() {
+
 		et.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+				if(!s.equals(null)){
+					String newStr = s.toString().replaceFirst("^0*", "");
+					if (!newStr.equals("")) {
+						int total = Integer.parseInt(newStr);
+						mData.clear();
+						recommendation.clear();
+						if (total >= 0) {
+							for (int i = 0; i < typenames.size(); i++) {
+								Map<String, String> budget = new HashMap<String, String>();//实际预算值
+								Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
+								int temp = 0;
+								temp = budgetData.getUserOneBudget(userName, typenames.get(i), GetTime.getYear(), GetTime.getMonth());
+								;
+								budget.put(typenames.get(i), "" + temp);
+								if (flag == false) {
+									re.put(typenames.get(i), budgetData.getTypeBudget(user, total, typenames.get(i)));
+								} else {
+									re.put(typenames.get(i), (int) (total * typePercent.get(typenames.get(i))));
+								}
+								recommendation.add(re);
+								mData.add(budget);
+							}
+							mAdapter.setData(mData, recommendation);
+							mAdapter.notifyDataSetChanged();
+						}
+					}
+				}
 			}
 			@Override
 			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
 			}
 			@Override
 			public void afterTextChanged(Editable s) {
-				String newStr = s.toString().replaceFirst("^0*", "");
-				if(!newStr.equals("")){
-				int total =Integer.parseInt(newStr);
-				mData.clear();
-				recommendation.clear();
-				if(total>=0) {
-					for (int i = 0; i < typenames.size(); i++) {
-						Map<String, String> budget = new HashMap<String, String>();//实际预算值
-						Map<String, Integer> re = new HashMap<String, Integer>();//推荐值
-						int temp = 0;
-						temp = budgetData.getUserOneBudget(userName, typenames.get(i), GetTime.getYear(), GetTime.getMonth());;
-						budget.put(typenames.get(i), "" + temp);
-						if (flag == false){
-							re.put(typenames.get(i), budgetData.getTypeBudget(user, total, typenames.get(i)));
-						}else{
-							re.put(typenames.get(i) ,(int)(total*typePercent.get(typenames.get(i))));
-						}
-						recommendation.add(re);
-						mData.add(budget);
-					}
-					mAdapter.setData(mData, recommendation);
-					mAdapter.notifyDataSetChanged();
-				}
-				}
+
 			}
 		});
 	}
