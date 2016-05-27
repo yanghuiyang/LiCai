@@ -209,7 +209,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
         // 时间
         time = (TextView) findViewById(R.id.jz_add_time_text);
         Calendar ca = Calendar.getInstance();
-       // time.setText(GetTime.getHour() + ":" + GetTime.getMinute());
+        // time.setText(GetTime.getHour() + ":" + GetTime.getMinute());
         time.setText(ca.get(Calendar.HOUR) + ":" + ca.get(Calendar.MINUTE));
         time.setOnClickListener(new TextClick());
         // 备注
@@ -268,7 +268,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 saveToDB();
                 break;
             case R.id.jz_add_cancel_fl:// 取消按钮
-                Intent intent = new Intent( JZAddActivity.this,JZMainActivity.class);
+                Intent intent = new Intent(JZAddActivity.this, JZMainActivity.class);
                 JZAddActivity.this.startActivity(intent);
                 JZAddActivity.this.finish();
                 break;
@@ -337,10 +337,10 @@ public class JZAddActivity extends Activity implements OnClickListener {
             String selectionMonth = JZzhichu.ZC_USER + "='" + userName + "'" + " and " + JZzhichu.ZC_YEAR + "=" + GetTime.getYear() + " and " + JZzhichu.ZC_MONTH + "=" + GetTime.getMonth();
             List<JZzhichu> zhichuMonthList = dataHelper.GetZhiChuList(selectionMonth);
             boolean beyondFlag = false;//连续三天超出平均值标志
-            beyondFlag = dataHelper.isBeyond(zhichu,user.getBudget());
+            beyondFlag = dataHelper.isBeyond(zhichu, user.getBudget());
             int count = 0;
             final int countTemp;
-           // final String msg = "";
+            // final String msg = "";
             String msg = "";
             final String msgTemp;
             if (zhichuMonthList != null) {
@@ -357,9 +357,9 @@ public class JZAddActivity extends Activity implements OnClickListener {
             }
             countTemp = count;
             msgTemp = msg;
-            SharedPreferences preferences=getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+            SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
             String tips = preferences.getString("tips", "");//tips 提醒标志 1为提醒 2位不提醒
-            if(tips.equals("1")) {
+            if (tips.equals("1")) {
                 if (beyondFlag) {
                     //           final Context contex = this;
                     final Context contex = this;
@@ -394,7 +394,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                             }
                                         });
                                         builder.show();
-                                    }else{
+                                    } else {
 
                                         if (!isUpdate) {
                                             dataHelper.SaveZhiChuInfo(zhichu);
@@ -436,7 +436,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                                     }
                                 });
                                 builder.show();
-                            }else{
+                            } else {
 
                                 if (!isUpdate) {
                                     dataHelper.SaveZhiChuInfo(zhichu);
@@ -455,7 +455,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                         }
                     });
                     builder.show();
-                }else if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+                } else if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
                     final Context contex = this;
                     AlertDialog.Builder builder = new AlertDialog.Builder(this);
                     builder.setTitle(msg)
@@ -477,7 +477,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
                         }
                     });
                     builder.show();
-                }else{
+                } else {
                     if (!isUpdate) {
                         dataHelper.SaveZhiChuInfo(zhichu);
                         showMsg("该条支出存储成功");
@@ -494,8 +494,8 @@ public class JZAddActivity extends Activity implements OnClickListener {
                 }
 
             }
-          //d--------
-               else if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
+            //d--------
+            else if (count + Integer.parseInt(jineString) > user.getBudget() || spend > budget) {
                 final Context contex = this;
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle(msg)
@@ -513,25 +513,25 @@ public class JZAddActivity extends Activity implements OnClickListener {
                         // Main.this.finish();
                         Intent intent = new Intent(contex, JZMainActivity.class);
                         contex.startActivity(intent);
-                       ((Activity) contex).finish();
+                        ((Activity) contex).finish();
                     }
                 });
                 builder.show();
-            }else{
-                   if (!isUpdate) {
-                       dataHelper.SaveZhiChuInfo(zhichu);
-                       showMsg("该条支出存储成功");
-                       picpath = "";
-                   } else {
-                       dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
-                       showMsg("该条支出修改成功");
-                   }
-                   // Main.this.finish();
-                   Context contex = this;
-                   Intent intent = new Intent(contex, JZMainActivity.class);
-                   contex.startActivity(intent);
-                   ((Activity) contex).finish();// -0527
-               }
+            } else {
+                if (!isUpdate) {
+                    dataHelper.SaveZhiChuInfo(zhichu);
+                    showMsg("该条支出存储成功");
+                    picpath = "";
+                } else {
+                    dataHelper.UpdateZhiChuInfo(zhichu, zc.getZc_Id());
+                    showMsg("该条支出修改成功");
+                }
+                // Main.this.finish();
+                Context contex = this;
+                Intent intent = new Intent(contex, JZMainActivity.class);
+                contex.startActivity(intent);
+                ((Activity) contex).finish();// -0527
+            }
         } else if (now_flag == shouru_flag) {
             shouru.setSr_Item(leibies);
 
@@ -555,7 +555,7 @@ public class JZAddActivity extends Activity implements OnClickListener {
             Context contex = this;
             Intent intent = new Intent(contex, JZMainActivity.class);
             contex.startActivity(intent);
-             this.finish();
+            this.finish();
         }
 
     }
@@ -842,9 +842,17 @@ public class JZAddActivity extends Activity implements OnClickListener {
                         picb = decodeFile(file);
                         pic.setImageBitmap(picb);
                     } else if (scheme.equalsIgnoreCase("content")) {
-                        Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+
+                        String[] filePathColumn = { MediaStore.Images.Media.DATA };
+                        Cursor cursor = getContentResolver().query(uri,filePathColumn, null, null, null);
                         cursor.moveToFirst();
-                        picpath = cursor.getString(1);
+                        int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                        picpath = cursor.getString(columnIndex);
+//                        cursor.close();
+
+//                        Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+//                        cursor.moveToFirst();
+//                        picpath = cursor.getString(1);
                         file = new File(picpath);
                         picb = decodeFile(file);
                         pic.setImageBitmap(picb);
@@ -874,5 +882,4 @@ public class JZAddActivity extends Activity implements OnClickListener {
         }
         return b;
     }
-
 }
