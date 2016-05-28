@@ -255,7 +255,7 @@
             <LinearLayout
                 android:id="@+id/jz_ll_shouru"
                 android:layout_width="match_parent"
-                android:layout_height="163dp"
+                android:layout_height="185dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="10dp"
@@ -310,7 +310,7 @@
                         android:id="@+id/jz_main_shouru_day_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="15dp"
                         android:text="@string/jz_0"
                         android:textColor="#ff0000" />
                 </LinearLayout>

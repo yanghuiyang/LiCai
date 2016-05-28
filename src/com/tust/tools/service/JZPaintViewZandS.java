@@ -9,14 +9,14 @@ import android.view.View;
 public class JZPaintViewZandS extends View {
 	private Paint mPaints;
     private float mStart;
-    private float mSweep = 200;
+    private float mSweep = 205;
     private int color,left;
     private Bitmap mSrcB;
     private String lable;
     //预算  余额   比率
     private float height;
     Bitmap makeSrc(int left) {
-      Bitmap bm = Bitmap.createBitmap(40+left, 250, Bitmap.Config.ARGB_8888);
+      Bitmap bm = Bitmap.createBitmap(40+left, 300, Bitmap.Config.ARGB_8888);
       Canvas c = new Canvas(bm);
       Paint p = new Paint(Paint.ANTI_ALIAS_FLAG);
       p.setColor(color);
@@ -26,21 +26,23 @@ public class JZPaintViewZandS extends View {
     
     public JZPaintViewZandS(Context context,int color,int left,float height,String lable) {
         super(context);
-        if(height>=200){
-        	this.height = 250-200;
-        }else{
-        	this.height = 250-height;
-        }
-        this.color = color;
-        this.left = left;
-        this.lable = lable;
-        mPaints = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaints = new Paint(mPaints);
-        mSrcB = makeSrc(left);
+//        this.height = height;
+            if(height>=200){
+                this.height = 250-200;
+            }else{
+                this.height = 250-height;
+            }
+            this.color = color;
+            this.left = left;
+            this.lable = lable;
+            mPaints = new Paint(Paint.ANTI_ALIAS_FLAG);
+            mPaints = new Paint(mPaints);
+            mSrcB = makeSrc(left);
+
     }
 
     private void drawArcs(Canvas canvas, Paint paint,String lable) {
-        canvas.drawBitmap(mSrcB, mStart, mSweep, paint);
+       canvas.drawBitmap(mSrcB, mStart, mSweep, paint);
         Paint labelP = new Paint(Paint.ANTI_ALIAS_FLAG);
     	labelP.setTextAlign(Paint.Align.CENTER);
     	canvas.drawText(lable, 20+left, height-labelP.getTextSize()-10, labelP);
@@ -56,5 +58,5 @@ public class JZPaintViewZandS extends View {
         	mSweep = height;
         }
         invalidate();
-    }
+   }
 }

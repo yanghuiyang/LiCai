@@ -333,16 +333,24 @@ public class JZMainActivity extends Activity implements OnClickListener {
         if(count_zc_week>0||count_zc_yue>0||count_sr_yue>0){
         	// 创建绘图区域 柱状图 当前支出
         	zhichu_shang_rl.setBackgroundDrawable(null);
-            float count = count_zc_week+count_zc_yue+count_sr_yue;
-            ;int temp ;
-            if(count >= 250){
-                 temp = (int)((count)/250);
+           float count = count_zc_week+count_zc_yue+count_sr_yue;
+            int temp ;
+            if(count >= 200){
+                 temp = (int)((count)/200);
             }else{
                 temp = 1;
             }
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(102,153,161),30,count_zc_week/temp,"本周支出"));
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(77,81,57),100,count_zc_yue/temp,"本月支出"));
-            zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(28,28,28),170,count_sr_yue/temp,"本月收入"));
+            //如果该项没数据就不画
+            if(count_zc_week>=1){
+                zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(102,153,161),30,count_zc_week/temp,"本周支出"));
+            }
+            if(count_zc_yue>=1){
+                zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(77,81,57),100,count_zc_yue/temp,"本月支出"));
+            }
+            if(count_sr_yue>=1){
+                zhichu_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(28,28,28),170,count_sr_yue/temp,"本月收入"));
+            }
+
         }else{
         	zhichu_shang_rl.setBackgroundResource(R.drawable.jz_empty_zhichu_zhuxing);
         }
@@ -404,15 +412,21 @@ public class JZMainActivity extends Activity implements OnClickListener {
         	// 创建绘图区域 柱状图
             float count = count_sr_year+count_sr_yue+count_sr_day;
             int temp ;
-            if(count >= 250){
-                temp = (int)((count)/250);
+            if(count >= 200){
+                temp = (int)((count)/200);
             }else{
                 temp = 1;
             }
         	shouru_shang_rl.setBackgroundDrawable(null);
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(102,153,161),30,count_sr_year/temp,"本年收入"));
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(77,81,57),100,count_sr_yue/temp,"本月收入"));
-        	shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(28,28,28),170,count_sr_day/temp,"今天收入"));
+            if(count_sr_year>=1){
+                shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(102,153,161),30,count_sr_year/temp,"本年收入"));
+            }
+        	if(count_sr_yue>=1){
+                shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(77,81,57),100,count_sr_yue/temp,"本月收入"));
+            }
+        	if(count_sr_day>=1){
+                shouru_shang_rl.addView(new JZPaintViewZandS(this,Color.rgb(28,28,28),170,count_sr_day/temp,"今天收入"));
+            }
         }else{
         	shouru_shang_rl.setBackgroundResource(R.drawable.jz_empty_zhichu_zhuxing);
         }
