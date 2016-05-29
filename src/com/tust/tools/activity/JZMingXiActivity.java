@@ -1,14 +1,15 @@
 package com.tust.tools.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.LinearLayout;
@@ -16,12 +17,10 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.tust.tools.R;
 import com.tust.tools.bean.JZshouru;
 import com.tust.tools.bean.JZzhichu;
 import com.tust.tools.service.DongHua3d;
-import com.tust.tools.service.DongHuaYanChi;
 import com.tust.tools.service.GetTime;
 import com.tust.tools.service.JZMingXiAdapter;
 
@@ -46,12 +45,15 @@ public class JZMingXiActivity extends Activity implements OnClickListener,OnItem
 	public static MessageHandler mh;
 	//适配器
 	private JZMingXiAdapter adapter;
+	private  String userName;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.jz_mingxi);
+		SharedPreferences preferences = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+		userName = preferences.getString("userName", "");
 		mh = new MessageHandler();
-		adapter = new JZMingXiAdapter(this);
+		adapter = new JZMingXiAdapter(this,userName);
 		init();
 	}
 	

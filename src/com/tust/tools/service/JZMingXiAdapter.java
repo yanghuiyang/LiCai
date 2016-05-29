@@ -1,14 +1,12 @@
 package com.tust.tools.service;
 
 import java.util.ArrayList;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
 import com.tust.tools.R;
 import com.tust.tools.activity.JZMingXiActivity;
 import com.tust.tools.bean.JZshouru;
@@ -22,23 +20,26 @@ public class JZMingXiAdapter extends BaseAdapter{
 	private int flag = 0;
 	//数据库操作
     JZData dataHelper ;
-	public JZMingXiAdapter(Context context) {
+	private String userName;
+	public JZMingXiAdapter(Context context,String userName) {
 		this.context = context;
+		this.userName = userName;
 		dataHelper= new JZData(context);
 	}
 
 	//根据传入的参数获取相应的集合
 	public double[] getList(int year,int month,int day,int flag){
 	    this.flag = flag;
+
 	    double countZhiChu = 0,countShouRu = 0;
 	    ArrayList<JZzhichu> zhiChuList = new ArrayList<JZzhichu>();
-	    String selectionzhichu = JZzhichu.ZC_YEAR+"="+year+" and "+JZzhichu.ZC_MONTH+"="+month;
+	    String selectionzhichu = JZzhichu.ZC_USER + "='" +userName + "'" +" and " +JZzhichu.ZC_YEAR+"="+year+" and "+JZzhichu.ZC_MONTH+"="+month;
 	    zhiChuList =  dataHelper.GetZhiChuList(selectionzhichu);
     	for(JZzhichu zhichu:zhiChuList){
     		countZhiChu += zhichu.getZc_Count();
     	}
     	ArrayList<JZshouru> shouRuList = new ArrayList<JZshouru>();
-        String selectionshouru = JZshouru.SR_YEAR+"="+year+" and "+JZshouru.SR_MONTH+"="+month;
+        String selectionshouru = JZshouru.SR_USER  + "='" +userName + "'" +" and " +JZshouru.SR_YEAR+"="+year+" and "+JZshouru.SR_MONTH+"="+month;
         shouRuList =  dataHelper.GetShouRuList(selectionshouru);
         for(JZshouru shouru:shouRuList){
         	countShouRu += shouru.getSr_Count();

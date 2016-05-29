@@ -97,7 +97,11 @@ public class UserEditActivity extends Activity implements OnClickListener{
 //
 				break;
 			case R.id.edit_btn_exit:
-				//注销 暂时做成退出 待实现登陆记住用户后
+				//注销
+				SharedPreferences preferences=getSharedPreferences("userInfo", Context.MODE_PRIVATE);
+				SharedPreferences.Editor editor=preferences.edit();
+				editor.clear();
+				editor.commit();
 				changeActivity(LoginActivity.class);
 			default:
 				break;

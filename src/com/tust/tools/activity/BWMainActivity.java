@@ -160,7 +160,7 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 				adapter.isShowCheck = false;
 				adapter.notifyDataSetChanged();
 			} else {
-				//exitDialog("exit");
+				exitDialog("exit");
 				Intent intent = new Intent(BWMainActivity.this, ToolsMainActivity.class);
 				BWMainActivity.this.startActivity(intent);
 				BWMainActivity.this.finish();
@@ -246,9 +246,9 @@ public class BWMainActivity extends Activity implements OnClickListener, OnItemC
 		case 100:
 			if (BWAdapter.bWlist != null && BWAdapter.bWlist.size() > 0) {
 				exitDialog("out");
-				Intent intent = new Intent(BWMainActivity.this, ToolsMainActivity.class);
-				BWMainActivity.this.startActivity(intent);
-				BWMainActivity.this.finish();
+//				Intent intent = new Intent(BWMainActivity.this, ToolsMainActivity.class);
+//				BWMainActivity.this.startActivity(intent);
+//				BWMainActivity.this.finish();
 			} else {
 				showMsg("没有可导出条目");
 			}
